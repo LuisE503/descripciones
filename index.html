@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generador de Descripciones Shopify - Proyecto Grupal</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <h1>🛍️ Generador de Descripciones Shopify</h1>
+                <p class="subtitle">Códigos de ejemplo optimizados para ChatGPT-5</p>
+            </div>
+        </div>
+    </header>
+
+    <!-- Search and Filter Section -->
+    <section class="search-section">
+        <div class="container">
+            <div class="search-box">
+                <input type="text" id="searchInput" placeholder="🔍 Buscar producto..." autocomplete="off">
+            </div>
+            <div class="filter-chips" id="filterChips">
+                <button class="chip active" data-filter="all">Todos</button>
+                <button class="chip" data-filter="case">Case</button>
+                <button class="chip" data-filter="cooler">Cooler</button>
+                <button class="chip" data-filter="fuente_de_poder">Fuente de Poder</button>
+                <button class="chip" data-filter="laptop">Laptop</button>
+                <button class="chip" data-filter="memoria_ram">Memoria RAM</button>
+                <button class="chip" data-filter="monitores">Monitores</button>
+                <button class="chip" data-filter="motherboard">Motherboard</button>
+                <button class="chip" data-filter="procesadores">Procesadores</button>
+                <button class="chip" data-filter="regletas">Regletas</button>
+                <button class="chip" data-filter="regulador_de_voltaje">Regulador de Voltaje</button>
+                <button class="chip" data-filter="software">Software</button>
+                <button class="chip" data-filter="supresor_de_voltaje">Supresor de Voltaje</button>
+                <button class="chip" data-filter="tarjetas_graficas">Tarjetas Gráficas</button>
+                <button class="chip" data-filter="ups_y_ups_online">UPS y UPS Online</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Grid -->
+    <main class="main-content">
+        <div class="container">
+            <div class="products-grid" id="productsGrid">
+                <!-- Los productos se generarán dinámicamente con JavaScript -->
+            </div>
+            <div class="no-results" id="noResults" style="display: none;">
+                <div class="no-results-icon">🔍</div>
+                <h3>No se encontraron productos</h3>
+                <p>Intenta con otro término de búsqueda o selecciona otra categoría</p>
+            </div>
+        </div>
+    </main>
+
+    <!-- Modal for Preview -->
+    <div class="modal" id="previewModal">
+        <div class="modal-overlay" id="modalOverlay"></div>
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 id="modalTitle">Vista Previa</h2>
+                <button class="modal-close" id="modalClose">&times;</button>
+            </div>
+            <div class="modal-body">
+                <div class="modal-tabs">
+                    <button class="modal-tab active" data-tab="preview">Vista Previa</button>
+                    <button class="modal-tab" data-tab="code">Código HTML</button>
+                    <button class="modal-tab" data-tab="description">Descripción Oficial</button>
+                </div>
+                <div class="tab-content active" id="previewTab">
+                    <div class="preview-container" id="previewContainer"></div>
+                </div>
+                <div class="tab-content" id="codeTab">
+                    <pre><code id="codeContent"></code></pre>
+                </div>
+                <div class="tab-content" id="descriptionTab">
+                    <div class="description-instructions">
+                        <h3>📋 Descripción Oficial del Producto (Opcional)</h3>
+                        <p>Pega las especificaciones del sitio oficial aquí. Si lo dejas vacío, ese campo se omitirá en el prompt.</p>
+                    </div>
+                    <textarea 
+                        id="officialDescription" 
+                        placeholder="Pega aquí la información del producto..."
+                        rows="20"
+                    ></textarea>
+                    <div class="description-status" id="descriptionStatus">
+                        <span class="status-icon">ℹ️</span>
+                        <span class="status-text">Campo opcional - puedes dejarlo vacío</span>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-secondary" id="copyCodeBtn">
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                        <path d="M4 2h8a2 2 0 0 1 2 2v8" stroke="currentColor" stroke-width="2"/>
+                        <rect x="2" y="6" width="8" height="8" rx="2" stroke="currentColor" stroke-width="2"/>
+                    </svg>
+                    Copiar Solo Código
+                </button>
+                <button class="btn btn-primary" id="copyFullPromptBtn">
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                        <path d="M8 2v12M2 8h12" stroke="currentColor" stroke-width="2"/>
+                    </svg>
+                    <span id="copyFullPromptText">Copiar Todo para ChatGPT</span>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Toast Notification -->
+    <div class="toast" id="toast">
+        <span id="toastMessage"></span>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>📦 Proyecto Grupal - Generador de Descripciones Shopify</p>
+            <p class="footer-note">14 categorías de productos disponibles</p>
+        </div>
+    </footer>
+
+    <script src="products-data.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

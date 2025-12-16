@@ -1,0 +1,153 @@
+<!-- BLOQUE: Case (estructura y CSS similar a la que proporcionaste) -->
+<div class="row">
+  <div class="col-sm-8 col-offset-sm-2 col-md-10 offset-md-1 mb-3">
+    <div class="product-seo-intro">
+      <p>Descubre un case pensado para montaje y refrigeración eficiente: compatibilidad amplia de motherboards, opciones de panel y gestión de cables.</p>
+    </div>
+    <br>
+    <h6 class="tt-title-sub">ESPECIFICACIONES DEL PRODUCTO</h6>
+    <div class="div-drop">
+      <table class="NEW-TABLE TableOverride-1 tab-drag" width="100%" id="table-plan-case">
+        <tbody>
+          <!-- GENERAL -->
+          <tr>
+            <td class="tableCellGroupTitle">General</td>
+            <td class="tableCellGroupTitleContent"></td>
+          </tr>
+          <tr>
+            <td class="tableCellMeta">Clasificación</td>
+            <td class="tableCellContent">MID TOWER</td>
+          </tr>
+          <tr>
+            <td class="tableCellMeta">Color</td>
+            <td class="tableCellContent">Blanco/Rojo</td>
+          </tr>
+
+          <!-- COMPATIBILIDAD -->
+          <tr>
+            <td class="tableCellGroupTitle">Compatibilidad</td>
+            <td class="tableCellGroupTitleContent"></td>
+          </tr>
+          <tr>
+            <td class="tableCellMeta">Soporte para Motherboard</td>
+            <td class="tableCellContent">ATX / MINI-ITX / MICRO-ATX</td>
+          </tr>
+
+          <!-- PANELES -->
+          <tr>
+            <td class="tableCellGroupTitle">Paneles</td>
+            <td class="tableCellGroupTitleContent"></td>
+          </tr>
+          <tr>
+            <td class="tableCellMeta">Acrílico</td>
+            <td class="tableCellContent">Sí</td>
+          </tr>
+          <tr>
+            <td class="tableCellMeta">Vidrio Templado</td>
+            <td class="tableCellContent">No</td>
+          </tr>
+
+          <!-- GESTIÓN -->
+          <tr>
+            <td class="tableCellGroupTitle">Gestión</td>
+            <td class="tableCellGroupTitleContent"></td>
+          </tr>
+          <tr>
+            <td class="tableCellMeta">Soporte para cables</td>
+            <td class="tableCellContent">Sí</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+
+<style>
+  /* Mantener estilo similar al bloque original para consistencia con el tema */
+  .nav-tabs .nav-item.show .nav-link,
+  .nav-tabs .nav-link .active {
+    background: #f5f5f5;
+    border-bottom: 2px solid #036cbf;
+    border-radius: 5px 5px 0 0;
+  }
+
+  /* Heredar tipografía del tema automáticamente */
+  .row,
+  .NEW-TABLE,
+  .TableOverride-1,
+  .tab-drag,
+  .tt-title-sub,
+  .tableCellMeta,
+  .tableCellContent,
+  .tableCellGroupTitle,
+  .tableCellGroupTitleContent,
+  .product-seo-intro,
+  .div-drop {
+    font-family: inherit;
+    color: inherit;
+  }
+
+  /* Título centrado pero más pequeño */
+  .tt-title-sub {
+    font-size: 12px;
+    font-weight: 700;
+    margin: 6px 0 10px;
+    letter-spacing: 0.3px;
+    text-align: center;
+  }
+
+  .div-drop { overflow-x: auto; }
+  table { border-collapse: collapse; font-size: 14px; width: 100%; }
+
+  .tableCellMeta {
+    border: 1px solid #fbfbfb;
+    padding: 3px 0 3px 15px;
+    vertical-align: middle;
+    background-color: #fdfdfd;
+    width: 50%;
+    text-align: left;
+  }
+
+  .tableCellContent {
+    text-align: center;
+    border: 1px solid #fbfbfb;
+    padding: 3px 0 3px 15px;
+    vertical-align: middle;
+    background-color: #fafafa;
+    width: 50%;
+  }
+
+  .tableCellGroupTitle {
+    border: 1px solid #f8f8f8;
+    padding: 3px 0 3px 5px;
+    vertical-align: middle;
+    background-color: #f7f7f7;
+    font-weight: 800;
+    text-transform: uppercase;
+    text-align: center;
+  }
+
+  .tableCellGroupTitleContent {
+    border: 1px solid #fbfbfb;
+    padding: 3px 0 3px 15px;
+    vertical-align: middle;
+    background-color: #fafafa;
+    width: 50%;
+  }
+
+  /* Responsive */
+  @media (max-width: 576px) {
+    .tt-title-sub { font-size: 11px; }
+    .tableCellMeta, .tableCellContent { font-size: 13px; padding-left: 10px; }
+  }
+</style>
+
+
+
+
+Toma esta estructura de codigo de ejemplo
+En clasificacion pon segun la clasificacion ATX, MINI-ITX, MICRO-ATX, EATX o segun sea el case
+Color el color del case
+Soporte para cables, si contiene si no se espeficica se añade No
+Si tiene vidrio acrilico o cidrio tamplado se pone si o no
+Si es un case gaming y tiene ventiladores se pone la cantidad de ventiladores en la tabla de ESPECIFICACIONES

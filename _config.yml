@@ -1,0 +1,3 @@
+theme: jekyll-theme-cayman
+title: "Generador de Descripciones Shopify"
+description: "Herramienta web para generar códigos HTML de productos con prompts optimizados para ChatGPT-5"

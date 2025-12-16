@@ -1,0 +1,158 @@
+<!-- BLOQUE: Cooler (estructura y CSS similar a la que proporcionaste) -->
+<div class="row">
+  <div class="col-sm-8 col-offset-sm-2 col-md-10 offset-md-1 mb-3">
+    <div class="product-seo-intro">
+      <p>Soluciones de refrigeración diseñadas para mantener tu sistema estable: opciones de disipador y soporte para enfriamiento líquido según modelo.</p>
+    </div>
+    <br>
+    <h6 class="tt-title-sub">ESPECIFICACIONES DEL PRODUCTO</h6>
+    <div class="div-drop">
+      <table class="NEW-TABLE TableOverride-1 tab-drag" width="100%" id="table-plan-cooler">
+        <tbody>
+          <!-- GENERAL -->
+          <tr>
+            <td class="tableCellGroupTitle">General</td>
+            <td class="tableCellGroupTitleContent"></td>
+          </tr>
+          <tr>
+            <td class="tableCellMeta">Serie</td>
+            <td class="tableCellContent">SERIE X</td>
+          </tr>
+          <tr>
+            <td class="tableCellMeta">Estilo</td>
+            <td class="tableCellContent">ESTILO A</td>
+          </tr>
+
+          <!-- COMPATIBILIDAD -->
+          <tr>
+            <td class="tableCellGroupTitle">Compatibilidad</td>
+            <td class="tableCellGroupTitleContent"></td>
+          </tr>
+          <tr>
+            <td class="tableCellMeta">Tipo de socket</td>
+            <td class="tableCellContent">AM4 / LGA1200</td>
+          </tr>
+
+          <!-- DIMENSIONES Y MATERIAL -->
+          <tr>
+            <td class="tableCellGroupTitle">Dimensiones y Material</td>
+            <td class="tableCellGroupTitleContent"></td>
+          </tr>
+          <tr>
+            <td class="tableCellMeta">Dimensiones</td>
+            <td class="tableCellContent">120 x 120 x 25 mm</td>
+          </tr>
+          <tr>
+            <td class="tableCellMeta">Color</td>
+            <td class="tableCellContent">Negro</td>
+          </tr>
+          <tr>
+            <td class="tableCellMeta">Material</td>
+            <td class="tableCellContent">Aluminio / Cobre</td>
+          </tr>
+
+          <!-- COMPONENTES -->
+          <tr>
+            <td class="tableCellGroupTitle">Componentes</td>
+            <td class="tableCellGroupTitleContent"></td>
+          </tr>
+          <tr>
+            <td class="tableCellMeta">Disipador de calor</td>
+            <td class="tableCellContent">Sí</td>
+          </tr>
+          <tr>
+            <td class="tableCellMeta">Enfriamiento líquido</td>
+            <td class="tableCellContent">No</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+
+<style>
+  /* Mantener estilo consistente con el bloque original */
+  .nav-tabs .nav-item.show .nav-link,
+  .nav-tabs .nav-link .active {
+    background: #f5f5f5;
+    border-bottom: 2px solid #036cbf;
+    border-radius: 5px 5px 0 0;
+  }
+
+  /* Heredar tipografía del tema automáticamente */
+  .row,
+  .NEW-TABLE,
+  .TableOverride-1,
+  .tab-drag,
+  .tt-title-sub,
+  .tableCellMeta,
+  .tableCellContent,
+  .tableCellGroupTitle,
+  .tableCellGroupTitleContent,
+  .product-seo-intro,
+  .div-drop {
+    font-family: inherit;
+    color: inherit;
+  }
+
+  /* Título centrado pero más pequeño */
+  .tt-title-sub {
+    font-size: 12px;
+    font-weight: 700;
+    margin: 6px 0 10px;
+    letter-spacing: 0.3px;
+    text-align: center;
+  }
+
+  .div-drop { overflow-x: auto; }
+  table { border-collapse: collapse; font-size: 14px; width: 100%; }
+
+  .tableCellMeta {
+    border: 1px solid #fbfbfb;
+    padding: 3px 0 3px 15px;
+    vertical-align: middle;
+    background-color: #fdfdfd;
+    width: 50%;
+    text-align: left;
+  }
+
+  .tableCellContent {
+    text-align: center;
+    border: 1px solid #fbfbfb;
+    padding: 3px 0 3px 15px;
+    vertical-align: middle;
+    background-color: #fafafa;
+    width: 50%;
+  }
+
+  .tableCellGroupTitle {
+    border: 1px solid #f8f8f8;
+    padding: 3px 0 3px 5px;
+    vertical-align: middle;
+    background-color: #f7f7f7;
+    font-weight: 800;
+    text-transform: uppercase;
+    text-align: center;
+  }
+
+  .tableCellGroupTitleContent {
+    border: 1px solid #fbfbfb;
+    padding: 3px 0 3px 15px;
+    vertical-align: middle;
+    background-color: #fafafa;
+    width: 50%;
+  }
+
+  /* Responsive */
+  @media (max-width: 576px) {
+    .tt-title-sub { font-size: 11px; }
+    .tableCellMeta, .tableCellContent { font-size: 13px; padding-left: 10px; }
+  }
+</style>
+
+
+Se añade la serie del cooler
+En tipo de socket se añaden las compatibilidades
+en estilo el estilo del cooler
+en dimensiones y material se añade solo las especificaciones que se tengan
+si no se tiene especificacion de algo no se coloca

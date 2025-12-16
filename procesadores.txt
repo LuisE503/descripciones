@@ -1,0 +1,151 @@
+<!-- BLOQUE: Procesadores (estructura y CSS consistente con los bloques anteriores) -->
+<div class="row">
+  <div class="col-sm-8 col-offset-sm-2 col-md-10 offset-md-1 mb-3">
+    <div class="product-seo-intro">
+      <p>Procesadores diseñados para ofrecer rendimiento según la arquitectura y la frecuencia especificada, con información clara sobre núcleos, hilos y capacidades gráficas.</p>
+    </div>
+    <br>
+    <h6 class="tt-title-sub">ESPECIFICACIONES DEL PRODUCTO</h6>
+    <div class="div-drop">
+      <table class="NEW-TABLE TableOverride-1 tab-drag" width="100%" id="table-plan-cpu" role="table" aria-label="Especificaciones del procesador">
+        <tbody>
+          <!-- GENERAL -->
+          <tr>
+            <td class="tableCellGroupTitle">General</td>
+            <td class="tableCellGroupTitleContent"></td>
+          </tr>
+          <tr>
+            <td class="tableCellMeta">Serie</td>
+            <td class="tableCellContent">SERIE X</td>
+          </tr>
+          <tr>
+            <td class="tableCellMeta">Socket</td>
+            <td class="tableCellContent">LGA</td>
+          </tr>
+
+          <!-- CACHE Y FRECUENCIA -->
+          <tr>
+            <td class="tableCellGroupTitle">Cache y Frecuencia</td>
+            <td class="tableCellGroupTitleContent"></td>
+          </tr>
+          <tr>
+            <td class="tableCellMeta">Espacio de caché</td>
+            <td class="tableCellContent">30 MB Caché</td>
+          </tr>
+          <tr>
+            <td class="tableCellMeta">Frecuencia básica</td>
+            <td class="tableCellContent">2.6 GHz</td>
+          </tr>
+
+          <!-- NÚCLEOS E HILOS -->
+          <tr>
+            <td class="tableCellGroupTitle">Núcleos e Hilos</td>
+            <td class="tableCellGroupTitleContent"></td>
+          </tr>
+          <tr>
+            <td class="tableCellMeta">Cantidad de núcleos</td>
+            <td class="tableCellContent">Octa</td>
+          </tr>
+          <tr>
+            <td class="tableCellMeta">Cantidad de hilos</td>
+            <td class="tableCellContent">16 Hilos</td>
+          </tr>
+
+          <!-- GRÁFICOS -->
+          <tr>
+            <td class="tableCellGroupTitle">Gráficos</td>
+            <td class="tableCellGroupTitleContent"></td>
+          </tr>
+          <tr>
+            <td class="tableCellMeta">Propiedades gráficas</td>
+            <td class="tableCellContent">Gráficos Intel UHD</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+
+<style>
+  /* Mantener estilo consistente con los bloques anteriores */
+  .nav-tabs .nav-item.show .nav-link,
+  .nav-tabs .nav-link .active {
+    background: #f5f5f5;
+    border-bottom: 2px solid #036cbf;
+    border-radius: 5px 5px 0 0;
+  }
+
+  /* Heredar tipografía del tema automáticamente */
+  .row,
+  .NEW-TABLE,
+  .TableOverride-1,
+  .tab-drag,
+  .tt-title-sub,
+  .tableCellMeta,
+  .tableCellContent,
+  .tableCellGroupTitle,
+  .tableCellGroupTitleContent,
+  .product-seo-intro,
+  .div-drop {
+    font-family: inherit;
+    color: inherit;
+  }
+
+  /* Título centrado pero más pequeño */
+  .tt-title-sub {
+    font-size: 12px;
+    font-weight: 700;
+    margin: 6px 0 10px;
+    letter-spacing: 0.3px;
+    text-align: center;
+  }
+
+  .div-drop { overflow-x: auto; }
+  table { border-collapse: collapse; font-size: 14px; width: 100%; }
+
+  .tableCellMeta {
+    border: 1px solid #fbfbfb;
+    padding: 3px 0 3px 15px;
+    vertical-align: middle;
+    background-color: #fdfdfd;
+    width: 50%;
+    text-align: left;
+  }
+
+  .tableCellContent {
+    text-align: center;
+    border: 1px solid #fbfbfb;
+    padding: 3px 0 3px 15px;
+    vertical-align: middle;
+    background-color: #fafafa;
+    width: 50%;
+  }
+
+  .tableCellGroupTitle {
+    border: 1px solid #f8f8f8;
+    padding: 3px 0 3px 5px;
+    vertical-align: middle;
+    background-color: #f7f7f7;
+    font-weight: 800;
+    text-transform: uppercase;
+    text-align: center;
+  }
+
+  .tableCellGroupTitleContent {
+    border: 1px solid #fbfbfb;
+    padding: 3px 0 3px 15px;
+    vertical-align: middle;
+    background-color: #fafafa;
+    width: 50%;
+  }
+
+  /* Responsive */
+  @media (max-width: 576px) {
+    .tt-title-sub { font-size: 11px; }
+    .tableCellMeta, .tableCellContent { font-size: 13px; padding-left: 10px; }
+  }
+</style>
+
+
+Serie solo si aplica, Sockect segun se especifique, igual con los demas parametros, dependera de la cantidad de informacion o la especificacion del PRODUCTO
+si algo no se menciona en las especificaciones oficiales no se incluye

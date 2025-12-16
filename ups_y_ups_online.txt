@@ -1,0 +1,209 @@
+<!-- BLOQUE: UPS / UPS Online (estructura y CSS consistente con los bloques anteriores) -->
+<div class="row">
+  <div class="col-sm-8 col-offset-sm-2 col-md-10 offset-md-1 mb-3">
+    <div class="product-seo-intro">
+      <p>UPS diseñados para proteger y mantener la continuidad de tus equipos: especifica clasificación, capacidad, salidas y protecciones según el modelo.</p>
+    </div>
+    <br>
+    <h6 class="tt-title-sub">ESPECIFICACIONES DEL PRODUCTO</h6>
+    <div class="div-drop">
+      <table class="NEW-TABLE TableOverride-1 tab-drag" width="100%" id="table-plan-ups" role="table" aria-label="Especificaciones del UPS">
+        <tbody>
+          <!-- GENERAL -->
+          <tr>
+            <td class="tableCellGroupTitle">General</td>
+            <td class="tableCellGroupTitleContent"></td>
+          </tr>
+          <tr>
+            <td class="tableCellMeta">Clasificación</td>
+            <td class="tableCellContent">Online</td>
+          </tr>
+          <tr>
+            <td class="tableCellMeta">Número de salidas</td>
+            <td class="tableCellContent">5 salidas</td>
+          </tr>
+          <tr>
+            <td class="tableCellMeta">Número de salidas con supresión</td>
+            <td class="tableCellContent">3 salidas con Supresión</td>
+          </tr>
+          <tr>
+            <td class="tableCellMeta">Número de salidas con regulación</td>
+            <td class="tableCellContent">2 salidas con Regulación</td>
+          </tr>
+          <tr>
+            <td class="tableCellMeta">Número de salidas de batería</td>
+            <td class="tableCellContent">2 salidas de Batería</td>
+          </tr>
+
+          <!-- CABLE Y TIEMPO -->
+          <tr>
+            <td class="tableCellGroupTitle">Cable y batería</td>
+            <td class="tableCellGroupTitleContent"></td>
+          </tr>
+          <tr>
+            <td class="tableCellMeta">Longitud del cable</td>
+            <td class="tableCellContent">Cable 3m</td>
+          </tr>
+          <tr>
+            <td class="tableCellMeta">Tiempo de duración de la batería</td>
+            <td class="tableCellContent">50min</td>
+          </tr>
+          <tr>
+            <td class="tableCellMeta">Voltaje</td>
+            <td class="tableCellContent">220V</td>
+          </tr>
+
+          <!-- CAPACIDAD Y CONECTIVIDAD -->
+          <tr>
+            <td class="tableCellGroupTitle">Capacidad y conectividad</td>
+            <td class="tableCellGroupTitleContent"></td>
+          </tr>
+          <tr>
+            <td class="tableCellMeta">Capacidad</td>
+            <td class="tableCellContent">1000VA/600W</td>
+          </tr>
+          <tr>
+            <td class="tableCellMeta">Número de puertos USB</td>
+            <td class="tableCellContent">2 Puertos USB</td>
+          </tr>
+
+          <!-- FUNCIONES Y PROTECCIONES -->
+          <tr>
+            <td class="tableCellGroupTitle">Funciones y protecciones</td>
+            <td class="tableCellGroupTitleContent"></td>
+          </tr>
+          <tr>
+            <td class="tableCellMeta">Pantalla LED</td>
+            <td class="tableCellContent">Sí</td>
+          </tr>
+          <tr>
+            <td class="tableCellMeta">Software de administración</td>
+            <td class="tableCellContent">Sí</td>
+          </tr>
+          <tr>
+            <td class="tableCellMeta">Indicador de consumo</td>
+            <td class="tableCellContent">Sí</td>
+          </tr>
+          <tr>
+            <td class="tableCellMeta">Protección AVR</td>
+            <td class="tableCellContent">Sí</td>
+          </tr>
+          <tr>
+            <td class="tableCellMeta">Protección RJ11</td>
+            <td class="tableCellContent">No</td>
+          </tr>
+          <tr>
+            <td class="tableCellMeta">Indicadores LED</td>
+            <td class="tableCellContent">Sí</td>
+          </tr>
+          <tr>
+            <td class="tableCellMeta">Protección eléctrica</td>
+            <td class="tableCellContent">Sí</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+
+<style>
+  /* Mantener estilo consistente con los bloques anteriores */
+  .nav-tabs .nav-item.show .nav-link,
+  .nav-tabs .nav-link .active {
+    background: #f5f5f5;
+    border-bottom: 2px solid #036cbf;
+    border-radius: 5px 5px 0 0;
+  }
+
+  /* Heredar tipografía del tema automáticamente */
+  .row,
+  .NEW-TABLE,
+  .TableOverride-1,
+  .tab-drag,
+  .tt-title-sub,
+  .tableCellMeta,
+  .tableCellContent,
+  .tableCellGroupTitle,
+  .tableCellGroupTitleContent,
+  .product-seo-intro,
+  .div-drop {
+    font-family: inherit;
+    color: inherit;
+  }
+
+  /* Título centrado pero más pequeño */
+  .tt-title-sub {
+    font-size: 12px;
+    font-weight: 700;
+    margin: 6px 0 10px;
+    letter-spacing: 0.3px;
+    text-align: center;
+  }
+
+  .div-drop { overflow-x: auto; }
+  table { border-collapse: collapse; font-size: 14px; width: 100%; }
+
+  .tableCellMeta {
+    border: 1px solid #fbfbfb;
+    padding: 3px 0 3px 15px;
+    vertical-align: middle;
+    background-color: #fdfdfd;
+    width: 50%;
+    text-align: left;
+  }
+
+  .tableCellContent {
+    text-align: center;
+    border: 1px solid #fbfbfb;
+    padding: 3px 0 3px 15px;
+    vertical-align: middle;
+    background-color: #fafafa;
+    width: 50%;
+  }
+
+  .tableCellGroupTitle {
+    border: 1px solid #f8f8f8;
+    padding: 3px 0 3px 5px;
+    vertical-align: middle;
+    background-color: #f7f7f7;
+    font-weight: 800;
+    text-transform: uppercase;
+    text-align: center;
+  }
+
+  .tableCellGroupTitleContent {
+    border: 1px solid #fbfbfb;
+    padding: 3px 0 3px 15px;
+    vertical-align: middle;
+    background-color: #fafafa;
+    width: 50%;
+  }
+
+  /* Responsive */
+  @media (max-width: 576px) {
+    .tt-title-sub { font-size: 11px; }
+    .tableCellMeta, .tableCellContent { font-size: 13px; padding-left: 10px; }
+  }
+</style>
+
+
+
+
+
+Clasificación	Especificar si el producto Offline, Online, Interactivo o Electromecánico.
+Número de salidas	Cantidad seguida de la palabra “salidas” (4 salidas, 5 salidas)
+Número de salidas con supresión	Si se especifica, colocar el número de salidas con supresión eléctrica colocando la cantidad seguida de las palabras “salidas con Supresión” (5 salidas con Supresión).
+Número de salidas con regulación.	Si se especifica, colocar el número de salidas con regulación colocando la cantidad seguida de las palabras “salidas con Regulación” (5 salidas con Regulación).
+Número de salidas de batería.	Si se especifica, colocar el número de salidas de batería colocando la cantidad seguida de las palabras “salidas de Batería” (5 salidas de Batería).
+Longitud del cable	Debe iniciarse colocando la palabra “Cable” con inicial mayúscula seguida de la cantidad y la unidad de medida (según el estándar internacional, evitar el uso de mts. o alguna otra variación) sin espacios (Cable 5m)
+Tiempo de duración de la batería	Cantidad seguida de la unidad de medida de tiempo según el Sistema Internacional (50min, 1h).
+Voltaje	Cantidad seguida de la unidad de medida expresada en voltios con letra mayúscula sin espacios (5V, 12V).
+Capacidad	Cantidad que se debe especificar utilizando la unidad de medida VA / W o VA sin espacios. (500VA/300W, 500VA).
+Número de puertos USB	Si existen, colocar el número de puertos USB colocando la cantidad seguida de dos palabras: Puerto/s USB. (5 Puertos USB, 1 Puerto USB).
+Pantalla LED	Sí/No
+Software de administración	Sí/No
+Indicador de consumo	Sí/No
+Protección AVR	Sí/No
+Protección RJ11	Sí/No
+Indicadores LED	Sí/No
+Protección eléctrica	Sí/No

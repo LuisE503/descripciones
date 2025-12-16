@@ -1,0 +1,173 @@
+<!-- BLOQUE: Regletas (estructura y CSS consistente con los bloques anteriores) -->
+<div class="row">
+  <div class="col-sm-8 col-offset-sm-2 col-md-10 offset-md-1 mb-3">
+    <div class="product-seo-intro">
+      <p>Regletas diseñadas para distribución segura de energía: especifica salidas, longitud de cable, protecciones y opciones de montaje según el modelo.</p>
+    </div>
+    <br>
+    <h6 class="tt-title-sub">ESPECIFICACIONES DEL PRODUCTO</h6>
+    <div class="div-drop">
+      <table class="NEW-TABLE TableOverride-1 tab-drag" width="100%" id="table-plan-regletas" role="table" aria-label="Especificaciones de la regleta">
+        <tbody>
+          <!-- GENERAL -->
+          <tr>
+            <td class="tableCellGroupTitle">General</td>
+            <td class="tableCellGroupTitleContent"></td>
+          </tr>
+          <tr>
+            <td class="tableCellMeta">Número de salidas</td>
+            <td class="tableCellContent">4 salidas</td>
+          </tr>
+          <tr>
+            <td class="tableCellMeta">Longitud del cable</td>
+            <td class="tableCellContent">Cable 5m</td>
+          </tr>
+          <tr>
+            <td class="tableCellMeta">Voltaje</td>
+            <td class="tableCellContent">220V</td>
+          </tr>
+
+          <!-- CONECTIVIDAD -->
+          <tr>
+            <td class="tableCellGroupTitle">Conectividad</td>
+            <td class="tableCellGroupTitleContent"></td>
+          </tr>
+          <tr>
+            <td class="tableCellMeta">Número de puertos USB</td>
+            <td class="tableCellContent">2 Puertos USB</td>
+          </tr>
+
+          <!-- FUNCIONES Y SEGURIDAD -->
+          <tr>
+            <td class="tableCellGroupTitle">Funciones y seguridad</td>
+            <td class="tableCellGroupTitleContent"></td>
+          </tr>
+          <tr>
+            <td class="tableCellMeta">Botón de encendido</td>
+            <td class="tableCellContent">Sí</td>
+          </tr>
+          <tr>
+            <td class="tableCellMeta">Montaje en pared</td>
+            <td class="tableCellContent">Sí</td>
+          </tr>
+          <tr>
+            <td class="tableCellMeta">Protección contra picos</td>
+            <td class="tableCellContent">Sí</td>
+          </tr>
+          <tr>
+            <td class="tableCellMeta">Protección AVR</td>
+            <td class="tableCellContent">No</td>
+          </tr>
+          <tr>
+            <td class="tableCellMeta">Retardador de llama</td>
+            <td class="tableCellContent">Sí</td>
+          </tr>
+          <tr>
+            <td class="tableCellMeta">Para Rack</td>
+            <td class="tableCellContent">No</td>
+          </tr>
+          <tr>
+            <td class="tableCellMeta">Protección eléctrica</td>
+            <td class="tableCellContent">Sí</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+
+<style>
+  /* Mantener estilo consistente con los bloques anteriores */
+  .nav-tabs .nav-item.show .nav-link,
+  .nav-tabs .nav-link .active {
+    background: #f5f5f5;
+    border-bottom: 2px solid #036cbf;
+    border-radius: 5px 5px 0 0;
+  }
+
+  /* Heredar tipografía del tema automáticamente */
+  .row,
+  .NEW-TABLE,
+  .TableOverride-1,
+  .tab-drag,
+  .tt-title-sub,
+  .tableCellMeta,
+  .tableCellContent,
+  .tableCellGroupTitle,
+  .tableCellGroupTitleContent,
+  .product-seo-intro,
+  .div-drop {
+    font-family: inherit;
+    color: inherit;
+  }
+
+  /* Título centrado pero más pequeño */
+  .tt-title-sub {
+    font-size: 12px;
+    font-weight: 700;
+    margin: 6px 0 10px;
+    letter-spacing: 0.3px;
+    text-align: center;
+  }
+
+  .div-drop { overflow-x: auto; }
+  table { border-collapse: collapse; font-size: 14px; width: 100%; }
+
+  .tableCellMeta {
+    border: 1px solid #fbfbfb;
+    padding: 3px 0 3px 15px;
+    vertical-align: middle;
+    background-color: #fdfdfd;
+    width: 50%;
+    text-align: left;
+  }
+
+  .tableCellContent {
+    text-align: center;
+    border: 1px solid #fbfbfb;
+    padding: 3px 0 3px 15px;
+    vertical-align: middle;
+    background-color: #fafafa;
+    width: 50%;
+  }
+
+  .tableCellGroupTitle {
+    border: 1px solid #f8f8f8;
+    padding: 3px 0 3px 5px;
+    vertical-align: middle;
+    background-color: #f7f7f7;
+    font-weight: 800;
+    text-transform: uppercase;
+    text-align: center;
+  }
+
+  .tableCellGroupTitleContent {
+    border: 1px solid #fbfbfb;
+    padding: 3px 0 3px 15px;
+    vertical-align: middle;
+    background-color: #fafafa;
+    width: 50%;
+  }
+
+  /* Responsive */
+  @media (max-width: 576px) {
+    .tt-title-sub { font-size: 11px; }
+    .tableCellMeta, .tableCellContent { font-size: 13px; padding-left: 10px; }
+  }
+</style>
+
+
+
+Número de salidas	Cantidad seguida de la palabra “salidas” (4 salidas, 5 salidas)
+Longitud del cable	Debe iniciarse colocando la palabra “Cable” con inicial mayúscula seguida de la cantidad y la unidad de medida (según el estándar internacional, evitar el uso de mts. o alguna otra variación) sin espacios (Cable 5m)
+Voltaje	Cantidad seguida de la unidad de medida expresada en voltios con letra mayúscula sin espacios (5V, 12V).
+Número de puertos USB	Si existen, colocar el número de puertos USB colocando la cantidad seguida de dos palabras: Puerto/s USB. (5 Puertos USB, 1 Puerto USB).
+Botón de encendido	Sí/No
+Montaje en pared	Sí/No
+Protección contra picos	Sí/No
+Protección AVR	Sí/No
+Retardador de llama	Sí/No
+Para Rack	Sí/No
+Protección eléctrica	Sí/No
+
+Las especificaciones que seran visibles dependera de la informacion oficial, si no lo mensiona no se coloca

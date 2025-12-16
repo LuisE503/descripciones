@@ -1,0 +1,212 @@
+<!-- BLOQUE: Monitores (estructura y CSS consistente con los bloques anteriores) -->
+<div class="row">
+  <div class="col-sm-8 col-offset-sm-2 col-md-10 offset-md-1 mb-3">
+    <div class="product-seo-intro">
+      <p>Monitores diseñados para ofrecer calidad de imagen y conectividad: especifica tecnología, tamaño, resolución y opciones de montaje según el modelo.</p>
+    </div>
+    <br>
+    <h6 class="tt-title-sub">ESPECIFICACIONES DEL PRODUCTO</h6>
+    <div class="div-drop">
+      <table class="NEW-TABLE TableOverride-1 tab-drag" width="100%" id="table-plan-monitor" role="table" aria-label="Especificaciones del monitor">
+        <tbody>
+          <!-- GENERAL -->
+          <tr>
+            <td class="tableCellGroupTitle">General</td>
+            <td class="tableCellGroupTitleContent"></td>
+          </tr>
+          <tr>
+            <td class="tableCellMeta">Tecnología de pantalla</td>
+            <td class="tableCellContent">IPS</td>
+          </tr>
+          <tr>
+            <td class="tableCellMeta">Retroiluminación</td>
+            <td class="tableCellContent">WLED</td>
+          </tr>
+
+          <!-- PANTALLA -->
+          <tr>
+            <td class="tableCellGroupTitle">Pantalla</td>
+            <td class="tableCellGroupTitleContent"></td>
+          </tr>
+          <tr>
+            <td class="tableCellMeta">Tamaño de pantalla</td>
+            <td class="tableCellContent">15.6 Plg</td>
+          </tr>
+          <tr>
+            <td class="tableCellMeta">Resolución</td>
+            <td class="tableCellContent">1920x1080</td>
+          </tr>
+          <tr>
+            <td class="tableCellMeta">Tipo de resolución</td>
+            <td class="tableCellContent">Full HD</td>
+          </tr>
+
+          <!-- CONECTIVIDAD Y VESA -->
+          <tr>
+            <td class="tableCellGroupTitle">Conectividad y montaje</td>
+            <td class="tableCellGroupTitleContent"></td>
+          </tr>
+          <tr>
+            <td class="tableCellMeta">Propiedades de conexión</td>
+            <td class="tableCellContent">HDMI / DisplayPort / USB</td>
+          </tr>
+          <tr>
+            <td class="tableCellMeta">VESA</td>
+            <td class="tableCellContent">VESA 100x100</td>
+          </tr>
+
+          <!-- FÍSICO Y RENDIMIENTO -->
+          <tr>
+            <td class="tableCellGroupTitle">Físico y rendimiento</td>
+            <td class="tableCellGroupTitleContent"></td>
+          </tr>
+          <tr>
+            <td class="tableCellMeta">Peso</td>
+            <td class="tableCellContent">7.5 lb</td>
+          </tr>
+          <tr>
+            <td class="tableCellMeta">Tiempo de Respuesta</td>
+            <td class="tableCellContent">1 ms</td>
+          </tr>
+          <tr>
+            <td class="tableCellMeta">Tasa de Refrescamiento</td>
+            <td class="tableCellContent">144 Hz</td>
+          </tr>
+
+          <!-- PUERTOS Y CARACTERÍSTICAS -->
+          <tr>
+            <td class="tableCellGroupTitle">Puertos y características</td>
+            <td class="tableCellGroupTitleContent"></td>
+          </tr>
+          <tr>
+            <td class="tableCellMeta">Puerto HDMI</td>
+            <td class="tableCellContent">Sí</td>
+          </tr>
+          <tr>
+            <td class="tableCellMeta">Puerto DisplayPort</td>
+            <td class="tableCellContent">Sí</td>
+          </tr>
+          <tr>
+            <td class="tableCellMeta">Puerto VGA</td>
+            <td class="tableCellContent">No</td>
+          </tr>
+          <tr>
+            <td class="tableCellMeta">Curvo</td>
+            <td class="tableCellContent">No</td>
+          </tr>
+          <tr>
+            <td class="tableCellMeta">Compatibilidad con brackets</td>
+            <td class="tableCellContent">Sí</td>
+          </tr>
+          <tr>
+            <td class="tableCellMeta">Pantalla antirreflejo</td>
+            <td class="tableCellContent">Sí</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+
+<style>
+  /* Mantener estilo consistente con los bloques anteriores */
+  .nav-tabs .nav-item.show .nav-link,
+  .nav-tabs .nav-link .active {
+    background: #f5f5f5;
+    border-bottom: 2px solid #036cbf;
+    border-radius: 5px 5px 0 0;
+  }
+
+  /* Heredar tipografía del tema automáticamente */
+  .row,
+  .NEW-TABLE,
+  .TableOverride-1,
+  .tab-drag,
+  .tt-title-sub,
+  .tableCellMeta,
+  .tableCellContent,
+  .tableCellGroupTitle,
+  .tableCellGroupTitleContent,
+  .product-seo-intro,
+  .div-drop {
+    font-family: inherit;
+    color: inherit;
+  }
+
+  /* Título centrado pero más pequeño */
+  .tt-title-sub {
+    font-size: 12px;
+    font-weight: 700;
+    margin: 6px 0 10px;
+    letter-spacing: 0.3px;
+    text-align: center;
+  }
+
+  .div-drop { overflow-x: auto; }
+  table { border-collapse: collapse; font-size: 14px; width: 100%; }
+
+  .tableCellMeta {
+    border: 1px solid #fbfbfb;
+    padding: 3px 0 3px 15px;
+    vertical-align: middle;
+    background-color: #fdfdfd;
+    width: 50%;
+    text-align: left;
+  }
+
+  .tableCellContent {
+    text-align: center;
+    border: 1px solid #fbfbfb;
+    padding: 3px 0 3px 15px;
+    vertical-align: middle;
+    background-color: #fafafa;
+    width: 50%;
+  }
+
+  .tableCellGroupTitle {
+    border: 1px solid #f8f8f8;
+    padding: 3px 0 3px 5px;
+    vertical-align: middle;
+    background-color: #f7f7f7;
+    font-weight: 800;
+    text-transform: uppercase;
+    text-align: center;
+  }
+
+  .tableCellGroupTitleContent {
+    border: 1px solid #fbfbfb;
+    padding: 3px 0 3px 15px;
+    vertical-align: middle;
+    background-color: #fafafa;
+    width: 50%;
+  }
+
+  /* Responsive */
+  @media (max-width: 576px) {
+    .tt-title-sub { font-size: 11px; }
+    .tableCellMeta, .tableCellContent { font-size: 13px; padding-left: 10px; }
+  }
+</style>
+
+
+
+Tecnología de pantalla	Resaltar el tipo de tecnología para construir la pantalla utilizando términos como LCD, Plasma u otra tecnología según su especificación, IPS.
+Retroiluminación	Colocar el tipo de retroiluminación que posee el monitor en dado caso tanto el panel como la retroiluminación sean distintos (IPS, WLED, LED, LCD)
+Tamaño de pantalla	Cantidad seguida de un espacio y la unidad de medida expresada en pulgadas con la abreviación Plg (14.5 Plg, 15.6 Plg)
+Resolución	Conjunto de dos cantidades separadas por la letra “x” sin espacios entre las cantidades.   (854x480).
+Tipo de resolución	Especificación que surge de una escala específica de resolución
+Propiedades de conexión	Según especificación. Debe especificarse si la forma para conectar el dispositivo es DisplayPort, HDMI, USB, Wireless u otro tipo.
+VESA	Se refiere al estándar que se utiliza para colocar los 4 orificios en los que se pueden instalar brackets. Si se especifica, se debe colocar las siglas VESA seguida de dos cantidades separadas por la letra “x” sin espacios
+(VESA 400x300).
+Para más información, leer: https://www.oneforall.es/dimensiones-vesa
+Peso	Si se especifica, debe incluirse el peso en la unidad de medida disponible (de preferencia, buscar libras).
+Tiempo de Respuesta	Segpun especificación, se debe de escribir un entero seguido de la medida ms (1ms).
+Tasa de Refrescamiento	Según especificación, se debe de escribir  una cantidad en enteres, seguido de la medida “Hz” (75Hz, 144Hz).
+Puerto HDMI	Sí/No
+Puerto DisplayPort	Sí/No
+Puerto VGA	Sí/No
+Curvo	Sí/No
+Compatibilidad con brackets	Sí/No
+Pantalla antirreflejo.	Sí/No
+
+Si alguna caracteristica no esta no se coloca dependera de las especificaciones oficiales

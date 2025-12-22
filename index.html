@@ -25,19 +25,31 @@
             </div>
             <div class="filter-chips" id="filterChips">
                 <button class="chip active" data-filter="all">Todos</button>
+                <button class="chip" data-filter="cartuchos">Cartuchos</button>
                 <button class="chip" data-filter="case">Case</button>
+                <button class="chip" data-filter="cinta">Cinta</button>
                 <button class="chip" data-filter="cooler">Cooler</button>
                 <button class="chip" data-filter="fuente_de_poder">Fuente de Poder</button>
+                <button class="chip" data-filter="impresora_de_inyeccion">Impresora de Inyección</button>
+                <button class="chip" data-filter="impresora_laser">Impresora Láser</button>
+                <button class="chip" data-filter="impresora_matricial">Impresora Matricial</button>
+                <button class="chip" data-filter="impresora_termica">Impresora Térmica</button>
                 <button class="chip" data-filter="laptop">Laptop</button>
                 <button class="chip" data-filter="memoria_ram">Memoria RAM</button>
                 <button class="chip" data-filter="monitores">Monitores</button>
                 <button class="chip" data-filter="motherboard">Motherboard</button>
+                <button class="chip" data-filter="plotter">Plotter</button>
                 <button class="chip" data-filter="procesadores">Procesadores</button>
+                <button class="chip" data-filter="proyectores">Proyectores</button>
                 <button class="chip" data-filter="regletas">Regletas</button>
                 <button class="chip" data-filter="regulador_de_voltaje">Regulador de Voltaje</button>
                 <button class="chip" data-filter="software">Software</button>
+                <button class="chip" data-filter="soporte_o_bracket">Soporte o Bracket</button>
                 <button class="chip" data-filter="supresor_de_voltaje">Supresor de Voltaje</button>
                 <button class="chip" data-filter="tarjetas_graficas">Tarjetas Gráficas</button>
+                <button class="chip" data-filter="televisores">Televisores</button>
+                <button class="chip" data-filter="tintas">Tintas</button>
+                <button class="chip" data-filter="toner">Tóner</button>
                 <button class="chip" data-filter="ups_y_ups_online">UPS y UPS Online</button>
             </div>
         </div>
@@ -69,28 +81,26 @@
                 <div class="modal-tabs">
                     <button class="modal-tab active" data-tab="preview">Vista Previa</button>
                     <button class="modal-tab" data-tab="code">Código HTML</button>
-                    <button class="modal-tab" data-tab="description">Descripción Oficial</button>
                 </div>
                 <div class="tab-content active" id="previewTab">
+                    <div class="description-instructions">
+                        <h3>📋 Pega aquí la información del producto</h3>
+                        <p>Pega las especificaciones oficiales del producto. Este texto se usará para generar el código HTML personalizado.</p>
+                    </div>
+                    <textarea 
+                        id="officialDescription" 
+                        placeholder="Pega aquí la información del producto desde el sitio oficial..."
+                        rows="15"
+                    ></textarea>
+                    <div class="description-status" id="descriptionStatus">
+                        <span class="status-icon">ℹ️</span>
+                        <span class="status-text">Pega la descripción del producto para activar el botón de copiar</span>
+                    </div>
+                    <hr style="margin: 20px 0; border: none; border-top: 1px solid #e0e0e0;">
                     <div class="preview-container" id="previewContainer"></div>
                 </div>
                 <div class="tab-content" id="codeTab">
                     <pre><code id="codeContent"></code></pre>
-                </div>
-                <div class="tab-content" id="descriptionTab">
-                    <div class="description-instructions">
-                        <h3>📋 Descripción Oficial del Producto (Opcional)</h3>
-                        <p>Pega las especificaciones del sitio oficial aquí. Si lo dejas vacío, ese campo se omitirá en el prompt.</p>
-                    </div>
-                    <textarea 
-                        id="officialDescription" 
-                        placeholder="Pega aquí la información del producto..."
-                        rows="20"
-                    ></textarea>
-                    <div class="description-status" id="descriptionStatus">
-                        <span class="status-icon">ℹ️</span>
-                        <span class="status-text">Campo opcional - puedes dejarlo vacío</span>
-                    </div>
                 </div>
             </div>
             <div class="modal-footer">
@@ -101,11 +111,11 @@
                     </svg>
                     Copiar Solo Código
                 </button>
-                <button class="btn btn-primary" id="copyFullPromptBtn">
+                <button class="btn btn-primary" id="copyFullPromptBtn" disabled>
                     <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
                         <path d="M8 2v12M2 8h12" stroke="currentColor" stroke-width="2"/>
                     </svg>
-                    <span id="copyFullPromptText">Copiar Todo para ChatGPT</span>
+                    <span id="copyFullPromptText">Copiar Todo con Prompt</span>
                 </button>
             </div>
         </div>
@@ -120,7 +130,7 @@
     <footer class="footer">
         <div class="container">
             <p>📦 Proyecto Grupal - Generador de Descripciones Shopify</p>
-            <p class="footer-note">14 categorías de productos disponibles</p>
+            <p class="footer-note">26 categorías de productos disponibles</p>
         </div>
     </footer>
 

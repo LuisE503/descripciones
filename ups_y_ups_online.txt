@@ -2,7 +2,7 @@
 <div class="row">
   <div class="col-sm-8 col-offset-sm-2 col-md-10 offset-md-1 mb-3">
     <div class="product-seo-intro">
-      <p>UPS diseñados para proteger y mantener la continuidad de tus equipos: especifica clasificación, capacidad, salidas y protecciones según el modelo.</p>
+      <p>Este UPS protege tu equipo de apagones y picos de energía, brindándote tiempo para guardar tu trabajo y mantener tu sistema funcionando sin interrupciones.</p>
     </div>
     <br>
     <h6 class="tt-title-sub">ESPECIFICACIONES DEL PRODUCTO</h6>

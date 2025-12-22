@@ -2,7 +2,7 @@
 <div class="row">
   <div class="col-sm-8 col-offset-sm-2 col-md-10 offset-md-1 mb-3">
     <div class="product-seo-intro">
-      <p>Reguladores de voltaje diseñados para proteger y estabilizar la alimentación de tus equipos: especifica salidas, protecciones, capacidad y opciones de montaje según el modelo.</p>
+      <p>Este regulador de voltaje estabiliza la energía que llega a tus equipos, protegiendolos de subidas y bajadas de corriente que podrían dañarlos.</p>
     </div>
     <br>
     <h6 class="tt-title-sub">ESPECIFICACIONES DEL PRODUCTO</h6>

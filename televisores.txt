@@ -1,60 +1,60 @@
-<!-- BLOQUE: Case (estructura y CSS similar a la que proporcionaste) -->
+<!-- BLOQUE: Televisores (estructura y CSS consistente con los bloques anteriores) -->
 <div class="row">
   <div class="col-sm-8 col-offset-sm-2 col-md-10 offset-md-1 mb-3">
     <div class="product-seo-intro">
-      <p>Este gabinete combina diseño y funcionalidad para tu PC, con espacio optimizado para componentes y flujo de aire eficiente que mantiene tu sistema fresco durante largas sesiones.</p>
+      <p>Este televisor ofrece imágenes nítidas y envolventes con resolución 4K Ultra HD, perfecto para disfrutar películas, series y contenido multimedia con gran detalle y colores vibrantes en tu hogar.</p>
     </div>
     <br>
     <h6 class="tt-title-sub">ESPECIFICACIONES DEL PRODUCTO</h6>
     <div class="div-drop">
-      <table class="NEW-TABLE TableOverride-1 tab-drag" width="100%" id="table-plan-case">
+      <table class="NEW-TABLE TableOverride-1 tab-drag" width="100%" id="table-plan-televisor" role="table" aria-label="Especificaciones del televisor">
         <tbody>
-          <!-- GENERAL -->
+          <!-- CARACTERÍSTICAS DE PANTALLA -->
           <tr>
-            <td class="tableCellGroupTitle">General</td>
+            <td class="tableCellGroupTitle">Características de Pantalla</td>
             <td class="tableCellGroupTitleContent"></td>
           </tr>
           <tr>
-            <td class="tableCellMeta">Clasificación</td>
-            <td class="tableCellContent">MID TOWER</td>
-          </tr>
-          <tr>
-            <td class="tableCellMeta">Color</td>
-            <td class="tableCellContent">Blanco/Rojo</td>
+            <td class="tableCellMeta">Tamaño de pantalla</td>
+            <td class="tableCellContent">75 Plg</td>
           </tr>
 
-          <!-- COMPATIBILIDAD -->
+          <!-- CALIDAD DE IMAGEN -->
           <tr>
-            <td class="tableCellGroupTitle">Compatibilidad</td>
+            <td class="tableCellGroupTitle">Calidad de Imagen</td>
             <td class="tableCellGroupTitleContent"></td>
           </tr>
           <tr>
-            <td class="tableCellMeta">Soporte para Motherboard</td>
-            <td class="tableCellContent">ATX / MINI-ITX / MICRO-ATX</td>
+            <td class="tableCellMeta">Resolución</td>
+            <td class="tableCellContent">3840 x 2160</td>
+          </tr>
+          <tr>
+            <td class="tableCellMeta">Tipo de resolución</td>
+            <td class="tableCellContent">4K UHD</td>
           </tr>
 
-          <!-- PANELES -->
+          <!-- CONECTIVIDAD -->
           <tr>
-            <td class="tableCellGroupTitle">Paneles</td>
+            <td class="tableCellGroupTitle">Conectividad</td>
             <td class="tableCellGroupTitleContent"></td>
           </tr>
           <tr>
-            <td class="tableCellMeta">Acrílico</td>
-            <td class="tableCellContent">Sí</td>
-          </tr>
-          <tr>
-            <td class="tableCellMeta">Vidrio Templado</td>
-            <td class="tableCellContent">No</td>
+            <td class="tableCellMeta">Puerto HDMI</td>
+            <td class="tableCellContent">✔</td>
           </tr>
 
-          <!-- GESTIÓN -->
+          <!-- CARACTERÍSTICAS -->
           <tr>
-            <td class="tableCellGroupTitle">Gestión</td>
+            <td class="tableCellGroupTitle">Características</td>
             <td class="tableCellGroupTitleContent"></td>
           </tr>
           <tr>
-            <td class="tableCellMeta">Soporte para cables</td>
-            <td class="tableCellContent">Sí</td>
+            <td class="tableCellMeta">SmartTV</td>
+            <td class="tableCellContent">✔</td>
+          </tr>
+          <tr>
+            <td class="tableCellMeta">Peso</td>
+            <td class="tableCellContent">22.45 kg</td>
           </tr>
         </tbody>
       </table>
@@ -63,7 +63,7 @@
 </div>
 
 <style>
-  /* Mantener estilo similar al bloque original para consistencia con el tema */
+  /* Mantener estilo consistente con los bloques anteriores */
   .nav-tabs .nav-item.show .nav-link,
   .nav-tabs .nav-link .active {
     background: #f5f5f5;
@@ -96,8 +96,15 @@
     text-align: center;
   }
 
-  .div-drop { overflow-x: auto; }
-  table { border-collapse: collapse; font-size: 14px; width: 100%; }
+  .div-drop {
+    overflow-x: auto;
+  }
+
+  table {
+    border-collapse: collapse;
+    font-size: 14px;
+    width: 100%;
+  }
 
   .tableCellMeta {
     border: 1px solid #fbfbfb;
@@ -135,19 +142,14 @@
     width: 50%;
   }
 
-  /* Responsive */
   @media (max-width: 576px) {
-    .tt-title-sub { font-size: 11px; }
-    .tableCellMeta, .tableCellContent { font-size: 13px; padding-left: 10px; }
+    .tt-title-sub {
+      font-size: 11px;
+    }
+    .tableCellMeta,
+    .tableCellContent {
+      font-size: 13px;
+      padding-left: 10px;
+    }
   }
 </style>
-
-
-
-
-Toma esta estructura de codigo de ejemplo
-En clasificacion pon segun la clasificacion ATX, MINI-ITX, MICRO-ATX, EATX o segun sea el case
-Color el color del case
-Soporte para cables, si contiene si no se espeficica se añade No
-Si tiene vidrio acrilico o cidrio tamplado se pone si o no
-Si es un case gaming y tiene ventiladores se pone la cantidad de ventiladores en la tabla de ESPECIFICACIONES

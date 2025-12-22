@@ -1,64 +1,64 @@
-<!-- BLOQUE: Procesadores (estructura y CSS consistente con los bloques anteriores) -->
+<!-- BLOQUE: Plotter (estructura y CSS consistente con los bloques anteriores) -->
 <div class="row">
   <div class="col-sm-8 col-offset-sm-2 col-md-10 offset-md-1 mb-3">
     <div class="product-seo-intro">
-      <p>Este procesador ofrece velocidad y capacidad de respuesta para tus tareas diarias, con múltiples núcleos que te permiten trabajar, navegar y disfrutar sin demoras.</p>
+      <p>Este plotter de gran formato está diseñado para profesionales que buscan impresiones rápidas y versátiles, compatible con diversos tipos de papel, con corte automático y cartuchos de alta capacidad para trabajos extensos.</p>
     </div>
     <br>
     <h6 class="tt-title-sub">ESPECIFICACIONES DEL PRODUCTO</h6>
     <div class="div-drop">
-      <table class="NEW-TABLE TableOverride-1 tab-drag" width="100%" id="table-plan-cpu" role="table" aria-label="Especificaciones del procesador">
+      <table class="NEW-TABLE TableOverride-1 tab-drag" width="100%" id="table-plan-plotter" role="table" aria-label="Especificaciones del plotter">
         <tbody>
-          <!-- GENERAL -->
+          <!-- IMPRESIÓN -->
           <tr>
-            <td class="tableCellGroupTitle">General</td>
+            <td class="tableCellGroupTitle">Impresión</td>
             <td class="tableCellGroupTitleContent"></td>
           </tr>
           <tr>
-            <td class="tableCellMeta">Serie</td>
-            <td class="tableCellContent">SERIE X</td>
+            <td class="tableCellMeta">Gota de tinta</td>
+            <td class="tableCellContent">5.5 pl (C, M, Y); 12 pl (N)</td>
           </tr>
           <tr>
-            <td class="tableCellMeta">Socket</td>
-            <td class="tableCellContent">LGA</td>
+            <td class="tableCellMeta">Tipos de tinta</td>
+            <td class="tableCellContent">Colorantes (C, M, Y); Pigmento (N)</td>
           </tr>
 
-          <!-- CACHE Y FRECUENCIA -->
+          <!-- MANEJO DE SOPORTES -->
           <tr>
-            <td class="tableCellGroupTitle">Cache y Frecuencia</td>
+            <td class="tableCellGroupTitle">Manejo de Soportes</td>
             <td class="tableCellGroupTitleContent"></td>
           </tr>
           <tr>
-            <td class="tableCellMeta">Espacio de caché</td>
-            <td class="tableCellContent">30 MB Caché</td>
+            <td class="tableCellMeta">Manejo de impresiones terminadas</td>
+            <td class="tableCellContent">Alimentación por hojas (bandeja opcional) y alimentación por rollo; cortador horizontal automático</td>
           </tr>
           <tr>
-            <td class="tableCellMeta">Frecuencia básica</td>
-            <td class="tableCellContent">2.6 GHz</td>
+            <td class="tableCellMeta">Tipos de soportes</td>
+            <td class="tableCellContent">Papel bond y recubierto; papel técnico; película; papel fotográfico; autoadhesivo</td>
           </tr>
 
-          <!-- NÚCLEOS E HILOS -->
+          <!-- CARTUCHOS Y VOLUMEN -->
           <tr>
-            <td class="tableCellGroupTitle">Núcleos e Hilos</td>
+            <td class="tableCellGroupTitle">Cartuchos y Volumen</td>
             <td class="tableCellGroupTitleContent"></td>
           </tr>
           <tr>
-            <td class="tableCellMeta">Cantidad de núcleos</td>
-            <td class="tableCellContent">Octa</td>
+            <td class="tableCellMeta">Volumen de cartucho/botella</td>
+            <td class="tableCellContent">80 ml (K); 38 ml (K alternativa); 29 ml (C, M, Y)</td>
           </tr>
           <tr>
-            <td class="tableCellMeta">Cantidad de hilos</td>
-            <td class="tableCellContent">16 Hilos</td>
+            <td class="tableCellMeta">Número de botellas/cartuchos</td>
+            <td class="tableCellContent">4 (C, M, Y, K)</td>
           </tr>
 
-          <!-- GRÁFICOS -->
+          <!-- CONECTIVIDAD -->
           <tr>
-            <td class="tableCellGroupTitle">Gráficos</td>
+            <td class="tableCellGroupTitle">Conectividad</td>
             <td class="tableCellGroupTitleContent"></td>
           </tr>
           <tr>
-            <td class="tableCellMeta">Propiedades gráficas</td>
-            <td class="tableCellContent">Gráficos Intel UHD</td>
+            <td class="tableCellMeta">Conectividad estándar</td>
+            <td class="tableCellContent">Gigabit Ethernet; USB 2.0 alta velocidad; Wi‑Fi 802.11a/b/g/n; Wi‑Fi Direct</td>
           </tr>
         </tbody>
       </table>
@@ -100,8 +100,15 @@
     text-align: center;
   }
 
-  .div-drop { overflow-x: auto; }
-  table { border-collapse: collapse; font-size: 14px; width: 100%; }
+  .div-drop {
+    overflow-x: auto;
+  }
+
+  table {
+    border-collapse: collapse;
+    font-size: 14px;
+    width: 100%;
+  }
 
   .tableCellMeta {
     border: 1px solid #fbfbfb;
@@ -139,13 +146,14 @@
     width: 50%;
   }
 
-  /* Responsive */
   @media (max-width: 576px) {
-    .tt-title-sub { font-size: 11px; }
-    .tableCellMeta, .tableCellContent { font-size: 13px; padding-left: 10px; }
+    .tt-title-sub {
+      font-size: 11px;
+    }
+    .tableCellMeta,
+    .tableCellContent {
+      font-size: 13px;
+      padding-left: 10px;
+    }
   }
 </style>
-
-
-Serie solo si aplica, Sockect segun se especifique, igual con los demas parametros, dependera de la cantidad de informacion o la especificacion del PRODUCTO
-si algo no se menciona en las especificaciones oficiales no se incluye

@@ -1,60 +1,70 @@
-<!-- BLOQUE: Case (estructura y CSS similar a la que proporcionaste) -->
+<!-- BLOQUE: Impresora Térmica (estructura y CSS consistente con los bloques anteriores) -->
 <div class="row">
   <div class="col-sm-8 col-offset-sm-2 col-md-10 offset-md-1 mb-3">
     <div class="product-seo-intro">
-      <p>Este gabinete combina diseño y funcionalidad para tu PC, con espacio optimizado para componentes y flujo de aire eficiente que mantiene tu sistema fresco durante largas sesiones.</p>
+      <p>Esta impresora térmica combina rapidez y practicidad para puntos de venta, con impresión silenciosa, conectividad versátil y diseño compacto que se adapta perfectamente a cualquier mostrador.</p>
     </div>
     <br>
     <h6 class="tt-title-sub">ESPECIFICACIONES DEL PRODUCTO</h6>
     <div class="div-drop">
-      <table class="NEW-TABLE TableOverride-1 tab-drag" width="100%" id="table-plan-case">
+      <table class="NEW-TABLE TableOverride-1 tab-drag" width="100%" id="table-plan-impresora-termica" role="table" aria-label="Especificaciones de la impresora térmica">
         <tbody>
-          <!-- GENERAL -->
+          <!-- INFORMACIÓN DEL PRODUCTO -->
           <tr>
-            <td class="tableCellGroupTitle">General</td>
+            <td class="tableCellGroupTitle">Información del Producto</td>
             <td class="tableCellGroupTitleContent"></td>
           </tr>
           <tr>
-            <td class="tableCellMeta">Clasificación</td>
-            <td class="tableCellContent">MID TOWER</td>
+            <td class="tableCellMeta">Serie</td>
+            <td class="tableCellContent">RPT006W</td>
           </tr>
           <tr>
-            <td class="tableCellMeta">Color</td>
-            <td class="tableCellContent">Blanco/Rojo</td>
+            <td class="tableCellMeta">Modelo</td>
+            <td class="tableCellContent">3nStar RPT006W</td>
           </tr>
 
-          <!-- COMPATIBILIDAD -->
+          <!-- CONECTIVIDAD -->
           <tr>
-            <td class="tableCellGroupTitle">Compatibilidad</td>
+            <td class="tableCellGroupTitle">Conectividad</td>
             <td class="tableCellGroupTitleContent"></td>
           </tr>
           <tr>
-            <td class="tableCellMeta">Soporte para Motherboard</td>
-            <td class="tableCellContent">ATX / MINI-ITX / MICRO-ATX</td>
+            <td class="tableCellMeta">Propiedades de conexión</td>
+            <td class="tableCellContent">USB / LAN / Wireless</td>
+          </tr>
+          <tr>
+            <td class="tableCellMeta">WiFi</td>
+            <td class="tableCellContent">✔</td>
           </tr>
 
-          <!-- PANELES -->
+          <!-- CARACTERÍSTICAS -->
           <tr>
-            <td class="tableCellGroupTitle">Paneles</td>
+            <td class="tableCellGroupTitle">Características</td>
             <td class="tableCellGroupTitleContent"></td>
           </tr>
           <tr>
-            <td class="tableCellMeta">Acrílico</td>
-            <td class="tableCellContent">Sí</td>
-          </tr>
-          <tr>
-            <td class="tableCellMeta">Vidrio Templado</td>
-            <td class="tableCellContent">No</td>
+            <td class="tableCellMeta">Cortado automático</td>
+            <td class="tableCellContent">✔</td>
           </tr>
 
-          <!-- GESTIÓN -->
+          <!-- VELOCIDAD Y CALIDAD -->
           <tr>
-            <td class="tableCellGroupTitle">Gestión</td>
+            <td class="tableCellGroupTitle">Velocidad y Calidad</td>
             <td class="tableCellGroupTitleContent"></td>
           </tr>
           <tr>
-            <td class="tableCellMeta">Soporte para cables</td>
-            <td class="tableCellContent">Sí</td>
+            <td class="tableCellMeta">Velocidad de impresión</td>
+            <td class="tableCellContent">200 mm/s · 260 mm/s</td>
+          </tr>
+
+          <!-- IMPRESIÓN -->
+          <tr>
+            <td class="tableCellGroupTitle">Impresión</td>
+            <td class="tableCellGroupTitleContent"></td>
+          </tr>
+          <tr>
+            <td class="tableCellMeta">Ancho de papel</td>
+            <td class="tableCellContent">80 mm / 3"</td>
           </tr>
         </tbody>
       </table>
@@ -63,7 +73,7 @@
 </div>
 
 <style>
-  /* Mantener estilo similar al bloque original para consistencia con el tema */
+  /* Mantener estilo consistente con los bloques anteriores */
   .nav-tabs .nav-item.show .nav-link,
   .nav-tabs .nav-link .active {
     background: #f5f5f5;
@@ -96,8 +106,15 @@
     text-align: center;
   }
 
-  .div-drop { overflow-x: auto; }
-  table { border-collapse: collapse; font-size: 14px; width: 100%; }
+  .div-drop {
+    overflow-x: auto;
+  }
+
+  table {
+    border-collapse: collapse;
+    font-size: 14px;
+    width: 100%;
+  }
 
   .tableCellMeta {
     border: 1px solid #fbfbfb;
@@ -135,19 +152,14 @@
     width: 50%;
   }
 
-  /* Responsive */
   @media (max-width: 576px) {
-    .tt-title-sub { font-size: 11px; }
-    .tableCellMeta, .tableCellContent { font-size: 13px; padding-left: 10px; }
+    .tt-title-sub {
+      font-size: 11px;
+    }
+    .tableCellMeta,
+    .tableCellContent {
+      font-size: 13px;
+      padding-left: 10px;
+    }
   }
 </style>
-
-
-
-
-Toma esta estructura de codigo de ejemplo
-En clasificacion pon segun la clasificacion ATX, MINI-ITX, MICRO-ATX, EATX o segun sea el case
-Color el color del case
-Soporte para cables, si contiene si no se espeficica se añade No
-Si tiene vidrio acrilico o cidrio tamplado se pone si o no
-Si es un case gaming y tiene ventiladores se pone la cantidad de ventiladores en la tabla de ESPECIFICACIONES

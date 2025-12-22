@@ -2,7 +2,7 @@
 <div class="row">
   <div class="col-sm-8 col-offset-sm-2 col-md-10 offset-md-1 mb-3">
     <div class="product-seo-intro">
-      <p>Soluciones de refrigeración diseñadas para mantener tu sistema estable: opciones de disipador y soporte para enfriamiento líquido según modelo.</p>
+      <p>Este sistema de enfriamiento mantiene tu procesador trabajando a temperaturas ideales, disipando el calor de forma eficiente para que tu equipo funcione sin interrupciones.</p>
     </div>
     <br>
     <h6 class="tt-title-sub">ESPECIFICACIONES DEL PRODUCTO</h6>

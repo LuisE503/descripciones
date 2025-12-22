@@ -1,7 +1,7 @@
 <div class="row">
 <div class="col-sm-8 col-offset-sm-2 col-md-10 offset-md-1 mb-3">
 <div class="product-seo-intro">
-<p>Descubre un equipo diseñado para acompañarte todo el día: rendimiento ágil, batería que dura y un diseño elegante que destaca en cualquier lugar.</p>
+<p>Esta laptop está lista para acompañarte en tu día a día, con rendimiento ágil para tus tareas, pantalla nítida y diseño portátil que se adapta a tu estilo de vida.</p>
 </div>
 <br>
 <h6 class="tt-title-sub">ESPECIFICACIONES DEL PRODUCTO</h6>

@@ -1,0 +1,207 @@
+<!-- BLOQUE: Impresora de Inyección (estructura y CSS consistente con los bloques anteriores) -->
+<div class="row">
+  <div class="col-sm-8 col-offset-sm-2 col-md-10 offset-md-1 mb-3">
+    <div class="product-seo-intro">
+      <p>Esta impresora multifunción combina velocidad y versatilidad para tu oficina o hogar, con impresión de alta calidad, escaneo preciso y copiado eficiente que facilitan tu trabajo diario.</p>
+    </div>
+    <br>
+    <h6 class="tt-title-sub">ESPECIFICACIONES DEL PRODUCTO</h6>
+    <div class="div-drop">
+      <table class="NEW-TABLE TableOverride-1 tab-drag" width="100%" id="table-plan-impresora-inyeccion" role="table" aria-label="Especificaciones de la impresora de inyección">
+        <tbody>
+          <!-- IMPRESIÓN -->
+          <tr>
+            <td class="tableCellGroupTitle">Impresión</td>
+            <td class="tableCellGroupTitleContent"></td>
+          </tr>
+          <tr>
+            <td class="tableCellMeta">Tecnología de impresión</td>
+            <td class="tableCellContent">Cabezal de impresión PrecisionCore® 4S por inyección de tinta de 4 colores</td>
+          </tr>
+          <tr>
+            <td class="tableCellMeta">Resolución máxima de impresión</td>
+            <td class="tableCellContent">4800 dpi x 1200 dpi de resolución optimizada</td>
+          </tr>
+          <tr>
+            <td class="tableCellMeta">Velocidad de impresión ISO</td>
+            <td class="tableCellContent">Simplex 25 ISO ppm (negro/color), dúplex 16 ISO ppm (negro/color)</td>
+          </tr>
+          <tr>
+            <td class="tableCellMeta">Tiempo de salida de la primera página</td>
+            <td class="tableCellContent">5 segundos en negro, 6 segundos en color</td>
+          </tr>
+          <tr>
+            <td class="tableCellMeta">Ciclo de trabajo mensual recomendado</td>
+            <td class="tableCellContent">Hasta 8.000 páginas</td>
+          </tr>
+          <tr>
+            <td class="tableCellMeta">Ciclo de trabajo mensual máximo</td>
+            <td class="tableCellContent">Hasta 75.000 páginas</td>
+          </tr>
+          <tr>
+            <td class="tableCellMeta">Dúplex automático</td>
+            <td class="tableCellContent">En tamaño carta y A4</td>
+          </tr>
+
+          <!-- COPIADO -->
+          <tr>
+            <td class="tableCellGroupTitle">Copiado</td>
+            <td class="tableCellGroupTitleContent"></td>
+          </tr>
+          <tr>
+            <td class="tableCellMeta">Velocidad de copiado ISO</td>
+            <td class="tableCellContent">24 ISO cpm en negro, 24 ISO cpm en colores</td>
+          </tr>
+          <tr>
+            <td class="tableCellMeta">Cantidad de copias</td>
+            <td class="tableCellContent">1 - 999 (sin PC)</td>
+          </tr>
+          <tr>
+            <td class="tableCellMeta">Tamaño máximo de copia</td>
+            <td class="tableCellContent">21,6 cm x 29.7 cm (CARTA)</td>
+          </tr>
+          <tr>
+            <td class="tableCellMeta">Funciones de copiado</td>
+            <td class="tableCellContent">Automático de doble cara (CARTA), vista previa, cambio de tamaño, copia de tarjeta de identificación, intercalación, densidad de copia ajustable, eliminación de agujeros perforados, eliminación de sombras</td>
+          </tr>
+
+          <!-- ESCANEO -->
+          <tr>
+            <td class="tableCellGroupTitle">Escaneo</td>
+            <td class="tableCellGroupTitleContent"></td>
+          </tr>
+          <tr>
+            <td class="tableCellMeta">Tipo de escáner</td>
+            <td class="tableCellContent">Color con cama plana/automático de doble faz ADF</td>
+          </tr>
+          <tr>
+            <td class="tableCellMeta">Sensor</td>
+            <td class="tableCellContent">CIS</td>
+          </tr>
+          <tr>
+            <td class="tableCellMeta">Tamaño de escaneo</td>
+            <td class="tableCellContent">Carta</td>
+          </tr>
+          <tr>
+            <td class="tableCellMeta">Resolución óptica</td>
+            <td class="tableCellContent">1200 dpi</td>
+          </tr>
+          <tr>
+            <td class="tableCellMeta">Resolución de hardware</td>
+            <td class="tableCellContent">1200 dpi x 2400 dpi</td>
+          </tr>
+          <tr>
+            <td class="tableCellMeta">Resolución máxima</td>
+            <td class="tableCellContent">9600 dpi x 9600 dpi interpolada</td>
+          </tr>
+          <tr>
+            <td class="tableCellMeta">Profundidad de bits del escáner</td>
+            <td class="tableCellContent">48 bits entrada / 24 bits salida</td>
+          </tr>
+
+          <!-- CONECTIVIDAD -->
+          <tr>
+            <td class="tableCellGroupTitle">Conectividad</td>
+            <td class="tableCellGroupTitleContent"></td>
+          </tr>
+          <tr>
+            <td class="tableCellMeta">Propiedades de conexión</td>
+            <td class="tableCellContent">USB 2.0, Ethernet 10/100, Wi-Fi 802.11b/g/n</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+
+<style>
+  /* Mantener estilo consistente con los bloques anteriores */
+  .nav-tabs .nav-item.show .nav-link,
+  .nav-tabs .nav-link .active {
+    background: #f5f5f5;
+    border-bottom: 2px solid #036cbf;
+    border-radius: 5px 5px 0 0;
+  }
+
+  /* Heredar tipografía del tema automáticamente */
+  .row,
+  .NEW-TABLE,
+  .TableOverride-1,
+  .tab-drag,
+  .tt-title-sub,
+  .tableCellMeta,
+  .tableCellContent,
+  .tableCellGroupTitle,
+  .tableCellGroupTitleContent,
+  .product-seo-intro,
+  .div-drop {
+    font-family: inherit;
+    color: inherit;
+  }
+
+  /* Título centrado pero más pequeño */
+  .tt-title-sub {
+    font-size: 12px;
+    font-weight: 700;
+    margin: 6px 0 10px;
+    letter-spacing: 0.3px;
+    text-align: center;
+  }
+
+  .div-drop {
+    overflow-x: auto;
+  }
+
+  table {
+    border-collapse: collapse;
+    font-size: 14px;
+    width: 100%;
+  }
+
+  .tableCellMeta {
+    border: 1px solid #fbfbfb;
+    padding: 3px 0 3px 15px;
+    vertical-align: middle;
+    background-color: #fdfdfd;
+    width: 50%;
+    text-align: left;
+  }
+
+  .tableCellContent {
+    text-align: center;
+    border: 1px solid #fbfbfb;
+    padding: 3px 0 3px 15px;
+    vertical-align: middle;
+    background-color: #fafafa;
+    width: 50%;
+  }
+
+  .tableCellGroupTitle {
+    border: 1px solid #f8f8f8;
+    padding: 3px 0 3px 5px;
+    vertical-align: middle;
+    background-color: #f7f7f7;
+    font-weight: 800;
+    text-transform: uppercase;
+    text-align: center;
+  }
+
+  .tableCellGroupTitleContent {
+    border: 1px solid #fbfbfb;
+    padding: 3px 0 3px 15px;
+    vertical-align: middle;
+    background-color: #fafafa;
+    width: 50%;
+  }
+
+  @media (max-width: 576px) {
+    .tt-title-sub {
+      font-size: 11px;
+    }
+    .tableCellMeta,
+    .tableCellContent {
+      font-size: 13px;
+      padding-left: 10px;
+    }
+  }
+</style>

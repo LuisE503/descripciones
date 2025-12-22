@@ -2,7 +2,7 @@
 <div class="row">
   <div class="col-sm-8 col-offset-sm-2 col-md-10 offset-md-1 mb-3">
     <div class="product-seo-intro">
-      <p>Fuentes de poder diseñadas para ofrecer suministro estable y eficiente: elige potencia y certificación 80 PLUS según tus necesidades de sistema.</p>
+      <p>Esta fuente de poder entrega energía estable y confiable para tu PC, con eficiencia certificada que reduce el consumo y protege tus componentes en todo momento.</p>
     </div>
     <br>
     <h6 class="tt-title-sub">ESPECIFICACIONES DEL PRODUCTO</h6>

@@ -2,7 +2,7 @@
 <div class="row">
   <div class="col-sm-8 col-offset-sm-2 col-md-10 offset-md-1 mb-3">
     <div class="product-seo-intro">
-      <p>Tarjetas gráficas diseñadas para ofrecer rendimiento visual y conectividad: especifica chipset, memoria y opciones de salida según el modelo.</p>
+      <p>Esta tarjeta gráfica lleva tus juegos y proyectos visuales al siguiente nivel, con gráficos fluidos y detalles impresionantes que transforman tu experiencia.</p>
     </div>
     <br>
     <h6 class="tt-title-sub">ESPECIFICACIONES DEL PRODUCTO</h6>

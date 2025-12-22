@@ -1,40 +1,36 @@
-<!-- BLOQUE: Memorias RAM (estructura y CSS consistente con el resto) -->
+<!-- BLOQUE: Cartuchos (estructura y CSS consistente con los bloques anteriores) -->
 <div class="row">
   <div class="col-sm-8 col-offset-sm-2 col-md-10 offset-md-1 mb-3">
     <div class="product-seo-intro">
-      <p>Esta memoria RAM acelera tu sistema para que trabajes, juegues y navegues sin esperas, optimizando el rendimiento de tu equipo en cada tarea.</p>
+      <p>Este cartucho de tinta ofrece impresiones de alta calidad con colores vivos y duraderos, diseñado para maximizar el rendimiento y reducir la frecuencia de reemplazo en tus impresoras.</p>
     </div>
     <br>
     <h6 class="tt-title-sub">ESPECIFICACIONES DEL PRODUCTO</h6>
     <div class="div-drop">
-      <table class="NEW-TABLE TableOverride-1 tab-drag" width="100%" id="table-plan-ram">
+      <table class="NEW-TABLE TableOverride-1 tab-drag" width="100%" id="table-plan-cartucho" role="table" aria-label="Especificaciones del cartucho">
         <tbody>
-          <!-- GENERAL -->
+          <!-- COMPATIBILIDAD -->
           <tr>
-            <td class="tableCellGroupTitle">General</td>
+            <td class="tableCellGroupTitle">Compatibilidad</td>
             <td class="tableCellGroupTitleContent"></td>
           </tr>
           <tr>
-            <td class="tableCellMeta">Clasificación</td>
-            <td class="tableCellContent">DDR4</td>
-          </tr>
-          <tr>
-            <td class="tableCellMeta">Dispositivo electrónico</td>
-            <td class="tableCellContent">para Laptop</td>
+            <td class="tableCellMeta">Compatibilidad con impresora</td>
+            <td class="tableCellContent">PIXMA MP240 | MP250 | MP480 | MP490 | MX320 | MX330</td>
           </tr>
 
-          <!-- CAPACIDAD Y VELOCIDAD -->
+          <!-- CARACTERÍSTICAS -->
           <tr>
-            <td class="tableCellGroupTitle">Capacidad y Velocidad</td>
+            <td class="tableCellGroupTitle">Características</td>
             <td class="tableCellGroupTitleContent"></td>
           </tr>
           <tr>
-            <td class="tableCellMeta">Capacidad</td>
-            <td class="tableCellContent">8GB</td>
+            <td class="tableCellMeta">Color</td>
+            <td class="tableCellContent">Tricolor</td>
           </tr>
           <tr>
-            <td class="tableCellMeta">Velocidad</td>
-            <td class="tableCellContent">3200 MHz</td>
+            <td class="tableCellMeta">Tamaño XL</td>
+            <td class="tableCellContent">✔</td>
           </tr>
         </tbody>
       </table>
@@ -43,7 +39,6 @@
 </div>
 
 <style>
-  /* Mantener estilo consistente con los bloques anteriores */
   .nav-tabs .nav-item.show .nav-link,
   .nav-tabs .nav-link .active {
     background: #f5f5f5;
@@ -76,8 +71,16 @@
     text-align: center;
   }
 
-  .div-drop { overflow-x: auto; }
-  table { border-collapse: collapse; font-size: 14px; width: 100%; }
+  .div-drop {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  table {
+    border-collapse: collapse;
+    font-size: 14px;
+    width: 100%;
+  }
 
   .tableCellMeta {
     border: 1px solid #fbfbfb;
@@ -97,6 +100,7 @@
     width: 50%;
   }
 
+  /* Mantener compatibilidad con estilos previos (por si se usan títulos de grupo) */
   .tableCellGroupTitle {
     border: 1px solid #f8f8f8;
     padding: 3px 0 3px 5px;
@@ -115,15 +119,15 @@
     width: 50%;
   }
 
-  /* Responsive */
   @media (max-width: 576px) {
-    .tt-title-sub { font-size: 11px; }
-    .tableCellMeta, .tableCellContent { font-size: 13px; padding-left: 10px; }
+    .tt-title-sub {
+      font-size: 11px;
+    }
+    .tableCellMeta,
+    .tableCellContent {
+      font-size: 13px;
+      padding-left: 10px;
+    }
   }
 </style>
 
-
-Clasificacion se coloca ya sea ddr4, ddr5, electrónico
-en tipo de sispositivo electronico se coloca se es para laptop, desktop, servidor o para lo que sea
-en capacidades y velocidades se coloca la capacidad en gb 
-y en velocidades lo mismo se aplica no no aparecen velocidades no se coloca nada

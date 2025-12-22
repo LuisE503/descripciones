@@ -1,0 +1,29 @@
+<div class="gds-css-product-metafields">
+  {% if product.metafields.envio.warning != blank %}
+    <p class="gds-css-product-metafields__item gds-css-product-metafields__warning">
+      <i class="fa-solid fa-triangle-exclamation" aria-hidden="true"></i>
+      {{ product.metafields.envio.warning | escape }}
+    </p>
+  {% endif %}
+
+  {% if product.metafields.producto.warrantynobrand != blank %}
+    <p class="gds-css-product-metafields__item gds-css-product-metafields__warrantynobrand">
+      <i class="fa-solid fa-award" aria-hidden="true"></i>
+      {{ product.metafields.producto.warrantynobrand | escape }}
+    </p>
+  {% endif %}
+
+  {% if product.metafields.producto.warrantynbrand != blank %}
+    <p class="gds-css-product-metafields__item gds-css-product-metafields__warrantynbrand">
+      {{ product.metafields.producto.warrantynbrand | escape }}
+    </p>
+  {% endif %}
+
+  {% if product.metafields.custom.gds_product_details != blank %}
+    <p class="gds-css-product-metafields__item gds-css-product-metafields__details">
+      <i class="fa-solid fa-info-circle" aria-hidden="true"></i>
+      <span class="visually-hidden">Detalles del producto:</span>
+      {{ product.metafields.custom.gds_product_details | escape }}
+    </p>
+  {% endif %}
+</div>

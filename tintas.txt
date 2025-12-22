@@ -1,40 +1,30 @@
-<!-- BLOQUE: Memorias RAM (estructura y CSS consistente con el resto) -->
+<!-- BLOQUE: Tintas (estructura y CSS consistente con los bloques anteriores) -->
 <div class="row">
   <div class="col-sm-8 col-offset-sm-2 col-md-10 offset-md-1 mb-3">
     <div class="product-seo-intro">
-      <p>Esta memoria RAM acelera tu sistema para que trabajes, juegues y navegues sin esperas, optimizando el rendimiento de tu equipo en cada tarea.</p>
+      <p>Esta tinta de alta calidad en presentación de 500 ml garantiza impresiones nítidas y duraderas, ideal para recargas frecuentes con colores vibrantes y bajo costo por página.</p>
     </div>
     <br>
     <h6 class="tt-title-sub">ESPECIFICACIONES DEL PRODUCTO</h6>
     <div class="div-drop">
-      <table class="NEW-TABLE TableOverride-1 tab-drag" width="100%" id="table-plan-ram">
+      <table class="NEW-TABLE TableOverride-1 tab-drag" width="100%" id="table-plan-tinta" role="table" aria-label="Especificaciones de la tinta">
         <tbody>
-          <!-- GENERAL -->
+          <!-- CARACTERÍSTICAS -->
           <tr>
-            <td class="tableCellGroupTitle">General</td>
+            <td class="tableCellGroupTitle">Características</td>
             <td class="tableCellGroupTitleContent"></td>
           </tr>
           <tr>
-            <td class="tableCellMeta">Clasificación</td>
-            <td class="tableCellContent">DDR4</td>
+            <td class="tableCellMeta">Color</td>
+            <td class="tableCellContent">Negro</td>
           </tr>
           <tr>
-            <td class="tableCellMeta">Dispositivo electrónico</td>
-            <td class="tableCellContent">para Laptop</td>
-          </tr>
-
-          <!-- CAPACIDAD Y VELOCIDAD -->
-          <tr>
-            <td class="tableCellGroupTitle">Capacidad y Velocidad</td>
-            <td class="tableCellGroupTitleContent"></td>
+            <td class="tableCellMeta">Contenido</td>
+            <td class="tableCellContent">500 ml</td>
           </tr>
           <tr>
-            <td class="tableCellMeta">Capacidad</td>
-            <td class="tableCellContent">8GB</td>
-          </tr>
-          <tr>
-            <td class="tableCellMeta">Velocidad</td>
-            <td class="tableCellContent">3200 MHz</td>
+            <td class="tableCellMeta">Presentación</td>
+            <td class="tableCellContent">Botella</td>
           </tr>
         </tbody>
       </table>
@@ -76,8 +66,15 @@
     text-align: center;
   }
 
-  .div-drop { overflow-x: auto; }
-  table { border-collapse: collapse; font-size: 14px; width: 100%; }
+  .div-drop {
+    overflow-x: auto;
+  }
+
+  table {
+    border-collapse: collapse;
+    font-size: 14px;
+    width: 100%;
+  }
 
   .tableCellMeta {
     border: 1px solid #fbfbfb;
@@ -115,15 +112,14 @@
     width: 50%;
   }
 
-  /* Responsive */
   @media (max-width: 576px) {
-    .tt-title-sub { font-size: 11px; }
-    .tableCellMeta, .tableCellContent { font-size: 13px; padding-left: 10px; }
+    .tt-title-sub {
+      font-size: 11px;
+    }
+    .tableCellMeta,
+    .tableCellContent {
+      font-size: 13px;
+      padding-left: 10px;
+    }
   }
 </style>
-
-
-Clasificacion se coloca ya sea ddr4, ddr5, electrónico
-en tipo de sispositivo electronico se coloca se es para laptop, desktop, servidor o para lo que sea
-en capacidades y velocidades se coloca la capacidad en gb 
-y en velocidades lo mismo se aplica no no aparecen velocidades no se coloca nada

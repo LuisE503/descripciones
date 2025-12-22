@@ -2,7 +2,7 @@
 <div class="row">
   <div class="col-sm-8 col-offset-sm-2 col-md-10 offset-md-1 mb-3">
     <div class="product-seo-intro">
-      <p>Placas base diseñadas para ofrecer compatibilidad y conectividad: factores de forma estándar, soporte de memoria y múltiples opciones de E/S según modelo.</p>
+      <p>Esta placa base conecta todos los componentes de tu PC con estabilidad y velocidad, ofreciendo puertos modernos y compatibilidad para que armes tu equipo ideal.</p>
     </div>
     <br>
     <h6 class="tt-title-sub">ESPECIFICACIONES DEL PRODUCTO</h6>

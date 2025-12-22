@@ -1,0 +1,185 @@
+<!-- BLOQUE: Impresora Matricial (estructura y CSS consistente con los bloques anteriores) -->
+<div class="row">
+  <div class="col-sm-8 col-offset-sm-2 col-md-10 offset-md-1 mb-3">
+    <div class="product-seo-intro">
+      <p>Esta impresora matricial destaca por su robustez y fiabilidad en entornos de punto de venta, diseñada para impresión continua de recibos y formularios con alta durabilidad y bajo costo operativo.</p>
+    </div>
+    <br>
+    <h6 class="tt-title-sub">ESPECIFICACIONES DEL PRODUCTO</h6>
+    <div class="div-drop">
+      <table class="NEW-TABLE TableOverride-1 tab-drag" width="100%" id="table-plan-impresora-matricial" role="table" aria-label="Especificaciones de la impresora matricial">
+        <tbody>
+          <!-- INFORMACIÓN DEL PRODUCTO -->
+          <tr>
+            <td class="tableCellGroupTitle">Información del Producto</td>
+            <td class="tableCellGroupTitleContent"></td>
+          </tr>
+          <tr>
+            <td class="tableCellMeta">Modelo</td>
+            <td class="tableCellContent">TM-U590P</td>
+          </tr>
+
+          <!-- IMPRESIÓN -->
+          <tr>
+            <td class="tableCellGroupTitle">Impresión</td>
+            <td class="tableCellGroupTitleContent"></td>
+          </tr>
+          <tr>
+            <td class="tableCellMeta">Método de impresión</td>
+            <td class="tableCellContent">Matricial</td>
+          </tr>
+          <tr>
+            <td class="tableCellMeta">Capacidad de la columna</td>
+            <td class="tableCellContent">66 cps / 88 cps</td>
+          </tr>
+          <tr>
+            <td class="tableCellMeta">Interfaces</td>
+            <td class="tableCellContent">USB + RJ11 para apertura de cajón</td>
+          </tr>
+          <tr>
+            <td class="tableCellMeta">Formato de papel</td>
+            <td class="tableCellContent">70 - 210 mm (Ancho) x 70 - 297 mm (Alto)</td>
+          </tr>
+          <tr>
+            <td class="tableCellMeta">Color de impresión</td>
+            <td class="tableCellContent">Negro</td>
+          </tr>
+
+          <!-- ESPECIFICACIONES TÉCNICAS -->
+          <tr>
+            <td class="tableCellGroupTitle">Especificaciones Técnicas</td>
+            <td class="tableCellGroupTitleContent"></td>
+          </tr>
+          <tr>
+            <td class="tableCellMeta">Matriz de pines</td>
+            <td class="tableCellContent">9 pines</td>
+          </tr>
+
+          <!-- CARACTERÍSTICAS -->
+          <tr>
+            <td class="tableCellGroupTitle">Características</td>
+            <td class="tableCellGroupTitleContent"></td>
+          </tr>
+          <tr>
+            <td class="tableCellMeta">Oficina</td>
+            <td class="tableCellContent">✔</td>
+          </tr>
+
+          <!-- VELOCIDAD Y DURABILIDAD -->
+          <tr>
+            <td class="tableCellGroupTitle">Velocidad y Durabilidad</td>
+            <td class="tableCellGroupTitleContent"></td>
+          </tr>
+          <tr>
+            <td class="tableCellMeta">Velocidad de impresión</td>
+            <td class="tableCellContent">233 / 311 cps</td>
+          </tr>
+          <tr>
+            <td class="tableCellMeta">Fiabilidad</td>
+            <td class="tableCellContent">29.000.000 líneas | 180.000 horas</td>
+          </tr>
+          <tr>
+            <td class="tableCellMeta">Vida útil cinta de impresora</td>
+            <td class="tableCellContent">12.000.000 líneas</td>
+          </tr>
+          <tr>
+            <td class="tableCellMeta">Vida útil cabezal de impresora</td>
+            <td class="tableCellContent">200 millones de caracteres</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+
+<style>
+  /* Mantener estilo consistente con los bloques anteriores */
+  .nav-tabs .nav-item.show .nav-link,
+  .nav-tabs .nav-link .active {
+    background: #f5f5f5;
+    border-bottom: 2px solid #036cbf;
+    border-radius: 5px 5px 0 0;
+  }
+
+  /* Heredar tipografía del tema automáticamente */
+  .row,
+  .NEW-TABLE,
+  .TableOverride-1,
+  .tab-drag,
+  .tt-title-sub,
+  .tableCellMeta,
+  .tableCellContent,
+  .tableCellGroupTitle,
+  .tableCellGroupTitleContent,
+  .product-seo-intro,
+  .div-drop {
+    font-family: inherit;
+    color: inherit;
+  }
+
+  /* Título centrado pero más pequeño */
+  .tt-title-sub {
+    font-size: 12px;
+    font-weight: 700;
+    margin: 6px 0 10px;
+    letter-spacing: 0.3px;
+    text-align: center;
+  }
+
+  .div-drop {
+    overflow-x: auto;
+  }
+
+  table {
+    border-collapse: collapse;
+    font-size: 14px;
+    width: 100%;
+  }
+
+  .tableCellMeta {
+    border: 1px solid #fbfbfb;
+    padding: 3px 0 3px 15px;
+    vertical-align: middle;
+    background-color: #fdfdfd;
+    width: 50%;
+    text-align: left;
+  }
+
+  .tableCellContent {
+    text-align: center;
+    border: 1px solid #fbfbfb;
+    padding: 3px 0 3px 15px;
+    vertical-align: middle;
+    background-color: #fafafa;
+    width: 50%;
+  }
+
+  .tableCellGroupTitle {
+    border: 1px solid #f8f8f8;
+    padding: 3px 0 3px 5px;
+    vertical-align: middle;
+    background-color: #f7f7f7;
+    font-weight: 800;
+    text-transform: uppercase;
+    text-align: center;
+  }
+
+  .tableCellGroupTitleContent {
+    border: 1px solid #fbfbfb;
+    padding: 3px 0 3px 15px;
+    vertical-align: middle;
+    background-color: #fafafa;
+    width: 50%;
+  }
+
+  @media (max-width: 576px) {
+    .tt-title-sub {
+      font-size: 11px;
+    }
+    .tableCellMeta,
+    .tableCellContent {
+      font-size: 13px;
+      padding-left: 10px;
+    }
+  }
+</style>

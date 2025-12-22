@@ -1,6 +1,6 @@
 // =============================================
 // PRODUCTOS SHOPIFY - ARCHIVO COMPLETO
-// 14 Categorías de Productos
+// 26 Categorías de Productos
 // =============================================
 
 // Archivo muy extenso - ver archivo en: 
@@ -95,6 +95,15 @@ function getEmbeddedProducts() {
     return [
         {
             id: 1,
+            category: "cartuchos",
+            name: "Cartuchos",
+            icon: "🖨️",
+            description: "Cartuchos de tinta para impresoras",
+            tags: ["cartucho", "tinta", "impresora"],
+            file: "cartuchos.txt"
+        },
+        {
+            id: 2,
             category: "case",
             name: "Case (Gabinete)",
             icon: "🖥️",
@@ -103,7 +112,16 @@ function getEmbeddedProducts() {
             file: "case.txt"
         },
         {
-            id: 2,
+            id: 3,
+            category: "cinta",
+            name: "Cinta",
+            icon: "📼",
+            description: "Cintas de impresión matricial",
+            tags: ["cinta", "impresora", "matricial"],
+            file: "cinta.txt"
+        },
+        {
+            id: 4,
             category: "cooler",
             name: "Cooler",
             icon: "❄️",
@@ -112,7 +130,7 @@ function getEmbeddedProducts() {
             file: "cooler.txt"
         },
         {
-            id: 3,
+            id: 5,
             category: "fuente_de_poder",
             name: "Fuente de Poder",
             icon: "⚡",
@@ -121,7 +139,43 @@ function getEmbeddedProducts() {
             file: "fuente_de_poder.txt"
         },
         {
-            id: 4,
+            id: 6,
+            category: "impresora_de_inyeccion",
+            name: "Impresora de Inyección",
+            icon: "🖨️",
+            description: "Impresoras de inyección de tinta",
+            tags: ["impresora", "inyección", "multifuncional"],
+            file: "impresora de inyeccion.txt"
+        },
+        {
+            id: 7,
+            category: "impresora_laser",
+            name: "Impresora Láser",
+            icon: "🖨️",
+            description: "Impresoras láser",
+            tags: ["impresora", "láser", "oficina"],
+            file: "impresora_laser.txt"
+        },
+        {
+            id: 8,
+            category: "impresora_matricial",
+            name: "Impresora Matricial",
+            icon: "🖨️",
+            description: "Impresoras matriciales de punto",
+            tags: ["impresora", "matricial", "punto"],
+            file: "impresora_matricial.txt"
+        },
+        {
+            id: 9,
+            category: "impresora_termica",
+            name: "Impresora Térmica",
+            icon: "🧾",
+            description: "Impresoras térmicas para recibos",
+            tags: ["impresora", "térmica", "recibo", "pos"],
+            file: "impresora_termica.txt"
+        },
+        {
+            id: 10,
             category: "laptop",
             name: "Laptop",
             icon: "💻",
@@ -130,7 +184,7 @@ function getEmbeddedProducts() {
             file: "Laptop.txt"
         },
         {
-            id: 5,
+            id: 11,
             category: "memoria_ram",
             name: "Memoria RAM",
             icon: "🎯",
@@ -139,7 +193,7 @@ function getEmbeddedProducts() {
             file: "memoria_ram.txt"
         },
         {
-            id: 6,
+            id: 12,
             category: "monitores",
             name: "Monitores",
             icon: "🖥️",
@@ -148,7 +202,7 @@ function getEmbeddedProducts() {
             file: "monitores.txt"
         },
         {
-            id: 7,
+            id: 13,
             category: "motherboard",
             name: "Motherboard",
             icon: "🔌",
@@ -157,7 +211,16 @@ function getEmbeddedProducts() {
             file: "motherboard.txt"
         },
         {
-            id: 8,
+            id: 14,
+            category: "plotter",
+            name: "Plotter",
+            icon: "🖨️",
+            description: "Plotters de gran formato",
+            tags: ["plotter", "impresión", "gran formato"],
+            file: "plotter.txt"
+        },
+        {
+            id: 15,
             category: "procesadores",
             name: "Procesadores",
             icon: "⚙️",
@@ -166,7 +229,16 @@ function getEmbeddedProducts() {
             file: "procesadores.txt"
         },
         {
-            id: 9,
+            id: 16,
+            category: "proyectores",
+            name: "Proyectores",
+            icon: "📽️",
+            description: "Proyectores multimedia",
+            tags: ["proyector", "presentaciones", "multimedia"],
+            file: "proyectores.txt"
+        },
+        {
+            id: 17,
             category: "regletas",
             name: "Regletas",
             icon: "🔌",
@@ -175,7 +247,7 @@ function getEmbeddedProducts() {
             file: "regletas.txt"
         },
         {
-            id: 10,
+            id: 18,
             category: "regulador_de_voltaje",
             name: "Regulador de Voltaje",
             icon: "🔋",
@@ -184,7 +256,7 @@ function getEmbeddedProducts() {
             file: "regulador_de_voltaje.txt"
         },
         {
-            id: 11,
+            id: 19,
             category: "software",
             name: "Software",
             icon: "💿",
@@ -193,7 +265,16 @@ function getEmbeddedProducts() {
             file: "software.txt"
         },
         {
-            id: 12,
+            id: 20,
+            category: "soporte_o_bracket",
+            name: "Soporte o Bracket",
+            icon: "📺",
+            description: "Soportes para televisores y monitores",
+            tags: ["soporte", "bracket", "montaje", "tv"],
+            file: "soporte o bracket.txt"
+        },
+        {
+            id: 21,
             category: "supresor_de_voltaje",
             name: "Supresor de Voltaje",
             icon: "⚡",
@@ -202,7 +283,7 @@ function getEmbeddedProducts() {
             file: "supresor_de_voltaje.txt"
         },
         {
-            id: 13,
+            id: 22,
             category: "tarjetas_graficas",
             name: "Tarjetas Gráficas",
             icon: "🎮",
@@ -211,7 +292,34 @@ function getEmbeddedProducts() {
             file: "tarjetas_graficas.txt"
         },
         {
-            id: 14,
+            id: 23,
+            category: "televisores",
+            name: "Televisores",
+            icon: "📺",
+            description: "Televisores y Smart TVs",
+            tags: ["televisor", "tv", "smart tv", "4k"],
+            file: "televisores.txt"
+        },
+        {
+            id: 24,
+            category: "tintas",
+            name: "Tintas",
+            icon: "🎨",
+            description: "Botellas de tinta para impresoras",
+            tags: ["tinta", "recarga", "impresora"],
+            file: "tintas.txt"
+        },
+        {
+            id: 25,
+            category: "toner",
+            name: "Tóner",
+            icon: "🖨️",
+            description: "Tóner para impresoras láser",
+            tags: ["tóner", "láser", "impresora"],
+            file: "toner.txt"
+        },
+        {
+            id: 26,
             category: "ups_y_ups_online",
             name: "UPS y UPS Online",
             icon: "🔋",
@@ -257,50 +365,76 @@ async function loadProductFile(fileName) {
 // Función para generar prompt completo
 function generateFullPrompt(product, htmlCode, promptInstructions, officialDescription = '') {
     const descriptionSection = officialDescription.trim() 
-        ? `\nINFORMACIÓN DEL PRODUCTO QUE DEBES USAR:\n\n${officialDescription}\n` 
+        ? `\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n📋 INFORMACIÓN DEL PRODUCTO:\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n\n${officialDescription}\n\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n` 
         : '';
     
     // Determinar si es laptop para instrucciones especiales
     const isLaptop = product.category === 'laptop';
     
     const characteristicsRule = isLaptop 
-        ? `⚠️ REGLA ESPECIAL PARA LAPTOPS - CARACTERÍSTICAS:
-- Las características de tipo Sí/No (teclado retroiluminado, pantalla táctil, etc.) DEBEN estar TODAS presentes
-- Si no tienes información que confirme que una característica existe, coloca "No"
-- NUNCA dejes celdas vacías en la sección de Características
-- NUNCA omitas características de Sí/No de la lista
-- Para otras secciones (procesador, memoria, etc.): Solo incluye lo que tenga información verificable`
-        : `⚠️ REGLA CRÍTICA SOBRE CARACTERÍSTICAS Y SECCIONES FALTANTES:
-- Si una característica específica NO existe en la información proporcionada, OMITE completamente esa fila de la tabla
-- Si una SECCIÓN COMPLETA no tiene información disponible (ejemplo: no se menciona conectividad), OMITE toda esa sección con su título
-- NO pongas "No", "N/A", "No especificado" o cualquier indicador negativo
-- SIMPLEMENTE NO INCLUYAS esa característica o sección en el código final
-- Solo incluye las características y secciones que tienen información real y verificable
-- Ejemplo: Si no hay información sobre WiFi o Bluetooth, omite toda la sección de Conectividad`;
+        ? `\n⚠️ REGLA CRÍTICA PARA LAPTOPS - CARACTERÍSTICAS DE SÍ/NO:\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\nLas características de tipo Sí/No (teclado retroiluminado, pantalla táctil, etc.) DEBEN estar TODAS en el código.\nSi NO confirmas que existe una característica → escribe "No"\nNUNCA omitas características de Sí/No.\nPara otras secciones: solo incluye lo que tenga información real.\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━`
+        : `\n⚠️ REGLA CRÍTICA - OMISIÓN DE INFORMACIÓN:\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\nSi una característica NO aparece en la información → OMITE esa fila completa.\nSi una SECCIÓN COMPLETA no tiene datos → OMITE la sección entera.\nNO escribas "No", "N/A", "No disponible".\nSOLO incluye lo que tenga información REAL.\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━`;
     
-    return `Necesito que generes un código HTML para la descripción de un producto ${product.name} en Shopify.
+    return `Eres un experto generando código HTML para descripciones de productos en Shopify. Debes generar código limpio y estructurado siguiendo EXACTAMENTE el formato del ejemplo.
 
-INSTRUCCIONES CRÍTICAS - DEBES SEGUIR ESTAS REGLAS EXACTAMENTE:
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+🎯 TU TAREA: Generar código HTML completo para ${product.name}
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-1. USA EL SIGUIENTE CÓDIGO COMO PLANTILLA BASE - NO CAMBIES NADA DE SU ESTRUCTURA HTML NI ESTILOS CSS
-2. MANTÉN TODOS LOS NOMBRES DE CLASES CSS EXACTAMENTE IGUALES
-3. MANTÉN LA ESTRUCTURA DE TABLA (pero puedes omitir secciones/filas completas sin información)
-4. SOLO MODIFICA LOS VALORES DE CONTENIDO DE LAS CELDAS CON LA INFORMACIÓN DEL PRODUCTO
-5. OMITE SECCIONES COMPLETAS SI NO HAY INFORMACIÓN PARA NINGUNA CARACTERÍSTICA DE ESA SECCIÓN
+⚠️⚠️⚠️ MUY IMPORTANTE - LEE ESTO PRIMERO ⚠️⚠️⚠️
 
-===== CÓDIGO DE EJEMPLO (USA ESTA ESTRUCTURA EXACTA) =====
+Tu respuesta DEBE ser UN SOLO BLOQUE DE CÓDIGO que contenga:
+
+1. EL CÓDIGO HTML COMPLETO (desde <div class="row"> hasta </div>)
+2. EL BLOQUE <style> COMPLETO (desde <style> hasta </style>)
+3. TODO JUNTO EN UNA SOLA RESPUESTA
+
+NO SEPARES EL HTML Y EL CSS EN BLOQUES DIFERENTES.
+NO ESCRIBAS EXPLICACIONES FUERA DEL CÓDIGO.
+NO OMITAS EL BLOQUE <style>.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+📝 CÓDIGO DE EJEMPLO (USA ESTA ESTRUCTURA EXACTA)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
 ${htmlCode}
 
-===== FIN DEL CÓDIGO DE EJEMPLO =====${descriptionSection}
-${promptInstructions}
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+📝 FIN DEL CÓDIGO DE EJEMPLO
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+${descriptionSection}
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+📋 INSTRUCCIONES ESPECÍFICAS PARA ${product.name.toUpperCase()}
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
+${promptInstructions}
 ${characteristicsRule}
 
-OTRAS REGLAS IMPORTANTES:
-- NO cambies ningún estilo CSS
-- NO modifiques los nombres de las clases
-- ${isLaptop ? 'Incluye TODAS las características de Sí/No, pero puedes omitir otras secciones sin info' : 'Omite filas y secciones completas sin información'}
-- Si una sección de la tabla no tiene ninguna información disponible, omite toda la sección incluyendo su título
-- Genera SOLO el código HTML modificado, sin explicaciones adicionales`;
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+✅ FORMATO DE SALIDA REQUERIDO
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Debes responder ÚNICAMENTE con el código HTML completo, en este formato:
+
+<!-- Comentario inicial -->
+<div class="row">
+  ... todo el HTML con la tabla de especificaciones ...
+</div>
+
+<style>
+  ... todos los estilos CSS completos ...
+</style>
+
+REGLAS FINALES:
+✓ Mantén TODOS los estilos CSS del ejemplo
+✓ Mantén TODAS las clases CSS exactamente iguales
+✓ SOLO modifica el contenido de <td class="tableCellContent">
+✓ ${isLaptop ? 'Incluye TODAS las características Sí/No (escribe "No" si no hay info)' : 'Omite filas sin información'}
+✓ Adapta los valores según la información del producto
+✓ NO agregues comentarios ni explicaciones
+✓ Responde SOLO con el código
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+🚀 GENERA EL CÓDIGO AHORA (HTML + CSS JUNTOS)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━`;
 }

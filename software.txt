@@ -2,7 +2,7 @@
 <div class="row">
 <div class="col-sm-8 col-offset-sm-2 col-md-10 offset-md-1 mb-3">
 <div class="product-seo-intro">
-<p>Software diseñado para ofrecer funcionalidad y compatibilidad claras: incluye versión, requisitos, licenciamiento y opciones de soporte.</p>
+<p>Este software te brinda las herramientas que necesitas para trabajar de manera eficiente, con interfaz intuitiva y funciones diseñadas para simplificar tus tareas diarias.</p>
 </div>
 <br>
 <h6 class="tt-title-sub">ESPECIFICACIONES DEL PRODUCTO</h6>

@@ -1,0 +1,177 @@
+<!-- BLOQUE: Soporte o Bracket (estructura y CSS consistente con los bloques anteriores) -->
+<div class="row">
+  <div class="col-sm-8 col-offset-sm-2 col-md-10 offset-md-1 mb-3">
+    <div class="product-seo-intro">
+      <p>Este soporte de pared para televisores combina robustez y versatilidad, con instalación segura, ajuste inclinable y compatibilidad con múltiples tamaños de pantalla para optimizar tu espacio.</p>
+    </div>
+    <br>
+    <h6 class="tt-title-sub">ESPECIFICACIONES DEL PRODUCTO</h6>
+    <div class="div-drop">
+      <table class="NEW-TABLE TableOverride-1 tab-drag" width="100%" id="table-plan-soporte" role="table" aria-label="Especificaciones del soporte">
+        <tbody>
+          <!-- INFORMACIÓN DEL PRODUCTO -->
+          <tr>
+            <td class="tableCellGroupTitle">Información del Producto</td>
+            <td class="tableCellGroupTitleContent"></td>
+          </tr>
+          <tr>
+            <td class="tableCellMeta">Modelo</td>
+            <td class="tableCellContent">Bracket Argom ARG-BR-1349 55/90 Plg</td>
+          </tr>
+          <tr>
+            <td class="tableCellMeta">Material</td>
+            <td class="tableCellContent">Acero</td>
+          </tr>
+
+          <!-- INSTALACIÓN -->
+          <tr>
+            <td class="tableCellGroupTitle">Instalación</td>
+            <td class="tableCellGroupTitleContent"></td>
+          </tr>
+          <tr>
+            <td class="tableCellMeta">Propiedades de instalación</td>
+            <td class="tableCellContent">Pared</td>
+          </tr>
+          <tr>
+            <td class="tableCellMeta">Tipo de montaje</td>
+            <td class="tableCellContent">Inclinable</td>
+          </tr>
+
+          <!-- CAPACIDAD -->
+          <tr>
+            <td class="tableCellGroupTitle">Capacidad</td>
+            <td class="tableCellGroupTitleContent"></td>
+          </tr>
+          <tr>
+            <td class="tableCellMeta">Tamaño Soportado</td>
+            <td class="tableCellContent">55/90 Plg</td>
+          </tr>
+          <tr>
+            <td class="tableCellMeta">Peso soportado</td>
+            <td class="tableCellContent">110 lb</td>
+          </tr>
+
+          <!-- CARACTERÍSTICAS -->
+          <tr>
+            <td class="tableCellGroupTitle">Características</td>
+            <td class="tableCellGroupTitleContent"></td>
+          </tr>
+          <tr>
+            <td class="tableCellMeta">Ajustable</td>
+            <td class="tableCellContent">Sí</td>
+          </tr>
+          <tr>
+            <td class="tableCellMeta">Desplazamiento lateral</td>
+            <td class="tableCellContent">Sí</td>
+          </tr>
+          <tr>
+            <td class="tableCellMeta">Accesorios</td>
+            <td class="tableCellContent">Incluye tornillos M8x50 para televisores Samsung y arandelas especiales para pantallas curvas</td>
+          </tr>
+
+          <!-- COMPATIBILIDAD -->
+          <tr>
+            <td class="tableCellGroupTitle">Compatibilidad</td>
+            <td class="tableCellGroupTitleContent"></td>
+          </tr>
+          <tr>
+            <td class="tableCellMeta">Compatibilidad VESA</td>
+            <td class="tableCellContent">200x200; 300x200; 300x300; 400x200; 400x300; 400x400; 600x400; 600x600; 800x400; 800x600</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+
+<style>
+  /* Mantener estilo consistente con los bloques anteriores */
+  .nav-tabs .nav-item.show .nav-link,
+  .nav-tabs .nav-link .active {
+    background: #f5f5f5;
+    border-bottom: 2px solid #036cbf;
+    border-radius: 5px 5px 0 0;
+  }
+
+  /* Heredar tipografía del tema automáticamente */
+  .row,
+  .NEW-TABLE,
+  .TableOverride-1,
+  .tab-drag,
+  .tt-title-sub,
+  .tableCellMeta,
+  .tableCellContent,
+  .tableCellGroupTitle,
+  .tableCellGroupTitleContent,
+  .product-seo-intro,
+  .div-drop {
+    font-family: inherit;
+    color: inherit;
+  }
+
+  /* Título centrado pero más pequeño */
+  .tt-title-sub {
+    font-size: 12px;
+    font-weight: 700;
+    margin: 6px 0 10px;
+    letter-spacing: 0.3px;
+    text-align: center;
+  }
+
+  .div-drop {
+    overflow-x: auto;
+  }
+
+  table {
+    border-collapse: collapse;
+    font-size: 14px;
+    width: 100%;
+  }
+
+  .tableCellMeta {
+    border: 1px solid #fbfbfb;
+    padding: 3px 0 3px 15px;
+    vertical-align: middle;
+    background-color: #fdfdfd;
+    width: 50%;
+    text-align: left;
+  }
+
+  .tableCellContent {
+    text-align: center;
+    border: 1px solid #fbfbfb;
+    padding: 3px 0 3px 15px;
+    vertical-align: middle;
+    background-color: #fafafa;
+    width: 50%;
+  }
+
+  .tableCellGroupTitle {
+    border: 1px solid #f8f8f8;
+    padding: 3px 0 3px 5px;
+    vertical-align: middle;
+    background-color: #f7f7f7;
+    font-weight: 800;
+    text-transform: uppercase;
+    text-align: center;
+  }
+
+  .tableCellGroupTitleContent {
+    border: 1px solid #fbfbfb;
+    padding: 3px 0 3px 15px;
+    vertical-align: middle;
+    background-color: #fafafa;
+    width: 50%;
+  }
+
+  @media (max-width: 576px) {
+    .tt-title-sub {
+      font-size: 11px;
+    }
+    .tableCellMeta,
+    .tableCellContent {
+      font-size: 13px;
+      padding-left: 10px;
+    }
+  }
+</style>

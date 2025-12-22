@@ -2,7 +2,7 @@
 <div class="row">
   <div class="col-sm-8 col-offset-sm-2 col-md-10 offset-md-1 mb-3">
     <div class="product-seo-intro">
-      <p>Monitores diseñados para ofrecer calidad de imagen y conectividad: especifica tecnología, tamaño, resolución y opciones de montaje según el modelo.</p>
+      <p>Esta pantalla te brinda imágenes claras y colores vibrantes para trabajar, estudiar o entretenerte, con un diseño elegante que se integra perfectamente en tu espacio.</p>
     </div>
     <br>
     <h6 class="tt-title-sub">ESPECIFICACIONES DEL PRODUCTO</h6>

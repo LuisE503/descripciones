@@ -1,0 +1,144 @@
+<!-- BLOQUE: Teclados (Cableados e Inalámbricos) -->
+<div class="row">
+  <div class="col-sm-8 col-offset-sm-2 col-md-10 offset-md-1 mb-3">
+    <div class="product-seo-intro">
+      <p>Teclado ergonómico con teclas de respuesta rápida, diseño duradero y conectividad versátil para máxima productividad y comodidad.</p>
+    </div>
+    <br>
+    <h6 class="tt-title-sub text-center">ESPECIFICACIONES DEL PRODUCTO</h6>
+    <div class="div-drop">
+      <table class="NEW-TABLE TableOverride-1 tab-drag" width="100%" id="table-plan-keyboard">
+        <tbody>
+          <tr>
+            <td class="tableCellGroupTitle">Tipo de Teclado</td>
+            <td class="tableCellGroupTitleContent"></td>
+          </tr>
+          <tr>
+            <td class="tableCellMeta">Tecnología</td>
+            <td class="tableCellContent">Mecánico / Membrana</td>
+          </tr>
+          <tr>
+            <td class="tableCellMeta">Layout</td>
+            <td class="tableCellContent">Español / Inglés</td>
+          </tr>
+          <tr>
+            <td class="tableCellMeta">Tamaño</td>
+            <td class="tableCellContent">Full Size / TKL / 60%</td>
+          </tr>
+          <tr>
+            <td class="tableCellGroupTitle">Switch (Mecánicos)</td>
+            <td class="tableCellGroupTitleContent"></td>
+          </tr>
+          <tr>
+            <td class="tableCellMeta">Tipo de switch</td>
+            <td class="tableCellContent">Cherry MX / Gateron / Outemu</td>
+          </tr>
+          <tr>
+            <td class="tableCellMeta">Fuerza de actuación</td>
+            <td class="tableCellContent">45g / 50g / 60g</td>
+          </tr>
+          <tr>
+            <td class="tableCellGroupTitle">Conectividad</td>
+            <td class="tableCellGroupTitleContent"></td>
+          </tr>
+          <tr>
+            <td class="tableCellMeta">Conexión</td>
+            <td class="tableCellContent">USB / 2.4GHz / Bluetooth</td>
+          </tr>
+          <tr>
+            <td class="tableCellMeta">Cable</td>
+            <td class="tableCellContent">1.8m USB / Trenzado</td>
+          </tr>
+          <tr>
+            <td class="tableCellGroupTitle">Características</td>
+            <td class="tableCellGroupTitleContent"></td>
+          </tr>
+          <tr>
+            <td class="tableCellMeta">Retroiluminación RGB</td>
+            <td class="tableCellContent">Sí / No</td>
+          </tr>
+          <tr>
+            <td class="tableCellMeta">Reposa muñecas</td>
+            <td class="tableCellContent">Sí / No</td>
+          </tr>
+          <tr>
+            <td class="tableCellMeta">Anti-ghosting</td>
+            <td class="tableCellContent">Sí (N-key rollover)</td>
+          </tr>
+          <tr>
+            <td class="tableCellMeta">Duración (pulsaciones)</td>
+            <td class="tableCellContent">50 millones</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+
+<style>
+  .nav-tabs .nav-item.show .nav-link,
+  .nav-tabs .nav-link .active {
+    background: #f5f5f5;
+    border-bottom: 2px solid #036cbf;
+    border-radius: 5px 5px 0 0;
+  }
+
+  .row, .NEW-TABLE, .TableOverride-1, .tab-drag, .tt-title-sub,
+  .tableCellMeta, .tableCellContent, .tableCellGroupTitle,
+  .tableCellGroupTitleContent, .product-seo-intro, .div-drop {
+    font-family: inherit;
+    color: inherit;
+  }
+
+  .tt-title-sub {
+    font-size: 12px;
+    font-weight: 700;
+    margin: 6px 0 10px;
+    letter-spacing: 0.3px;
+    text-align: center;
+  }
+
+  .div-drop { overflow-x: auto; }
+  table { border-collapse: collapse; font-size: 14px; width: 100%; }
+
+  .tableCellMeta {
+    border: 1px solid #fbfbfb;
+    padding: 3px 0 3px 15px;
+    vertical-align: middle;
+    background-color: #fdfdfd;
+    width: 50%;
+    text-align: left;
+  }
+
+  .tableCellContent {
+    text-align: center;
+    border: 1px solid #fbfbfb;
+    padding: 3px 0 3px 15px;
+    vertical-align: middle;
+    background-color: #fafafa;
+    width: 50%;
+  }
+
+  .tableCellGroupTitle {
+    border: 1px solid #f8f8f8;
+    padding: 3px 0 3px 5px;
+    vertical-align: middle;
+    background-color: #f7f7f7;
+    font-weight: 800;
+    text-transform: uppercase;
+    text-align: center;
+  }
+
+  .tableCellGroupTitleContent {
+    border: 1px solid #fbfbfb;
+    padding: 3px 0 3px 15px;
+    vertical-align: middle;
+    background-color: #fafafa;
+    width: 50%;
+  }
+
+  @media (max-width: 576px) {
+    .tt-title-sub { font-size: 11px; }
+    .tableCellMeta, .tableCellContent { font-size: 13px; padding-left: 10px; }
+  }
+</style>

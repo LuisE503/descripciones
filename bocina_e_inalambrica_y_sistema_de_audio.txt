@@ -1,0 +1,187 @@
+﻿
+
+<!-- BLOQUE: Bocinas (estructura y CSS consistente con los bloques anteriores) -->
+<div class="row">
+
+    <div class="product-seo-intro">
+      <p>Altavoz portátil pensado para llevar tu música a cualquier lugar: sonido potente, batería de larga duración y resistencia al agua para uso en exteriores y en casa.</p>
+    </div>
+    <br>
+    <h6 class="tt-title-sub text-center">ESPECIFICACIONES DEL PRODUCTO</h6>
+    <div class="div-drop">
+      <table id="table-plan-speaker" width="100%" class="NEW-TABLE TableOverride-1 tab-drag" style="margin: auto;" role="table" aria-label="Especificaciones de la bocina">
+        <tbody>
+          <!-- Conectividad -->
+          <tr>
+            <td class="tableCellGroupTitle">Conectividad</td>
+            <td class="tableCellGroupTitleContent"></td>
+          </tr>
+          <tr>
+            <td class="tableCellMeta">Propiedades de conexión</td>
+            <td class="tableCellContent">Bluetooth</td>
+          </tr>
+          <tr>
+            <td class="tableCellMeta">Versión Bluetooth</td>
+            <td class="tableCellContent">5.1</td>
+          </tr>
+
+          <!-- Potencia -->
+          <tr>
+            <td class="tableCellGroupTitle">Potencia de salida</td>
+            <td class="tableCellGroupTitleContent"></td>
+          </tr>
+          <tr>
+            <td class="tableCellMeta">Potencia</td>
+            <td class="tableCellContent">40 W</td>
+          </tr>
+
+          <!-- Batería -->
+          <tr>
+            <td class="tableCellGroupTitle">Batería</td>
+            <td class="tableCellGroupTitleContent"></td>
+          </tr>
+          <tr>
+            <td class="tableCellMeta">Tiempo de reproducción</td>
+            <td class="tableCellContent">20 horas</td>
+          </tr>
+
+          <!-- Resistencia -->
+          <tr>
+            <td class="tableCellGroupTitle">Resistencia</td>
+            <td class="tableCellGroupTitleContent"></td>
+          </tr>
+          <tr>
+            <td class="tableCellMeta">Grado de protección IP</td>
+            <td class="tableCellContent">IP67</td>
+          </tr>
+          <tr>
+            <td class="tableCellMeta">Resistente al agua</td>
+            <td class="tableCellContent">Sí</td>
+          </tr>
+
+          <!-- Aplicación y serie -->
+          <tr>
+            <td class="tableCellGroupTitle">Aplicación y serie</td>
+            <td class="tableCellGroupTitleContent"></td>
+          </tr>
+          <tr>
+            <td class="tableCellMeta">App</td>
+            <td class="tableCellContent">JBL Portable</td>
+          </tr>
+          <tr>
+            <td class="tableCellMeta">Serie</td>
+            <td class="tableCellContent">No especificado</td>
+          </tr>
+
+          <!-- Tipo de parlante y color -->
+          <tr>
+            <td class="tableCellGroupTitle">Tipo y apariencia</td>
+            <td class="tableCellGroupTitleContent"></td>
+          </tr>
+          <tr>
+            <td class="tableCellMeta">Tipo de Parlante</td>
+            <td class="tableCellContent">Canal 2.0</td>
+          </tr>
+          <tr>
+            <td class="tableCellMeta">Color</td>
+            <td class="tableCellContent">No especificado</td>
+          </tr>
+
+          <!-- Funciones y entradas -->
+          <tr>
+            <td class="tableCellGroupTitle">Funciones y entradas</td>
+            <td class="tableCellGroupTitleContent"></td>
+          </tr>
+          <tr>
+            <td class="tableCellMeta">Contiene micrófono</td>
+            <td class="tableCellContent">No especificado</td>
+          </tr>
+          <tr>
+            <td class="tableCellMeta">Pantalla LED</td>
+            <td class="tableCellContent">No especificado</td>
+          </tr>
+          <tr>
+            <td class="tableCellMeta">Luces LED</td>
+            <td class="tableCellContent">No especificado</td>
+          </tr>
+          <tr>
+            <td class="tableCellMeta">Entrada para memoria USB</td>
+            <td class="tableCellContent">No especificado</td>
+          </tr>
+          <tr>
+            <td class="tableCellMeta">Entrada para memoria SD</td>
+            <td class="tableCellContent">No especificado</td>
+          </tr>
+          <tr>
+            <td class="tableCellMeta">Entrada para memoria microSD</td>
+            <td class="tableCellContent">No especificado</td>
+          </tr>
+          <tr>
+            <td class="tableCellMeta">Entrada para micrófono</td>
+            <td class="tableCellContent">No especificado</td>
+          </tr>
+          <tr>
+            <td class="tableCellMeta">Entrada para cable auxiliar</td>
+            <td class="tableCellContent">No especificado</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <p style="text-align: center; margin-top: 8px;"><br></p>
+  </div>
+</div>
+
+<style>
+  .nav-tabs .nav-item.show .nav-link,
+  .nav-tabs .nav-link .active {
+    background: #f5f5f5;
+    border-bottom: 2px solid #036cbf;
+    border-radius: 5px 5px 0 0;
+  }
+  .tableCellMeta {
+    border: 1px solid #fbfbfb;
+    padding: 3px 0 3px 15px;
+    vertical-align: middle;
+    background-color: #fdfdfd;
+    width: 50%;
+    text-align: left;
+  }
+  .tableCellContent {
+    text-align: center;
+    border: 1px solid #fbfbfb;
+    padding: 3px 0 3px 15px;
+    vertical-align: middle;
+    background-color: #fafafa;
+    width: 50%;
+  }
+  .tableCellGroupTitle {
+    border: 1px solid #f8f8f8;
+    padding: 3px 0 3px 5px;
+    vertical-align: middle;
+    background-color: #f7f7f7;
+    font-weight: 800;
+    text-transform: uppercase;
+    text-align: center;
+  }
+  .tableCellGroupTitleContent {
+    border: 1px solid #fbfbfb;
+    padding: 3px 0 3px 15px;
+    vertical-align: middle;
+    background-color: #fafafa;
+    width: 50%;
+  }
+  .tt-title-sub {
+    font-size: 12px;
+    font-weight: 700;
+    margin: 6px 0 10px;
+    letter-spacing: 0.3px;
+    text-align: center;
+  }
+  .div-drop { overflow-x: auto; }
+  table { border-collapse: collapse; font-size: 14px; width: 100%; }
+  @media (max-width: 576px) {
+    .tt-title-sub { font-size: 11px; }
+    .tableCellMeta, .tableCellContent { font-size: 13px; padding-left: 10px; }
+  }
+</style>

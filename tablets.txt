@@ -1,0 +1,236 @@
+<!-- BLOQUE: Tablet (descripción y tabla de especificaciones con formato estándar) -->
+<div class="row">
+<div class="col-sm-8 col-offset-sm-2 col-md-10 offset-md-1 mb-3">
+<div class="product-seo-intro">
+<p>Tablet con rendimiento equilibrado para multimedia y productividad ligera: pantalla HD de 9 Plg, SoC MediaTek, almacenamiento ampliable y conectividad 4G LTE.</p>
+</div>
+<br>
+<h6 class="tt-title-sub text-center">ESPECIFICACIONES DEL PRODUCTO</h6>
+
+<div class="div-drop">
+<table id="table-plan-tablet" width="100%" class="NEW-TABLE TableOverride-1 tab-drag" role="table" aria-label="Especificaciones de la tablet" style="margin: auto;">
+<tbody>
+<!-- Rendimiento -->
+<tr>
+<td class="tableCellGroupTitle">Rendimiento</td>
+<td class="tableCellGroupTitleContent"></td>
+</tr>
+<tr>
+<td class="tableCellMeta">Procesador</td>
+<td class="tableCellContent">MediaTek Helio G80 (2× A75 @ 2.0 GHz + 6× A55 @ 1.8 GHz)</td>
+</tr>
+<tr>
+<td class="tableCellMeta">Gráficos</td>
+<td class="tableCellContent">Arm Mali-G52 MC2 integrado</td>
+</tr>
+<tr>
+<td class="tableCellMeta">Chipset</td>
+<td class="tableCellContent">Plataforma SoC MediaTek</td>
+</tr>
+<tr>
+<td class="tableCellMeta">Memoria</td>
+<td class="tableCellContent">4GB RAM</td>
+</tr>
+<tr>
+<td class="tableCellMeta">Almacenamiento</td>
+<td class="tableCellContent">128GB</td>
+</tr>
+<tr>
+<td class="tableCellMeta">Soporte de almacenamiento</td>
+<td class="tableCellContent">microSD FAT32 hasta 128GB; exFAT hasta 2TB</td>
+</tr>
+
+<!-- Audio y cámaras -->
+<tr>
+<td class="tableCellGroupTitle">Audio y cámaras</td>
+<td class="tableCellGroupTitleContent"></td>
+</tr>
+<tr>
+<td class="tableCellMeta">Altavoces</td>
+<td class="tableCellContent">Dual speaker optimizados con Dolby Atmos</td>
+</tr>
+<tr>
+<td class="tableCellMeta">Micrófono</td>
+<td class="tableCellContent">Mono</td>
+</tr>
+<tr>
+<td class="tableCellMeta">Cámara Principal</td>
+<td class="tableCellContent">8MP Principal</td>
+</tr>
+<tr>
+<td class="tableCellMeta">Cámara Frontal</td>
+<td class="tableCellContent">2MP Frontal</td>
+</tr>
+
+<!-- Diseño -->
+<tr>
+<td class="tableCellGroupTitle">Diseño</td>
+<td class="tableCellGroupTitleContent"></td>
+</tr>
+<tr>
+<td class="tableCellMeta">Pantalla</td>
+<td class="tableCellContent">9 Plg HD (1340 × 800) IPS, 400 nits, antihuellas, táctil</td>
+</tr>
+<tr>
+<td class="tableCellMeta">Pantalla táctil</td>
+<td class="tableCellContent">In-cell, multitáctil 10 puntos</td>
+</tr>
+<tr>
+<td class="tableCellMeta">Lápiz</td>
+<td class="tableCellContent">No soportado</td>
+</tr>
+<tr>
+<td class="tableCellMeta">Teclado</td>
+<td class="tableCellContent">Ninguno</td>
+</tr>
+<tr>
+<td class="tableCellMeta">Dimensiones (An×Pr×Al)</td>
+<td class="tableCellContent">215.43 × 136.76 × 7.99 mm</td>
+</tr>
+<tr>
+<td class="tableCellMeta">Peso</td>
+<td class="tableCellContent">≈ 344 g</td>
+</tr>
+<tr>
+<td class="tableCellMeta">Color</td>
+<td class="tableCellContent">Arctic Grey</td>
+</tr>
+<tr>
+<td class="tableCellMeta">Material de la carcasa</td>
+<td class="tableCellContent">Metal (parte trasera)</td>
+</tr>
+
+<!-- Software -->
+<tr>
+<td class="tableCellGroupTitle">Software</td>
+<td class="tableCellGroupTitleContent"></td>
+</tr>
+<tr>
+<td class="tableCellMeta">Sistema operativo</td>
+<td class="tableCellContent">Android 12</td>
+</tr>
+
+<!-- Conectividad -->
+<tr>
+<td class="tableCellGroupTitle">Conectividad</td>
+<td class="tableCellGroupTitleContent"></td>
+</tr>
+<tr>
+<td class="tableCellMeta">Wi‑Fi + Bluetooth</td>
+<td class="tableCellContent">Wi‑Fi 5 (802.11ac) 1×1; BT 5.1</td>
+</tr>
+<tr>
+<td class="tableCellMeta">WWAN</td>
+<td class="tableCellContent">4G LTE</td>
+</tr>
+<tr>
+<td class="tableCellMeta">Servicios de ubicación</td>
+<td class="tableCellContent">GPS; GLONASS; Galileo; A‑GPS</td>
+</tr>
+<tr>
+<td class="tableCellMeta">Puertos estándar</td>
+<td class="tableCellContent">1× USB‑C 2.0 (datos, carga, headset digital); 1× Jack 3.5 mm; 1× Ranura de tarjeta</td>
+</tr>
+
+<!-- Batería -->
+<tr>
+<td class="tableCellGroupTitle">Batería</td>
+<td class="tableCellGroupTitleContent"></td>
+</tr>
+<tr>
+<td class="tableCellMeta">Propiedades de batería</td>
+<td class="tableCellContent">No especificado</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+
+<style>
+.nav-tabs .nav-item.show .nav-link,
+.nav-tabs .nav-link .active {
+background: #f5f5f5;
+border-bottom: 2px solid #036cbf;
+border-radius: 5px 5px 0 0;
+}
+
+.row,
+.NEW-TABLE,
+.TableOverride-1,
+.tab-drag,
+.tt-title-sub,
+.tableCellMeta,
+.tableCellContent,
+.tableCellGroupTitle,
+.tableCellGroupTitleContent,
+.product-seo-intro,
+.div-drop {
+font-family: inherit;
+color: inherit;
+}
+
+.tt-title-sub {
+font-size: 12px;
+font-weight: 700;
+margin: 6px 0 10px;
+letter-spacing: 0.3px;
+text-align: center;
+}
+
+.div-drop { overflow-x: auto; }
+table { border-collapse: collapse; font-size: 14px; width: 100%; }
+
+.tableCellMeta {
+border: 1px solid #fbfbfb;
+padding: 3px 0 3px 15px;
+vertical-align: middle;
+background-color: #fdfdfd;
+width: 50%;
+text-align: left;
+}
+
+.tableCellContent {
+text-align: center;
+border: 1px solid #fbfbfb;
+padding: 3px 0 3px 15px;
+vertical-align: middle;
+background-color: #fafafa;
+width: 50%;
+}
+
+.tableCellGroupTitle {
+border: 1px solid #f8f8f8;
+padding: 3px 0 3px 5px;
+vertical-align: middle;
+background-color: #f7f7f7;
+font-weight: 800;
+text-transform: uppercase;
+text-align: center;
+}
+
+.tableCellGroupTitleContent {
+border: 1px solid #fbfbfb;
+padding: 3px 0 3px 15px;
+vertical-align: middle;
+background-color: #fafafa;
+width: 50%;
+}
+
+@media (max-width: 576px) {
+.tt-title-sub { font-size: 11px; }
+.tableCellMeta, .tableCellContent { font-size: 13px; padding-left: 10px; }
+}
+</style>
+
+
+
+Tamaño de la pantalla	Cantidad seguida de un espacio y la unidad de medida expresada en pulgadas con la abreviación Plg (7.5 Plg, 10.5 Plg)
+Almacenamiento	Capacidad + Unidad de medida en mayúscula sin espacio (240GB, 1TB)
+Memoria RAM	Capacidad + Unidad de medida en mayúscula sin espacio seguido de un espacio y la palabra RAM (1GB RAM, 2GB RAM)
+Cámara Principal	Cantidad seguida de la unidad de medida expresada en megapíxeles (MP) sin espacio y la palabra “Principal” separada por un espacio (12MP Principal, 15MP Principal).
+Cámara Frontal	Cantidad seguida de la unidad de medida expresada en megapíxeles (MP) sin espacio y la palabra “Frontal” separada por un espacio (12MP Frontal, 15MP Frontal).
+Propiedades de batería	Cantidad seguida de un espacio y la unidad de medida expresa en amperios por hora (pueden ser miliamperios por hora) (3000 mAh)
+Sistema Operativo	Según especificación. Colocar plataforma, versión y, si es Android, el nombre (Android 8.0 Oreo, Windows 10 Home).
+Color	Según especificación
+(Blanco, Rojo). Pueden crearse tipos combinados si se unen los nombres de los colores por medio del signo “/” sin espacios (Blanco/Rojo).

@@ -1,0 +1,221 @@
+Tamaño de la pantalla	Cantidad seguida de un espacio y la unidad de medida expresada en pulgadas con la abreviación Plg (4.5 Plg, 5.5 Plg)
+Almacenamiento	Capacidad + Unidad de medida en mayúscula sin espacio (240GB, 1TB)
+Memoria RAM	Capacidad + Unidad de medida en mayúscula sin espacio seguido de un espacio y la palabra RAM (1GB RAM, 2GB RAM)
+Cámara Principal	Cantidad seguida de la unidad de medida expresada en megapíxeles (MP) sin espacio y la palabra “Principal” separada por un espacio (12MP Principal, 15MP Principal).
+Cámara Frontal	Cantidad seguida de la unidad de medida expresada en megapíxeles (MP) sin espacio y la palabra “Frontal” separada por un espacio (12MP Frontal, 15MP Frontal).
+Propiedades de batería	Cantidad seguida de un espacio y la unidad de medida expresa en amperios por hora (pueden ser miliamperios por hora) (3000 mAh)
+Sistema Operativo	Según especificación. Colocar plataforma, versión y, si es Android, el nombre (Android 8.0 Oreo) o si son sistemas operativos basados en algunas ROMS o propias del fabricante (OxygenOS basado en Android 10), “basado en” siempre se debe de escribir antes de la versión de Android.
+Color	Según especificación
+(Blanco, Rojo). Pueden crearse tipos combinados si se unen los nombres de los colores por medio del signo “/” sin espacios (Blanco/Rojo).
+Cámara Dual	Sí/No
+Resistente al agua	Sí/No
+Gorilla Glass	Sí/No
+
+
+<!-- BLOQUE: Smartphone (solo descripción y tabla de especificaciones) -->
+<div class="row">
+<div class="col-sm-8 col-offset-sm-2 col-md-10 offset-md-1 mb-3">
+<div class="product-seo-intro">
+<p>Smartphone con batería de alta capacidad, sistema de cámaras asistidas por IA y almacenamiento ampliable; pensado para uso intensivo, fotografía y multimedia.</p>
+</div>
+<br>
+<h6 class="tt-title-sub text-center">ESPECIFICACIONES DEL PRODUCTO</h6>
+
+<div class="div-drop">
+<table id="table-plan-smartphone" width="100%" class="NEW-TABLE TableOverride-1 tab-drag" role="table" aria-label="Especificaciones del smartphone" style="margin: auto;">
+<tbody>
+<!-- Cámara -->
+<tr>
+<td class="tableCellGroupTitle">Cámara</td>
+<td class="tableCellGroupTitleContent"></td>
+</tr>
+<tr>
+<td class="tableCellMeta">Principal</td>
+<td class="tableCellContent">50MP Principal; 2MP Principal (IA)</td>
+</tr>
+<tr>
+<td class="tableCellMeta">Frontal</td>
+<td class="tableCellContent">5MP Frontal (IA)</td>
+</tr>
+
+<!-- Almacenamiento y RAM -->
+<tr>
+<td class="tableCellGroupTitle">Almacenamiento y RAM</td>
+<td class="tableCellGroupTitleContent"></td>
+</tr>
+<tr>
+<td class="tableCellMeta">Almacenamiento</td>
+<td class="tableCellContent">256GB; Micro SD hasta 1TB</td>
+</tr>
+<tr>
+<td class="tableCellMeta">Memoria RAM</td>
+<td class="tableCellContent">8GB RAM + 8GB RAM (extendida)</td>
+</tr>
+
+<!-- Procesador -->
+<tr>
+<td class="tableCellGroupTitle">Procesador</td>
+<td class="tableCellGroupTitleContent"></td>
+</tr>
+<tr>
+<td class="tableCellMeta">SoC</td>
+<td class="tableCellContent">Qualcomm Snapdragon 6s Gen1</td>
+</tr>
+
+<!-- Pantalla -->
+<tr>
+<td class="tableCellGroupTitle">Pantalla</td>
+<td class="tableCellGroupTitleContent"></td>
+</tr>
+<tr>
+<td class="tableCellMeta">Tamaño de la pantalla</td>
+<td class="tableCellContent">No especificado</td>
+</tr>
+
+<!-- Batería -->
+<tr>
+<td class="tableCellGroupTitle">Batería</td>
+<td class="tableCellGroupTitleContent"></td>
+</tr>
+<tr>
+<td class="tableCellMeta">Propiedades de batería</td>
+<td class="tableCellContent">6000 mAh</td>
+</tr>
+<tr>
+<td class="tableCellMeta">Duración de la batería</td>
+<td class="tableCellContent">No especificado</td>
+</tr>
+
+<!-- Carga -->
+<tr>
+<td class="tableCellGroupTitle">Carga</td>
+<td class="tableCellGroupTitleContent"></td>
+</tr>
+<tr>
+<td class="tableCellMeta">Carga rápida</td>
+<td class="tableCellContent">45W (0–100% en 1 h 15 m)</td>
+</tr>
+
+<!-- Sistema operativo -->
+<tr>
+<td class="tableCellGroupTitle">Sistema operativo</td>
+<td class="tableCellGroupTitleContent"></td>
+</tr>
+<tr>
+<td class="tableCellMeta">Sistema operativo</td>
+<td class="tableCellContent">No especificado</td>
+</tr>
+
+<!-- Resistencia y protección -->
+<tr>
+<td class="tableCellGroupTitle">Resistencia y protección</td>
+<td class="tableCellGroupTitleContent"></td>
+</tr>
+<tr>
+<td class="tableCellMeta">Protección</td>
+<td class="tableCellContent">Gorilla Glass 7i; IP65</td>
+</tr>
+<tr>
+<td class="tableCellMeta">Gorilla Glass</td>
+<td class="tableCellContent">Sí</td>
+</tr>
+<tr>
+<td class="tableCellMeta">Resistente al agua</td>
+<td class="tableCellContent">Sí</td>
+</tr>
+
+<!-- Apariencia y extras -->
+<tr>
+<td class="tableCellGroupTitle">Apariencia y extras</td>
+<td class="tableCellGroupTitleContent"></td>
+</tr>
+<tr>
+<td class="tableCellMeta">Color</td>
+<td class="tableCellContent">No especificado</td>
+</tr>
+<tr>
+<td class="tableCellMeta">Cámara Dual</td>
+<td class="tableCellContent">Sí</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+
+<style>
+.nav-tabs .nav-item.show .nav-link,
+.nav-tabs .nav-link .active {
+background: #f5f5f5;
+border-bottom: 2px solid #036cbf;
+border-radius: 5px 5px 0 0;
+}
+
+.row,
+.NEW-TABLE,
+.TableOverride-1,
+.tab-drag,
+.tt-title-sub,
+.tableCellMeta,
+.tableCellContent,
+.tableCellGroupTitle,
+.tableCellGroupTitleContent,
+.product-seo-intro,
+.div-drop {
+font-family: inherit;
+color: inherit;
+}
+
+.tt-title-sub {
+font-size: 12px;
+font-weight: 700;
+margin: 6px 0 10px;
+letter-spacing: 0.3px;
+text-align: center;
+}
+
+.div-drop { overflow-x: auto; }
+table { border-collapse: collapse; font-size: 14px; width: 100%; }
+
+.tableCellMeta {
+border: 1px solid #fbfbfb;
+padding: 3px 0 3px 15px;
+vertical-align: middle;
+background-color: #fdfdfd;
+width: 50%;
+text-align: left;
+}
+
+.tableCellContent {
+text-align: center;
+border: 1px solid #fbfbfb;
+padding: 3px 0 3px 15px;
+vertical-align: middle;
+background-color: #fafafa;
+width: 50%;
+}
+
+.tableCellGroupTitle {
+border: 1px solid #f8f8f8;
+padding: 3px 0 3px 5px;
+vertical-align: middle;
+background-color: #f7f7f7;
+font-weight: 800;
+text-transform: uppercase;
+text-align: center;
+}
+
+.tableCellGroupTitleContent {
+border: 1px solid #fbfbfb;
+padding: 3px 0 3px 15px;
+vertical-align: middle;
+background-color: #fafafa;
+width: 50%;
+}
+
+@media (max-width: 576px) {
+.tt-title-sub { font-size: 11px; }
+.tableCellMeta, .tableCellContent { font-size: 13px; padding-left: 10px; }
+}
+</style>
+

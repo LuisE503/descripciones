@@ -326,6 +326,321 @@ function getEmbeddedProducts() {
             description: "Sistemas de alimentación ininterrumpida",
             tags: ["eléctrico", "ups", "batería"],
             file: "ups_y_ups_online.txt"
+        },
+        {
+            id: 27,
+            category: "adaptador_de_red_usb",
+            name: "Adaptador de Red USB",
+            icon: "🔌",
+            description: "Adaptadores de red USB WiFi y Ethernet",
+            tags: ["adaptador", "red", "usb", "wifi", "ethernet"],
+            file: "adaptador_de_red_usb.txt"
+        },
+        {
+            id: 28,
+            category: "almacenamiento_externo",
+            name: "Almacenamiento Externo",
+            icon: "💾",
+            description: "Discos duros externos y unidades de almacenamiento",
+            tags: ["almacenamiento", "disco", "externo", "hdd", "ssd"],
+            file: "almacenamiento_externo.txt"
+        },
+        {
+            id: 29,
+            category: "amplificador_de_red",
+            name: "Amplificador de Red",
+            icon: "📡",
+            description: "Amplificadores y extensores de señal WiFi",
+            tags: ["amplificador", "red", "wifi", "señal"],
+            file: "amplificador_de_red.txt"
+        },
+        {
+            id: 30,
+            category: "audifonos_cableados_e_inalambricos",
+            name: "Audífonos Cableados e Inalámbricos",
+            icon: "🎧",
+            description: "Audífonos y auriculares",
+            tags: ["audífonos", "auriculares", "audio", "headphones"],
+            file: "audifonos_cableados_e_inalambricos.txt"
+        },
+        {
+            id: 31,
+            category: "bases_para_laptop",
+            name: "Bases para Laptop",
+            icon: "🖥️",
+            description: "Bases de refrigeración y soportes para laptop",
+            tags: ["base", "laptop", "soporte", "refrigeración"],
+            file: "bases_para_laptop.txt"
+        },
+        {
+            id: 32,
+            category: "bocina_e_inalambrica_y_sistema_de_audio",
+            name: "Bocinas y Sistema de Audio",
+            icon: "🔊",
+            description: "Bocinas inalámbricas y sistemas de audio",
+            tags: ["bocina", "audio", "altavoz", "speaker"],
+            file: "bocina_e_inalambrica_y_sistema_de_audio.txt"
+        },
+        {
+            id: 33,
+            category: "cable_hdmi",
+            name: "Cable HDMI",
+            icon: "📺",
+            description: "Cables HDMI para video y audio",
+            tags: ["cable", "hdmi", "video", "audio"],
+            file: "cable_hdmi.txt"
+        },
+        {
+            id: 34,
+            category: "cable_usb",
+            name: "Cable USB",
+            icon: "🔌",
+            description: "Cables USB de diferentes tipos",
+            tags: ["cable", "usb", "tipo-c", "micro-usb"],
+            file: "cable_usb.txt"
+        },
+        {
+            id: 35,
+            category: "cable_utp_y_bobina_de_cable",
+            name: "Cable UTP y Bobina de Cable",
+            icon: "🔗",
+            description: "Cables de red UTP y bobinas",
+            tags: ["cable", "utp", "red", "ethernet", "bobina"],
+            file: "cable_utp_y_bobina_de_cable.txt"
+        },
+        {
+            id: 36,
+            category: "cables_vga",
+            name: "Cables VGA",
+            icon: "🖥️",
+            description: "Cables VGA para monitores",
+            tags: ["cable", "vga", "video", "monitor"],
+            file: "cables_vga.txt"
+        },
+        {
+            id: 37,
+            category: "camara_de_video_web_dslr_digital",
+            name: "Cámara de Video Web DSLR Digital",
+            icon: "📷",
+            description: "Cámaras web y cámaras digitales",
+            tags: ["cámara", "webcam", "dslr", "digital"],
+            file: "camara_de_video_web_dslr_digital.txt"
+        },
+        {
+            id: 38,
+            category: "camaras_de_vigilancia_analoga_ip_wifi",
+            name: "Cámaras de Vigilancia",
+            icon: "📹",
+            description: "Cámaras de seguridad análogas, IP y WiFi",
+            tags: ["cámara", "vigilancia", "seguridad", "ip", "wifi"],
+            file: "camaras_de_vigilancia_analoga_ip_wifi.txt"
+        },
+        {
+            id: 39,
+            category: "combo_teclado_y_mouse_cableados_e_inalambrico",
+            name: "Combo Teclado y Mouse",
+            icon: "⌨️",
+            description: "Combos de teclado y mouse cableados e inalámbricos",
+            tags: ["combo", "teclado", "mouse", "kit"],
+            file: "combo_teclado_y_mouse_cableados_e_inalambrico.txt"
+        },
+        {
+            id: 40,
+            category: "dvr",
+            name: "DVR",
+            icon: "📼",
+            description: "Grabadores digitales de video",
+            tags: ["dvr", "grabador", "video", "vigilancia"],
+            file: "dvr.txt"
+        },
+        {
+            id: 41,
+            category: "enclousure",
+            name: "Enclosure",
+            icon: "💾",
+            description: "Carcasas para discos duros",
+            tags: ["enclosure", "carcasa", "disco", "externo"],
+            file: "enclousure.txt"
+        },
+        {
+            id: 42,
+            category: "escaneres",
+            name: "Escáneres",
+            icon: "🖨️",
+            description: "Escáneres de documentos",
+            tags: ["escáner", "scanner", "digitalización"],
+            file: "escaneres.txt"
+        },
+        {
+            id: 43,
+            category: "estacion_de_carga",
+            name: "Estación de Carga",
+            icon: "🔌",
+            description: "Estaciones de carga para dispositivos",
+            tags: ["estación", "carga", "usb", "cargador"],
+            file: "estacion_de_carga.txt"
+        },
+        {
+            id: 44,
+            category: "gabinetes",
+            name: "Gabinetes",
+            icon: "🖥️",
+            description: "Gabinetes para PC",
+            tags: ["gabinete", "case", "torre", "pc"],
+            file: "gabinetes.txt"
+        },
+        {
+            id: 45,
+            category: "hostpot",
+            name: "Hotspot",
+            icon: "📶",
+            description: "Dispositivos hotspot móviles",
+            tags: ["hotspot", "móvil", "wifi", "portátil"],
+            file: "hostpot.txt"
+        },
+        {
+            id: 46,
+            category: "hub_usb",
+            name: "Hub USB",
+            icon: "🔌",
+            description: "Hubs y concentradores USB",
+            tags: ["hub", "usb", "concentrador", "puertos"],
+            file: "hub_usb.txt"
+        },
+        {
+            id: 47,
+            category: "iot",
+            name: "IoT",
+            icon: "🌐",
+            description: "Dispositivos Internet de las Cosas",
+            tags: ["iot", "smart", "inteligente", "conectado"],
+            file: "iot.txt"
+        },
+        {
+            id: 48,
+            category: "memorias_extraibles",
+            name: "Memorias Extraíbles",
+            icon: "💾",
+            description: "Memorias USB y tarjetas SD",
+            tags: ["memoria", "usb", "sd", "flash", "pendrive"],
+            file: "memorias_extraibles.txt"
+        },
+        {
+            id: 49,
+            category: "microfono",
+            name: "Micrófono",
+            icon: "🎤",
+            description: "Micrófonos para grabación y streaming",
+            tags: ["micrófono", "audio", "grabación", "streaming"],
+            file: "microfono.txt"
+        },
+        {
+            id: 50,
+            category: "mouse_cableados",
+            name: "Mouse Cableados",
+            icon: "🖱️",
+            description: "Mouse con cable",
+            tags: ["mouse", "ratón", "cableado"],
+            file: "mouse_cableados.txt"
+        },
+        {
+            id: 51,
+            category: "mouse_inalambricos",
+            name: "Mouse Inalámbricos",
+            icon: "🖱️",
+            description: "Mouse inalámbricos",
+            tags: ["mouse", "ratón", "inalámbrico", "wireless"],
+            file: "mouse_inalambricos.txt"
+        },
+        {
+            id: 52,
+            category: "mouse_pad",
+            name: "Mouse Pad",
+            icon: "🖱️",
+            description: "Alfombrillas para mouse",
+            tags: ["mousepad", "alfombrilla", "mouse"],
+            file: "mouse_pad.txt"
+        },
+        {
+            id: 53,
+            category: "nvr",
+            name: "NVR",
+            icon: "📹",
+            description: "Grabadores de video en red",
+            tags: ["nvr", "grabador", "red", "ip", "vigilancia"],
+            file: "nvr.txt"
+        },
+        {
+            id: 54,
+            category: "punto_de_acceso",
+            name: "Punto de Acceso",
+            icon: "📡",
+            description: "Puntos de acceso WiFi",
+            tags: ["punto", "acceso", "wifi", "ap"],
+            file: "punto_de_acceso.txt"
+        },
+        {
+            id: 55,
+            category: "repetidores_de_red",
+            name: "Repetidores de Red",
+            icon: "📡",
+            description: "Repetidores y extensores WiFi",
+            tags: ["repetidor", "extensor", "wifi", "red"],
+            file: "repetidores_de_red.txt"
+        },
+        {
+            id: 56,
+            category: "router",
+            name: "Router",
+            icon: "📡",
+            description: "Routers y enrutadores WiFi",
+            tags: ["router", "wifi", "red", "enrutador"],
+            file: "router.txt"
+        },
+        {
+            id: 57,
+            category: "smartphone",
+            name: "Smartphone",
+            icon: "📱",
+            description: "Teléfonos inteligentes",
+            tags: ["smartphone", "teléfono", "móvil", "celular"],
+            file: "smartphone.txt"
+        },
+        {
+            id: 58,
+            category: "smartwatches",
+            name: "Smartwatches",
+            icon: "⌚",
+            description: "Relojes inteligentes",
+            tags: ["smartwatch", "reloj", "inteligente", "wearable"],
+            file: "smartwatches.txt"
+        },
+        {
+            id: 59,
+            category: "switches",
+            name: "Switches",
+            icon: "🔀",
+            description: "Switches de red",
+            tags: ["switch", "red", "ethernet", "conmutador"],
+            file: "switches.txt"
+        },
+        {
+            id: 60,
+            category: "tablets",
+            name: "Tablets",
+            icon: "📱",
+            description: "Tabletas electrónicas",
+            tags: ["tablet", "tableta", "ipad"],
+            file: "tablets.txt"
+        },
+        {
+            id: 61,
+            category: "teclados_cableados_e_inalambricos",
+            name: "Teclados Cableados e Inalámbricos",
+            icon: "⌨️",
+            description: "Teclados con y sin cable",
+            tags: ["teclado", "keyboard", "mecánico", "gaming"],
+            file: "teclados_cableados_e_inalambricos.txt"
         }
     ];
 }

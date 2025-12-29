@@ -20,37 +20,46 @@
     <!-- Search and Filter Section -->
     <section class="search-section">
         <div class="container">
-            <div class="search-box">
-                <input type="text" id="searchInput" placeholder="🔍 Buscar producto..." autocomplete="off">
-            </div>
-            <div class="filter-chips" id="filterChips">
-                <button class="chip active" data-filter="all">Todos</button>
-                <button class="chip" data-filter="cartuchos">Cartuchos</button>
-                <button class="chip" data-filter="case">Case</button>
-                <button class="chip" data-filter="cinta">Cinta</button>
-                <button class="chip" data-filter="cooler">Cooler</button>
-                <button class="chip" data-filter="fuente_de_poder">Fuente de Poder</button>
-                <button class="chip" data-filter="impresora_de_inyeccion">Impresora de Inyección</button>
-                <button class="chip" data-filter="impresora_laser">Impresora Láser</button>
-                <button class="chip" data-filter="impresora_matricial">Impresora Matricial</button>
-                <button class="chip" data-filter="impresora_termica">Impresora Térmica</button>
-                <button class="chip" data-filter="laptop">Laptop</button>
-                <button class="chip" data-filter="memoria_ram">Memoria RAM</button>
-                <button class="chip" data-filter="monitores">Monitores</button>
-                <button class="chip" data-filter="motherboard">Motherboard</button>
-                <button class="chip" data-filter="plotter">Plotter</button>
-                <button class="chip" data-filter="procesadores">Procesadores</button>
-                <button class="chip" data-filter="proyectores">Proyectores</button>
-                <button class="chip" data-filter="regletas">Regletas</button>
-                <button class="chip" data-filter="regulador_de_voltaje">Regulador de Voltaje</button>
-                <button class="chip" data-filter="software">Software</button>
-                <button class="chip" data-filter="soporte_o_bracket">Soporte o Bracket</button>
-                <button class="chip" data-filter="supresor_de_voltaje">Supresor de Voltaje</button>
-                <button class="chip" data-filter="tarjetas_graficas">Tarjetas Gráficas</button>
-                <button class="chip" data-filter="televisores">Televisores</button>
-                <button class="chip" data-filter="tintas">Tintas</button>
-                <button class="chip" data-filter="toner">Tóner</button>
-                <button class="chip" data-filter="ups_y_ups_online">UPS y UPS Online</button>
+            <div class="search-filter-row">
+                <div class="search-box">
+                    <svg class="search-icon" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                        <circle cx="8" cy="8" r="6" stroke="currentColor" stroke-width="2"/>
+                        <path d="M12 12l6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                    </svg>
+                    <input type="text" id="searchInput" placeholder="Buscar producto..." autocomplete="off">
+                </div>
+                
+                <div class="filter-dropdown">
+                    <button class="filter-btn" id="filterBtn">
+                        <svg width="18" height="18" viewBox="0 0 18 18" fill="none">
+                            <path d="M1 4h16M4 9h10M7 14h4" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+                        <span id="filterBtnText">Todas las categorías</span>
+                        <svg class="dropdown-arrow" width="12" height="12" viewBox="0 0 12 12" fill="none">
+                            <path d="M3 4.5l3 3 3-3" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </button>
+                    <div class="dropdown-menu" id="dropdownMenu">
+                        <div class="dropdown-header">
+                            <span class="dropdown-title">Seleccionar categoría</span>
+                            <button class="dropdown-close" id="dropdownClose">
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                    <path d="M4 4l8 8M12 4l-8 8" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                                </svg>
+                            </button>
+                        </div>
+                        <div class="dropdown-search">
+                            <input type="text" id="categorySearch" placeholder="Buscar categoría...">
+                        </div>
+                        <div class="dropdown-content" id="dropdownContent">
+                            <!-- Las categorías se generarán dinámicamente -->
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="results-count">
+                    <span id="resultsCount">61 productos</span>
+                </div>
             </div>
         </div>
     </section>
@@ -129,8 +138,8 @@
     <!-- Footer -->
     <footer class="footer">
         <div class="container">
-            <p>📦 Proyecto Grupal - Generador de Descripciones Shopify</p>
-            <p class="footer-note">26 categorías de productos disponibles</p>
+            <p>📦 Generador de Descripciones Shopify - Proyecto Profesional</p>
+            <p class="footer-note">61 categorías de productos | Optimizado para ChatGPT-5</p>
         </div>
     </footer>
 

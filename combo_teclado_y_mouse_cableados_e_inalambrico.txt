@@ -1,0 +1,340 @@
+Serie	Colocar el nombre del producto, según lo indica el fabricante, no colocar el número de serie o modelo.
+Idioma	Según especificación. Asegurarse de que esté escrito correctamente.
+(Español, Inglés)
+Propiedades de conexión	Descripción del tipo de tecnología para la conexión.
+(PS/2, USB, Bluetooth, 2.4GHz)
+Duración de la batería del teclado	Colocar la cantidad, en números enteros seguida de un espacio y la palabra meses (5 meses)
+Duración de la batería del mouse	Colocar la cantidad, en números enteros seguida de un espacio y la palabra meses (5 meses)
+Tipo de Cable	Colocar si es de Caucho, Nylon, Trenzado, entre otros.
+Tipo de Tecla	Colocar para los Teclados Gamer, si es de Membrana, Cherry MX (el color en Inglés de las mismas Cherry MX Red o Cherry MX Blue, Kaith Silver Speed, Hyper X Red, HyperX Blue)
+Color	Según especificación
+(Blanco, Rojo). Pueden crearse tipos combinados si se unen los nombres de los colores por medio del signo “/” sin espacios (Blanco/Rojo).
+Incluye Mouse	Sí/No
+Teclado Numérico	Pendiente de agregar
+Ergonómico	Pendiente de agregar
+DPI Ajustable	Sí/No
+Inalámbrico	Sí/No
+Plug and Play	Sí/No
+Resistente a derrames o salpicaduras	Sí/No
+Teclas silenciosas	Sí/No
+Teclas Multifuncionales Específicas	Sí/No
+Teclas Multifuncionales Secundarias	Sí/No
+Teclas silenciosas	Sí/No
+Incluye baterías	Sí/No
+Retroiluminación RGB	Sí/No
+Mecánico	Sí/No
+Metálico	Sí/No
+
+
+
+
+
+<!-- BLOQUE: Combo Teclado y Mouse (descripción y tabla de especificaciones) -->
+<div class="row">
+<div class="col-sm-8 col-offset-sm-2 col-md-10 offset-md-1 mb-3">
+<div class="product-seo-intro">
+<p>Combo inalámbrico teclado + mouse pensado para productividad diaria: teclado compacto con sección numérica y patas inclinables, y mouse ergonómico con sensor óptico de 1000 DPI. Conectividad Bluetooth Low Energy, larga autonomía y diseño multisistema para Windows, macOS y ChromeOS.</p>
+</div>
+<br>
+<h6 class="tt-title-sub text-center">ESPECIFICACIONES PRODUCTOS</h6>
+
+<div class="div-drop">
+<table style="margin: auto;" class="NEW-TABLE TableOverride-1 tab-drag" width="100%" id="table-combo-kb-mouse" role="table" aria-label="Especificaciones del combo teclado y mouse">
+<tbody>
+<!-- IDENTIFICACIÓN -->
+<tr>
+<td class="tableCellGroupTitle">Identificación</td>
+<td class="tableCellGroupTitleContent"></td>
+</tr>
+<tr>
+<td class="tableCellMeta">Serie</td>
+<td class="tableCellContent">No especificado</td>
+</tr>
+<tr>
+<td class="tableCellMeta">Incluye Mouse</td>
+<td class="tableCellContent">Sí</td>
+</tr>
+
+<!-- DIMENSIONES TECLADO -->
+<tr>
+<td class="tableCellGroupTitle">TECLADO</td>
+<td class="tableCellGroupTitleContent"></td>
+</tr>
+<tr>
+<td class="tableCellMeta">Altura</td>
+<td class="tableCellContent">136.9 mm</td>
+</tr>
+<tr>
+<td class="tableCellMeta">Anchura</td>
+<td class="tableCellContent">369.9 mm</td>
+</tr>
+<tr>
+<td class="tableCellMeta">Profundidad</td>
+<td class="tableCellContent">22.8 mm</td>
+</tr>
+<tr>
+<td class="tableCellMeta">Peso</td>
+<td class="tableCellContent">380 g</td>
+</tr>
+
+<!-- DIMENSIONES MOUSE -->
+<tr>
+<td class="tableCellGroupTitle">MOUSE</td>
+<td class="tableCellGroupTitleContent"></td>
+</tr>
+<tr>
+<td class="tableCellMeta">Altura</td>
+<td class="tableCellContent">100 mm</td>
+</tr>
+<tr>
+<td class="tableCellMeta">Anchura</td>
+<td class="tableCellContent">60 mm</td>
+</tr>
+<tr>
+<td class="tableCellMeta">Profundidad</td>
+<td class="tableCellContent">38 mm</td>
+</tr>
+<tr>
+<td class="tableCellMeta">Peso</td>
+<td class="tableCellContent">76 g</td>
+</tr>
+
+<!-- ESPECIFICACIONES TÉCNICAS MOUSE -->
+<tr>
+<td class="tableCellGroupTitle">ESPECIFICACIONES TÉCNICAS</td>
+<td class="tableCellGroupTitleContent"></td>
+</tr>
+<tr>
+<td class="tableCellGroupTitle">MOUSE</td>
+<td class="tableCellGroupTitleContent"></td>
+</tr>
+<tr>
+<td class="tableCellMeta">Tecnología de sensor</td>
+<td class="tableCellContent">Seguimiento óptico fluido (1000 DPI)</td>
+</tr>
+<tr>
+<td class="tableCellMeta">DPI Ajustable</td>
+<td class="tableCellContent">No especificado</td>
+</tr>
+<tr>
+<td class="tableCellMeta">Número de botones</td>
+<td class="tableCellContent">3 (click izquierdo/derecho, rueda central)</td>
+</tr>
+<tr>
+<td class="tableCellMeta">Botón scroll</td>
+<td class="tableCellContent">2D, mecánico</td>
+</tr>
+<tr>
+<td class="tableCellMeta">Tipo de batería (mouse)</td>
+<td class="tableCellContent">1 AA (incluido)</td>
+</tr>
+<tr>
+<td class="tableCellMeta">Duración de la batería (mouse)</td>
+<td class="tableCellContent">12 meses</td>
+</tr>
+
+<!-- ESPECIFICACIONES TÉCNICAS TECLADO -->
+<tr>
+<td class="tableCellGroupTitle">TECLADO</td>
+<td class="tableCellGroupTitleContent"></td>
+</tr>
+<tr>
+<td class="tableCellMeta">Tipo de conexión</td>
+<td class="tableCellContent">Bluetooth® Low Energy</td>
+</tr>
+<tr>
+<td class="tableCellMeta">Alcance inalámbrico</td>
+<td class="tableCellContent">10 m</td>
+</tr>
+<tr>
+<td class="tableCellMeta">Tipo de batería (teclado)</td>
+<td class="tableCellContent">2 AAA (incluidas)</td>
+</tr>
+<tr>
+<td class="tableCellMeta">Duración de la batería (teclado)</td>
+<td class="tableCellContent">12 meses</td>
+</tr>
+<tr>
+<td class="tableCellMeta">Botones especiales</td>
+<td class="tableCellContent">Botón de encendido/apagado</td>
+</tr>
+<tr>
+<td class="tableCellMeta">Características adicionales</td>
+<td class="tableCellContent">Patas inclinables (7° de inclinación)</td>
+</tr>
+<tr>
+<td class="tableCellMeta">Distribución</td>
+<td class="tableCellContent">Diseño compacto con sección numérica</td>
+</tr>
+
+<!-- CONECTIVIDAD Y FUNCIONES -->
+<tr>
+<td class="tableCellGroupTitle">CONECTIVIDAD Y FUNCIONES</td>
+<td class="tableCellGroupTitleContent"></td>
+</tr>
+<tr>
+<td class="tableCellMeta">Propiedades de conexión</td>
+<td class="tableCellContent">Bluetooth</td>
+</tr>
+<tr>
+<td class="tableCellMeta">Plug and Play</td>
+<td class="tableCellContent">No especificado</td>
+</tr>
+<tr>
+<td class="tableCellMeta">Inalámbrico</td>
+<td class="tableCellContent">Sí</td>
+</tr>
+<tr>
+<td class="tableCellMeta">Teclas Multifuncionales Específicas</td>
+<td class="tableCellContent">Sí</td>
+</tr>
+<tr>
+<td class="tableCellMeta">Teclas Multifuncionales Secundarias</td>
+<td class="tableCellContent">No especificado</td>
+</tr>
+<tr>
+<td class="tableCellMeta">Teclas silenciosas</td>
+<td class="tableCellContent">No especificado</td>
+</tr>
+
+<!-- APARIENCIA Y CONSTRUCCIÓN -->
+<tr>
+<td class="tableCellGroupTitle">APARIENCIA Y CONSTRUCCIÓN</td>
+<td class="tableCellGroupTitleContent"></td>
+</tr>
+<tr>
+<td class="tableCellMeta">Color</td>
+<td class="tableCellContent">No especificado</td>
+</tr>
+<tr>
+<td class="tableCellMeta">Tipo de cable</td>
+<td class="tableCellContent">No aplica (inalámbrico)</td>
+</tr>
+<tr>
+<td class="tableCellMeta">Mecánico</td>
+<td class="tableCellContent">No</td>
+</tr>
+<tr>
+<td class="tableCellMeta">Metálico</td>
+<td class="tableCellContent">No especificado</td>
+</tr>
+<tr>
+<td class="tableCellMeta">Resistente a derrames o salpicaduras</td>
+<td class="tableCellContent">No especificado</td>
+</tr>
+
+<!-- COMPATIBILIDAD Y REQUISITOS -->
+<tr>
+<td class="tableCellGroupTitle">REQUISITOS Y COMPATIBILIDAD</td>
+<td class="tableCellGroupTitleContent"></td>
+</tr>
+<tr>
+<td class="tableCellMeta">Requisitos</td>
+<td class="tableCellContent">Bluetooth® Low Energy</td>
+</tr>
+<tr>
+<td class="tableCellMeta">Compatibilidad</td>
+<td class="tableCellContent">Windows 10/11+; macOS 12+; ChromeOS</td>
+</tr>
+
+<!-- SOSTENIBILIDAD -->
+<tr>
+<td class="tableCellGroupTitle">PLÁSTICO RECICLADO</td>
+<td class="tableCellGroupTitleContent"></td>
+</tr>
+<tr>
+<td class="tableCellMeta">Mouse – Grafito</td>
+<td class="tableCellContent">67% de material reciclado</td>
+</tr>
+<tr>
+<td class="tableCellMeta">Mouse – Blanco crudo</td>
+<td class="tableCellContent">66% de material reciclado</td>
+</tr>
+<tr>
+<td class="tableCellMeta">Keyboard – Grafito</td>
+<td class="tableCellContent">74% de material reciclado</td>
+</tr>
+<tr>
+<td class="tableCellMeta">Keyboard – Blanco crudo</td>
+<td class="tableCellContent">69% de material reciclado</td>
+</tr>
+</tbody>
+      </table>
+</div>
+</div>
+
+<style>
+.nav-tabs .nav-item.show .nav-link,
+.nav-tabs .nav-link .active {
+background: #f5f5f5;
+border-bottom: 2px solid #036cbf;
+border-radius: 5px 5px 0 0;
+}
+
+.row,
+.NEW-TABLE,
+.TableOverride-1,
+.tab-drag,
+.tt-title-sub,
+.tableCellMeta,
+.tableCellContent,
+.tableCellGroupTitle,
+.tableCellGroupTitleContent,
+.product-seo-intro,
+.div-drop {
+font-family: inherit;
+color: inherit;
+}
+
+.tt-title-sub {
+font-size: 12px;
+font-weight: 700;
+margin: 6px 0 10px;
+letter-spacing: 0.3px;
+text-align: center;
+}
+
+.div-drop { overflow-x: auto; }
+table { border-collapse: collapse; font-size: 14px; width: 100%; }
+
+.tableCellMeta {
+border: 1px solid #fbfbfb;
+padding: 3px 0 3px 15px;
+vertical-align: middle;
+background-color: #fdfdfd;
+width: 50%;
+text-align: left;
+}
+
+.tableCellContent {
+text-align: center;
+border: 1px solid #fbfbfb;
+padding: 3px 0 3px 15px;
+vertical-align: middle;
+background-color: #fafafa;
+width: 50%;
+}
+
+.tableCellGroupTitle {
+border: 1px solid #f8f8f8;
+padding: 3px 0 3px 5px;
+vertical-align: middle;
+background-color: #f7f7f7;
+font-weight: 800;
+text-transform: uppercase;
+text-align: center;
+}
+
+.tableCellGroupTitleContent {
+border: 1px solid #fbfbfb;
+padding: 3px 0 3px 15px;
+vertical-align: middle;
+background-color: #fafafa;
+width: 50%;
+}
+
+@media (max-width: 576px) {
+.tt-title-sub { font-size: 11px; }
+.tableCellMeta, .tableCellContent { font-size: 13px; padding-left: 10px; }
+}
+</style>

@@ -1,0 +1,286 @@
+﻿<!-- BLOQUE: NVR (solo descripción y tabla de especificaciones) -->
+<div class="row">
+  <div class="col-sm-8 offset-sm-2 col-md-10 offset-md-1 mb-3">
+    <div class="product-seo-intro">
+      <p>Grabador NVR diseñado para sistemas IP: gestión centralizada de cámaras, grabación en alta resolución, reproducción flexible y soporte PoE para instalaciones residenciales y comerciales.</p>
+    </div>
+    <br>
+    <h6 class="tt-title-sub text-center">ESPECIFICACIONES DEL PRODUCTO</h6>
+
+    <div class="div-drop">
+      <table id="table-plan-nvr" width="100%" class="NEW-TABLE TableOverride-1 tab-drag" role="table" aria-label="Especificaciones del NVR" style="margin: auto;">
+        <tbody>
+          <!-- Identificación -->
+          <tr>
+            <td class="tableCellGroupTitle">Identificación</td>
+            <td class="tableCellGroupTitleContent"></td>
+          </tr>
+          <tr>
+            <td class="tableCellMeta">Serie</td>
+            <td class="tableCellContent">No especificado</td>
+          </tr>
+          <tr>
+            <td class="tableCellMeta">Uso</td>
+            <td class="tableCellContent">No especificado</td>
+          </tr>
+
+          <!-- Video -->
+          <tr>
+            <td class="tableCellGroupTitle">Video</td>
+            <td class="tableCellGroupTitleContent"></td>
+          </tr>
+          <tr>
+            <td class="tableCellMeta">Canales de Vídeo IP</td>
+            <td class="tableCellContent">8 Canales</td>
+          </tr>
+          <tr>
+            <td class="tableCellMeta">Ancho de Banda de Entrada</td>
+            <td class="tableCellContent">60 Mbps</td>
+          </tr>
+          <tr>
+            <td class="tableCellMeta">Tipo de Puerto IP</td>
+            <td class="tableCellContent">RJ45</td>
+          </tr>
+          <tr>
+            <td class="tableCellMeta">Resolución Máxima IP</td>
+            <td class="tableCellContent">6MP</td>
+          </tr>
+
+          <!-- Audio -->
+          <tr>
+            <td class="tableCellGroupTitle">Audio</td>
+            <td class="tableCellGroupTitleContent"></td>
+          </tr>
+          <tr>
+            <td class="tableCellMeta">Canales de Audio</td>
+            <td class="tableCellContent">8 Canales</td>
+          </tr>
+
+          <!-- Grabación -->
+          <tr>
+            <td class="tableCellGroupTitle">Grabación</td>
+            <td class="tableCellGroupTitleContent"></td>
+          </tr>
+          <tr>
+            <td class="tableCellMeta">Compresión de Vídeo</td>
+            <td class="tableCellContent">H.265+ / H.265 / H.264+ / H.264</td>
+          </tr>
+          <tr>
+            <td class="tableCellMeta">Resolución de Grabación</td>
+            <td class="tableCellContent">6MP / 4MP / 3MP / 1080p / UXGA / 720p / VGA / 4CIF / DCIF / 2CIF / CIF / QCIF</td>
+          </tr>
+          <tr>
+            <td class="tableCellMeta">Grabación Continua</td>
+            <td class="tableCellContent">✔</td>
+          </tr>
+          <tr>
+            <td class="tableCellMeta">Grabación por Detección de Movimiento</td>
+            <td class="tableCellContent">✔</td>
+          </tr>
+          <tr>
+            <td class="tableCellMeta">Grabación por Programación</td>
+            <td class="tableCellContent">✔</td>
+          </tr>
+          <tr>
+            <td class="tableCellMeta">Grabación Manual</td>
+            <td class="tableCellContent">✔</td>
+          </tr>
+
+          <!-- Reproducción y respaldo -->
+          <tr>
+            <td class="tableCellGroupTitle">Reproducción y Respaldo</td>
+            <td class="tableCellGroupTitleContent"></td>
+          </tr>
+          <tr>
+            <td class="tableCellMeta">Reproducción en Vivo</td>
+            <td class="tableCellContent">✔</td>
+          </tr>
+          <tr>
+            <td class="tableCellMeta">Reproducción en Pantalla Completa</td>
+            <td class="tableCellContent">✔</td>
+          </tr>
+          <tr>
+            <td class="tableCellMeta">Reproducción con Audio</td>
+            <td class="tableCellContent">✔</td>
+          </tr>
+          <tr>
+            <td class="tableCellMeta">Modo de Búsqueda por Día</td>
+            <td class="tableCellContent">✔</td>
+          </tr>
+          <tr>
+            <td class="tableCellMeta">Modo de Búsqueda por Hora</td>
+            <td class="tableCellContent">✔</td>
+          </tr>
+          <tr>
+            <td class="tableCellMeta">Zoom Digital</td>
+            <td class="tableCellContent">✔</td>
+          </tr>
+          <tr>
+            <td class="tableCellMeta">Respaldo hacia Dispositivo USB</td>
+            <td class="tableCellContent">✔</td>
+          </tr>
+
+          <!-- Pantalla -->
+          <tr>
+            <td class="tableCellGroupTitle">Pantalla</td>
+            <td class="tableCellGroupTitleContent"></td>
+          </tr>
+          <tr>
+            <td class="tableCellMeta">Resolución de Visualización</td>
+            <td class="tableCellContent">1920×1080</td>
+          </tr>
+          <tr>
+            <td class="tableCellMeta">Puerto HDMI</td>
+            <td class="tableCellContent">✔</td>
+          </tr>
+          <tr>
+            <td class="tableCellMeta">Puerto VGA</td>
+            <td class="tableCellContent">✔</td>
+          </tr>
+          <tr>
+            <td class="tableCellMeta">Visualización Multipantalla</td>
+            <td class="tableCellContent">✔</td>
+          </tr>
+
+          <!-- Interfaces y almacenamiento -->
+          <tr>
+            <td class="tableCellGroupTitle">Interfaces Principales y Auxiliares</td>
+            <td class="tableCellGroupTitleContent"></td>
+          </tr>
+          <tr>
+            <td class="tableCellMeta">Interfaces</td>
+            <td class="tableCellContent">1 Interfaz SATA</td>
+          </tr>
+          <tr>
+            <td class="tableCellMeta">Tipo de Almacenamiento</td>
+            <td class="tableCellContent">HDD</td>
+          </tr>
+          <tr>
+            <td class="tableCellMeta">Capacidad Máxima de Almacenamiento por Interfaz</td>
+            <td class="tableCellContent">6TB</td>
+          </tr>
+          <tr>
+            <td class="tableCellMeta">Puertos USB</td>
+            <td class="tableCellContent">2 USB 2.0</td>
+          </tr>
+
+          <!-- Conectividad -->
+          <tr>
+            <td class="tableCellGroupTitle">Conectividad</td>
+            <td class="tableCellGroupTitleContent"></td>
+          </tr>
+          <tr>
+            <td class="tableCellMeta">Capacidad Máxima de Usuarios</td>
+            <td class="tableCellContent">16 Usuarios</td>
+          </tr>
+          <tr>
+            <td class="tableCellMeta">Power over Ethernet</td>
+            <td class="tableCellContent">✔</td>
+          </tr>
+          <tr>
+            <td class="tableCellMeta">Puerto Fast Ethernet</td>
+            <td class="tableCellContent">✔</td>
+          </tr>
+          <tr>
+            <td class="tableCellMeta">Interfaz Web de Administración</td>
+            <td class="tableCellContent">✔</td>
+          </tr>
+          <tr>
+            <td class="tableCellMeta">Aplicación Móvil para Administración</td>
+            <td class="tableCellContent">✔</td>
+          </tr>
+
+          <!-- PoE -->
+          <tr>
+            <td class="tableCellGroupTitle">Power over Ethernet</td>
+            <td class="tableCellGroupTitleContent"></td>
+          </tr>
+          <tr>
+            <td class="tableCellMeta">Estándar PoE</td>
+            <td class="tableCellContent">802.3af/at</td>
+          </tr>
+          <tr>
+            <td class="tableCellMeta">Puertos PoE</td>
+            <td class="tableCellContent">8 Puertos PoE</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+
+<style>
+  .nav-tabs .nav-item.show .nav-link,
+  .nav-tabs .nav-link .active {
+    background: #f5f5f5;
+    border-bottom: 2px solid #036cbf;
+    border-radius: 5px 5px 0 0;
+  }
+
+  .row,
+  .NEW-TABLE,
+  .TableOverride-1,
+  .tab-drag,
+  .tt-title-sub,
+  .tableCellMeta,
+  .tableCellContent,
+  .tableCellGroupTitle,
+  .tableCellGroupTitleContent,
+  .product-seo-intro,
+  .div-drop {
+    font-family: inherit;
+    color: inherit;
+  }
+
+  .tt-title-sub {
+    font-size: 12px;
+    font-weight: 700;
+    margin: 6px 0 10px;
+    letter-spacing: 0.3px;
+    text-align: center;
+  }
+
+  .div-drop { overflow-x: auto; }
+  table { border-collapse: collapse; font-size: 14px; width: 100%; }
+
+  .tableCellMeta {
+    border: 1px solid #fbfbfb;
+    padding: 3px 0 3px 15px;
+    vertical-align: middle;
+    background-color: #fdfdfd;
+    width: 50%;
+    text-align: left;
+  }
+
+  .tableCellContent {
+    text-align: center;
+    border: 1px solid #fbfbfb;
+    padding: 3px 0 3px 15px;
+    vertical-align: middle;
+    background-color: #fafafa;
+    width: 50%;
+  }
+
+  .tableCellGroupTitle {
+    border: 1px solid #f8f8f8;
+    padding: 3px 0 3px 5px;
+    vertical-align: middle;
+    background-color: #f7f7f7;
+    font-weight: 800;
+    text-transform: uppercase;
+    text-align: center;
+  }
+
+  .tableCellGroupTitleContent {
+    border: 1px solid #fbfbfb;
+    padding: 3px 0 3px 15px;
+    vertical-align: middle;
+    background-color: #fafafa;
+    width: 50%;
+  }
+
+  @media (max-width: 576px) {
+    .tt-title-sub { font-size: 11px; }
+    .tableCellMeta, .tableCellContent { font-size: 13px; padding-left: 10px; }
+  }
+</style>

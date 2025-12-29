@@ -1,0 +1,124 @@
+<!-- BLOQUE: Mouse Pad -->
+<div class="row">
+  <div class="col-sm-8 col-offset-sm-2 col-md-10 offset-md-1 mb-3">
+    <div class="product-seo-intro">
+      <p>Alfombrilla para mouse de superficie suave y base antideslizante que garantiza movimientos precisos y comodidad durante el uso prolongado.</p>
+    </div>
+    <br>
+    <h6 class="tt-title-sub text-center">ESPECIFICACIONES DEL PRODUCTO</h6>
+    <div class="div-drop">
+      <table class="NEW-TABLE TableOverride-1 tab-drag" width="100%" id="table-plan-mousepad">
+        <tbody>
+          <tr>
+            <td class="tableCellGroupTitle">Dimensiones</td>
+            <td class="tableCellGroupTitleContent"></td>
+          </tr>
+          <tr>
+            <td class="tableCellMeta">Tamaño</td>
+            <td class="tableCellContent">M / L / XL / XXL</td>
+          </tr>
+          <tr>
+            <td class="tableCellMeta">Medidas (LxW)</td>
+            <td class="tableCellContent">900x400mm</td>
+          </tr>
+          <tr>
+            <td class="tableCellMeta">Grosor</td>
+            <td class="tableCellContent">3mm / 4mm</td>
+          </tr>
+          <tr>
+            <td class="tableCellGroupTitle">Material</td>
+            <td class="tableCellGroupTitleContent"></td>
+          </tr>
+          <tr>
+            <td class="tableCellMeta">Superficie</td>
+            <td class="tableCellContent">Tela / Microfibra</td>
+          </tr>
+          <tr>
+            <td class="tableCellMeta">Base</td>
+            <td class="tableCellContent">Goma antideslizante</td>
+          </tr>
+          <tr>
+            <td class="tableCellGroupTitle">Características</td>
+            <td class="tableCellGroupTitleContent"></td>
+          </tr>
+          <tr>
+            <td class="tableCellMeta">Bordes</td>
+            <td class="tableCellContent">Cosidos / Sellados</td>
+          </tr>
+          <tr>
+            <td class="tableCellMeta">Lavable</td>
+            <td class="tableCellContent">Sí</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+
+<style>
+  .nav-tabs .nav-item.show .nav-link,
+  .nav-tabs .nav-link .active {
+    background: #f5f5f5;
+    border-bottom: 2px solid #036cbf;
+    border-radius: 5px 5px 0 0;
+  }
+
+  .row, .NEW-TABLE, .TableOverride-1, .tab-drag, .tt-title-sub,
+  .tableCellMeta, .tableCellContent, .tableCellGroupTitle,
+  .tableCellGroupTitleContent, .product-seo-intro, .div-drop {
+    font-family: inherit;
+    color: inherit;
+  }
+
+  .tt-title-sub {
+    font-size: 12px;
+    font-weight: 700;
+    margin: 6px 0 10px;
+    letter-spacing: 0.3px;
+    text-align: center;
+  }
+
+  .div-drop { overflow-x: auto; }
+  table { border-collapse: collapse; font-size: 14px; width: 100%; }
+
+  .tableCellMeta {
+    border: 1px solid #fbfbfb;
+    padding: 3px 0 3px 15px;
+    vertical-align: middle;
+    background-color: #fdfdfd;
+    width: 50%;
+    text-align: left;
+  }
+
+  .tableCellContent {
+    text-align: center;
+    border: 1px solid #fbfbfb;
+    padding: 3px 0 3px 15px;
+    vertical-align: middle;
+    background-color: #fafafa;
+    width: 50%;
+  }
+
+  .tableCellGroupTitle {
+    border: 1px solid #f8f8f8;
+    padding: 3px 0 3px 5px;
+    vertical-align: middle;
+    background-color: #f7f7f7;
+    font-weight: 800;
+    text-transform: uppercase;
+    text-align: center;
+  }
+
+  .tableCellGroupTitleContent {
+    border: 1px solid #fbfbfb;
+    padding: 3px 0 3px 15px;
+    vertical-align: middle;
+    background-color: #fafafa;
+    width: 50%;
+  }
+
+  @media (max-width: 576px) {
+    .tt-title-sub { font-size: 11px; }
+    .tableCellMeta, .tableCellContent { font-size: 13px; padding-left: 10px; }
+  }
+</style>

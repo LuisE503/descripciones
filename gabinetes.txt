@@ -1,0 +1,175 @@
+Ancho	Cantidad seguida de una unidad de medida de longitud sin espacios (pueden ser centímetros, metros, pies u otra unidad, siguiendo el estándar del Sistema Internacional). Si la medida se encuentra en decimales (1.54m, por ejemplo), es preferible que se utilice una unidad de medida que no requiera los decimales si esta existe (1.54m => 154cm). Agregar la palabra Ancho con inicial mayúscula al inicio (Ancho 154cm, Ancho 1m).
+Profundidad	Cantidad seguida de una unidad de medida de longitud sin espacios (pueden ser centímetros, metros, pies u otra unidad, siguiendo el estándar del Sistema Internacional). Si la medida se encuentra en decimales (1.54m, por ejemplo), es preferible que se utilice una unidad de medida que no requiera los decimales si esta existe (1.54m => 154cm) (50cm, 1m). Agregar la palabra Profundidad con inicial mayúscula al inicio (Profundidad 154cm, Profundidad 1m).
+Altura	Cantidad seguida de una unidad de medida de longitud sin espacios (pueden ser centímetros, metros, pies u otra unidad, siguiendo el estándar del Sistema Internacional). Si la medida se encuentra en decimales (1.54m, por ejemplo), es preferible que se utilice una unidad de medida que no requiera los decimales si esta existe (1.54m => 154cm) (50cm, 1m). Agregar la palabra Altura con inicial mayúscula al inicio (Altura 154cm, Altura 1m).
+Serie	Según la especificación. Se trata del nombre con el que se clasifica a los productos.
+Puerta de vidrio	Sí/No
+Doble Bisagra	Sí/No
+Ventiladores de techo	Sí/No
+Incluye llave	Sí/No
+Con rodos	Sí/No
+Acceso de cables	Sí/No
+Paneles laterales removibles	Sí/No
+Infraestructura de Red	Sí/No
+
+
+
+
+<!-- BLOQUE: Gabinete (solo descripción y tabla de especificaciones) -->
+<div class="row">
+<div class="col-sm-8 col-offset-sm-2 col-md-10 offset-md-1 mb-3">
+<div class="product-seo-intro">
+<p>Gabinete abatible pensado para almacenamiento y organización en oficinas o talleres; diseño compacto con acceso frontal y espacio para gestión de cables.</p>
+</div>
+<br>
+<h6 class="tt-title-sub text-center">ESPECIFICACIONES DEL PRODUCTO</h6>
+
+<div class="div-drop">
+<table id="table-plan-cabinet" width="100%" class="NEW-TABLE TableOverride-1 tab-drag" role="table" aria-label="Especificaciones del gabinete" style="margin: auto;">
+<tbody>
+<tr>
+<td class="tableCellGroupTitle">Identificación</td>
+<td class="tableCellGroupTitleContent"></td>
+</tr>
+<tr>
+<td class="tableCellMeta">Tipo</td>
+<td class="tableCellContent">Tipo abatible</td>
+</tr>
+<tr>
+<td class="tableCellMeta">Serie</td>
+<td class="tableCellContent">No especificado</td>
+</tr>
+
+<tr>
+<td class="tableCellGroupTitle">Dimensiones</td>
+<td class="tableCellGroupTitleContent"></td>
+</tr>
+<tr>
+<td class="tableCellMeta">Ancho</td>
+<td class="tableCellContent">Ancho 60cm</td>
+</tr>
+<tr>
+<td class="tableCellMeta">Profundidad</td>
+<td class="tableCellContent">Profundidad 55cm</td>
+</tr>
+<tr>
+<td class="tableCellMeta">Altura</td>
+<td class="tableCellContent">Altura 37cm</td>
+</tr>
+
+<tr>
+<td class="tableCellGroupTitle">Accesorios y construcción</td>
+<td class="tableCellGroupTitleContent"></td>
+</tr>
+<tr>
+<td class="tableCellMeta">Puerta de vidrio</td>
+<td class="tableCellContent">No</td>
+</tr>
+<tr>
+<td class="tableCellMeta">Doble bisagra</td>
+<td class="tableCellContent">No</td>
+</tr>
+<tr>
+<td class="tableCellMeta">Ventiladores de techo</td>
+<td class="tableCellContent">No</td>
+</tr>
+<tr>
+<td class="tableCellMeta">Incluye llave</td>
+<td class="tableCellContent">No</td>
+</tr>
+<tr>
+<td class="tableCellMeta">Con rodos</td>
+<td class="tableCellContent">No</td>
+</tr>
+<tr>
+<td class="tableCellMeta">Acceso de cables</td>
+<td class="tableCellContent">No</td>
+</tr>
+<tr>
+<td class="tableCellMeta">Paneles laterales removibles</td>
+<td class="tableCellContent">No</td>
+</tr>
+<tr>
+<td class="tableCellMeta">Infraestructura de Red</td>
+<td class="tableCellContent">No</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+
+<style>
+.nav-tabs .nav-item.show .nav-link,
+.nav-tabs .nav-link .active {
+background: #f5f5f5;
+border-bottom: 2px solid #036cbf;
+border-radius: 5px 5px 0 0;
+}
+
+.row,
+.NEW-TABLE,
+.TableOverride-1,
+.tab-drag,
+.tt-title-sub,
+.tableCellMeta,
+.tableCellContent,
+.tableCellGroupTitle,
+.tableCellGroupTitleContent,
+.product-seo-intro,
+.div-drop {
+font-family: inherit;
+color: inherit;
+}
+
+.tt-title-sub {
+font-size: 12px;
+font-weight: 700;
+margin: 6px 0 10px;
+letter-spacing: 0.3px;
+text-align: center;
+}
+
+.div-drop { overflow-x: auto; }
+table { border-collapse: collapse; font-size: 14px; width: 100%; }
+
+.tableCellMeta {
+border: 1px solid #fbfbfb;
+padding: 3px 0 3px 15px;
+vertical-align: middle;
+background-color: #fdfdfd;
+width: 50%;
+text-align: left;
+}
+
+.tableCellContent {
+text-align: center;
+border: 1px solid #fbfbfb;
+padding: 3px 0 3px 15px;
+vertical-align: middle;
+background-color: #fafafa;
+width: 50%;
+}
+
+.tableCellGroupTitle {
+border: 1px solid #f8f8f8;
+padding: 3px 0 3px 5px;
+vertical-align: middle;
+background-color: #f7f7f7;
+font-weight: 800;
+text-transform: uppercase;
+text-align: center;
+}
+
+.tableCellGroupTitleContent {
+border: 1px solid #fbfbfb;
+padding: 3px 0 3px 15px;
+vertical-align: middle;
+background-color: #fafafa;
+width: 50%;
+}
+
+@media (max-width: 576px) {
+.tt-title-sub { font-size: 11px; }
+.tableCellMeta, .tableCellContent { font-size: 13px; padding-left: 10px; }
+}
+</style>

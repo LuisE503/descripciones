@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diagnóstico - Sistema de Productos</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            background: #f5f7fa;
+        }
+        h1 {
+            color: #667eea;
+            text-align: center;
+        }
+        .section {
+            background: white;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .status {
+            display: inline-block;
+            padding: 5px 10px;
+            border-radius: 4px;
+            font-weight: bold;
+            margin-right: 10px;
+        }
+        .status.ok {
+            background: #d4edda;
+            color: #155724;
+        }
+        .status.error {
+            background: #f8d7da;
+            color: #721c24;
+        }
+        .status.warning {
+            background: #fff3cd;
+            color: #856404;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 15px;
+        }
+        th, td {
+            padding: 10px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+        th {
+            background: #667eea;
+            color: white;
+        }
+        tr:hover {
+            background: #f0f4f8;
+        }
+        .progress {
+            width: 100%;
+            height: 30px;
+            background: #e0e0e0;
+            border-radius: 15px;
+            overflow: hidden;
+            margin: 15px 0;
+        }
+        .progress-bar {
+            height: 100%;
+            background: linear-gradient(90deg, #667eea, #764ba2);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-weight: bold;
+            transition: width 0.3s ease;
+        }
+        button {
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            color: white;
+            border: none;
+            padding: 12px 24px;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 16px;
+            margin: 5px;
+        }
+        button:hover {
+            opacity: 0.9;
+        }
+        .log {
+            background: #1e1e1e;
+            color: #d4d4d4;
+            padding: 15px;
+            border-radius: 6px;
+            font-family: 'Courier New', monospace;
+            font-size: 14px;
+            max-height: 400px;
+            overflow-y: auto;
+        }
+        .log div {
+            margin: 3px 0;
+        }
+    </style>
+</head>
+<body>
+    <h1>🔍 Diagnóstico del Sistema de Productos</h1>
+    
+    <div class="section">
+        <h2>📊 Resumen General</h2>
+        <div id="summary"></div>
+        <div class="progress">
+            <div class="progress-bar" id="progressBar" style="width: 0%">0%</div>
+        </div>
+    </div>
+    
+    <div class="section">
+        <h2>🧪 Pruebas Disponibles</h2>
+        <button onclick="runAllTests()">Ejecutar Todas las Pruebas</button>
+        <button onclick="testProductsData()">Probar Productos Data</button>
+        <button onclick="testFileLoading()">Probar Carga de Archivos</button>
+        <button onclick="clearLogs()">Limpiar Logs</button>
+    </div>
+    
+    <div class="section">
+        <h2>📋 Resultados de Productos</h2>
+        <div id="productsTable"></div>
+    </div>
+    
+    <div class="section">
+        <h2>📝 Logs de Console</h2>
+        <div class="log" id="logs"></div>
+    </div>
+
+    <script src="products-data.js"></script>
+    <script>
+        // Capturar console.log
+        const originalLog = console.log;
+        const originalError = console.error;
+        const originalWarn = console.warn;
+        
+        function addLog(message, type = 'log') {
+            const logsDiv = document.getElementById('logs');
+            const logEntry = document.createElement('div');
+            const timestamp = new Date().toLocaleTimeString();
+            const colors = {
+                log: '#d4d4d4',
+                error: '#f48771',
+                warn: '#dcdcaa'
+            };
+            logEntry.style.color = colors[type];
+            logEntry.textContent = `[${timestamp}] ${message}`;
+            logsDiv.appendChild(logEntry);
+            logsDiv.scrollTop = logsDiv.scrollHeight;
+        }
+        
+        console.log = function(...args) {
+            originalLog.apply(console, args);
+            addLog(args.join(' '), 'log');
+        };
+        
+        console.error = function(...args) {
+            originalError.apply(console, args);
+            addLog(args.join(' '), 'error');
+        };
+        
+        console.warn = function(...args) {
+            originalWarn.apply(console, args);
+            addLog(args.join(' '), 'warn');
+        };
+
+        // Variables globales
+        let allProducts = [];
+        let loadedConfigs = {};
+        
+        // Cargar productos
+        function loadProducts() {
+            console.log('🚀 Iniciando carga de productos...');
+            allProducts = getAllProducts();
+            console.log(`📦 Total de productos cargados: ${allProducts.length}`);
+            return allProducts;
+        }
+        
+        // Probar datos de productos
+        async function testProductsData() {
+            console.log('🧪 Probando datos de productos...');
+            const products = loadProducts();
+            
+            let html = `<table>
+                <tr>
+                    <th>#</th>
+                    <th>Categoría</th>
+                    <th>Nombre</th>
+                    <th>Archivo</th>
+                    <th>Estado</th>
+                </tr>`;
+            
+            products.forEach((product, index) => {
+                const status = '<span class="status ok">✓</span>';
+                html += `<tr>
+                    <td>${index + 1}</td>
+                    <td>${product.category}</td>
+                    <td>${product.icon} ${product.name}</td>
+                    <td>${product.file}</td>
+                    <td>${status}</td>
+                </tr>`;
+            });
+            
+            html += '</table>';
+            document.getElementById('productsTable').innerHTML = html;
+            
+            updateSummary(products.length, 0, 0);
+        }
+        
+        // Probar carga de archivos
+        async function testFileLoading() {
+            console.log('📂 Probando carga de archivos...');
+            const products = loadProducts();
+            let success = 0;
+            let errors = 0;
+            
+            for (const product of products) {
+                try {
+                    const response = await fetch(product.file);
+                    if (response.ok) {
+                        const content = await response.text();
+                        if (content.length > 100) {
+                            console.log(`✅ ${product.file}: ${content.length} chars`);
+                            success++;
+                        } else {
+                            console.warn(`⚠️  ${product.file}: Contenido muy corto (${content.length} chars)`);
+                            errors++;
+                        }
+                    } else {
+                        console.error(`❌ ${product.file}: HTTP ${response.status}`);
+                        errors++;
+                    }
+                } catch (error) {
+                    console.error(`❌ ${product.file}: ${error.message}`);
+                    errors++;
+                }
+                
+                // Actualizar progreso
+                const progress = Math.round(((success + errors) / products.length) * 100);
+                updateProgress(progress);
+            }
+            
+            updateSummary(products.length, success, errors);
+            console.log(`\n✅ Completado: ${success} exitosos, ${errors} errores`);
+        }
+        
+        // Ejecutar todas las pruebas
+        async function runAllTests() {
+            console.log('🚀 Ejecutando todas las pruebas...\n');
+            await testProductsData();
+            await new Promise(resolve => setTimeout(resolve, 500));
+            await testFileLoading();
+            console.log('\n🎉 Todas las pruebas completadas');
+        }
+        
+        // Actualizar resumen
+        function updateSummary(total, success, errors) {
+            const pending = total - success - errors;
+            let html = `
+                <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; margin: 20px 0;">
+                    <div style="text-align: center;">
+                        <div style="font-size: 48px; font-weight: bold; color: #667eea;">${total}</div>
+                        <div style="color: #666;">Total Productos</div>
+                    </div>
+                    <div style="text-align: center;">
+                        <div style="font-size: 48px; font-weight: bold; color: #28a745;">${success}</div>
+                        <div style="color: #666;">Exitosos</div>
+                    </div>
+                    <div style="text-align: center;">
+                        <div style="font-size: 48px; font-weight: bold; color: #dc3545;">${errors}</div>
+                        <div style="color: #666;">Errores</div>
+                    </div>
+                </div>
+            `;
+            document.getElementById('summary').innerHTML = html;
+        }
+        
+        // Actualizar barra de progreso
+        function updateProgress(percent) {
+            const progressBar = document.getElementById('progressBar');
+            progressBar.style.width = percent + '%';
+            progressBar.textContent = percent + '%';
+        }
+        
+        // Limpiar logs
+        function clearLogs() {
+            document.getElementById('logs').innerHTML = '';
+            console.log('🧹 Logs limpiados');
+        }
+        
+        // Inicializar
+        window.addEventListener('DOMContentLoaded', () => {
+            console.log('✅ Sistema de diagnóstico iniciado');
+            console.log('💡 Haz clic en "Ejecutar Todas las Pruebas" para comenzar');
+            testProductsData();
+        });
+    </script>
+</body>
+</html>

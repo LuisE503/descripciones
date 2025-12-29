@@ -2340,14 +2340,16 @@ function viewProduct(productId) {
     // Limpiar textarea de descripción
     document.getElementById('officialDescription').value = '';
     
-    // Deshabilitar botón desde el inicio
+    // Deshabilitar botones desde el inicio
     const copyBtn = document.getElementById('copyFullPromptBtn');
+    const qwenBtn = document.getElementById('copyQwenPromptBtn');
     copyBtn.disabled = true;
+    qwenBtn.disabled = true;
     
     // Reset status
     const status = document.getElementById('descriptionStatus');
     status.querySelector('.status-icon').textContent = 'ℹ️';
-    status.querySelector('.status-text').textContent = 'Pega la descripción del producto para activar el botón de copiar';
+    status.querySelector('.status-text').textContent = 'Pega la descripción del producto para activar los botones';
     status.className = 'description-status';
     
     // Mostrar modal
@@ -2402,7 +2404,35 @@ function copyFullPrompt() {
     const fullPrompt = generateFullPrompt(product, productData.htmlCode, productData.promptRules, officialDescription);
     copyToClipboard(fullPrompt);
     
-    showToast('✅ ¡Prompt completo copiado! Pégalo en ChatGPT-5, Copilot o QWEN');
+    showToast('✅ ¡Prompt ChatGPT copiado! Pégalo en ChatGPT-5 o Copilot');
+}
+
+// =============================================
+// COPIAR PROMPT EXCLUSIVO PARA QWEN
+// =============================================
+function copyQwenPrompt() {
+    if (!appState.currentProduct) return;
+    
+    const product = appState.currentProduct;
+    const productData = appState.productsData[product.category];
+    const officialDescription = document.getElementById('officialDescription').value.trim();
+    
+    if (!productData) {
+        showToast('❌ Error: Datos no disponibles');
+        return;
+    }
+    
+    // Verificar que haya descripción
+    if (!officialDescription) {
+        showToast('⚠️ Por favor pega la descripción del producto primero');
+        return;
+    }
+    
+    // Generar prompt exclusivo para Qwen
+    const qwenPrompt = generateQwenPrompt(product, productData.htmlCode, productData.promptRules, officialDescription);
+    copyToClipboard(qwenPrompt);
+    
+    showToast('✅ ¡Prompt Qwen copiado! Pégalo en Qwen para obtener código');
 }
 
 // =============================================
@@ -2414,25 +2444,33 @@ function updateDescriptionStatus(text) {
     const statusText = status.querySelector('.status-text');
     const copyBtn = document.getElementById('copyFullPromptBtn');
     const copyBtnText = document.getElementById('copyFullPromptText');
+    const qwenBtn = document.getElementById('copyQwenPromptBtn');
+    const qwenBtnText = document.getElementById('copyQwenPromptText');
     
     if (text.trim().length === 0) {
         statusIcon.textContent = 'ℹ️';
-        statusText.textContent = 'Pega la descripción del producto para activar el botón de copiar';
+        statusText.textContent = 'Pega la descripción del producto para activar los botones';
         status.className = 'description-status';
         copyBtn.disabled = true;
-        copyBtnText.textContent = 'Copiar Todo con Prompt';
+        qwenBtn.disabled = true;
+        copyBtnText.textContent = 'Prompt ChatGPT';
+        qwenBtnText.textContent = 'Prompt Qwen';
     } else if (text.trim().length < 50) {
         statusIcon.textContent = '⚠️';
         statusText.textContent = `${text.trim().length} caracteres - considera agregar más detalles para un mejor resultado`;
         status.className = 'description-status warning';
         copyBtn.disabled = false;
-        copyBtnText.textContent = 'Copiar Todo con Prompt';
+        qwenBtn.disabled = false;
+        copyBtnText.textContent = 'Prompt ChatGPT';
+        qwenBtnText.textContent = 'Prompt Qwen';
     } else {
         statusIcon.textContent = '✅';
         statusText.textContent = `¡Perfecto! ${text.trim().length} caracteres detectados - listo para copiar`;
         status.className = 'description-status success';
         copyBtn.disabled = false;
-        copyBtnText.textContent = '🚀 Copiar Todo con Prompt';
+        qwenBtn.disabled = false;
+        copyBtnText.textContent = '🚀 Prompt ChatGPT';
+        qwenBtnText.textContent = '🚀 Prompt Qwen';
     }
 }
 
@@ -2550,6 +2588,7 @@ function initializeEventListeners() {
     // Botones de copiar
     document.getElementById('copyCodeBtn').addEventListener('click', copyCode);
     document.getElementById('copyFullPromptBtn').addEventListener('click', copyFullPrompt);
+    document.getElementById('copyQwenPromptBtn').addEventListener('click', copyQwenPrompt);
     
     // Textarea de descripción oficial
     const officialDescriptionTextarea = document.getElementById('officialDescription');

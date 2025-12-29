@@ -753,3 +753,146 @@ REGLAS FINALES:
 🚀 GENERA EL CÓDIGO AHORA (HTML + CSS JUNTOS)
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━`;
 }
+
+// =============================================
+// FUNCIÓN PARA GENERAR PROMPT EXCLUSIVO PARA QWEN
+// =============================================
+function generateQwenPrompt(product, htmlCode, promptInstructions, officialDescription = '') {
+    const descriptionSection = officialDescription.trim() 
+        ? `\n## 📋 INFORMACIÓN DEL PRODUCTO A PROCESAR:\n\n\`\`\`\n${officialDescription}\n\`\`\`\n` 
+        : '';
+    
+    // Determinar si es laptop para instrucciones especiales
+    const isLaptop = product.category === 'laptop';
+    
+    // Generar descripción comercial específica según el producto
+    const productDescriptions = {
+        cartuchos: "Este cartucho de tinta ofrece impresiones de alta calidad con colores vivos y duraderos, diseñado para maximizar el rendimiento de tu impresora.",
+        case: "Este gabinete combina diseño moderno con funcionalidad, ofreciendo excelente gestión de cables y espacio para todos tus componentes.",
+        cinta: "Esta cinta de impresión matricial garantiza impresiones claras y duraderas, ideal para facturas y documentos continuos.",
+        cooler: "Este sistema de refrigeración mantiene tu procesador en temperaturas óptimas, asegurando rendimiento estable y mayor vida útil.",
+        fuente_de_poder: "Esta fuente de poder ofrece energía estable y eficiente para todos tus componentes, con protecciones avanzadas para mayor seguridad.",
+        impresora_de_inyeccion: "Esta impresora de inyección combina versatilidad y calidad de impresión, perfecta para documentos y fotografías.",
+        impresora_laser: "Esta impresora láser ofrece velocidad y eficiencia en impresiones profesionales, con bajo costo por página.",
+        impresora_matricial: "Esta impresora matricial es robusta y confiable, ideal para puntos de venta y documentos multicopia.",
+        impresora_termica: "Esta impresora térmica combina rapidez y practicidad para puntos de venta, con impresión silenciosa y conectividad versátil.",
+        laptop: "Esta laptop está lista para acompañarte en tu día a día, con rendimiento ágil y diseño portátil que se adapta a tu estilo de vida.",
+        memoria_ram: "Esta memoria RAM optimiza el rendimiento de tu equipo, permitiendo ejecutar más aplicaciones con mayor fluidez.",
+        monitores: "Esta pantalla te brinda imágenes claras y colores vibrantes para trabajar, estudiar o entretenerte.",
+        motherboard: "Esta tarjeta madre ofrece conectividad moderna y compatibilidad con los últimos procesadores para construir el PC que necesitas.",
+        plotter: "Este plotter ofrece impresiones de gran formato con calidad profesional, ideal para diseño y arquitectura.",
+        procesadores: "Este procesador ofrece el poder de cómputo que necesitas, ya sea para trabajo productivo o entretenimiento.",
+        proyectores: "Este proyector transforma cualquier espacio en tu sala de cine personal o salón de presentaciones profesionales.",
+        regletas: "Esta regleta te brinda múltiples conexiones seguras para proteger tus equipos electrónicos.",
+        regulador_de_voltaje: "Este regulador protege tus equipos contra variaciones de voltaje, asegurando un funcionamiento estable.",
+        software: "Este software te proporciona las herramientas que necesitas para ser más productivo en tu trabajo diario.",
+        supresor_de_voltaje: "Este supresor protege tus equipos de picos de voltaje dañinos, brindando seguridad a tus dispositivos.",
+        soporte_o_bracket: "Este soporte te permite montar tu pantalla de forma segura y ergonómica, optimizando tu espacio.",
+        tarjetas_graficas: "Esta tarjeta gráfica potencia tu experiencia visual, desde gaming intenso hasta diseño profesional.",
+        televisores: "Este televisor transforma tu entretenimiento con imágenes impactantes y tecnología de punta.",
+        tintas: "Esta tinta ofrece colores vibrantes y durabilidad excepcional para todas tus impresiones.",
+        toner: "Este tóner garantiza impresiones nítidas y profesionales con alto rendimiento de páginas.",
+        ups_y_ups_online: "Este UPS mantiene tus equipos funcionando durante cortes de energía, protegiendo tu trabajo y datos.",
+        adaptador_de_red_usb: "Este adaptador de red te brinda conectividad inalámbrica o ethernet confiable para tu equipo.",
+        almacenamiento_externo: "Este almacenamiento externo te permite llevar todos tus archivos contigo de forma segura.",
+        amplificador_de_red: "Este amplificador extiende la cobertura de tu WiFi, eliminando zonas muertas en tu hogar u oficina.",
+        audifonos_cableados_e_inalambricos: "Estos audífonos te sumergen en un sonido de alta calidad, ya sea para música, juegos o llamadas.",
+        bases_para_laptop: "Esta base para laptop mejora la ergonomía y refrigeración de tu equipo portátil.",
+        bocina_e_inalambrica_y_sistema_de_audio: "Esta bocina llena cualquier espacio con sonido potente y claro, perfecta para música y entretenimiento.",
+        cable_hdmi: "Este cable HDMI transmite audio y video de alta calidad para conectar tus dispositivos.",
+        cable_usb: "Este cable USB ofrece transferencia rápida de datos y carga confiable para tus dispositivos.",
+        cable_utp_y_bobina_de_cable: "Este cable de red te brinda conexión ethernet estable y rápida para tus equipos.",
+        cables_vga: "Este cable VGA conecta tu equipo a monitores y proyectores para visualización confiable.",
+        camara_de_video_web_dslr_digital: "Esta cámara captura momentos con calidad excepcional, perfecta para streaming, fotografía o video.",
+        camaras_de_vigilancia_analoga_ip_wifi: "Esta cámara de vigilancia te brinda seguridad y tranquilidad con monitoreo claro día y noche.",
+        combo_teclado_y_mouse_cableados_e_inalambrico: "Este combo de teclado y mouse te ofrece productividad y comodidad para tu trabajo diario.",
+        dvr: "Este DVR te permite grabar y almacenar las imágenes de tus cámaras de seguridad de forma confiable.",
+        enclousure: "Este enclosure transforma tu disco duro interno en almacenamiento portátil y versátil.",
+        escaneres: "Este escáner digitaliza tus documentos con claridad y rapidez, facilitando tu organización.",
+        estacion_de_carga: "Esta estación de carga te permite cargar múltiples dispositivos de forma organizada y eficiente.",
+        gabinetes: "Este gabinete combina estética y funcionalidad para alojar todos tus componentes de PC.",
+        hostpot: "Este hotspot te brinda internet portátil para conectarte donde quiera que estés.",
+        hub_usb: "Este hub USB expande tus puertos disponibles para conectar todos tus dispositivos.",
+        iot: "Este dispositivo IoT hace tu hogar más inteligente y automatizado con control desde tu smartphone.",
+        memorias_extraibles: "Esta memoria extraíble te permite almacenar y transportar tus archivos de forma práctica.",
+        microfono: "Este micrófono captura tu voz con claridad profesional, ideal para streaming, podcasts o conferencias.",
+        mouse_cableados: "Este mouse te ofrece precisión y comodidad para navegar y trabajar eficientemente.",
+        mouse_inalambricos: "Este mouse inalámbrico te brinda libertad de movimiento sin sacrificar precisión ni respuesta.",
+        mouse_pad: "Este mouse pad optimiza el deslizamiento de tu mouse para mayor precisión y comodidad.",
+        nvr: "Este NVR te permite gestionar y grabar múltiples cámaras IP con calidad profesional.",
+        punto_de_acceso: "Este punto de acceso expande tu red WiFi con velocidades rápidas y conexión estable.",
+        repetidores_de_red: "Este repetidor amplía la señal WiFi de tu router para cubrir cada rincón de tu espacio.",
+        router: "Este router te brinda conexión WiFi rápida y estable para todos tus dispositivos.",
+        smartphone: "Este smartphone combina potencia y elegancia para mantenerte conectado y productivo.",
+        smartwatches: "Este smartwatch te acompaña en tu día a día con notificaciones, fitness y estilo en tu muñeca.",
+        switches: "Este switch de red te permite conectar múltiples dispositivos a tu red con velocidad y confiabilidad.",
+        tablets: "Esta tablet te ofrece portabilidad y potencia para trabajo, estudio y entretenimiento.",
+        teclados_cableados_e_inalambricos: "Este teclado te brinda comodidad y respuesta precisa para escribir durante horas."
+    };
+    
+    const productDescription = productDescriptions[product.category] || `Este ${product.name} combina calidad y rendimiento para satisfacer tus necesidades.`;
+    
+    const characteristicsRule = isLaptop 
+        ? `⚠️ PARA LAPTOPS: Las características Sí/No (teclado retroiluminado, pantalla táctil, etc.) DEBEN estar TODAS. Si no hay información, escribe "No".`
+        : `⚠️ REGLA DE OMISIÓN: Si una característica NO aparece en la información → OMITE esa fila completa. NO escribas "No", "N/A" o "No disponible". SOLO incluye datos REALES.`;
+
+    return `# 🎯 TAREA: Generar código HTML para ${product.name} en Shopify
+
+## ⚠️ FORMATO DE RESPUESTA OBLIGATORIO
+
+Tu respuesta debe ser **ÚNICAMENTE UN BLOQUE DE CÓDIGO** que contenga:
+1. El HTML completo
+2. El bloque \`<style>\` completo
+3. TODO JUNTO, sin separar
+
+\`\`\`html
+<!-- Tu código aquí - HTML + CSS juntos -->
+\`\`\`
+
+**NO escribas explicaciones, comentarios ni texto fuera del bloque de código.**
+**NO separes el HTML y CSS en bloques diferentes.**
+
+---
+
+## 📝 DESCRIPCIÓN DEL PRODUCTO (usar en product-seo-intro)
+
+**IMPORTANTE:** Reemplaza la descripción genérica del ejemplo con esta descripción adaptada al producto específico:
+
+> "${productDescription}"
+
+Puedes ajustar ligeramente esta descripción según las especificaciones del producto, pero mantén un tono comercial amigable, NO técnico. La descripción debe ser breve (1-2 oraciones) y hacer referencia específica al tipo de producto.
+
+---
+
+## 📋 CÓDIGO DE EJEMPLO (ESTRUCTURA A SEGUIR)
+
+\`\`\`html
+${htmlCode}
+\`\`\`
+
+---
+${descriptionSection}
+## 📖 INSTRUCCIONES ESPECÍFICAS PARA ${product.name.toUpperCase()}
+
+${promptInstructions}
+
+${characteristicsRule}
+
+---
+
+## ✅ CHECKLIST FINAL
+
+- [ ] El código incluye \`<div class="row">\` al inicio
+- [ ] El código incluye \`</style>\` al final
+- [ ] La descripción en \`product-seo-intro\` es específica para este producto
+- [ ] HTML y CSS están en el MISMO bloque de código
+- [ ] Solo se modificó el contenido de \`<td class="tableCellContent">\`
+- [ ] Se mantienen todas las clases CSS originales
+- [ ] ${isLaptop ? 'Todas las características Sí/No están incluidas' : 'Solo hay filas con información real'}
+
+---
+
+## 🚀 GENERA EL CÓDIGO AHORA
+
+Responde únicamente con el bloque de código HTML+CSS completo:`; 
+}

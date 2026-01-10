@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generador de Descripciones Shopify AI - Con Agente de IA Integrado</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles-ai.css">
+</head>
+<body>
+    <!-- Header con indicador de IA -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo-section">
+                    <div class="logo-icon ai-glow">
+                        <i class="fas fa-robot"></i>
+                    </div>
+                    <div class="logo-text">
+                        <h1>Generador de Descripciones</h1>
+                        <div class="badge-container">
+                            <span class="badge-ai">AI</span>
+                            <span class="badge-powered">Powered by Groq & Qwen</span>
+                        </div>
+                    </div>
+                </div>
+                <p class="subtitle">
+                    <i class="fas fa-sparkles"></i>
+                    Genera descripciones HTML automáticamente con Inteligencia Artificial
+                </p>
+                <div class="header-stats">
+                    <div class="stat">
+                        <i class="fas fa-box-open"></i>
+                        <span><strong id="totalProducts">61</strong> Productos</span>
+                    </div>
+                    <div class="stat">
+                        <i class="fas fa-brain"></i>
+                        <span>IA Integrada</span>
+                    </div>
+                    <div class="stat ai-status" id="aiStatus">
+                        <i class="fas fa-circle"></i>
+                        <span>Configurar API</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="header-wave">
+            <svg viewBox="0 0 1440 120" preserveAspectRatio="none">
+                <path d="M0,60 C360,120 720,0 1080,60 C1260,90 1380,60 1440,60 L1440,120 L0,120 Z" fill="#f5f7fa"/>
+            </svg>
+        </div>
+    </header>
+
+    <!-- API Configuration Banner -->
+    <section class="api-config-banner" id="apiConfigBanner">
+        <div class="container">
+            <div class="config-content">
+                <div class="config-info">
+                    <i class="fas fa-key"></i>
+                    <div>
+                        <h3>Configura tu API Key para habilitar la generación automática con IA</h3>
+                        <p>Usa Groq (gratuito y rápido) o Qwen API para generar descripciones automáticamente</p>
+                    </div>
+                </div>
+                <button class="btn btn-config" id="openConfigBtn">
+                    <i class="fas fa-cog"></i>
+                    Configurar API
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Search and Filter Section -->
+    <section class="search-section">
+        <div class="container">
+            <div class="search-filter-row">
+                <div class="search-box">
+                    <i class="fas fa-search search-icon"></i>
+                    <input type="text" id="searchInput" placeholder="Buscar producto o categoría..." autocomplete="off">
+                    <button class="search-clear" id="searchClear" style="display: none;">
+                        <i class="fas fa-times"></i>
+                    </button>
+                </div>
+                
+                <div class="filter-dropdown">
+                    <button class="filter-btn" id="filterBtn">
+                        <i class="fas fa-filter"></i>
+                        <span id="filterBtnText">Todas las categorías</span>
+                        <i class="fas fa-chevron-down dropdown-arrow"></i>
+                    </button>
+                    <div class="dropdown-menu" id="dropdownMenu">
+                        <div class="dropdown-header">
+                            <span class="dropdown-title">
+                                <i class="fas fa-tags"></i>
+                                Seleccionar categoría
+                            </span>
+                            <button class="dropdown-close" id="dropdownClose">
+                                <i class="fas fa-times"></i>
+                            </button>
+                        </div>
+                        <div class="dropdown-search">
+                            <i class="fas fa-search"></i>
+                            <input type="text" id="categorySearch" placeholder="Buscar categoría...">
+                        </div>
+                        <div class="dropdown-content" id="dropdownContent">
+                            <!-- Las categorías se generarán dinámicamente -->
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="results-count">
+                    <i class="fas fa-cube"></i>
+                    <span id="resultsCount">61 productos</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Grid -->
+    <main class="main-content">
+        <div class="container">
+            <div class="products-grid" id="productsGrid">
+                <!-- Los productos se generarán dinámicamente con JavaScript -->
+            </div>
+            <div class="no-results" id="noResults" style="display: none;">
+                <div class="no-results-icon">
+                    <i class="fas fa-search"></i>
+                </div>
+                <h3>No se encontraron productos</h3>
+                <p>Intenta con otro término de búsqueda o selecciona otra categoría</p>
+                <button class="btn btn-primary" onclick="resetFilters()">
+                    <i class="fas fa-redo"></i>
+                    Restablecer búsqueda
+                </button>
+            </div>
+        </div>
+    </main>
+
+    <!-- Modal de Configuración de API -->
+    <div class="modal" id="configModal">
+        <div class="modal-overlay" id="configModalOverlay"></div>
+        <div class="modal-content modal-config">
+            <div class="modal-header">
+                <div class="modal-title-section">
+                    <div class="modal-icon config-icon">
+                        <i class="fas fa-key"></i>
+                    </div>
+                    <div>
+                        <h2>Configuración de API</h2>
+                        <span class="modal-category">Conecta con Groq o Qwen para generación automática</span>
+                    </div>
+                </div>
+                <button class="modal-close" id="configModalClose">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            
+            <div class="modal-body">
+                <div class="config-section">
+                    <div class="provider-tabs">
+                        <button class="provider-tab active" data-provider="groq">
+                            <i class="fas fa-bolt"></i>
+                            Groq (Recomendado)
+                        </button>
+                        <button class="provider-tab" data-provider="qwen">
+                            <i class="fas fa-brain"></i>
+                            Qwen API
+                        </button>
+                    </div>
+                    
+                    <div class="provider-content active" id="groqConfig">
+                        <div class="provider-info">
+                            <div class="provider-badge free">
+                                <i class="fas fa-gift"></i>
+                                Gratis
+                            </div>
+                            <h3>Groq API</h3>
+                            <p>Groq ofrece acceso gratuito a modelos de IA ultra rápidos. Perfecto para generación de descripciones.</p>
+                            <a href="https://console.groq.com/keys" target="_blank" class="provider-link">
+                                <i class="fas fa-external-link-alt"></i>
+                                Obtener API Key gratis en console.groq.com
+                            </a>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="groqApiKey">
+                                <i class="fas fa-key"></i>
+                                API Key de Groq
+                            </label>
+                            <div class="input-with-icon">
+                                <input type="password" id="groqApiKey" placeholder="gsk_...">
+                                <button class="toggle-visibility" data-target="groqApiKey">
+                                    <i class="fas fa-eye"></i>
+                                </button>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="groqModel">
+                                <i class="fas fa-microchip"></i>
+                                Modelo
+                            </label>
+                            <select id="groqModel">
+                                <option value="llama-3.3-70b-versatile">Llama 3.3 70B (Recomendado)</option>
+                                <option value="llama-3.1-8b-instant">Llama 3.1 8B Instant (Más rápido)</option>
+                                <option value="mixtral-8x7b-32768">Mixtral 8x7B</option>
+                                <option value="gemma2-9b-it">Gemma 2 9B</option>
+                            </select>
+                        </div>
+                    </div>
+                    
+                    <div class="provider-content" id="qwenConfig">
+                        <div class="provider-info">
+                            <div class="provider-badge paid">
+                                <i class="fas fa-coins"></i>
+                                Pago por uso
+                            </div>
+                            <h3>Qwen API (Alibaba Cloud)</h3>
+                            <p>Qwen es un modelo de IA potente de Alibaba. Ofrece excelente calidad en español.</p>
+                            <a href="https://dashscope.console.aliyun.com/" target="_blank" class="provider-link">
+                                <i class="fas fa-external-link-alt"></i>
+                                Obtener API Key en Alibaba Cloud
+                            </a>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="qwenApiKey">
+                                <i class="fas fa-key"></i>
+                                API Key de Qwen
+                            </label>
+                            <div class="input-with-icon">
+                                <input type="password" id="qwenApiKey" placeholder="sk-...">
+                                <button class="toggle-visibility" data-target="qwenApiKey">
+                                    <i class="fas fa-eye"></i>
+                                </button>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="qwenModel">
+                                <i class="fas fa-microchip"></i>
+                                Modelo
+                            </label>
+                            <select id="qwenModel">
+                                <option value="qwen-plus">Qwen Plus (Recomendado)</option>
+                                <option value="qwen-turbo">Qwen Turbo (Más rápido)</option>
+                                <option value="qwen-max">Qwen Max (Mejor calidad)</option>
+                            </select>
+                        </div>
+                    </div>
+                    
+                    <div class="config-note">
+                        <i class="fas fa-shield-alt"></i>
+                        <span>Tu API key se guarda solo en tu navegador (localStorage) y nunca se envía a nuestros servidores.</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="modal-footer">
+                <button class="btn btn-outline" id="testApiBtn">
+                    <i class="fas fa-vial"></i>
+                    Probar Conexión
+                </button>
+                <button class="btn btn-primary" id="saveConfigBtn">
+                    <i class="fas fa-save"></i>
+                    Guardar Configuración
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Principal con IA -->
+    <div class="modal" id="previewModal">
+        <div class="modal-overlay" id="modalOverlay"></div>
+        <div class="modal-content modal-lg">
+            <div class="modal-header">
+                <div class="modal-title-section">
+                    <div class="modal-icon" id="modalIcon">
+                        <i class="fas fa-box"></i>
+                    </div>
+                    <div>
+                        <h2 id="modalTitle">Vista Previa</h2>
+                        <span class="modal-category" id="modalCategory">Categoría</span>
+                    </div>
+                </div>
+                <button class="modal-close" id="modalClose">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            
+            <div class="modal-body">
+                <!-- Tabs de navegación -->
+                <div class="modal-tabs">
+                    <button class="modal-tab active" data-tab="input">
+                        <i class="fas fa-paste"></i>
+                        Entrada
+                    </button>
+                    <button class="modal-tab" data-tab="ai">
+                        <i class="fas fa-robot"></i>
+                        Generar con IA
+                    </button>
+                    <button class="modal-tab" data-tab="preview">
+                        <i class="fas fa-eye"></i>
+                        Vista Previa
+                    </button>
+                    <button class="modal-tab" data-tab="code">
+                        <i class="fas fa-code"></i>
+                        Código
+                    </button>
+                </div>
+                
+                <!-- Tab: Entrada de Datos -->
+                <div class="tab-content active" id="inputTab">
+                    <div class="input-section">
+                        <div class="input-header">
+                            <h3>
+                                <i class="fas fa-clipboard-list"></i>
+                                Información del Producto
+                            </h3>
+                            <p>Pega las especificaciones oficiales del producto.</p>
+                        </div>
+                        
+                        <div class="textarea-container">
+                            <label for="officialDescription">
+                                <i class="fas fa-file-alt"></i>
+                                Especificaciones del Producto
+                            </label>
+                            <textarea 
+                                id="officialDescription" 
+                                placeholder="Pega aquí la información del producto desde el sitio oficial del fabricante..."
+                                rows="12"
+                            ></textarea>
+                            <div class="textarea-footer">
+                                <span class="char-count" id="charCount">0 caracteres</span>
+                                <button class="btn-text" id="clearText">
+                                    <i class="fas fa-eraser"></i>
+                                    Limpiar
+                                </button>
+                            </div>
+                        </div>
+                        
+                        <div class="action-buttons-input">
+                            <button class="btn btn-primary btn-lg" id="goToAiTab" disabled>
+                                <i class="fas fa-robot"></i>
+                                Continuar con IA
+                                <i class="fas fa-arrow-right"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Tab: Generación con IA -->
+                <div class="tab-content" id="aiTab">
+                    <div class="ai-section">
+                        <div class="ai-header">
+                            <div class="ai-icon-large">
+                                <i class="fas fa-robot"></i>
+                            </div>
+                            <h3>Generación Automática con IA</h3>
+                            <p>Genera el código HTML y la meta descripción automáticamente usando inteligencia artificial.</p>
+                        </div>
+                        
+                        <div class="ai-options">
+                            <div class="ai-option-card" id="generateHtmlCard">
+                                <div class="option-icon">
+                                    <i class="fas fa-code"></i>
+                                </div>
+                                <div class="option-info">
+                                    <h4>Generar Código HTML</h4>
+                                    <p>Genera el código HTML completo con estilos para la descripción del producto.</p>
+                                </div>
+                                <button class="btn btn-ai" id="generateHtmlBtn" disabled>
+                                    <i class="fas fa-magic"></i>
+                                    Generar HTML
+                                </button>
+                            </div>
+                            
+                            <div class="ai-option-card" id="generateMetaCard">
+                                <div class="option-icon">
+                                    <i class="fas fa-tags"></i>
+                                </div>
+                                <div class="option-info">
+                                    <h4>Generar Meta Descripción</h4>
+                                    <p>Genera una meta descripción SEO optimizada de 150-160 caracteres.</p>
+                                </div>
+                                <button class="btn btn-ai" id="generateMetaBtn" disabled>
+                                    <i class="fas fa-magic"></i>
+                                    Generar Meta
+                                </button>
+                            </div>
+                            
+                            <div class="ai-option-card" id="generateBothCard">
+                                <div class="option-icon highlight">
+                                    <i class="fas fa-layer-group"></i>
+                                </div>
+                                <div class="option-info">
+                                    <h4>Generar Todo</h4>
+                                    <p>Genera HTML y Meta Descripción en una sola petición.</p>
+                                </div>
+                                <button class="btn btn-ai-primary" id="generateBothBtn" disabled>
+                                    <i class="fas fa-rocket"></i>
+                                    Generar Todo
+                                </button>
+                            </div>
+                        </div>
+                        
+                        <!-- Área de resultados de IA -->
+                        <div class="ai-results" id="aiResults" style="display: none;">
+                            <div class="result-section" id="htmlResultSection">
+                                <div class="result-header">
+                                    <h4>
+                                        <i class="fas fa-code"></i>
+                                        Código HTML Generado
+                                    </h4>
+                                    <button class="btn-icon" id="copyGeneratedHtml" title="Copiar">
+                                        <i class="fas fa-copy"></i>
+                                    </button>
+                                </div>
+                                <pre class="code-block"><code id="generatedHtmlCode"></code></pre>
+                            </div>
+                            
+                            <div class="result-section" id="metaResultSection">
+                                <div class="result-header">
+                                    <h4>
+                                        <i class="fas fa-tags"></i>
+                                        Meta Descripción Generada
+                                    </h4>
+                                    <button class="btn-icon" id="copyGeneratedMeta" title="Copiar">
+                                        <i class="fas fa-copy"></i>
+                                    </button>
+                                </div>
+                                <div class="meta-result" id="generatedMetaText"></div>
+                                <div class="meta-stats">
+                                    <span id="metaCharCount">0 caracteres</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Loading state -->
+                        <div class="ai-loading" id="aiLoading" style="display: none;">
+                            <div class="loading-spinner">
+                                <i class="fas fa-spinner fa-spin"></i>
+                            </div>
+                            <h4>Generando con IA...</h4>
+                            <p id="loadingMessage">Procesando tu solicitud</p>
+                        </div>
+                        
+                        <!-- Error state -->
+                        <div class="ai-error" id="aiError" style="display: none;">
+                            <div class="error-icon">
+                                <i class="fas fa-exclamation-triangle"></i>
+                            </div>
+                            <h4>Error al generar</h4>
+                            <p id="errorMessage"></p>
+                            <button class="btn btn-outline" id="retryBtn">
+                                <i class="fas fa-redo"></i>
+                                Reintentar
+                            </button>
+                        </div>
+                        
+                        <!-- No API configured -->
+                        <div class="ai-no-config" id="aiNoConfig">
+                            <div class="no-config-icon">
+                                <i class="fas fa-key"></i>
+                            </div>
+                            <h4>API no configurada</h4>
+                            <p>Configura tu API Key de Groq o Qwen para habilitar la generación automática.</p>
+                            <button class="btn btn-primary" id="openConfigFromAi">
+                                <i class="fas fa-cog"></i>
+                                Configurar API
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Tab: Vista Previa -->
+                <div class="tab-content" id="previewTab">
+                    <div class="preview-wrapper">
+                        <div class="preview-header">
+                            <h3>
+                                <i class="fas fa-desktop"></i>
+                                Previsualización del Código HTML
+                            </h3>
+                        </div>
+                        <div class="preview-container" id="previewContainer">
+                            <!-- Aquí se renderiza el HTML -->
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Tab: Código -->
+                <div class="tab-content" id="codeTab">
+                    <div class="code-wrapper">
+                        <div class="code-header">
+                            <h3>
+                                <i class="fas fa-code"></i>
+                                Código HTML
+                            </h3>
+                            <button class="btn-icon" id="copyCodeInline" title="Copiar código">
+                                <i class="fas fa-copy"></i>
+                            </button>
+                        </div>
+                        <pre class="code-block"><code id="codeContent"></code></pre>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Footer con botones de acción -->
+            <div class="modal-footer">
+                <div class="footer-left">
+                    <button class="btn btn-outline" id="copyCodeBtn">
+                        <i class="fas fa-code"></i>
+                        Copiar Código
+                    </button>
+                </div>
+                <div class="footer-right">
+                    <button class="btn btn-chatgpt" id="copyFullPromptBtn" disabled>
+                        <i class="fas fa-robot"></i>
+                        Prompt ChatGPT
+                    </button>
+                    <button class="btn btn-meta" id="copyMetaPromptBtn" disabled>
+                        <i class="fas fa-tags"></i>
+                        Prompt Meta
+                    </button>
+                    <button class="btn btn-qwen" id="copyQwenPromptBtn" disabled>
+                        <i class="fas fa-brain"></i>
+                        Prompt Qwen
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Toast Notification -->
+    <div class="toast" id="toast">
+        <div class="toast-icon">
+            <i class="fas fa-check-circle"></i>
+        </div>
+        <span id="toastMessage"></span>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <i class="fas fa-robot"></i>
+                    <span>Generador de Descripciones Shopify AI</span>
+                </div>
+                <div class="footer-info">
+                    <span>
+                        <i class="fas fa-box-open"></i>
+                        61 categorías de productos
+                    </span>
+                    <span class="separator">•</span>
+                    <span>
+                        <i class="fas fa-brain"></i>
+                        Powered by Groq & Qwen
+                    </span>
+                </div>
+                <div class="footer-version">
+                    <span>Versión AI 1.0</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="products-data.js"></script>
+    <script src="script-ai.js"></script>
+</body>
+</html>

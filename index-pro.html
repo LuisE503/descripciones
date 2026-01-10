@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generador de Descripciones Shopify PRO - Proyecto Profesional</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles-pro.css">
+</head>
+<body>
+    <!-- Header Profesional -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo-section">
+                    <div class="logo-icon">
+                        <i class="fas fa-shopping-bag"></i>
+                    </div>
+                    <div class="logo-text">
+                        <h1>Generador de Descripciones</h1>
+                        <span class="badge-pro">PRO</span>
+                    </div>
+                </div>
+                <p class="subtitle">
+                    <i class="fas fa-magic"></i>
+                    Prompts optimizados para ChatGPT-5, Copilot y Qwen AI
+                </p>
+                <div class="header-stats">
+                    <div class="stat">
+                        <i class="fas fa-box-open"></i>
+                        <span><strong id="totalProducts">61</strong> Productos</span>
+                    </div>
+                    <div class="stat">
+                        <i class="fas fa-layer-group"></i>
+                        <span><strong id="totalCategories">61</strong> Categorías</span>
+                    </div>
+                    <div class="stat">
+                        <i class="fas fa-robot"></i>
+                        <span>IA Ready</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="header-wave">
+            <svg viewBox="0 0 1440 120" preserveAspectRatio="none">
+                <path d="M0,60 C360,120 720,0 1080,60 C1260,90 1380,60 1440,60 L1440,120 L0,120 Z" fill="#f5f7fa"/>
+            </svg>
+        </div>
+    </header>
+
+    <!-- Search and Filter Section -->
+    <section class="search-section">
+        <div class="container">
+            <div class="search-filter-row">
+                <div class="search-box">
+                    <i class="fas fa-search search-icon"></i>
+                    <input type="text" id="searchInput" placeholder="Buscar producto o categoría..." autocomplete="off">
+                    <button class="search-clear" id="searchClear" style="display: none;">
+                        <i class="fas fa-times"></i>
+                    </button>
+                </div>
+                
+                <div class="filter-dropdown">
+                    <button class="filter-btn" id="filterBtn">
+                        <i class="fas fa-filter"></i>
+                        <span id="filterBtnText">Todas las categorías</span>
+                        <i class="fas fa-chevron-down dropdown-arrow"></i>
+                    </button>
+                    <div class="dropdown-menu" id="dropdownMenu">
+                        <div class="dropdown-header">
+                            <span class="dropdown-title">
+                                <i class="fas fa-tags"></i>
+                                Seleccionar categoría
+                            </span>
+                            <button class="dropdown-close" id="dropdownClose">
+                                <i class="fas fa-times"></i>
+                            </button>
+                        </div>
+                        <div class="dropdown-search">
+                            <i class="fas fa-search"></i>
+                            <input type="text" id="categorySearch" placeholder="Buscar categoría...">
+                        </div>
+                        <div class="dropdown-content" id="dropdownContent">
+                            <!-- Las categorías se generarán dinámicamente -->
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="view-toggle">
+                    <button class="view-btn active" data-view="grid" title="Vista de cuadrícula">
+                        <i class="fas fa-th-large"></i>
+                    </button>
+                    <button class="view-btn" data-view="list" title="Vista de lista">
+                        <i class="fas fa-list"></i>
+                    </button>
+                </div>
+                
+                <div class="results-count">
+                    <i class="fas fa-cube"></i>
+                    <span id="resultsCount">61 productos</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Grid -->
+    <main class="main-content">
+        <div class="container">
+            <div class="products-grid" id="productsGrid">
+                <!-- Los productos se generarán dinámicamente con JavaScript -->
+            </div>
+            <div class="no-results" id="noResults" style="display: none;">
+                <div class="no-results-icon">
+                    <i class="fas fa-search"></i>
+                </div>
+                <h3>No se encontraron productos</h3>
+                <p>Intenta con otro término de búsqueda o selecciona otra categoría</p>
+                <button class="btn btn-primary" onclick="resetFilters()">
+                    <i class="fas fa-redo"></i>
+                    Restablecer búsqueda
+                </button>
+            </div>
+        </div>
+    </main>
+
+    <!-- Modal Profesional -->
+    <div class="modal" id="previewModal">
+        <div class="modal-overlay" id="modalOverlay"></div>
+        <div class="modal-content">
+            <div class="modal-header">
+                <div class="modal-title-section">
+                    <div class="modal-icon" id="modalIcon">
+                        <i class="fas fa-box"></i>
+                    </div>
+                    <div>
+                        <h2 id="modalTitle">Vista Previa</h2>
+                        <span class="modal-category" id="modalCategory">Categoría</span>
+                    </div>
+                </div>
+                <button class="modal-close" id="modalClose">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            
+            <div class="modal-body">
+                <!-- Tabs de navegación -->
+                <div class="modal-tabs">
+                    <button class="modal-tab active" data-tab="input">
+                        <i class="fas fa-paste"></i>
+                        Entrada de Datos
+                    </button>
+                    <button class="modal-tab" data-tab="preview">
+                        <i class="fas fa-eye"></i>
+                        Vista Previa
+                    </button>
+                    <button class="modal-tab" data-tab="code">
+                        <i class="fas fa-code"></i>
+                        Código HTML
+                    </button>
+                </div>
+                
+                <!-- Tab: Entrada de Datos -->
+                <div class="tab-content active" id="inputTab">
+                    <div class="input-section">
+                        <div class="input-header">
+                            <h3>
+                                <i class="fas fa-clipboard-list"></i>
+                                Información del Producto
+                            </h3>
+                            <p>Pega las especificaciones oficiales del producto para generar el código HTML y las meta descripciones.</p>
+                        </div>
+                        
+                        <div class="textarea-container">
+                            <label for="officialDescription">
+                                <i class="fas fa-file-alt"></i>
+                                Especificaciones del Producto
+                            </label>
+                            <textarea 
+                                id="officialDescription" 
+                                placeholder="Pega aquí la información del producto desde el sitio oficial del fabricante...
+
+Ejemplo:
+- Modelo: XYZ-1234
+- Procesador: Intel Core i7-12700H
+- RAM: 16GB DDR5
+- Almacenamiento: 512GB SSD NVMe
+- Pantalla: 15.6&quot; Full HD IPS
+..."
+                                rows="12"
+                            ></textarea>
+                            <div class="textarea-footer">
+                                <span class="char-count" id="charCount">0 caracteres</span>
+                                <button class="btn-text" id="clearText">
+                                    <i class="fas fa-eraser"></i>
+                                    Limpiar
+                                </button>
+                            </div>
+                        </div>
+                        
+                        <div class="status-indicator" id="descriptionStatus">
+                            <i class="fas fa-info-circle"></i>
+                            <span>Pega la información del producto para activar los botones de generación</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Tab: Vista Previa -->
+                <div class="tab-content" id="previewTab">
+                    <div class="preview-wrapper">
+                        <div class="preview-header">
+                            <h3>
+                                <i class="fas fa-desktop"></i>
+                                Previsualización del Código HTML
+                            </h3>
+                        </div>
+                        <div class="preview-container" id="previewContainer">
+                            <!-- Aquí se renderiza el HTML -->
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Tab: Código -->
+                <div class="tab-content" id="codeTab">
+                    <div class="code-wrapper">
+                        <div class="code-header">
+                            <h3>
+                                <i class="fas fa-code"></i>
+                                Código HTML Generado
+                            </h3>
+                            <button class="btn-icon" id="copyCodeInline" title="Copiar código">
+                                <i class="fas fa-copy"></i>
+                            </button>
+                        </div>
+                        <pre class="code-block"><code id="codeContent"></code></pre>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Footer con botones de acción -->
+            <div class="modal-footer">
+                <div class="footer-left">
+                    <button class="btn btn-outline" id="copyCodeBtn">
+                        <i class="fas fa-code"></i>
+                        Copiar Código
+                    </button>
+                </div>
+                <div class="footer-right">
+                    <button class="btn btn-chatgpt" id="copyFullPromptBtn" disabled>
+                        <i class="fas fa-robot"></i>
+                        <span id="copyFullPromptText">Prompt ChatGPT</span>
+                    </button>
+                    <button class="btn btn-meta" id="copyMetaPromptBtn" disabled>
+                        <i class="fas fa-tags"></i>
+                        <span id="copyMetaPromptText">Prompt Meta Descripción</span>
+                    </button>
+                    <button class="btn btn-qwen" id="copyQwenPromptBtn" disabled>
+                        <i class="fas fa-brain"></i>
+                        <span id="copyQwenPromptText">Prompt Qwen</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Toast Notification -->
+    <div class="toast" id="toast">
+        <div class="toast-icon">
+            <i class="fas fa-check-circle"></i>
+        </div>
+        <span id="toastMessage"></span>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <i class="fas fa-shopping-bag"></i>
+                    <span>Generador de Descripciones Shopify PRO</span>
+                </div>
+                <div class="footer-info">
+                    <span>
+                        <i class="fas fa-box-open"></i>
+                        61 categorías de productos
+                    </span>
+                    <span class="separator">•</span>
+                    <span>
+                        <i class="fas fa-robot"></i>
+                        Compatible con ChatGPT-5, Copilot y Qwen
+                    </span>
+                </div>
+                <div class="footer-version">
+                    <span>Versión PRO 2.0</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="products-data.js"></script>
+    <script src="script-pro.js"></script>
+</body>
+</html>

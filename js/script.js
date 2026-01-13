@@ -2343,8 +2343,8 @@ function viewProduct(productId) {
     // Deshabilitar botones desde el inicio
     const copyBtn = document.getElementById('copyFullPromptBtn');
     const qwenBtn = document.getElementById('copyQwenPromptBtn');
-    copyBtn.disabled = true;
-    qwenBtn.disabled = true;
+    if (copyBtn) copyBtn.disabled = true;
+    if (qwenBtn) qwenBtn.disabled = true;
     
     // Reset status
     const status = document.getElementById('descriptionStatus');
@@ -2451,26 +2451,26 @@ function updateDescriptionStatus(text) {
         statusIcon.textContent = 'ℹ️';
         statusText.textContent = 'Pega la descripción del producto para activar los botones';
         status.className = 'description-status';
-        copyBtn.disabled = true;
-        qwenBtn.disabled = true;
-        copyBtnText.textContent = 'Prompt ChatGPT';
-        qwenBtnText.textContent = 'Prompt Qwen';
+        if (copyBtn) copyBtn.disabled = true;
+        if (qwenBtn) qwenBtn.disabled = true;
+        if (copyBtnText) copyBtnText.textContent = 'Prompt ChatGPT';
+        if (qwenBtnText) qwenBtnText.textContent = 'Prompt Qwen';
     } else if (text.trim().length < 50) {
         statusIcon.textContent = '⚠️';
         statusText.textContent = `${text.trim().length} caracteres - considera agregar más detalles para un mejor resultado`;
         status.className = 'description-status warning';
-        copyBtn.disabled = false;
-        qwenBtn.disabled = false;
-        copyBtnText.textContent = 'Prompt ChatGPT';
-        qwenBtnText.textContent = 'Prompt Qwen';
+        if (copyBtn) copyBtn.disabled = false;
+        if (qwenBtn) qwenBtn.disabled = false;
+        if (copyBtnText) copyBtnText.textContent = 'Prompt ChatGPT';
+        if (qwenBtnText) qwenBtnText.textContent = 'Prompt Qwen';
     } else {
         statusIcon.textContent = '✅';
         statusText.textContent = `¡Perfecto! ${text.trim().length} caracteres detectados - listo para copiar`;
         status.className = 'description-status success';
-        copyBtn.disabled = false;
-        qwenBtn.disabled = false;
-        copyBtnText.textContent = '🚀 Prompt ChatGPT';
-        qwenBtnText.textContent = '🚀 Prompt Qwen';
+        if (copyBtn) copyBtn.disabled = false;
+        if (qwenBtn) qwenBtn.disabled = false;
+        if (copyBtnText) copyBtnText.textContent = '🚀 Prompt ChatGPT';
+        if (qwenBtnText) qwenBtnText.textContent = '🚀 Prompt Qwen';
     }
 }
 
@@ -2588,7 +2588,12 @@ function initializeEventListeners() {
     // Botones de copiar
     document.getElementById('copyCodeBtn').addEventListener('click', copyCode);
     document.getElementById('copyFullPromptBtn').addEventListener('click', copyFullPrompt);
-    document.getElementById('copyQwenPromptBtn').addEventListener('click', copyQwenPrompt);
+    
+    // Botón Qwen solo si existe (versiones con Qwen)
+    const qwenBtn = document.getElementById('copyQwenPromptBtn');
+    if (qwenBtn) {
+        qwenBtn.addEventListener('click', copyQwenPrompt);
+    }
     
     // Textarea de descripción oficial
     const officialDescriptionTextarea = document.getElementById('officialDescription');

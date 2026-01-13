@@ -1,4 +1,4 @@
-<!-- BLOQUE: Regulador de Voltaje (estructura y CSS consistente con los bloques anteriores) -->
+﻿<!-- BLOQUE: Regulador de Voltaje (estructura y CSS consistente con los bloques anteriores) -->
 <div class="row">
   <div class="col-sm-8 col-offset-sm-2 col-md-10 offset-md-1 mb-3">
     <div class="product-seo-intro">
@@ -184,9 +184,8 @@
   }
 </style>
 
-
-
-
+<!--
+INSTRUCCIONES ADICIONALES:
 Número de salidas	Cantidad seguida de la palabra “salidas” (4 salidas, 5 salidas)
 Número de salidas con protección	Si se especifica, colocar el número de salidas con protección eléctrica colocando la cantidad seguida de las palabras “salidas con Protección” (5 salidas con Protección).
 Número de salidas con regulación.	Si se especifica, colocar el número de salidas con regulación colocando la cantidad seguida de las palabras “salidas con Regulación” (5 salidas con Regulación).
@@ -202,3 +201,4 @@ Retardador de llama	Sí/No
 Trabaja con fusible	Sí/No
 Montaje en pared	Sí/No
 Protección eléctrica	Sí/No
+-->

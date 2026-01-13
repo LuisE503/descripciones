@@ -146,6 +146,8 @@
   }
 </style>
 
-
+<!--
+INSTRUCCIONES ADICIONALES:
 Serie solo si aplica, Sockect segun se especifique, igual con los demas parametros, dependera de la cantidad de informacion o la especificacion del PRODUCTO
 si algo no se menciona en las especificaciones oficiales no se incluye
+-->

@@ -1,22 +1,23 @@
-Tamaño de la pantalla	Cantidad seguida de un espacio y la unidad de medida expresada en pulgadas con la abreviación Plg (4.5 Plg, 5.5 Plg)
-Almacenamiento	Capacidad + Unidad de medida en mayúscula sin espacio (240GB, 1TB)
-Memoria RAM	Capacidad + Unidad de medida en mayúscula sin espacio seguido de un espacio y la palabra RAM (1GB RAM, 2GB RAM)
-Cámara Principal	Cantidad seguida de la unidad de medida expresada en megapíxeles (MP) sin espacio y la palabra “Principal” separada por un espacio (12MP Principal, 15MP Principal).
-Cámara Frontal	Cantidad seguida de la unidad de medida expresada en megapíxeles (MP) sin espacio y la palabra “Frontal” separada por un espacio (12MP Frontal, 15MP Frontal).
-Propiedades de batería	Cantidad seguida de un espacio y la unidad de medida expresa en amperios por hora (pueden ser miliamperios por hora) (3000 mAh)
-Sistema Operativo	Según especificación. Colocar plataforma, versión y, si es Android, el nombre (Android 8.0 Oreo) o si son sistemas operativos basados en algunas ROMS o propias del fabricante (OxygenOS basado en Android 10), “basado en” siempre se debe de escribir antes de la versión de Android.
-Color	Según especificación
-(Blanco, Rojo). Pueden crearse tipos combinados si se unen los nombres de los colores por medio del signo “/” sin espacios (Blanco/Rojo).
-Cámara Dual	Sí/No
-Resistente al agua	Sí/No
-Gorilla Glass	Sí/No
+﻿<!--
+TamaÃ±o de la pantalla	Cantidad seguida de un espacio y la unidad de medida expresada en pulgadas con la abreviaciÃ³n Plg (4.5 Plg, 5.5 Plg)
+Almacenamiento	Capacidad + Unidad de medida en mayÃºscula sin espacio (240GB, 1TB)
+Memoria RAM	Capacidad + Unidad de medida en mayÃºscula sin espacio seguido de un espacio y la palabra RAM (1GB RAM, 2GB RAM)
+CÃ¡mara Principal	Cantidad seguida de la unidad de medida expresada en megapÃ­xeles (MP) sin espacio y la palabra â€œPrincipalâ€ separada por un espacio (12MP Principal, 15MP Principal).
+CÃ¡mara Frontal	Cantidad seguida de la unidad de medida expresada en megapÃ­xeles (MP) sin espacio y la palabra â€œFrontalâ€ separada por un espacio (12MP Frontal, 15MP Frontal).
+Propiedades de baterÃ­a	Cantidad seguida de un espacio y la unidad de medida expresa en amperios por hora (pueden ser miliamperios por hora) (3000 mAh)
+Sistema Operativo	SegÃºn especificaciÃ³n. Colocar plataforma, versiÃ³n y, si es Android, el nombre (Android 8.0 Oreo) o si son sistemas operativos basados en algunas ROMS o propias del fabricante (OxygenOS basado en Android 10), â€œbasado enâ€ siempre se debe de escribir antes de la versiÃ³n de Android.
+Color	SegÃºn especificaciÃ³n
+(Blanco, Rojo). Pueden crearse tipos combinados si se unen los nombres de los colores por medio del signo â€œ/â€ sin espacios (Blanco/Rojo).
+CÃ¡mara Dual	SÃ­/No
+Resistente al agua	SÃ­/No
+Gorilla Glass	SÃ­/No
+-->
 
-
-<!-- BLOQUE: Smartphone (solo descripción y tabla de especificaciones) -->
+<!-- BLOQUE: Smartphone (solo descripciÃ³n y tabla de especificaciones) -->
 <div class="row">
 <div class="col-sm-8 col-offset-sm-2 col-md-10 offset-md-1 mb-3">
 <div class="product-seo-intro">
-<p>Smartphone con batería de alta capacidad, sistema de cámaras asistidas por IA y almacenamiento ampliable; pensado para uso intensivo, fotografía y multimedia.</p>
+<p>Smartphone con baterÃ­a de alta capacidad, sistema de cÃ¡maras asistidas por IA y almacenamiento ampliable; pensado para uso intensivo, fotografÃ­a y multimedia.</p>
 </div>
 <br>
 <h6 class="tt-title-sub text-center">ESPECIFICACIONES DEL PRODUCTO</h6>
@@ -24,9 +25,9 @@ Gorilla Glass	Sí/No
 <div class="div-drop">
 <table id="table-plan-smartphone" width="100%" class="NEW-TABLE TableOverride-1 tab-drag" role="table" aria-label="Especificaciones del smartphone" style="margin: auto;">
 <tbody>
-<!-- Cámara -->
+<!-- CÃ¡mara -->
 <tr>
-<td class="tableCellGroupTitle">Cámara</td>
+<td class="tableCellGroupTitle">CÃ¡mara</td>
 <td class="tableCellGroupTitleContent"></td>
 </tr>
 <tr>
@@ -68,21 +69,21 @@ Gorilla Glass	Sí/No
 <td class="tableCellGroupTitleContent"></td>
 </tr>
 <tr>
-<td class="tableCellMeta">Tamaño de la pantalla</td>
+<td class="tableCellMeta">TamaÃ±o de la pantalla</td>
 <td class="tableCellContent">No especificado</td>
 </tr>
 
-<!-- Batería -->
+<!-- BaterÃ­a -->
 <tr>
-<td class="tableCellGroupTitle">Batería</td>
+<td class="tableCellGroupTitle">BaterÃ­a</td>
 <td class="tableCellGroupTitleContent"></td>
 </tr>
 <tr>
-<td class="tableCellMeta">Propiedades de batería</td>
+<td class="tableCellMeta">Propiedades de baterÃ­a</td>
 <td class="tableCellContent">6000 mAh</td>
 </tr>
 <tr>
-<td class="tableCellMeta">Duración de la batería</td>
+<td class="tableCellMeta">DuraciÃ³n de la baterÃ­a</td>
 <td class="tableCellContent">No especificado</td>
 </tr>
 
@@ -92,8 +93,8 @@ Gorilla Glass	Sí/No
 <td class="tableCellGroupTitleContent"></td>
 </tr>
 <tr>
-<td class="tableCellMeta">Carga rápida</td>
-<td class="tableCellContent">45W (0–100% en 1 h 15 m)</td>
+<td class="tableCellMeta">Carga rÃ¡pida</td>
+<td class="tableCellContent">45W (0â€“100% en 1 h 15 m)</td>
 </tr>
 
 <!-- Sistema operativo -->
@@ -106,22 +107,22 @@ Gorilla Glass	Sí/No
 <td class="tableCellContent">No especificado</td>
 </tr>
 
-<!-- Resistencia y protección -->
+<!-- Resistencia y protecciÃ³n -->
 <tr>
-<td class="tableCellGroupTitle">Resistencia y protección</td>
+<td class="tableCellGroupTitle">Resistencia y protecciÃ³n</td>
 <td class="tableCellGroupTitleContent"></td>
 </tr>
 <tr>
-<td class="tableCellMeta">Protección</td>
+<td class="tableCellMeta">ProtecciÃ³n</td>
 <td class="tableCellContent">Gorilla Glass 7i; IP65</td>
 </tr>
 <tr>
 <td class="tableCellMeta">Gorilla Glass</td>
-<td class="tableCellContent">Sí</td>
+<td class="tableCellContent">SÃ­</td>
 </tr>
 <tr>
 <td class="tableCellMeta">Resistente al agua</td>
-<td class="tableCellContent">Sí</td>
+<td class="tableCellContent">SÃ­</td>
 </tr>
 
 <!-- Apariencia y extras -->
@@ -134,8 +135,8 @@ Gorilla Glass	Sí/No
 <td class="tableCellContent">No especificado</td>
 </tr>
 <tr>
-<td class="tableCellMeta">Cámara Dual</td>
-<td class="tableCellContent">Sí</td>
+<td class="tableCellMeta">CÃ¡mara Dual</td>
+<td class="tableCellContent">SÃ­</td>
 </tr>
 </tbody>
 </table>

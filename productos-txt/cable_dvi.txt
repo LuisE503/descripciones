@@ -1,3 +1,4 @@
+<!--
 INSTRUCCIONES PARA CABLE DVI:
 
 Tipo: DVI-D, DVI-A, DVI-I (especificar)
@@ -8,6 +9,7 @@ Apantallamiento: Doble, Triple, Ninguno
 Características: Ferrita, Resistencia EMI/RFI
 Resolución máxima: Soportada (1920x1200, 2560x1600, etc.)
 Marcas: Especificar si es genérico o marca específica
+-->
 
 <!-- BLOQUE: Cable DVI (descripción y tabla de especificaciones) -->
 <div class="row">

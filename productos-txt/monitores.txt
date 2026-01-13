@@ -1,4 +1,4 @@
-<!-- BLOQUE: Monitores (estructura y CSS consistente con los bloques anteriores) -->
+﻿<!-- BLOQUE: Monitores (estructura y CSS consistente con los bloques anteriores) -->
 <div class="row">
   <div class="col-sm-8 col-offset-sm-2 col-md-10 offset-md-1 mb-3">
     <div class="product-seo-intro">
@@ -188,8 +188,8 @@
   }
 </style>
 
-
-
+<!--
+INSTRUCCIONES ADICIONALES:
 Tecnología de pantalla	Resaltar el tipo de tecnología para construir la pantalla utilizando términos como LCD, Plasma u otra tecnología según su especificación, IPS.
 Retroiluminación	Colocar el tipo de retroiluminación que posee el monitor en dado caso tanto el panel como la retroiluminación sean distintos (IPS, WLED, LED, LCD)
 Tamaño de pantalla	Cantidad seguida de un espacio y la unidad de medida expresada en pulgadas con la abreviación Plg (14.5 Plg, 15.6 Plg)
@@ -210,3 +210,4 @@ Compatibilidad con brackets	Sí/No
 Pantalla antirreflejo.	Sí/No
 
 Si alguna caracteristica no esta no se coloca dependera de las especificaciones oficiales
+-->

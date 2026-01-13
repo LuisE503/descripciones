@@ -23,6 +23,10 @@
     --chatgpt-primary: #10a37f;
     --chatgpt-hover: #0d8c6d;
     
+    /* Colores Qwen */
+    --qwen-primary: #7c3aed;
+    --qwen-hover: #6d28d9;
+    
     /* Colores Groq */
     --groq-primary: #f97316;
     --groq-hover: #ea580c;
@@ -1860,6 +1864,17 @@ body {
 .btn-chatgpt:hover:not(:disabled) {
     background: var(--chatgpt-hover);
     border-color: var(--chatgpt-hover);
+}
+
+.btn-qwen {
+    background: var(--qwen-primary);
+    color: white;
+    border-color: var(--qwen-primary);
+}
+
+.btn-qwen:hover:not(:disabled) {
+    background: var(--qwen-hover);
+    border-color: var(--qwen-hover);
 }
 
 .btn-groq {

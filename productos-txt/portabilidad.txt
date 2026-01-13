@@ -1,20 +1,22 @@
+﻿<!--
 INSTRUCCIONES PARA PORTABILIDAD (Mochilas, Fundas, Maletas):
 
-Tipo: Mochila, Funda, Maletín, Maleta, Bolso
-Compatibilidad: Tamaño de dispositivo (14", 15.6", 17" para laptops)
+Tipo: Mochila, Funda, MaletÃ­n, Maleta, Bolso
+Compatibilidad: TamaÃ±o de dispositivo (14", 15.6", 17" para laptops)
 Capacidad: Litros aproximados
-Material exterior: Nylon, Poliéster, Cuero, Canvas
+Material exterior: Nylon, PoliÃ©ster, Cuero, Canvas
 Material interior: Acolchado, Neopreno, Tela
 Dimensiones: Alto x Ancho x Profundidad (cm)
 Peso: Gramos o kilogramos
-Compartimentos: Número y especificación de bolsillos
-Características: Resistencia al agua, Correas, Ruedas (si aplica)
+Compartimentos: NÃºmero y especificaciÃ³n de bolsillos
+CaracterÃ­sticas: Resistencia al agua, Correas, Ruedas (si aplica)
+-->
 
-<!-- BLOQUE: Portabilidad - Mochilas y Fundas (descripción y tabla de especificaciones) -->
+<!-- BLOQUE: Portabilidad - Mochilas y Fundas (descripciÃ³n y tabla de especificaciones) -->
 <div class="row">
 <div class="col-sm-8 col-offset-sm-2 col-md-10 offset-md-1 mb-3">
 <div class="product-seo-intro">
-<p>Soluciones de portabilidad diseñadas para proteger y transportar tus dispositivos con comodidad y seguridad. Desde mochilas hasta maletas, con diseño ergonómico y materiales de calidad.</p>
+<p>Soluciones de portabilidad diseÃ±adas para proteger y transportar tus dispositivos con comodidad y seguridad. Desde mochilas hasta maletas, con diseÃ±o ergonÃ³mico y materiales de calidad.</p>
 </div>
 <br>
 <h6 class="tt-title-sub text-center">ESPECIFICACIONES DEL PRODUCTO</h6>
@@ -22,23 +24,23 @@ Características: Resistencia al agua, Correas, Ruedas (si aplica)
 <div class="div-drop">
 <table style="margin: auto;" class="NEW-TABLE TableOverride-1 tab-drag" width="100%">
 <tbody>
-<!-- IDENTIFICACIÓN -->
+<!-- IDENTIFICACIÃ“N -->
 <tr>
-<td class="tableCellGroupTitle">Identificación</td>
+<td class="tableCellGroupTitle">IdentificaciÃ³n</td>
 <td class="tableCellGroupTitleContent"></td>
 </tr>
 <tr>
 <td class="tableCellMeta">Tipo de producto</td>
-<td class="tableCellContent">Mochila | Funda | Maletín | Maleta</td>
+<td class="tableCellContent">Mochila | Funda | MaletÃ­n | Maleta</td>
 </tr>
 <tr>
 <td class="tableCellMeta">Compatibilidad</td>
-<td class="tableCellContent">Tamaño dispositivo compatible</td>
+<td class="tableCellContent">TamaÃ±o dispositivo compatible</td>
 </tr>
 
-<!-- ESPECIFICACIONES FÍSICAS -->
+<!-- ESPECIFICACIONES FÃSICAS -->
 <tr>
-<td class="tableCellGroupTitle">Especificaciones Físicas</td>
+<td class="tableCellGroupTitle">Especificaciones FÃ­sicas</td>
 <td class="tableCellGroupTitleContent"></td>
 </tr>
 <tr>
@@ -54,28 +56,28 @@ Características: Resistencia al agua, Correas, Ruedas (si aplica)
 <td class="tableCellContent">En kilogramos</td>
 </tr>
 
-<!-- MATERIALES Y CONSTRUCCIÓN -->
+<!-- MATERIALES Y CONSTRUCCIÃ“N -->
 <tr>
 <td class="tableCellGroupTitle">Materiales</td>
 <td class="tableCellGroupTitleContent"></td>
 </tr>
 <tr>
 <td class="tableCellMeta">Material exterior</td>
-<td class="tableCellContent">Nylon | Poliéster | Cuero | Canvas</td>
+<td class="tableCellContent">Nylon | PoliÃ©ster | Cuero | Canvas</td>
 </tr>
 <tr>
 <td class="tableCellMeta">Material interior</td>
 <td class="tableCellContent">Acolchado | Neopreno | Tela</td>
 </tr>
 
-<!-- CARACTERÍSTICAS -->
+<!-- CARACTERÃSTICAS -->
 <tr>
-<td class="tableCellGroupTitle">Características</td>
+<td class="tableCellGroupTitle">CaracterÃ­sticas</td>
 <td class="tableCellGroupTitleContent"></td>
 </tr>
 <tr>
 <td class="tableCellMeta">Compartimentos</td>
-<td class="tableCellContent">Número de bolsillos y espacios</td>
+<td class="tableCellContent">NÃºmero de bolsillos y espacios</td>
 </tr>
 <tr>
 <td class="tableCellMeta">Especiales</td>

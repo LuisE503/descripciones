@@ -1,31 +1,32 @@
+﻿<!--
 Peso	Colocar la cantidad mas su peso en gramos (2g, 8g, 25g)
 Color	Escribir el color de la misma, usualmente son dos (Blanco , Gris o Negro)
 Tipo de Base	Escribir la base de la cual deriva (Silicona, Metal, Poliuretano)
-Viscosidad	Escribir los valores de la viscosidad separados por un guion sin espacio con su medida que es “Pascal segundo (Pa·s)”, entre los valores y la unidad de medida existe un espacio (130-199 Pa·s), se recomienda màs el uso de  Pa·s que de poise, este último se escribe en minúscula.
-Conductividad Térmica	Cantidad + unidad de medida
+Viscosidad	Escribir los valores de la viscosidad separados por un guion sin espacio con su medida que es â€œPascal segundo (PaÂ·s)â€, entre los valores y la unidad de medida existe un espacio (130-199 PaÂ·s), se recomienda mÃ s el uso de  PaÂ·s que de poise, este Ãºltimo se escribe en minÃºscula.
+Conductividad TÃ©rmica	Cantidad + unidad de medida
 (12.5 W/mk)
-Resistencia Térmica	Cantidad + unidad de medida
+Resistencia TÃ©rmica	Cantidad + unidad de medida
 (0.0032 K/W)
-Conductividad Eléctrica	Cantidad + unidad de medida (0 pS/m)
+Conductividad ElÃ©ctrica	Cantidad + unidad de medida (0 pS/m)
 Temperatura	Cantidad + unidad de medida
-(-250°C/+350 ° C)
+(-250Â°C/+350 Â° C)
 
 
 Nota: tomar en cuenta que la descripcion cambiara dependiendo de la informacion que se de en el prompt
 
-Descripcion de ejemplo 
+Descripcion de ejemplo
+-->
 
-
-<!-- BLOQUE: Pasta Térmica (estructura y CSS consistente con los bloques anteriores) -->
+<!-- BLOQUE: Pasta TÃ©rmica (estructura y CSS consistente con los bloques anteriores) -->
 <div class="row">
   <div class="col-sm-8 col-offset-sm-2 col-md-10 offset-md-1 mb-3">
     <div class="product-seo-intro">
-      <p>Esta pasta térmica de alto rendimiento está diseñada para disipación eficiente de calor en CPUs, GPUs y disipadores, ofreciendo baja resistencia térmica, buena estabilidad a largo plazo y una aplicación sencilla para sistemas de escritorio y portátiles.</p>
+      <p>Esta pasta tÃ©rmica de alto rendimiento estÃ¡ diseÃ±ada para disipaciÃ³n eficiente de calor en CPUs, GPUs y disipadores, ofreciendo baja resistencia tÃ©rmica, buena estabilidad a largo plazo y una aplicaciÃ³n sencilla para sistemas de escritorio y portÃ¡tiles.</p>
     </div>
     <br>
     <h6 class="tt-title-sub">ESPECIFICACIONES DEL PRODUCTO</h6>
     <div class="div-drop">
-      <table class="NEW-TABLE TableOverride-1 tab-drag" width="100%" id="table-plan-thermalpaste" role="table" aria-label="Especificaciones de la pasta térmica">
+      <table class="NEW-TABLE TableOverride-1 tab-drag" width="100%" id="table-plan-thermalpaste" role="table" aria-label="Especificaciones de la pasta tÃ©rmica">
         <tbody>
           <!-- RENDIMIENTO -->
           <tr>
@@ -33,58 +34,58 @@ Descripcion de ejemplo
             <td class="tableCellGroupTitleContent"></td>
           </tr>
           <tr>
-            <td class="tableCellMeta"><strong>Conductividad térmica</strong></td>
+            <td class="tableCellMeta"><strong>Conductividad tÃ©rmica</strong></td>
             <td class="tableCellContent">Alta conductividad para transferencia eficiente de calor</td>
           </tr>
           <tr>
-            <td class="tableCellMeta">Resistencia térmica</td>
-            <td class="tableCellContent">Baja resistencia térmica para mejorar la disipación</td>
+            <td class="tableCellMeta">Resistencia tÃ©rmica</td>
+            <td class="tableCellContent">Baja resistencia tÃ©rmica para mejorar la disipaciÃ³n</td>
           </tr>
 
-          <!-- COMPOSICIÓN Y PROPIEDADES -->
+          <!-- COMPOSICIÃ“N Y PROPIEDADES -->
           <tr>
-            <td class="tableCellGroupTitle">Composición y Propiedades</td>
+            <td class="tableCellGroupTitle">ComposiciÃ³n y Propiedades</td>
             <td class="tableCellGroupTitleContent"></td>
           </tr>
           <tr>
             <td class="tableCellMeta">Base</td>
-            <td class="tableCellContent">Compuesto de silicona/cerámico; formulación no conductora eléctricamente</td>
+            <td class="tableCellContent">Compuesto de silicona/cerÃ¡mico; formulaciÃ³n no conductora elÃ©ctricamente</td>
           </tr>
           <tr>
             <td class="tableCellMeta">Viscosidad</td>
-            <td class="tableCellContent">Textura cremosa para aplicación uniforme</td>
+            <td class="tableCellContent">Textura cremosa para aplicaciÃ³n uniforme</td>
           </tr>
           <tr>
-            <td class="tableCellMeta">Estabilidad térmica</td>
-            <td class="tableCellContent">Resistente a la degradación por ciclos térmicos</td>
+            <td class="tableCellMeta">Estabilidad tÃ©rmica</td>
+            <td class="tableCellContent">Resistente a la degradaciÃ³n por ciclos tÃ©rmicos</td>
           </tr>
 
-          <!-- APLICACIÓN Y USO -->
+          <!-- APLICACIÃ“N Y USO -->
           <tr>
-            <td class="tableCellGroupTitle">Aplicación y Uso</td>
+            <td class="tableCellGroupTitle">AplicaciÃ³n y Uso</td>
             <td class="tableCellGroupTitleContent"></td>
           </tr>
           <tr>
-            <td class="tableCellMeta">Método de aplicación</td>
-            <td class="tableCellContent">Punta fina incluida; aplicar una pequeña cantidad y esparcir o usar método de punto</td>
+            <td class="tableCellMeta">MÃ©todo de aplicaciÃ³n</td>
+            <td class="tableCellContent">Punta fina incluida; aplicar una pequeÃ±a cantidad y esparcir o usar mÃ©todo de punto</td>
           </tr>
           <tr>
             <td class="tableCellMeta">Superficies compatibles</td>
             <td class="tableCellContent">CPUs, GPUs, disipadores de aluminio y cobre, bloques de agua</td>
           </tr>
 
-          <!-- PRESENTACIÓN -->
+          <!-- PRESENTACIÃ“N -->
           <tr>
-            <td class="tableCellGroupTitle">Presentación</td>
+            <td class="tableCellGroupTitle">PresentaciÃ³n</td>
             <td class="tableCellGroupTitleContent"></td>
           </tr>
           <tr>
             <td class="tableCellMeta">Contenido</td>
-            <td class="tableCellContent">3 g; también disponible en 5 g y 10 g</td>
+            <td class="tableCellContent">3 g; tambiÃ©n disponible en 5 g y 10 g</td>
           </tr>
           <tr>
             <td class="tableCellMeta">Accesorios incluidos</td>
-            <td class="tableCellContent">Espátula aplicadora; boquilla de precisión</td>
+            <td class="tableCellContent">EspÃ¡tula aplicadora; boquilla de precisiÃ³n</td>
           </tr>
 
           <!-- COMPATIBILIDAD -->
@@ -94,7 +95,7 @@ Descripcion de ejemplo
           </tr>
           <tr>
             <td class="tableCellMeta">Plataformas</td>
-            <td class="tableCellContent">Intel y AMD (sockets modernos); tarjetas gráficas y sistemas de refrigeración por agua</td>
+            <td class="tableCellContent">Intel y AMD (sockets modernos); tarjetas grÃ¡ficas y sistemas de refrigeraciÃ³n por agua</td>
           </tr>
 
           <!-- SEGURIDAD Y ALMACENAMIENTO -->
@@ -104,11 +105,11 @@ Descripcion de ejemplo
           </tr>
           <tr>
             <td class="tableCellMeta">Precauciones</td>
-            <td class="tableCellContent">Evitar contacto con ojos; mantener fuera del alcance de niños</td>
+            <td class="tableCellContent">Evitar contacto con ojos; mantener fuera del alcance de niÃ±os</td>
           </tr>
           <tr>
             <td class="tableCellMeta">Almacenamiento</td>
-            <td class="tableCellContent">Conservar en lugar fresco y seco; cerrar bien el envase después de usar</td>
+            <td class="tableCellContent">Conservar en lugar fresco y seco; cerrar bien el envase despuÃ©s de usar</td>
           </tr>
         </tbody>
       </table>
@@ -125,7 +126,7 @@ Descripcion de ejemplo
     border-radius: 5px 5px 0 0;
   }
 
-  /* Heredar tipografía del tema automáticamente */
+  /* Heredar tipografÃ­a del tema automÃ¡ticamente */
   .row,
   .NEW-TABLE,
   .TableOverride-1,
@@ -141,7 +142,7 @@ Descripcion de ejemplo
     color: inherit;
   }
 
-  /* Título centrado pero más pequeño */
+  /* TÃ­tulo centrado pero mÃ¡s pequeÃ±o */
   .tt-title-sub {
     font-size: 12px;
     font-weight: 700;

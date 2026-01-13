@@ -1,3 +1,4 @@
+<!--
 INSTRUCCIONES PARA DRONES:
 
 Tipo: Cuadricóptero, Hexacóptero, Ala fija, Submarino
@@ -10,6 +11,7 @@ Batería: Capacidad mAh, Tiempo carga
 Resistencia: Lluvia, Nieve, Viento (si aplica)
 Control: Aplicación móvil, Control remoto
 Accesorios: Propelas, Baterías, Cargador
+-->
 
 <!-- BLOQUE: Drones (descripción y tabla de especificaciones) -->
 <div class="row">

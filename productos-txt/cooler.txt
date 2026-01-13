@@ -150,9 +150,11 @@
   }
 </style>
 
-
+<!--
+INSTRUCCIONES ADICIONALES:
 Se añade la serie del cooler
 En tipo de socket se añaden las compatibilidades
 en estilo el estilo del cooler
 en dimensiones y material se añade solo las especificaciones que se tengan
 si no se tiene especificacion de algo no se coloca
+-->

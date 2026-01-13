@@ -981,6 +981,7 @@ function initializeEventListeners() {
     document.getElementById('copyCodeBtn').addEventListener('click', copyCode);
     document.getElementById('copyCodeInline').addEventListener('click', copyCode);
     document.getElementById('copyFullPromptBtn').addEventListener('click', copyFullPrompt);
+    document.getElementById('copyQwenPromptBtn').addEventListener('click', copyQwenPrompt);
     document.getElementById('copyMetaPromptBtn').addEventListener('click', copyMetaPrompt);
     document.getElementById('copyGroqPromptBtn').addEventListener('click', copyGroqPrompt);
     
@@ -1236,6 +1237,7 @@ function updateButtonStates() {
     const status = document.getElementById('descriptionStatus');
     
     document.getElementById('copyFullPromptBtn').disabled = !hasContent;
+    document.getElementById('copyQwenPromptBtn').disabled = !hasContent;
     document.getElementById('copyMetaPromptBtn').disabled = !hasContent;
     document.getElementById('copyGroqPromptBtn').disabled = !hasContent;
     
@@ -1312,6 +1314,23 @@ function copyGroqPrompt() {
     const prompt = generateGroqPrompt(product, productData.htmlCode, productData.promptRules, officialDescription);
     copyToClipboard(prompt);
     showToast('✅ Prompt Groq copiado al portapapeles');
+}
+
+function copyQwenPrompt() {
+    if (!appState.currentProduct) return;
+    
+    const product = appState.currentProduct;
+    const productData = appState.productsData[product.category];
+    const officialDescription = document.getElementById('officialDescription').value.trim();
+    
+    if (!productData || !officialDescription) {
+        showToast('⚠️ Pega la información del producto primero', 'warning');
+        return;
+    }
+    
+    const prompt = generateQwenPrompt(product, productData.htmlCode, productData.promptRules, officialDescription);
+    copyToClipboard(prompt);
+    showToast('✅ Prompt Qwen copiado al portapapeles');
 }
 
 // =============================================

@@ -1,19 +1,21 @@
+﻿<!--
 Velocidad	Cantidad seguida de la unidad de medida sin espacios expresada en Mbps (1000Mbps)
-Alcance de transmisión	Cantidad seguida de una unidad de medida de longitud según el Sistema Internacional (500m, 2km)
-Puertos	Cantidad seguida de un espacio y la palabra Puertos con inicial mayúscula (o Puerto, si solo incluye uno) (4 Puertos).
+Alcance de transmisiÃ³n	Cantidad seguida de una unidad de medida de longitud segÃºn el Sistema Internacional (500m, 2km)
+Puertos	Cantidad seguida de un espacio y la palabra Puertos con inicial mayÃºscula (o Puerto, si solo incluye uno) (4 Puertos).
 Ancho de banda	Si se especifica, colocar una cantidad seguida de la unidad de medida especificada en Mbit/s o Gbit/s, por lo general, sin espacios (34Mbit/s)
 Frecuencia	Medida de la frecuencia del dispositivo, expresada por lo general en unidad de GHz. Debe incluir una cantidad sin espacios (2.4GHz, 3.1GHz).
-Estándar Wireless	Si se encuentra esta información, se verá disponible una expresión como “802.11n” que representa el estándar IEE que sigue el dispositivo. Algunas veces, este estándar se encontrará como Wireless AC, Wireless N. Si es así, es preferible colocar 802.11ac o 802.11n.
-Antenas externas	Si el dispositivo posee antenas, especificarlas colocando la cantidad, un espacio y la palabra Antenas con inicial mayúscula (4 Antenas).
-Puerto Ethernet	Sí/No
-Banda Dual	Sí/No
-Botón WPS	Sí/No
+EstÃ¡ndar Wireless	Si se encuentra esta informaciÃ³n, se verÃ¡ disponible una expresiÃ³n como â€œ802.11nâ€ que representa el estÃ¡ndar IEE que sigue el dispositivo. Algunas veces, este estÃ¡ndar se encontrarÃ¡ como Wireless AC, Wireless N. Si es asÃ­, es preferible colocar 802.11ac o 802.11n.
+Antenas externas	Si el dispositivo posee antenas, especificarlas colocando la cantidad, un espacio y la palabra Antenas con inicial mayÃºscula (4 Antenas).
+Puerto Ethernet	SÃ­/No
+Banda Dual	SÃ­/No
+BotÃ³n WPS	SÃ­/No
+-->
 
-<!-- BLOQUE: Amplificador de red (solo descripción y tabla de especificaciones) -->
+<!-- BLOQUE: Amplificador de red (solo descripciÃ³n y tabla de especificaciones) -->
 <div class="row">
   <div class="col-sm-8 col-offset-sm-2 col-md-10 offset-md-1 mb-3">
     <div class="product-seo-intro">
-      <p>Amplificador de red para extender la cobertura Wi‑Fi en interiores: soporte banda dual, puerto Ethernet y alcance ampliado para mejorar la conectividad en hogares y oficinas pequeñas.</p>
+      <p>Amplificador de red para extender la cobertura Wiâ€‘Fi en interiores: soporte banda dual, puerto Ethernet y alcance ampliado para mejorar la conectividad en hogares y oficinas pequeÃ±as.</p>
     </div>
     <br>
     <h6 class="tt-title-sub text-center">ESPECIFICACIONES DEL PRODUCTO</h6>
@@ -21,9 +23,9 @@ Botón WPS	Sí/No
     <div class="div-drop">
       <table id="table-plan-network-amplifier" width="100%" class="NEW-TABLE TableOverride-1 tab-drag" role="table" aria-label="Especificaciones del amplificador de red" style="margin: auto;">
         <tbody>
-          <!-- Identificación -->
+          <!-- IdentificaciÃ³n -->
           <tr>
-            <td class="tableCellGroupTitle">Identificación</td>
+            <td class="tableCellGroupTitle">IdentificaciÃ³n</td>
             <td class="tableCellGroupTitleContent"></td>
           </tr>
           <tr>
@@ -35,9 +37,9 @@ Botón WPS	Sí/No
             <td class="tableCellContent">No especificado</td>
           </tr>
 
-          <!-- Características -->
+          <!-- CaracterÃ­sticas -->
           <tr>
-            <td class="tableCellGroupTitle">Características</td>
+            <td class="tableCellGroupTitle">CaracterÃ­sticas</td>
             <td class="tableCellGroupTitleContent"></td>
           </tr>
           <tr>
@@ -46,11 +48,11 @@ Botón WPS	Sí/No
           </tr>
           <tr>
             <td class="tableCellMeta">Banda Dual</td>
-            <td class="tableCellContent">Sí</td>
+            <td class="tableCellContent">SÃ­</td>
           </tr>
           <tr>
             <td class="tableCellMeta">Puerto Ethernet</td>
-            <td class="tableCellContent">Sí</td>
+            <td class="tableCellContent">SÃ­</td>
           </tr>
 
           <!-- Conectividad -->
@@ -59,7 +61,7 @@ Botón WPS	Sí/No
             <td class="tableCellGroupTitleContent"></td>
           </tr>
           <tr>
-            <td class="tableCellMeta">Estándar Wireless</td>
+            <td class="tableCellMeta">EstÃ¡ndar Wireless</td>
             <td class="tableCellContent">802.11b/g/n</td>
           </tr>
           <tr>
@@ -81,7 +83,7 @@ Botón WPS	Sí/No
             <td class="tableCellContent">300Mbps</td>
           </tr>
           <tr>
-            <td class="tableCellMeta">Alcance de transmisión</td>
+            <td class="tableCellMeta">Alcance de transmisiÃ³n</td>
             <td class="tableCellContent">270m</td>
           </tr>
           <tr>
@@ -95,7 +97,7 @@ Botón WPS	Sí/No
             <td class="tableCellGroupTitleContent"></td>
           </tr>
           <tr>
-            <td class="tableCellMeta">Botón WPS</td>
+            <td class="tableCellMeta">BotÃ³n WPS</td>
             <td class="tableCellContent">No especificado</td>
           </tr>
         </tbody>

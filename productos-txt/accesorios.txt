@@ -1,3 +1,4 @@
+<!--
 INSTRUCCIONES PARA ACCESORIOS PERIFÉRICOS:
 
 Tipos de accesorios: Adaptadores, Extensores, Conectores, Protectores, Organizadores
@@ -8,6 +9,7 @@ Dimensiones: Alto x Ancho x Profundidad (mm)
 Peso: Gramos exactos
 Características especiales: Antideslizante, Protección contra derrames, Ventilación, etc.
 Resistencia: Materiales resistentes a caídas/golpes si aplica
+-->
 
 <!-- BLOQUE: Accesorios para Periféricos (descripción y tabla de especificaciones) -->
 <div class="row">

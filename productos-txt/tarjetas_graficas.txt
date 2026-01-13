@@ -166,8 +166,8 @@
   }
 </style>
 
-
-
+<!--
+INSTRUCCIONES ADICIONALES:
 Chipset	Se debe de colocar el modelo o versión del Chipset bajo el cual se fabrico la tarjeta gráfica, NVIDIA GeForce GTX 1060, AMD RX550.
 Serie	Según la especificación. Se trata del nombre con el que se clasifica a los productos.
 Velocidad de núcleo	Cantidad seguida de la unidad de medida en Mega Hertz (1594 MHz) eliminar coma o puntos decimales
@@ -182,5 +182,5 @@ Puerto VGA	Sí/No
 Puerto HDMI	Sí/No
 Puerto DisplayPort	Sí/No
 
-
 Todo es segun las especificaciones oficiales si no las contienen no se coloca
+-->

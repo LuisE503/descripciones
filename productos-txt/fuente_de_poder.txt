@@ -122,9 +122,10 @@
   }
 </style>
 
-
-La potencia de expresa en W
-y en clasificacion 80 plus se explresa en Bronze, Silver, Gold, platinum o titanum segun se especifique en las especificaciones
-si no no se coloca esta clasificacion
-Modular o Semimodular se coloca si o no segun se especifique
-
+<!--
+INSTRUCCIONES ADICIONALES:
+La potencia se expresa en W
+y en clasificación 80 plus se expresa en Bronze, Silver, Gold, Platinum o Titanium según se especifique
+si no, no se coloca esta clasificación
+Modular o Semimodular se coloca sí o no según se especifique
+-->

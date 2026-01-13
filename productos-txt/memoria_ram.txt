@@ -122,8 +122,10 @@
   }
 </style>
 
-
+<!--
+INSTRUCCIONES ADICIONALES:
 Clasificacion se coloca ya sea ddr4, ddr5, electrónico
 en tipo de sispositivo electronico se coloca se es para laptop, desktop, servidor o para lo que sea
 en capacidades y velocidades se coloca la capacidad en gb 
 y en velocidades lo mismo se aplica no no aparecen velocidades no se coloca nada
+-->

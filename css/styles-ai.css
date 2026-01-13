@@ -19,6 +19,10 @@
     --groq-primary: #f97316;
     --groq-secondary: #ea580c;
     
+    /* Colores ChatGPT */
+    --chatgpt-primary: #10a37f;
+    --chatgpt-secondary: #0d8a6a;
+    
     /* Gradientes AI */
     --gradient-ai: linear-gradient(135deg, #10b981 0%, #059669 50%, #047857 100%);
     --gradient-ai-header: linear-gradient(135deg, #064e3b 0%, #065f46 25%, #047857 50%, #059669 75%, #10b981 100%);
@@ -504,6 +508,124 @@
     transform: none;
 }
 
+.btn-ai-tags {
+    background: linear-gradient(135deg, #8b5cf6 0%, #a855f7 100%);
+    color: white;
+    border: none;
+    padding: var(--spacing-md) var(--spacing-xl);
+    border-radius: var(--radius-lg);
+    font-weight: 600;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-sm);
+    transition: var(--transition-normal);
+    font-family: var(--font-family);
+    margin-top: auto;
+    box-shadow: 0 4px 15px rgba(139, 92, 246, 0.3);
+}
+
+.btn-ai-tags:hover:not(:disabled) {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(139, 92, 246, 0.4);
+}
+
+.btn-ai-tags:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+    transform: none;
+}
+
+/* Tags icon style */
+.option-icon.tags-icon {
+    background: linear-gradient(135deg, rgba(139, 92, 246, 0.2), rgba(168, 85, 247, 0.2));
+    color: #8b5cf6;
+}
+
+/* =============================================
+   BOTONES DE FOOTER - PROMPTS API
+   ============================================= */
+.btn-chatgpt {
+    background: linear-gradient(135deg, var(--chatgpt-primary) 0%, var(--chatgpt-secondary) 100%);
+    color: white;
+    border: none;
+    padding: var(--spacing-sm) var(--spacing-lg);
+    border-radius: var(--radius-lg);
+    font-weight: 600;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-sm);
+    transition: var(--transition-normal);
+    font-family: var(--font-family);
+    box-shadow: 0 4px 12px rgba(16, 163, 127, 0.25);
+}
+
+.btn-chatgpt:hover:not(:disabled) {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(16, 163, 127, 0.35);
+}
+
+.btn-chatgpt:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+    transform: none;
+}
+
+.btn-groq {
+    background: linear-gradient(135deg, var(--groq-primary) 0%, var(--groq-secondary) 100%);
+    color: white;
+    border: none;
+    padding: var(--spacing-sm) var(--spacing-lg);
+    border-radius: var(--radius-lg);
+    font-weight: 600;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-sm);
+    transition: var(--transition-normal);
+    font-family: var(--font-family);
+    box-shadow: 0 4px 12px rgba(249, 115, 22, 0.25);
+}
+
+.btn-groq:hover:not(:disabled) {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(249, 115, 22, 0.35);
+}
+
+.btn-groq:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+    transform: none;
+}
+
+.btn-meta {
+    background: linear-gradient(135deg, #8b5cf6 0%, #7c3aed 100%);
+    color: white;
+    border: none;
+    padding: var(--spacing-sm) var(--spacing-lg);
+    border-radius: var(--radius-lg);
+    font-weight: 600;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-sm);
+    transition: var(--transition-normal);
+    font-family: var(--font-family);
+    box-shadow: 0 4px 12px rgba(139, 92, 246, 0.25);
+}
+
+.btn-meta:hover:not(:disabled) {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(139, 92, 246, 0.35);
+}
+
+.btn-meta:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+    transform: none;
+}
+
 /* AI Results */
 .ai-results {
     background: var(--bg-secondary);
@@ -552,6 +674,59 @@
     margin-top: var(--spacing-sm);
     font-size: 0.85rem;
     color: var(--text-secondary);
+}
+
+/* Tags Results */
+.tags-result {
+    background: var(--bg-primary);
+    border: 2px solid var(--border-light);
+    border-radius: var(--radius-lg);
+    padding: var(--spacing-lg);
+}
+
+.tags-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--spacing-sm);
+    margin-bottom: var(--spacing-md);
+}
+
+.generated-tag {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    background: linear-gradient(135deg, rgba(139, 92, 246, 0.1), rgba(168, 85, 247, 0.1));
+    border: 1px solid rgba(139, 92, 246, 0.3);
+    color: #7c3aed;
+    padding: 8px 16px;
+    border-radius: var(--radius-full);
+    font-size: 0.9rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.generated-tag:hover {
+    background: linear-gradient(135deg, #8b5cf6, #a855f7);
+    color: white;
+    border-color: transparent;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 15px rgba(139, 92, 246, 0.3);
+}
+
+.generated-tag i {
+    font-size: 0.8rem;
+}
+
+.tags-info {
+    font-size: 0.8rem;
+    color: var(--text-tertiary);
+    padding-top: var(--spacing-sm);
+    border-top: 1px solid var(--border-light);
+}
+
+.tags-info i {
+    color: #8b5cf6;
 }
 
 /* AI Loading */
@@ -697,4 +872,51 @@
         height: 60px;
         font-size: 1.75rem;
     }
+}
+
+/* =============================================
+   FOOTER AI ESPECÍFICO
+   ============================================= */
+.footer-ai {
+    border-top-color: var(--ai-primary);
+    background: linear-gradient(135deg, #0d2818 0%, #064e3b 50%, #065f46 100%);
+}
+
+.footer-ai .footer-main .footer-brand i {
+    color: var(--ai-primary);
+}
+
+.footer-ai .footer-stats h4,
+.footer-ai .footer-compat h4 {
+    color: var(--ai-primary);
+}
+
+.footer-ai .footer-stats li i {
+    color: var(--ai-primary);
+}
+
+.footer-ai .badge-compat {
+    background: rgba(16, 185, 129, 0.15);
+    border-color: rgba(16, 185, 129, 0.3);
+    color: var(--ai-primary);
+}
+
+.footer-ai .badge-compat:hover {
+    background: rgba(16, 185, 129, 0.25);
+}
+
+.footer-ai .badge-groq {
+    background: rgba(249, 115, 22, 0.15);
+    border-color: rgba(249, 115, 22, 0.3);
+    color: var(--groq-primary);
+}
+
+.footer-ai .badge-chatgpt {
+    background: rgba(16, 163, 127, 0.15);
+    border-color: rgba(16, 163, 127, 0.3);
+    color: #10a37f;
+}
+
+.footer-ai .version-ai .version-label {
+    background: var(--ai-primary);
 }

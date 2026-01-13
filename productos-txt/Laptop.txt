@@ -227,29 +227,8 @@
   }
 </style>
 
-
-
-Toma esta estructura de codigo de ejemplo
-
-IMPORTANTE - NIVEL DE COMPLEJIDAD:
-- Essential: Ryzen 3 o Intel i3 inferiores
-- Standard: Ryzen 5 o Intel i5
-- Premium: Ryzen 7 o Intel i7
-- Gaming: Ryzen 5/7 o i5/i7 con gráfica dedicada
-
-IMPORTANTE - TIPO:
-- Consumer: Cuando el equipo tiene Windows Home
-- Corporativo: Cuando el equipo tiene Windows Pro/Professional
-
-IMPORTANTE - TARJETA GRÁFICA:
-- Cuando el equipo tiene tarjeta gráfica dedicada (ej: NVIDIA GTX, RTX, AMD Radeon), añade una fila adicional en la sección "Procesamiento" con:
-  • Nombre: Tarjeta gráfica
-  • Valor: El modelo específico (ej: NVIDIA GeForce GTX 1650)
-
-IMPORTANTE - CARACTERÍSTICAS (Sí/No):
-- TODAS las características de Sí/No deben estar presentes en el código final
-- Si no tienes información que confirme explícitamente que una característica EXISTE, coloca "No"
-- NUNCA dejes celdas vacías
-- NUNCA omitas características de la lista
-- Solo pon "Sí" cuando la información confirme que la característica está presente
-- El valor por defecto es "No" cuando no hay información suficiente
+<!-- 
+  📖 INSTRUCCIONES PARA PROMPTS:
+  Ver archivo: _INSTRUCCIONES_laptop.md
+  Contiene reglas específicas para clasificación, GPU dedicada y características Sí/No
+-->

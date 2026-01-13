@@ -1,4 +1,4 @@
-<!-- BLOQUE: Case (estructura y CSS similar a la que proporcionaste) -->
+<!-- VISTA PREVIA HTML - Case/Gabinete -->
 <div class="row">
   <div class="col-sm-8 col-offset-sm-2 col-md-10 offset-md-1 mb-3">
     <div class="product-seo-intro">
@@ -20,7 +20,7 @@
           </tr>
           <tr>
             <td class="tableCellMeta">Color</td>
-            <td class="tableCellContent">Blanco/Rojo</td>
+            <td class="tableCellContent">Negro/RGB</td>
           </tr>
 
           <!-- COMPATIBILIDAD -->
@@ -40,11 +40,21 @@
           </tr>
           <tr>
             <td class="tableCellMeta">Acrílico</td>
-            <td class="tableCellContent">Sí</td>
+            <td class="tableCellContent">No</td>
           </tr>
           <tr>
             <td class="tableCellMeta">Vidrio Templado</td>
-            <td class="tableCellContent">No</td>
+            <td class="tableCellContent">Sí</td>
+          </tr>
+
+          <!-- VENTILACIÓN (solo para cases gaming con ventiladores) -->
+          <tr>
+            <td class="tableCellGroupTitle">Ventilación</td>
+            <td class="tableCellGroupTitleContent"></td>
+          </tr>
+          <tr>
+            <td class="tableCellMeta">Ventiladores Incluidos</td>
+            <td class="tableCellContent">3x 120mm RGB</td>
           </tr>
 
           <!-- GESTIÓN -->
@@ -142,12 +152,8 @@
   }
 </style>
 
-
-
-
-Toma esta estructura de codigo de ejemplo
-En clasificacion pon segun la clasificacion ATX, MINI-ITX, MICRO-ATX, EATX o segun sea el case
-Color el color del case
-Soporte para cables, si contiene si no se espeficica se añade No
-Si tiene vidrio acrilico o cidrio tamplado se pone si o no
-Si es un case gaming y tiene ventiladores se pone la cantidad de ventiladores en la tabla de ESPECIFICACIONES
+<!-- 
+  📖 INSTRUCCIONES PARA PROMPTS:
+  Ver archivo: _INSTRUCCIONES_case.md
+  Contiene reglas específicas para generar prompts de gabinetes/cases
+-->

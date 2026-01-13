@@ -1,7 +1,7 @@
 // =============================================
 // GENERADOR DE DESCRIPCIONES SHOPIFY AI
 // Script con Agente de IA Integrado
-// Soporta: Groq API (gratuito) y Qwen API
+// Soporta: Groq API y OpenAI ChatGPT API
 // =============================================
 
 // Estado global de la aplicación
@@ -15,19 +15,20 @@ const appState = {
     viewMode: 'grid',
     // Configuración de IA
     aiConfig: {
-        provider: 'groq', // 'groq' o 'qwen'
+        provider: 'groq', // 'groq' o 'chatgpt'
         groq: {
             apiKey: '',
             model: 'llama-3.3-70b-versatile'
         },
-        qwen: {
+        chatgpt: {
             apiKey: '',
-            model: 'qwen-plus'
+            model: 'gpt-4o'
         }
     },
     // Resultados de generación
     generatedHtml: '',
-    generatedMeta: ''
+    generatedMeta: '',
+    generatedTags: []
 };
 
 // Mapeo de categorías a iconos de FontAwesome
@@ -93,7 +94,36 @@ const categoryIcons = {
     switches: 'fa-code-branch',
     tablets: 'fa-tablet-screen-button',
     teclados_cableados_e_inalambricos: 'fa-keyboard',
-    pasta_termica: 'fa-temperature-low'
+    pasta_termica: 'fa-temperature-low',
+    // NUEVAS CATEGORÍAS
+    accesorios: 'fa-gift',
+    infraestructura_de_red: 'fa-network-wired',
+    portabilidad: 'fa-bag-shopping',
+    smart_home: 'fa-house',
+    drones: 'fa-helicopter',
+    cargadores: 'fa-plug',
+    tableta_grafica: 'fa-palette',
+    cable_dvi: 'fa-link',
+    internet_de_las_cosas: 'fa-globe'
+};
+
+// Grupos de categorías para navegación organizada
+const categoryGroups = {
+    'Computadoras': ['laptop', 'procesadores', 'motherboard', 'tarjetas_graficas', 'memoria_ram', 'cooler', 'pasta_termica', 'fuente_de_poder', 'gabinetes', 'case'],
+    'Protección Eléctrica': ['ups_y_ups_online', 'regulador_de_voltaje', 'supresor_de_voltaje', 'regletas'],
+    'Impresoras': ['impresora_de_inyeccion', 'impresora_laser', 'impresora_matricial', 'impresora_termica', 'plotter', 'escaneres'],
+    'Consumibles': ['cartuchos', 'tintas', 'toner', 'cinta'],
+    'Periféricos': ['teclados_cableados_e_inalambricos', 'mouse_cableados', 'mouse_inalambricos', 'combo_teclado_y_mouse_cableados_e_inalambrico', 'mouse_pad', 'audifonos_cableados_e_inalambricos', 'microfono'],
+    'Almacenamiento': ['almacenamiento_externo', 'memorias_extraibles', 'enclousure'],
+    'Conectividad': ['router', 'switches', 'punto_de_acceso', 'repetidores_de_red', 'amplificador_de_red', 'hostpot', 'adaptador_de_red_usb', 'hub_usb', 'infraestructura_de_red'],
+    'Cables': ['cable_hdmi', 'cable_usb', 'cable_utp_y_bobina_de_cable', 'cables_vga', 'cable_dvi'],
+    'CCTV y Vigilancia': ['camaras_de_vigilancia_analoga_ip_wifi', 'dvr', 'nvr'],
+    'Video': ['monitores', 'televisores', 'proyectores', 'soporte_o_bracket'],
+    'Electrónica': ['smartphone', 'tablets', 'smartwatches', 'camara_de_video_web_dslr_digital', 'drones', 'tableta_grafica'],
+    'Smart Home e IoT': ['smart_home', 'iot', 'internet_de_las_cosas'],
+    'Audio': ['bocina_e_inalambrica_y_sistema_de_audio'],
+    'Portabilidad': ['bases_para_laptop', 'portabilidad'],
+    'Office': ['software', 'estacion_de_carga', 'cargadores', 'accesorios']
 };
 
 // =============================================
@@ -157,11 +187,11 @@ function updateApiStatus() {
     const noConfigSection = document.getElementById('aiNoConfig');
     const aiOptions = document.querySelector('.ai-options');
     
-    const hasApiKey = appState.aiConfig.groq.apiKey || appState.aiConfig.qwen.apiKey;
+    const hasApiKey = appState.aiConfig.groq.apiKey || appState.aiConfig.chatgpt.apiKey;
     
     if (hasApiKey) {
         statusEl.classList.add('connected');
-        statusEl.innerHTML = `<i class="fas fa-circle"></i><span>${appState.aiConfig.provider === 'groq' ? 'Groq' : 'Qwen'} Conectado</span>`;
+        statusEl.innerHTML = `<i class="fas fa-circle"></i><span>${appState.aiConfig.provider === 'groq' ? 'Groq' : 'ChatGPT'} Conectado</span>`;
         banner.classList.add('hidden');
         
         if (noConfigSection) noConfigSection.style.display = 'none';
@@ -181,7 +211,7 @@ function updateApiStatus() {
 // =============================================
 async function loadProductContent(fileName) {
     try {
-        const response = await fetch(fileName);
+        const response = await fetch(`productos-txt/${fileName}`);
         if (!response.ok) throw new Error(`Error loading ${fileName}`);
         return await response.text();
     } catch (error) {
@@ -255,7 +285,17 @@ async function loadAllProductData() {
         switches: { file: 'switches.txt', rules: getRulesForCategory('switches') },
         tablets: { file: 'tablets.txt', rules: getRulesForCategory('tablets') },
         teclados_cableados_e_inalambricos: { file: 'teclados_cableados_e_inalambricos.txt', rules: getRulesForCategory('teclados_cableados_e_inalambricos') },
-        pasta_termica: { file: 'pasta_termica.txt', rules: getRulesForCategory('pasta_termica') }
+        pasta_termica: { file: 'pasta_termica.txt', rules: getRulesForCategory('pasta_termica') },
+        // NUEVAS CATEGORÍAS
+        accesorios: { file: 'accesorios.txt', rules: getRulesForCategory('accesorios') },
+        infraestructura_de_red: { file: 'infraestructura_de_red.txt', rules: getRulesForCategory('infraestructura_de_red') },
+        portabilidad: { file: 'portabilidad.txt', rules: getRulesForCategory('portabilidad') },
+        smart_home: { file: 'smart_home.txt', rules: getRulesForCategory('smart_home') },
+        drones: { file: 'drones.txt', rules: getRulesForCategory('drones') },
+        cargadores: { file: 'cargadores.txt', rules: getRulesForCategory('cargadores') },
+        tableta_grafica: { file: 'tableta_grafica.txt', rules: getRulesForCategory('tableta_grafica') },
+        cable_dvi: { file: 'cable_dvi.txt', rules: getRulesForCategory('cable_dvi') },
+        internet_de_las_cosas: { file: 'internet_de_las_cosas.txt', rules: getRulesForCategory('internet_de_las_cosas') }
     };
     
     const loadPromises = Object.entries(productConfigs).map(async ([category, config]) => {
@@ -272,17 +312,75 @@ async function loadAllProductData() {
 
 function getRulesForCategory(category) {
     const rules = {
-        cartuchos: `Color: Negro o Tricolor. Compatibilidad: Modelos separados con " | ". Tamaño XL: Solo si confirman.`,
-        case: `Clasificación: MID/FULL/MINI TOWER, ATX, MICRO-ATX, MINI-ITX. Paneles: Solo si confirman acrílico o vidrio templado.`,
-        laptop: `Nivel: Essential (i3/R3), Standard (i5/R5), Premium (i7/R7), Gaming. TODAS las características Sí/No DEBEN estar.`,
-        monitores: `Tecnología: IPS, LCD, VA, OLED. Resolución sin espacios. VESA solo si mencionan. Características solo si confirman.`,
-        procesadores: `Socket, caché, frecuencia base/máxima, núcleos, hilos. Gráficos integrados solo si tiene.`,
-        motherboard: `Factor de forma, chipset, socket, slots RAM/PCI. WiFi y Bluetooth solo si tiene.`,
-        tarjetas_graficas: `Memoria VRAM y tipo, interfaz PCIe, conectores de video, alimentación requerida.`,
-        televisores: `Tamaño en pulgadas, resolución, tecnología de panel, Smart TV y SO.`,
-        ups_y_ups_online: `Capacidad VA/Watts, tiempo respaldo, número salidas, tipo.`
+        // CATEGORÍAS PROBLEMÁTICAS REPARADAS
+        combo_teclado_y_mouse_cableados_e_inalambrico: `COMBO TECLADO Y MOUSE: Omite "No especificado". Solo incluye datos confirmados. Estructura: Identificación, Teclado, Mouse, Conexión, Características. Meta: "Combo teclado y mouse [tipo de conexión] [material/características]."`,
+
+        memorias_extraibles: `MEMORIAS EXTRAIBLES: Diferencia USB DRIVE de SD CARD. NO MEZCLES tipos. Secciones: Almacenamiento, Velocidades, Interfaz, Compatibilidad. Omite información no confirmada. Meta: "[USB/SD] [capacidad] velocidad [MB/s]. Compatible con [dispositivos]."`,
+
+        camaras_de_vigilancia_analoga_ip_wifi: `CÁMARAS VIGILANCIA: Información COMPLETA (no minimalista). Resolución, Sensor, Lente, Visión nocturna (con rango), Compresión. Tipos y Conectividad: Analógica/IP/WiFi, Conectores. Audio, Detección (movimiento, personas, animales). Meta: "Cámara [720p-4K] [tipo] visión nocturna [Xm]. [Tecnología]."`,
+
+        hub_usb: `HUB USB: CAMBIO DESCRIPCIÓN OBLIGATORIO. Incluye: cantidad puertos, velocidad, características únicas. Información: Número puertos exacto, Tipo puerto, Velocidad, Alimentación (W si self-powered), Características (LED, switch). Meta: "Hub USB [X puertos] [velocidad] Gbps con [características]."`,
+
+        microfono: `MICRÓFONO: CAMBIO DESCRIPCIÓN OBLIGATORIO. Incluye: tipo, interfaz, patrón polar. Si USB: patrón, frecuencia, sensibilidad, cancelación ruido. Si XLR: impedancia, SPL máximo. Accesorios incluidos. Meta: "Micrófono [tipo] [interfaz] patrón [cardinal]. Ideal para [uso]."`,
+
+        cable_utp_y_bobina_de_cable: `CABLE UTP/BOBINA: SEPARACIÓN CLARA. Individuales vs Bobinas. NO MEZCLES con accesorios. Categoría (CAT5e/6/6A/7), Velocidad máxima, Impedancia, AWG, Apantallamiento, Longitud exacta. Meta: "Cable UTP CAT[X] [metros/bobina]. Velocidad hasta [Gbps]."`,
+
+        bocina_e_inalambrica_y_sistema_de_audio: `BOCINA/AUDIO: ESTRUCTURA HTML VÁLIDA. Verifica <div> y <td> balanceados. Tipos: Inalámbrica (Bluetooth, alcance, batería), Sistemas (2.1, 5.1, Surround), Cableada (conectores). Potencia (W RMS), Frecuencia exacta, Impedancia, Drivers, Conectividad. Meta: "Bocina [tipo] [potencia]W Bluetooth. Sonido [característica]."`,
+
+        nvr: `NVR: CAMBIO DESCRIPCIÓN OBLIGATORIO. Especifica: canales IP, resolución máxima, almacenamiento. Información: Canales IP exactos, Resolución máxima, Almacenamiento TB, Bahías HDD, Codificación (H.265/H.264), Ancho banda. Conectividad: Ethernet, HDMI, USB, PoE+. Meta: "NVR [X canales] IP [resolución] [TB almacenamiento]. Grabación continua."`,
+
+        smartphone: `SMARTPHONE: CAMBIO DESCRIPCIÓN OBLIGATORIO. Incluye: SO (versión), Procesador exacto, RAM, Almacenamiento. Información: SO versión, Procesador (A16, Snapdragon 8 Gen 2, etc.), RAM GB, Almacenamiento, Pantalla (tamaño, tecnología), Cámara trasera (MP, sensores), Cámara frontal. Adicionales: Batería mAh, Carga rápida W, IP rating, Conectividad 5G/NFC. Meta: "[Modelo] [SO] [procesador] [RAM]GB [almacenamiento]. Pantalla [tamaño]."`,
+
+        // CATEGORÍAS ESTÁNDAR
+        cartuchos: `Cartuchos: Color (Negro, Tricolor). Compatibilidad con modelos separados |. Rendimiento páginas si especifican. Tamaño Standard/XL solo si confirman.`,
+        case: `Case: Clasificación (MID/FULL/MINI TOWER, ATX/MICRO/MINI). Socket CPU. Soporte Motherboard. Paneles (Acrílico, Vidrio) si confirman.`,
+        laptop: `Laptop: Nivel (Essential, Standard, Premium, Gaming). TODAS características Sí/No DEBEN estar. Peso kg, Batería horas.`,
+        monitores: `Monitores: Panel (IPS, VA, OLED). Resolución sin espacios. Hz exacto. VESA si especifican.`,
+        impresora_de_inyeccion: `Inyección: Tecnología, Resolución DPI, Velocidad PPM, Conectividad (USB, WiFi, Ethernet).`,
+        procesadores: `Procesadores: Marca, Socket, Núcleos/Hilos, Frecuencia Base y Turbo GHz.`,
+        motherboard: `Motherboard: Chipset exacto, Socket, RAM máximo (DDR4/DDR5), Slots M.2/PCIe.`,
+        tarjetas_graficas: `Gráficas: Memoria GB (GDDR6, HBM2), Chip exacto, TDP W, Conectores (HDMI, DP).`,
+        televisores: `Televisores: Pulgadas exactas, Resolución (Full HD, 4K, 8K), Panel (IPS, VA, QLED, OLED), Smart SO.`,
+        ups_y_ups_online: `UPS: Capacidad VA/W, Autonomía minutos/horas, Número salidas, Tipo (Línea, Online, Standby).`,
+        adaptador_de_red_usb: `Adaptador: Tipo (WiFi, Ethernet, LTE), Velocidad Mbps/Gbps, Tecnología exacta, Compatibilidad SO.`,
+        almacenamiento_externo: `Almacenamiento: Tipo (HDD, SSD), Capacidad TB/GB, Interfaz (USB 2.0/3.0/3.1/USB-C), Velocidad MB/s.`,
+        amplificador_de_red: `Amplificador: Estándar (802.11n/ac/WiFi 6), Cobertura metros, Compatibilidad banda, Antenas cantidad.`,
+        audifonos_cableados_e_inalambricos: `Audífonos: Tipo (Over/On/In-ear), Drivers tamaño mm, Impedancia Ohms, Cable longitud si cableado.`,
+        bases_para_laptop: `Base Laptop: Ángulo grados, Material (Aluminio, Plástico, Bambú), Puertos (Hub USB), Refrigeración ventiladores.`,
+        cable_hdmi: `Cable HDMI: Versión (2.0, 2.1), Longitud metros, Tipo (Estándar, Mini, Micro), 4K/HDR si soporta.`,
+        cable_usb: `Cable USB: Tipo (USB-A, USB-C, Micro, Lightning), Versión (2.0, 3.0, 3.1), Longitud, Carga rápida mA.`,
+        cables_vga: `Cable VGA: Longitud metros, Densidad 15 pin, Ferrita si tiene, Blindaje (Doble, Triple).`,
+        camara_de_video_web_dslr_digital: `Cámara: Resolución (720p, 1080p, 4K), Sensor (tamaño, tipo), FPS cada resolución, Conectividad (USB, HDMI).`,
+        dvr: `DVR: Canales exactos, Resolución (CIF, D1, 720p, 1080p), Almacenamiento TB máximo, Video PAL/NTSC.`,
+        enclousure: `Enclosure: Compatibilidad (2.5", 3.5"), Interfaz (USB 2.0/3.0/SATA), Material, Cable incluido.`,
+        escaneres: `Escáner: Tipo (Plano, ADF, Rollo), Resolución DPI máximo, Velocidad PPM, Conectividad (USB, Red).`,
+        estacion_de_carga: `Estación: Puertos (USB-A, USB-C cantidad), Potencia W máximo, Dispositivos simultáneos, Carga rápida/inalámbrica.`,
+        gabinetes: `Gabinete: Factor (ATX, MICRO, MINI), Bahías cantidad, Slots tarjeta gráfica máximo, Ventiladores incluidos.`,
+        hostpot: `Hotspot: Red (3G, 4G, 5G), Batería autonomía horas, Velocidad Mbps, WiFi estándar 802.11.`,
+        iot: `IoT: Tecnología (WiFi, Bluetooth, Zigbee), Función automatización, Control (App, Voz), Compatibilidad ecosistemas.`,
+        mouse_cableados: `Mouse Cableado: Sensor (Óptico, Láser), DPI máximo, Botones cantidad, Cable longitud metros.`,
+        mouse_inalambricos: `Mouse Inalámbrico: Tecnología (Bluetooth, 2.4GHz), Batería autonomía horas, DPI máximo, Rango metros.`,
+        mouse_pad: `Mouse Pad: Dimensiones exactas cm, Material (Tela, Caucho), Base antideslizante, RGB/Inalámbrico.`,
+        punto_de_acceso: `Punto Acceso: Estándar (WiFi 5, WiFi 6), Puertos Ethernet cantidad, Potencia W, Cobertura metros.`,
+        repetidores_de_red: `Repetidor: Estándar (802.11ac, WiFi 6), Velocidad Mbps máximo, Cobertura metros adicionales, Antenas cantidad.`,
+        router: `Router: Estándar (WiFi 5, WiFi 6), Velocidad Mbps, Antenas cantidad, Puertos Ethernet (WAN/LAN).`,
+        smartwatches: `Smartwatch: SO (watchOS, Wear OS), Pantalla (AMOLED, LCD), Batería días autonomía, Conectividad (Bluetooth, Cellular).`,
+        switches: `Switch: Puertos cantidad/velocidad, Velocidad (Gigabit, 10 Gigabit), Tipo (Managed, Unmanaged), PoE si soporta.`,
+        tablets: `Tablet: SO (iOS, Android versión), Pantalla (tamaño pulgadas, tecnología), Procesador exacto, RAM/Almacenamiento GB.`,
+        teclados_cableados_e_inalambricos: `Teclado: Tipo (Mecánico, Membrana, Chiclet), Distribución (QWERTY, DVORAK), Retroiluminación (RGB, Mono), Conexión (USB, Wireless).`,
+        pasta_termica: `Pasta Térmica: Composición base exacta, Conductividad W/mK, Densidad g/cm³, Consistencia para aplicación.`,
+        // NUEVAS CATEGORÍAS
+        accesorios: `Accesorio: Tipo (limpieza, protección, organización), Compatibilidad dispositivos, Material, Contenido paquete.`,
+        infraestructura_de_red: `Infraestructura Red: Tipo (rack, patch panel, organizador), Capacidad (U, puertos), Material, Compatibilidad categoría cable.`,
+        portabilidad: `Portabilidad: Tipo (mochila, maletín, funda), Capacidad laptop pulgadas, Material, Compartimentos número.`,
+        smart_home: `Smart Home: Tipo dispositivo, Conectividad (WiFi, Zigbee), Compatibilidad (Alexa, Google Home), Control (app, voz).`,
+        drones: `Drone: Tipo (fotografía, FPV), Cámara resolución, Autonomía minutos vuelo, Alcance metros, Características (GPS, RTH).`,
+        cargadores: `Cargador: Tipo (pared, auto, inalámbrico), Potencia Watts, Protocolo (QC, PD), Puertos número y tipo.`,
+        tableta_grafica: `Tableta Gráfica: Área activa pulgadas, Niveles presión, Resolución LPI, Conexión, Teclas programables.`,
+        cable_dvi: `Cable DVI: Tipo (DVI-D, DVI-I, Single/Dual Link), Resolución máxima, Longitud metros, Conectores.`,
+        internet_de_las_cosas: `IoT: Tipo (sensor, módulo, kit), Conectividad (WiFi, LoRa), Protocolos (MQTT, HTTP), Compatibilidad (Arduino, ESP32).`
     };
-    return rules[category] || `Solo incluye información confirmada. Omite características sin datos.`;
+    return rules[category] || `Solo información confirmada. Omite sin datos. META (máx 160 caracteres): Especificar características clave + CTA.`;
 }
 
 // =============================================
@@ -433,7 +531,11 @@ function initializeEventListeners() {
     document.getElementById('copyCodeInline').addEventListener('click', copyCode);
     document.getElementById('copyFullPromptBtn').addEventListener('click', copyFullPrompt);
     document.getElementById('copyMetaPromptBtn').addEventListener('click', copyMetaPrompt);
-    document.getElementById('copyQwenPromptBtn').addEventListener('click', copyQwenPrompt);
+    document.getElementById('copyGroqPromptBtn').addEventListener('click', copyGroqPrompt);
+    
+    // Tags generation
+    document.getElementById('generateTagsBtn').addEventListener('click', () => generateWithAI('tags'));
+    document.getElementById('copyGeneratedTags').addEventListener('click', copyAllTags);
     
     // Atajos de teclado
     document.addEventListener('keydown', (e) => {
@@ -451,8 +553,8 @@ function openConfigModal() {
     // Cargar valores actuales
     document.getElementById('groqApiKey').value = appState.aiConfig.groq.apiKey;
     document.getElementById('groqModel').value = appState.aiConfig.groq.model;
-    document.getElementById('qwenApiKey').value = appState.aiConfig.qwen.apiKey;
-    document.getElementById('qwenModel').value = appState.aiConfig.qwen.model;
+    document.getElementById('chatgptApiKey').value = appState.aiConfig.chatgpt.apiKey;
+    document.getElementById('chatgptModel').value = appState.aiConfig.chatgpt.model;
     
     // Seleccionar provider activo
     document.querySelectorAll('.provider-tab').forEach(tab => {
@@ -473,8 +575,8 @@ function closeConfigModal() {
 function saveApiConfig() {
     appState.aiConfig.groq.apiKey = document.getElementById('groqApiKey').value.trim();
     appState.aiConfig.groq.model = document.getElementById('groqModel').value;
-    appState.aiConfig.qwen.apiKey = document.getElementById('qwenApiKey').value.trim();
-    appState.aiConfig.qwen.model = document.getElementById('qwenModel').value;
+    appState.aiConfig.chatgpt.apiKey = document.getElementById('chatgptApiKey').value.trim();
+    appState.aiConfig.chatgpt.model = document.getElementById('chatgptModel').value;
     
     saveConfig();
     updateApiStatus();
@@ -490,7 +592,7 @@ async function testApiConnection() {
         const provider = appState.aiConfig.provider;
         const apiKey = provider === 'groq' 
             ? document.getElementById('groqApiKey').value.trim()
-            : document.getElementById('qwenApiKey').value.trim();
+            : document.getElementById('chatgptApiKey').value.trim();
         
         if (!apiKey) {
             throw new Error('Por favor ingresa una API Key');
@@ -500,7 +602,7 @@ async function testApiConnection() {
         const response = await callAI('Di "conexión exitosa" en español.', provider, apiKey);
         
         if (response) {
-            showToast('✅ Conexión exitosa con ' + (provider === 'groq' ? 'Groq' : 'Qwen'));
+            showToast('✅ Conexión exitosa con ' + (provider === 'groq' ? 'Groq' : 'ChatGPT'));
         }
     } catch (error) {
         showToast('❌ Error: ' + error.message, 'error');
@@ -519,7 +621,7 @@ async function callAI(prompt, provider = null, apiKey = null) {
     if (provider === 'groq') {
         return await callGroqAPI(prompt, apiKey);
     } else {
-        return await callQwenAPI(prompt, apiKey);
+        return await callChatGPTAPI(prompt, apiKey);
     }
 }
 
@@ -563,16 +665,16 @@ async function callGroqAPI(prompt, apiKey = null) {
     return data.choices[0].message.content;
 }
 
-async function callQwenAPI(prompt, apiKey = null) {
-    apiKey = apiKey || appState.aiConfig.qwen.apiKey;
-    const model = appState.aiConfig.qwen.model;
+async function callChatGPTAPI(prompt, apiKey = null) {
+    apiKey = apiKey || appState.aiConfig.chatgpt.apiKey;
+    const model = appState.aiConfig.chatgpt.model;
     
     if (!apiKey) {
-        throw new Error('API Key de Qwen no configurada');
+        throw new Error('API Key de ChatGPT no configurada');
     }
     
-    // Qwen usa la API de DashScope de Alibaba
-    const response = await fetch('https://dashscope.aliyuncs.com/api/v1/services/aigc/text-generation/generation', {
+    // ChatGPT usa la API de OpenAI
+    const response = await fetch('https://api.openai.com/v1/chat/completions', {
         method: 'POST',
         headers: {
             'Authorization': `Bearer ${apiKey}`,
@@ -580,32 +682,28 @@ async function callQwenAPI(prompt, apiKey = null) {
         },
         body: JSON.stringify({
             model: model,
-            input: {
-                messages: [
-                    {
-                        role: 'system',
-                        content: 'Eres un experto en generación de código HTML para descripciones de productos de eCommerce en Shopify. Respondes solo con el código solicitado, sin explicaciones adicionales.'
-                    },
-                    {
-                        role: 'user',
-                        content: prompt
-                    }
-                ]
-            },
-            parameters: {
-                temperature: 0.7,
-                max_tokens: 4096
-            }
+            messages: [
+                {
+                    role: 'system',
+                    content: 'Eres un experto en generación de código HTML para descripciones de productos de eCommerce en Shopify. Respondes solo con el código solicitado, sin explicaciones adicionales.'
+                },
+                {
+                    role: 'user',
+                    content: prompt
+                }
+            ],
+            temperature: 0.7,
+            max_tokens: 4096
         })
     });
     
     if (!response.ok) {
         const error = await response.json();
-        throw new Error(error.message || 'Error en la API de Qwen');
+        throw new Error(error.error?.message || 'Error en la API de ChatGPT');
     }
     
     const data = await response.json();
-    return data.output?.text || data.output?.choices?.[0]?.message?.content;
+    return data.choices[0].message.content;
 }
 
 // =============================================
@@ -647,6 +745,14 @@ async function generateWithAI(type) {
             appState.generatedMeta = extractMetaDescription(metaResult);
         }
         
+        if (type === 'tags') {
+            document.getElementById('loadingMessage').textContent = 'Generando etiquetas Shopify...';
+            const tagsPrompt = buildTagsPrompt(product, officialDescription);
+            const tagsResult = await callAI(tagsPrompt);
+            appState.generatedTags = extractTags(tagsResult);
+            renderTags(appState.generatedTags);
+        }
+        
         // Mostrar resultados
         document.getElementById('aiLoading').style.display = 'none';
         document.getElementById('aiResults').style.display = 'block';
@@ -654,7 +760,7 @@ async function generateWithAI(type) {
         if (type === 'html' || type === 'both') {
             document.getElementById('htmlResultSection').style.display = 'block';
             document.getElementById('generatedHtmlCode').textContent = appState.generatedHtml;
-        } else {
+        } else if (type !== 'tags') {
             document.getElementById('htmlResultSection').style.display = 'none';
         }
         
@@ -662,8 +768,16 @@ async function generateWithAI(type) {
             document.getElementById('metaResultSection').style.display = 'block';
             document.getElementById('generatedMetaText').textContent = appState.generatedMeta;
             document.getElementById('metaCharCount').textContent = `${appState.generatedMeta.length} caracteres`;
-        } else {
+        } else if (type !== 'tags') {
             document.getElementById('metaResultSection').style.display = 'none';
+        }
+        
+        if (type === 'tags') {
+            document.getElementById('tagsResultSection').style.display = 'block';
+            document.getElementById('htmlResultSection').style.display = 'none';
+            document.getElementById('metaResultSection').style.display = 'none';
+        } else {
+            document.getElementById('tagsResultSection').style.display = 'none';
         }
         
         showToast('✅ Generación completada');
@@ -747,17 +861,66 @@ function generateCategoryDropdown() {
         </div>
     `;
     
+    // Crear un mapa de categorías disponibles para búsqueda rápida
+    const availableCategories = new Map();
     appState.allProducts.forEach(product => {
-        const iconClass = categoryIcons[product.category] || 'fa-box';
+        availableCategories.set(product.category, product);
+    });
+    
+    // Generar dropdown agrupado
+    for (const [groupName, categories] of Object.entries(categoryGroups)) {
+        // Filtrar solo categorías que existen en los productos
+        const groupProducts = categories.filter(cat => availableCategories.has(cat));
+        
+        if (groupProducts.length === 0) continue;
+        
+        // Header del grupo
         html += `
-            <div class="dropdown-item" data-category="${product.category}" onclick="selectCategory('${product.category}')">
-                <div class="item-icon">
-                    <i class="fas ${iconClass}"></i>
-                </div>
-                <span class="item-name">${product.name}</span>
+            <div class="dropdown-group-header">
+                <span>${groupName}</span>
+                <span class="group-count">${groupProducts.length}</span>
             </div>
         `;
-    });
+        
+        // Items del grupo
+        groupProducts.forEach(category => {
+            const product = availableCategories.get(category);
+            const iconClass = categoryIcons[category] || 'fa-box';
+            html += `
+                <div class="dropdown-item" data-category="${category}" onclick="selectCategory('${category}')">
+                    <div class="item-icon">
+                        <i class="fas ${iconClass}"></i>
+                    </div>
+                    <span class="item-name">${product.name}</span>
+                </div>
+            `;
+        });
+    }
+    
+    // Categorías no agrupadas (si las hay)
+    const groupedCategories = new Set(Object.values(categoryGroups).flat());
+    const ungroupedProducts = appState.allProducts.filter(p => !groupedCategories.has(p.category));
+    
+    if (ungroupedProducts.length > 0) {
+        html += `
+            <div class="dropdown-group-header">
+                <span>Otros</span>
+                <span class="group-count">${ungroupedProducts.length}</span>
+            </div>
+        `;
+        
+        ungroupedProducts.forEach(product => {
+            const iconClass = categoryIcons[product.category] || 'fa-box';
+            html += `
+                <div class="dropdown-item" data-category="${product.category}" onclick="selectCategory('${product.category}')">
+                    <div class="item-icon">
+                        <i class="fas ${iconClass}"></i>
+                    </div>
+                    <span class="item-name">${product.name}</span>
+                </div>
+            `;
+        });
+    }
     
     dropdownContent.innerHTML = html;
 }
@@ -837,7 +1000,7 @@ function renderProducts() {
     grid.style.display = 'grid';
     noResults.style.display = 'none';
     
-    const hasApiKey = appState.aiConfig.groq.apiKey || appState.aiConfig.qwen.apiKey;
+    const hasApiKey = appState.aiConfig.groq.apiKey || appState.aiConfig.chatgpt.apiKey;
     
     grid.innerHTML = appState.filteredProducts.map(product => {
         const iconClass = categoryIcons[product.category] || 'fa-box';
@@ -885,8 +1048,10 @@ function viewProduct(productId) {
         document.getElementById('codeContent').textContent = productData.htmlCode;
     }
     
-    // Limpiar textarea
-    document.getElementById('officialDescription').value = '';
+    // Limpiar textarea y actualizar placeholder dinámico
+    const textarea = document.getElementById('officialDescription');
+    textarea.value = '';
+    textarea.placeholder = `Pega aquí las especificaciones de ${product.name} desde el sitio oficial del fabricante...`;
     document.getElementById('charCount').textContent = '0 caracteres';
     
     // Reset AI section
@@ -894,7 +1059,7 @@ function viewProduct(productId) {
     document.getElementById('aiLoading').style.display = 'none';
     document.getElementById('aiError').style.display = 'none';
     
-    const hasApiKey = appState.aiConfig.groq.apiKey || appState.aiConfig.qwen.apiKey;
+    const hasApiKey = appState.aiConfig.groq.apiKey || appState.aiConfig.chatgpt.apiKey;
     document.getElementById('aiNoConfig').style.display = hasApiKey ? 'none' : 'block';
     document.querySelector('.ai-options').style.display = hasApiKey ? 'grid' : 'none';
     
@@ -923,16 +1088,17 @@ function switchTab(tabName) {
 
 function updateButtonStates() {
     const hasContent = document.getElementById('officialDescription').value.trim().length > 0;
-    const hasApiKey = appState.aiConfig.groq.apiKey || appState.aiConfig.qwen.apiKey;
+    const hasApiKey = appState.aiConfig.groq.apiKey || appState.aiConfig.chatgpt.apiKey;
     
     document.getElementById('goToAiTab').disabled = !hasContent;
     document.getElementById('copyFullPromptBtn').disabled = !hasContent;
     document.getElementById('copyMetaPromptBtn').disabled = !hasContent;
-    document.getElementById('copyQwenPromptBtn').disabled = !hasContent;
+    document.getElementById('copyGroqPromptBtn').disabled = !hasContent;
     
     document.getElementById('generateHtmlBtn').disabled = !hasContent || !hasApiKey;
     document.getElementById('generateMetaBtn').disabled = !hasContent || !hasApiKey;
     document.getElementById('generateBothBtn').disabled = !hasContent || !hasApiKey;
+    document.getElementById('generateTagsBtn').disabled = !hasContent || !hasApiKey;
 }
 
 // =============================================
@@ -980,7 +1146,7 @@ function copyMetaPrompt() {
     showToast('✅ Prompt Meta copiado');
 }
 
-function copyQwenPrompt() {
+function copyGroqPrompt() {
     if (!appState.currentProduct) return;
     const product = appState.currentProduct;
     const productData = appState.productsData[product.category];
@@ -1007,7 +1173,7 @@ ${productData.promptRules}
 Responde solo con el código HTML + CSS completo.`;
     
     copyToClipboard(prompt);
-    showToast('✅ Prompt Qwen copiado');
+    showToast('✅ Prompt Groq copiado');
 }
 
 // =============================================
@@ -1043,4 +1209,75 @@ function showToast(message, type = 'success') {
     
     toast.classList.add('show');
     setTimeout(() => toast.classList.remove('show'), 3000);
+}
+
+// =============================================
+// GENERACIÓN DE TAGS DE SHOPIFY
+// =============================================
+function buildTagsPrompt(product, officialDescription) {
+    return `Genera las mejores etiquetas/tags para un producto de Shopify.
+
+PRODUCTO: ${product.name}
+CATEGORÍA: ${product.category}
+
+INFORMACIÓN DEL PRODUCTO:
+${officialDescription}
+
+REQUISITOS:
+- Genera entre 10 y 15 etiquetas relevantes
+- Las etiquetas deben ayudar a la búsqueda y organización en Shopify
+- Incluir: marca, tipo de producto, características principales, uso, compatibilidad
+- Las etiquetas deben ser cortas (1-3 palabras cada una)
+- Usa español
+- No uses caracteres especiales ni acentos
+- Separa las etiquetas con comas
+
+FORMATO DE RESPUESTA:
+Responde SOLO con las etiquetas separadas por comas, sin explicaciones adicionales.
+Ejemplo: laptop, gaming, intel, 16gb ram, ssd, nvidia, portatil, gamer`;
+}
+
+function extractTags(response) {
+    // Limpiar la respuesta y extraer tags
+    let tagsText = response.trim();
+    
+    // Remover posibles formatos de lista
+    tagsText = tagsText.replace(/^(etiquetas?|tags?):\s*/i, '');
+    tagsText = tagsText.replace(/^\d+\.\s*/gm, '');
+    tagsText = tagsText.replace(/^[-•]\s*/gm, '');
+    
+    // Separar por comas o saltos de línea
+    const tags = tagsText.split(/[,\n]/)
+        .map(tag => tag.trim().toLowerCase())
+        .filter(tag => tag.length > 0 && tag.length < 50);
+    
+    // Eliminar duplicados
+    return [...new Set(tags)];
+}
+
+function renderTags(tags) {
+    const container = document.getElementById('generatedTagsContainer');
+    
+    container.innerHTML = tags.map(tag => `
+        <span class="generated-tag" onclick="copyTag('${tag}')" title="Click para copiar">
+            <i class="fas fa-hashtag"></i>
+            ${tag}
+        </span>
+    `).join('');
+}
+
+function copyTag(tag) {
+    copyToClipboard(tag);
+    showToast(`✅ Tag "${tag}" copiado`);
+}
+
+function copyAllTags() {
+    if (appState.generatedTags.length === 0) {
+        showToast('⚠️ No hay tags para copiar', 'warning');
+        return;
+    }
+    
+    const tagsText = appState.generatedTags.join(', ');
+    copyToClipboard(tagsText);
+    showToast('✅ Todas las etiquetas copiadas');
 }

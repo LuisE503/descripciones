@@ -8,10 +8,413 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles-pro.css">
+    <link rel="stylesheet" href="css/styles-pro.css">
 </head>
 <body>
     <!-- Header Profesional -->
+    <!-- Navbar Principal -->
+    <nav class="navbar-main">
+        <div class="container">
+            <div class="navbar-content">
+                <!-- Logo y Marca -->
+                <div class="navbar-brand">
+                    <div class="brand-icon">
+                        <i class="fas fa-shopping-bag"></i>
+                    </div>
+                    <div class="brand-text">
+                        <span class="brand-name">Shopify Generator</span>
+                        <span class="brand-badge">v2</span>
+                    </div>
+                </div>
+
+                <!-- Menú de Navegación -->
+                <div class="navbar-menu" id="navbarMenu">
+                    <a href="#inicio" class="nav-item active">
+                        <i class="fas fa-home"></i>
+                        <span>Inicio</span>
+                    </a>
+                    
+                    <!-- Categorías con Mega Menu -->
+                    <div class="nav-item nav-dropdown nav-mega" id="megaMenuContainer">
+                        <button class="nav-item-btn" id="megaMenuBtn">
+                            <i class="fas fa-layer-group"></i>
+                            <span>Categorías</span>
+                            <i class="fas fa-chevron-down arrow"></i>
+                        </button>
+                        
+                        <!-- Mega Menu -->
+                        <div class="mega-menu" id="megaMenu">
+                            <div class="mega-menu-content">
+                                <!-- Hardware -->
+                                <div class="mega-menu-column">
+                                    <h4 class="mega-menu-title">
+                                        <i class="fas fa-microchip"></i>
+                                        Hardware
+                                    </h4>
+                                    <a href="#" class="mega-menu-item" data-category="procesadores">
+                                        <i class="fas fa-microchip"></i>
+                                        <span>Procesadores</span>
+                                    </a>
+                                    <a href="#" class="mega-menu-item" data-category="motherboard">
+                                        <i class="fas fa-microchip"></i>
+                                        <span>Motherboard</span>
+                                    </a>
+                                    <a href="#" class="mega-menu-item" data-category="memoria_ram">
+                                        <i class="fas fa-memory"></i>
+                                        <span>Memoria RAM</span>
+                                    </a>
+                                    <a href="#" class="mega-menu-item" data-category="tarjetas_graficas">
+                                        <i class="fas fa-gamepad"></i>
+                                        <span>Tarjetas Gráficas</span>
+                                    </a>
+                                    <a href="#" class="mega-menu-item" data-category="fuente_de_poder">
+                                        <i class="fas fa-bolt"></i>
+                                        <span>Fuente de Poder</span>
+                                    </a>
+                                    <a href="#" class="mega-menu-item" data-category="case">
+                                        <i class="fas fa-computer"></i>
+                                        <span>Gabinetes / Cases</span>
+                                    </a>
+                                    <a href="#" class="mega-menu-item" data-category="cooler">
+                                        <i class="fas fa-fan"></i>
+                                        <span>Coolers</span>
+                                    </a>
+                                    <a href="#" class="mega-menu-item" data-category="pasta_termica">
+                                        <i class="fas fa-temperature-low"></i>
+                                        <span>Pasta Térmica</span>
+                                    </a>
+                                </div>
+
+                                <!-- Impresoras y Consumibles -->
+                                <div class="mega-menu-column">
+                                    <h4 class="mega-menu-title">
+                                        <i class="fas fa-print"></i>
+                                        Impresoras
+                                    </h4>
+                                    <a href="#" class="mega-menu-item" data-category="impresora_de_inyeccion">
+                                        <i class="fas fa-print"></i>
+                                        <span>Impresora Inyección</span>
+                                    </a>
+                                    <a href="#" class="mega-menu-item" data-category="impresora_laser">
+                                        <i class="fas fa-print"></i>
+                                        <span>Impresora Láser</span>
+                                    </a>
+                                    <a href="#" class="mega-menu-item" data-category="impresora_matricial">
+                                        <i class="fas fa-print"></i>
+                                        <span>Impresora Matricial</span>
+                                    </a>
+                                    <a href="#" class="mega-menu-item" data-category="impresora_termica">
+                                        <i class="fas fa-receipt"></i>
+                                        <span>Impresora Térmica</span>
+                                    </a>
+                                    <a href="#" class="mega-menu-item" data-category="plotter">
+                                        <i class="fas fa-ruler-combined"></i>
+                                        <span>Plotters</span>
+                                    </a>
+                                    <a href="#" class="mega-menu-item" data-category="escaneres">
+                                        <i class="fas fa-scanner"></i>
+                                        <span>Escáneres</span>
+                                    </a>
+                                    <a href="#" class="mega-menu-item" data-category="cartuchos">
+                                        <i class="fas fa-fill-drip"></i>
+                                        <span>Cartuchos</span>
+                                    </a>
+                                    <a href="#" class="mega-menu-item" data-category="tintas">
+                                        <i class="fas fa-droplet"></i>
+                                        <span>Tintas</span>
+                                    </a>
+                                    <a href="#" class="mega-menu-item" data-category="toner">
+                                        <i class="fas fa-cube"></i>
+                                        <span>Tóner</span>
+                                    </a>
+                                    <a href="#" class="mega-menu-item" data-category="cinta">
+                                        <i class="fas fa-tape"></i>
+                                        <span>Cintas</span>
+                                    </a>
+                                </div>
+
+                                <!-- Computadoras y Pantallas -->
+                                <div class="mega-menu-column">
+                                    <h4 class="mega-menu-title">
+                                        <i class="fas fa-desktop"></i>
+                                        Computadoras
+                                    </h4>
+                                    <a href="#" class="mega-menu-item" data-category="laptop">
+                                        <i class="fas fa-laptop"></i>
+                                        <span>Laptops</span>
+                                    </a>
+                                    <a href="#" class="mega-menu-item" data-category="tablets">
+                                        <i class="fas fa-tablet-screen-button"></i>
+                                        <span>Tablets</span>
+                                    </a>
+                                    <a href="#" class="mega-menu-item" data-category="monitores">
+                                        <i class="fas fa-desktop"></i>
+                                        <span>Monitores</span>
+                                    </a>
+                                    <a href="#" class="mega-menu-item" data-category="proyectores">
+                                        <i class="fas fa-video"></i>
+                                        <span>Proyectores</span>
+                                    </a>
+                                    <a href="#" class="mega-menu-item" data-category="televisores">
+                                        <i class="fas fa-tv"></i>
+                                        <span>Televisores</span>
+                                    </a>
+                                    <a href="#" class="mega-menu-item" data-category="soporte_o_bracket">
+                                        <i class="fas fa-tv"></i>
+                                        <span>Soportes / Brackets</span>
+                                    </a>
+                                    <a href="#" class="mega-menu-item" data-category="bases_para_laptop">
+                                        <i class="fas fa-laptop-file"></i>
+                                        <span>Bases para Laptop</span>
+                                    </a>
+                                </div>
+
+                                <!-- Periféricos -->
+                                <div class="mega-menu-column">
+                                    <h4 class="mega-menu-title">
+                                        <i class="fas fa-keyboard"></i>
+                                        Periféricos
+                                    </h4>
+                                    <a href="#" class="mega-menu-item" data-category="teclados_cableados_e_inalambricos">
+                                        <i class="fas fa-keyboard"></i>
+                                        <span>Teclados</span>
+                                    </a>
+                                    <a href="#" class="mega-menu-item" data-category="mouse_cableados">
+                                        <i class="fas fa-computer-mouse"></i>
+                                        <span>Mouse Cableados</span>
+                                    </a>
+                                    <a href="#" class="mega-menu-item" data-category="mouse_inalambricos">
+                                        <i class="fas fa-computer-mouse"></i>
+                                        <span>Mouse Inalámbricos</span>
+                                    </a>
+                                    <a href="#" class="mega-menu-item" data-category="combo_teclado_y_mouse_cableados_e_inalambrico">
+                                        <i class="fas fa-keyboard"></i>
+                                        <span>Combos Teclado+Mouse</span>
+                                    </a>
+                                    <a href="#" class="mega-menu-item" data-category="mouse_pad">
+                                        <i class="fas fa-square"></i>
+                                        <span>Mouse Pads</span>
+                                    </a>
+                                    <a href="#" class="mega-menu-item" data-category="audifonos_cableados_e_inalambricos">
+                                        <i class="fas fa-headphones"></i>
+                                        <span>Audífonos</span>
+                                    </a>
+                                    <a href="#" class="mega-menu-item" data-category="microfono">
+                                        <i class="fas fa-microphone"></i>
+                                        <span>Micrófonos</span>
+                                    </a>
+                                    <a href="#" class="mega-menu-item" data-category="bocina_e_inalambrica_y_sistema_de_audio">
+                                        <i class="fas fa-volume-high"></i>
+                                        <span>Bocinas y Audio</span>
+                                    </a>
+                                    <a href="#" class="mega-menu-item" data-category="camara_de_video_web_dslr_digital">
+                                        <i class="fas fa-camera"></i>
+                                        <span>Cámaras Web</span>
+                                    </a>
+                                </div>
+
+                                <!-- Redes y Conectividad -->
+                                <div class="mega-menu-column">
+                                    <h4 class="mega-menu-title">
+                                        <i class="fas fa-network-wired"></i>
+                                        Redes
+                                    </h4>
+                                    <a href="#" class="mega-menu-item" data-category="router">
+                                        <i class="fas fa-router"></i>
+                                        <span>Routers</span>
+                                    </a>
+                                    <a href="#" class="mega-menu-item" data-category="switches">
+                                        <i class="fas fa-code-branch"></i>
+                                        <span>Switches</span>
+                                    </a>
+                                    <a href="#" class="mega-menu-item" data-category="punto_de_acceso">
+                                        <i class="fas fa-tower-cell"></i>
+                                        <span>Punto de Acceso</span>
+                                    </a>
+                                    <a href="#" class="mega-menu-item" data-category="repetidores_de_red">
+                                        <i class="fas fa-signal"></i>
+                                        <span>Repetidores</span>
+                                    </a>
+                                    <a href="#" class="mega-menu-item" data-category="amplificador_de_red">
+                                        <i class="fas fa-tower-broadcast"></i>
+                                        <span>Amplificadores</span>
+                                    </a>
+                                    <a href="#" class="mega-menu-item" data-category="adaptador_de_red_usb">
+                                        <i class="fas fa-network-wired"></i>
+                                        <span>Adaptadores USB</span>
+                                    </a>
+                                    <a href="#" class="mega-menu-item" data-category="hostpot">
+                                        <i class="fas fa-wifi"></i>
+                                        <span>Hotspots</span>
+                                    </a>
+                                    <a href="#" class="mega-menu-item" data-category="cable_utp_y_bobina_de_cable">
+                                        <i class="fas fa-ethernet"></i>
+                                        <span>Cables UTP</span>
+                                    </a>
+                                </div>
+
+                                <!-- Cables y Conectividad -->
+                                <div class="mega-menu-column">
+                                    <h4 class="mega-menu-title">
+                                        <i class="fas fa-plug"></i>
+                                        Cables
+                                    </h4>
+                                    <a href="#" class="mega-menu-item" data-category="cable_hdmi">
+                                        <i class="fas fa-plug"></i>
+                                        <span>Cable HDMI</span>
+                                    </a>
+                                    <a href="#" class="mega-menu-item" data-category="cable_usb">
+                                        <i class="fas fa-usb"></i>
+                                        <span>Cable USB</span>
+                                    </a>
+                                    <a href="#" class="mega-menu-item" data-category="cables_vga">
+                                        <i class="fas fa-display"></i>
+                                        <span>Cable VGA</span>
+                                    </a>
+                                    <a href="#" class="mega-menu-item" data-category="hub_usb">
+                                        <i class="fas fa-hubspot"></i>
+                                        <span>Hub USB</span>
+                                    </a>
+                                    <a href="#" class="mega-menu-item" data-category="estacion_de_carga">
+                                        <i class="fas fa-charging-station"></i>
+                                        <span>Estaciones de Carga</span>
+                                    </a>
+                                    <h4 class="mega-menu-title mt-3">
+                                        <i class="fas fa-hdd"></i>
+                                        Almacenamiento
+                                    </h4>
+                                    <a href="#" class="mega-menu-item" data-category="almacenamiento_externo">
+                                        <i class="fas fa-hard-drive"></i>
+                                        <span>Almacenamiento Externo</span>
+                                    </a>
+                                    <a href="#" class="mega-menu-item" data-category="memorias_extraibles">
+                                        <i class="fas fa-sd-card"></i>
+                                        <span>Memorias Extraíbles</span>
+                                    </a>
+                                    <a href="#" class="mega-menu-item" data-category="enclousure">
+                                        <i class="fas fa-hdd"></i>
+                                        <span>Enclosures</span>
+                                    </a>
+                                </div>
+
+                                <!-- Energía y Seguridad -->
+                                <div class="mega-menu-column">
+                                    <h4 class="mega-menu-title">
+                                        <i class="fas fa-bolt"></i>
+                                        Energía
+                                    </h4>
+                                    <a href="#" class="mega-menu-item" data-category="ups_y_ups_online">
+                                        <i class="fas fa-battery-full"></i>
+                                        <span>UPS / No-Break</span>
+                                    </a>
+                                    <a href="#" class="mega-menu-item" data-category="regulador_de_voltaje">
+                                        <i class="fas fa-car-battery"></i>
+                                        <span>Reguladores</span>
+                                    </a>
+                                    <a href="#" class="mega-menu-item" data-category="supresor_de_voltaje">
+                                        <i class="fas fa-shield-halved"></i>
+                                        <span>Supresores</span>
+                                    </a>
+                                    <a href="#" class="mega-menu-item" data-category="regletas">
+                                        <i class="fas fa-plug"></i>
+                                        <span>Regletas</span>
+                                    </a>
+                                    <h4 class="mega-menu-title mt-3">
+                                        <i class="fas fa-video"></i>
+                                        Seguridad
+                                    </h4>
+                                    <a href="#" class="mega-menu-item" data-category="camaras_de_vigilancia_analoga_ip_wifi">
+                                        <i class="fas fa-video"></i>
+                                        <span>Cámaras Vigilancia</span>
+                                    </a>
+                                    <a href="#" class="mega-menu-item" data-category="dvr">
+                                        <i class="fas fa-server"></i>
+                                        <span>DVR</span>
+                                    </a>
+                                    <a href="#" class="mega-menu-item" data-category="nvr">
+                                        <i class="fas fa-database"></i>
+                                        <span>NVR</span>
+                                    </a>
+                                </div>
+
+                                <!-- Móviles y Smart -->
+                                <div class="mega-menu-column">
+                                    <h4 class="mega-menu-title">
+                                        <i class="fas fa-mobile-screen"></i>
+                                        Móviles
+                                    </h4>
+                                    <a href="#" class="mega-menu-item" data-category="smartphone">
+                                        <i class="fas fa-mobile-screen"></i>
+                                        <span>Smartphones</span>
+                                    </a>
+                                    <a href="#" class="mega-menu-item" data-category="smartwatches">
+                                        <i class="fas fa-clock"></i>
+                                        <span>Smartwatches</span>
+                                    </a>
+                                    <a href="#" class="mega-menu-item" data-category="iot">
+                                        <i class="fas fa-house-signal"></i>
+                                        <span>IoT / Smart Home</span>
+                                    </a>
+                                    <h4 class="mega-menu-title mt-3">
+                                        <i class="fas fa-compact-disc"></i>
+                                        Software
+                                    </h4>
+                                    <a href="#" class="mega-menu-item" data-category="software">
+                                        <i class="fas fa-compact-disc"></i>
+                                        <span>Software y Licencias</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="nav-item nav-dropdown">
+                        <button class="nav-item-btn" onclick="this.parentElement.classList.toggle('active')">
+                            <i class="fas fa-code-branch"></i>
+                            <span>Versiones</span>
+                            <i class="fas fa-chevron-down arrow"></i>
+                        </button>
+                        <div class="dropdown-simple">
+                            <a href="index.html" class="dropdown-item-simple">
+                                <i class="fas fa-cube"></i>
+                                <span>v1 - Básico</span>
+                            </a>
+                            <a href="index-pro.html" class="dropdown-item-simple active">
+                                <i class="fas fa-crown"></i>
+                                <span>v2 - Profesional</span>
+                            </a>
+                            <a href="index-ai.html" class="dropdown-item-simple">
+                                <i class="fas fa-brain"></i>
+                                <span>v2.1 - IA Avanzada</span>
+                            </a>
+                        </div>
+                    </div>
+
+                    <a href="#ayuda" class="nav-item">
+                        <i class="fas fa-question-circle"></i>
+                        <span>Ayuda</span>
+                    </a>
+                </div>
+
+                <!-- Búsqueda y Acciones -->
+                <div class="navbar-actions">
+                    <div class="search-box-nav">
+                        <i class="fas fa-search"></i>
+                        <input type="text" id="searchInputNav" placeholder="Buscar producto...">
+                    </div>
+                    
+                    <button class="navbar-toggle" id="navbarToggle">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Overlay para cerrar mega menu -->
+    <div class="mega-menu-overlay" id="megaMenuOverlay"></div>
+
+    <!-- Header Hero -->
     <header class="header">
         <div class="container">
             <div class="header-content">
@@ -21,21 +424,21 @@
                     </div>
                     <div class="logo-text">
                         <h1>Generador de Descripciones</h1>
-                        <span class="badge-pro">PRO</span>
+                        <span class="badge-pro">v2</span>
                     </div>
                 </div>
                 <p class="subtitle">
-                    <i class="fas fa-magic"></i>
-                    Prompts optimizados para ChatGPT-5, Copilot y Qwen AI
+                    <i class="fas fa-sparkles"></i>
+                    Generador profesional de descripciones HTML y prompts optimizados para Shopify
                 </p>
                 <div class="header-stats">
                     <div class="stat">
                         <i class="fas fa-box-open"></i>
-                        <span><strong id="totalProducts">61</strong> Productos</span>
+                        <span><strong id="totalProducts">70</strong> Productos</span>
                     </div>
                     <div class="stat">
                         <i class="fas fa-layer-group"></i>
-                        <span><strong id="totalCategories">61</strong> Categorías</span>
+                        <span><strong id="totalCategories">70</strong> Categorías</span>
                     </div>
                     <div class="stat">
                         <i class="fas fa-robot"></i>
@@ -249,16 +652,16 @@ Ejemplo:
                 </div>
                 <div class="footer-right">
                     <button class="btn btn-chatgpt" id="copyFullPromptBtn" disabled>
-                        <i class="fas fa-robot"></i>
+                        <i class="fas fa-comments"></i>
                         <span id="copyFullPromptText">Prompt ChatGPT</span>
+                    </button>
+                    <button class="btn btn-groq" id="copyGroqPromptBtn" disabled>
+                        <i class="fas fa-bolt"></i>
+                        <span id="copyGroqPromptText">Prompt Groq</span>
                     </button>
                     <button class="btn btn-meta" id="copyMetaPromptBtn" disabled>
                         <i class="fas fa-tags"></i>
-                        <span id="copyMetaPromptText">Prompt Meta Descripción</span>
-                    </button>
-                    <button class="btn btn-qwen" id="copyQwenPromptBtn" disabled>
-                        <i class="fas fa-brain"></i>
-                        <span id="copyQwenPromptText">Prompt Qwen</span>
+                        <span id="copyMetaPromptText">Meta Descripción</span>
                     </button>
                 </div>
             </div>
@@ -273,34 +676,54 @@ Ejemplo:
         <span id="toastMessage"></span>
     </div>
 
-    <!-- Footer -->
+    <!-- Footer Profesional -->
     <footer class="footer">
         <div class="container">
             <div class="footer-content">
-                <div class="footer-brand">
-                    <i class="fas fa-shopping-bag"></i>
-                    <span>Generador de Descripciones Shopify PRO</span>
+                <!-- Columna Principal - Marca -->
+                <div class="footer-main">
+                    <div class="footer-brand">
+                        <i class="fas fa-shopping-bag"></i>
+                        <span>Generador de Descripciones Shopify</span>
+                    </div>
+                    <p class="footer-tagline">Crea descripciones optimizadas para SEO de manera rápida y profesional.</p>
                 </div>
-                <div class="footer-info">
-                    <span>
-                        <i class="fas fa-box-open"></i>
-                        61 categorías de productos
-                    </span>
-                    <span class="separator">•</span>
-                    <span>
-                        <i class="fas fa-robot"></i>
-                        Compatible con ChatGPT-5, Copilot y Qwen
-                    </span>
+                
+                <!-- Columna - Estadísticas -->
+                <div class="footer-stats">
+                    <h4><i class="fas fa-chart-bar"></i> Estadísticas</h4>
+                    <ul>
+                        <li><i class="fas fa-folder"></i> 70 categorías de productos</li>
+                        <li><i class="fas fa-code"></i> HTML optimizado para Shopify</li>
+                        <li><i class="fas fa-search"></i> SEO listo para Google</li>
+                    </ul>
                 </div>
-                <div class="footer-version">
-                    <span>Versión PRO 2.0</span>
+                
+                <!-- Columna - Compatibilidad IA -->
+                <div class="footer-compat">
+                    <h4><i class="fas fa-brain"></i> Integraciones IA</h4>
+                    <div class="compat-badges">
+                        <span class="badge-compat"><i class="fas fa-comments"></i> ChatGPT</span>
+                        <span class="badge-compat"><i class="fas fa-bolt"></i> Groq</span>
+                        <span class="badge-compat"><i class="fas fa-robot"></i> Claude</span>
+                        <span class="badge-compat"><i class="fas fa-sparkles"></i> Gemini</span>
+                    </div>
+                </div>
+                
+                <!-- Columna - Versión -->
+                <div class="footer-version-col">
+                    <div class="version-badge">
+                        <span class="version-label">PROFESIONAL</span>
+                        <span class="version-number">v2.0</span>
+                    </div>
+                    <span class="copyright">© 2026 - Sistema profesional de generación</span>
                 </div>
             </div>
         </div>
     </footer>
 
     <!-- Scripts -->
-    <script src="products-data.js"></script>
-    <script src="script-pro.js"></script>
+    <script src="js/products-data.js"></script>
+    <script src="js/script-pro.js"></script>
 </body>
 </html>

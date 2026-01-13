@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diagnóstico PRO</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background: #f5f5f5;
+        }
+        .diagnostic {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+        .status {
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 5px;
+        }
+        .success { background: #d1fae5; border-left: 4px solid #10b981; }
+        .error { background: #fee2e2; border-left: 4px solid #ef4444; }
+        .warning { background: #fef3c7; border-left: 4px solid #f59e0b; }
+        pre {
+            background: #1e293b;
+            color: #10b981;
+            padding: 15px;
+            border-radius: 5px;
+            overflow-x: auto;
+        }
+    </style>
+</head>
+<body>
+    <h1>🔍 Diagnóstico del Generador PRO</h1>
+    
+    <div class="diagnostic">
+        <h2>1. Verificación de Archivos</h2>
+        <div id="filesCheck"></div>
+    </div>
+    
+    <div class="diagnostic">
+        <h2>2. Estado del Grid de Productos</h2>
+        <div id="gridCheck"></div>
+    </div>
+    
+    <div class="diagnostic">
+        <h2>3. Productos Cargados</h2>
+        <div id="productsCheck"></div>
+    </div>
+    
+    <div class="diagnostic">
+        <h2>4. Estilos CSS del Grid</h2>
+        <div id="cssCheck"></div>
+    </div>
+    
+    <div class="diagnostic">
+        <h2>5. Mega Menú</h2>
+        <div id="megaMenuCheck"></div>
+    </div>
+
+    <script src="js/products-data.js"></script>
+    <script src="js/script-pro.js"></script>
+    <script>
+        async function runDiagnostics() {
+            // 1. Verificar archivos
+            const filesDiv = document.getElementById('filesCheck');
+            const cssExists = !!document.querySelector('link[href*="styles-pro.css"]');
+            const jsExists = typeof getAllProducts === 'function';
+            
+            filesDiv.innerHTML = `
+                <div class="status ${cssExists ? 'success' : 'error'}">
+                    ${cssExists ? '✅' : '❌'} styles-pro.css: ${cssExists ? 'Cargado' : 'NO ENCONTRADO'}
+                </div>
+                <div class="status ${jsExists ? 'success' : 'error'}">
+                    ${jsExists ? '✅' : '❌'} script-pro.js: ${jsExists ? 'Cargado' : 'NO ENCONTRADO'}
+                </div>
+            `;
+            
+            // 2. Verificar Grid
+            const gridDiv = document.getElementById('gridCheck');
+            const grid = document.getElementById('productsGrid');
+            const gridExists = !!grid;
+            
+            if (gridExists) {
+                const computedStyle = window.getComputedStyle(grid);
+                gridDiv.innerHTML = `
+                    <div class="status success">✅ Grid encontrado</div>
+                    <pre>display: ${computedStyle.display}
+grid-template-columns: ${computedStyle.gridTemplateColumns}
+visibility: ${computedStyle.visibility}
+opacity: ${computedStyle.opacity}
+position: ${computedStyle.position}
+z-index: ${computedStyle.zIndex}</pre>
+                `;
+            } else {
+                gridDiv.innerHTML = `<div class="status error">❌ Grid NO encontrado en el DOM</div>`;
+            }
+            
+            // 3. Verificar productos
+            const productsDiv = document.getElementById('productsCheck');
+            try {
+                const products = getAllProducts();
+                productsDiv.innerHTML = `
+                    <div class="status success">✅ ${products.length} productos cargados</div>
+                    <pre>${JSON.stringify(products.slice(0, 2), null, 2)}</pre>
+                `;
+            } catch (error) {
+                productsDiv.innerHTML = `<div class="status error">❌ Error: ${error.message}</div>`;
+            }
+            
+            // 4. Verificar CSS del Grid
+            const cssDiv = document.getElementById('cssCheck');
+            if (grid && grid.children.length > 0) {
+                const firstCard = grid.children[0];
+                const cardStyle = window.getComputedStyle(firstCard);
+                cssDiv.innerHTML = `
+                    <div class="status success">✅ ${grid.children.length} tarjetas renderizadas</div>
+                    <pre>Primera tarjeta:
+display: ${cardStyle.display}
+visibility: ${cardStyle.visibility}
+opacity: ${cardStyle.opacity}
+width: ${cardStyle.width}
+height: ${cardStyle.height}</pre>
+                `;
+            } else {
+                cssDiv.innerHTML = `<div class="status warning">⚠️ Grid sin hijos (${grid ? grid.children.length : 0} elementos)</div>`;
+            }
+            
+            // 5. Verificar Mega Menú
+            const megaDiv = document.getElementById('megaMenuCheck');
+            const megaMenu = document.getElementById('megaMenu');
+            const megaMenuContainer = document.getElementById('megaMenuContainer');
+            
+            if (megaMenu && megaMenuContainer) {
+                const menuStyle = window.getComputedStyle(megaMenu);
+                const containerStyle = window.getComputedStyle(megaMenuContainer);
+                megaDiv.innerHTML = `
+                    <div class="status success">✅ Mega menú encontrado</div>
+                    <pre>Mega Menu:
+visibility: ${menuStyle.visibility}
+opacity: ${menuStyle.opacity}
+z-index: ${menuStyle.zIndex}
+position: ${menuStyle.position}
+
+Container:
+z-index: ${containerStyle.zIndex}
+position: ${containerStyle.position}</pre>
+                `;
+            } else {
+                megaDiv.innerHTML = `<div class="status error">❌ Mega menú NO encontrado</div>`;
+            }
+        }
+        
+        // Ejecutar diagnósticos después de un breve delay
+        setTimeout(runDiagnostics, 1000);
+    </script>
+</body>
+</html>

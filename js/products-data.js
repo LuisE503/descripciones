@@ -641,6 +641,87 @@ function getEmbeddedProducts() {
             description: "Teclados con y sin cable",
             tags: ["teclado", "keyboard", "mecánico", "gaming"],
             file: "teclados_cableados_e_inalambricos.txt"
+        },
+        {
+            id: 62,
+            category: "accesorios",
+            name: "Accesorios",
+            icon: "🎁",
+            description: "Accesorios para periféricos",
+            tags: ["accesorio", "periférico", "protección"],
+            file: "accesorios.txt"
+        },
+        {
+            id: 63,
+            category: "infraestructura_de_red",
+            name: "Infraestructura de Red",
+            icon: "🏗️",
+            description: "Brackets, bandejas y herramientas de red",
+            tags: ["infraestructura", "red", "rack", "servidor"],
+            file: "infraestructura_de_red.txt"
+        },
+        {
+            id: 64,
+            category: "portabilidad",
+            name: "Portabilidad",
+            icon: "🎒",
+            description: "Mochilas, fundas y maletas",
+            tags: ["mochila", "funda", "maleta", "transporte"],
+            file: "portabilidad.txt"
+        },
+        {
+            id: 65,
+            category: "smart_home",
+            name: "Smart Home",
+            icon: "🏠",
+            description: "Dispositivos de automatización del hogar",
+            tags: ["smart", "hogar", "automatización", "inteligente"],
+            file: "smart_home.txt"
+        },
+        {
+            id: 66,
+            category: "drones",
+            name: "Drones",
+            icon: "🛸",
+            description: "Drones aéreos para captura y exploración",
+            tags: ["drone", "cuadricóptero", "aéreo", "video"],
+            file: "drones.txt"
+        },
+        {
+            id: 67,
+            category: "cargadores",
+            name: "Cargadores",
+            icon: "🔌",
+            description: "Cargadores rápidos y de viaje",
+            tags: ["cargador", "carga rápida", "batería", "usb"],
+            file: "cargadores.txt"
+        },
+        {
+            id: 68,
+            category: "tableta_grafica",
+            name: "Tableta Gráfica",
+            icon: "🖌️",
+            description: "Tabletas gráficas para diseñadores",
+            tags: ["tableta", "gráfica", "diseño", "lápiz"],
+            file: "tableta_grafica.txt"
+        },
+        {
+            id: 69,
+            category: "cable_dvi",
+            name: "Cable DVI",
+            icon: "🔗",
+            description: "Cables DVI para monitores",
+            tags: ["cable", "dvi", "video", "monitor"],
+            file: "cable_dvi.txt"
+        },
+        {
+            id: 70,
+            category: "internet_de_las_cosas",
+            name: "Internet de las Cosas (IoT)",
+            icon: "📡",
+            description: "Dispositivos IoT inteligentes",
+            tags: ["iot", "sensor", "inteligente", "conectado"],
+            file: "internet_de_las_cosas.txt"
         }
     ];
 }

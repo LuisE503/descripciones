@@ -2255,7 +2255,7 @@ async function loadProductContent(fileName) {
     try {
         // Codificar el nombre del archivo para manejar espacios y caracteres especiales
         const encodedFileName = encodeURIComponent(fileName).replace(/%2F/g, '/');
-        const response = await fetch(encodedFileName);
+        const response = await fetch(`productos-txt/${encodedFileName}`);
         if (!response.ok) {
             console.error(`❌ No se pudo cargar: ${fileName} - Status: ${response.status}`);
             return `<!-- Error: No se pudo cargar ${fileName} - Status: ${response.status} -->`;

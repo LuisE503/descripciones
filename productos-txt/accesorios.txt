@@ -1,0 +1,140 @@
+INSTRUCCIONES PARA ACCESORIOS PERIFÉRICOS:
+
+Tipos de accesorios: Adaptadores, Extensores, Conectores, Protectores, Organizadores
+Material del accesorio: Plástico, Aluminio, Silicona, Nylon, Otros
+Compatibilidad: Periférico específico (mouse, teclado, etc.)
+Color: Especificar color exacto
+Dimensiones: Alto x Ancho x Profundidad (mm)
+Peso: Gramos exactos
+Características especiales: Antideslizante, Protección contra derrames, Ventilación, etc.
+Resistencia: Materiales resistentes a caídas/golpes si aplica
+
+<!-- BLOQUE: Accesorios para Periféricos (descripción y tabla de especificaciones) -->
+<div class="row">
+<div class="col-sm-8 col-offset-sm-2 col-md-10 offset-md-1 mb-3">
+<div class="product-seo-intro">
+<p>Accesorios diseñados para mejorar la funcionalidad y protección de tus periféricos. Compatibles con una amplia gama de dispositivos, ofrecen soluciones prácticas para tu espacio de trabajo.</p>
+</div>
+<br>
+<h6 class="tt-title-sub text-center">ESPECIFICACIONES DEL PRODUCTO</h6>
+
+<div class="div-drop">
+<table style="margin: auto;" class="NEW-TABLE TableOverride-1 tab-drag" width="100%">
+<tbody>
+<!-- IDENTIFICACIÓN -->
+<tr>
+<td class="tableCellGroupTitle">Identificación</td>
+<td class="tableCellGroupTitleContent"></td>
+</tr>
+<tr>
+<td class="tableCellMeta">Tipo de accesorio</td>
+<td class="tableCellContent">Especificar tipo</td>
+</tr>
+<tr>
+<td class="tableCellMeta">Material</td>
+<td class="tableCellContent">Material principal</td>
+</tr>
+
+<!-- CARACTERÍSTICAS FÍSICAS -->
+<tr>
+<td class="tableCellGroupTitle">Características Físicas</td>
+<td class="tableCellGroupTitleContent"></td>
+</tr>
+<tr>
+<td class="tableCellMeta">Dimensiones (Alto x Ancho x Profundidad)</td>
+<td class="tableCellContent">En mm</td>
+</tr>
+<tr>
+<td class="tableCellMeta">Peso</td>
+<td class="tableCellContent">En gramos</td>
+</tr>
+<tr>
+<td class="tableCellMeta">Color</td>
+<td class="tableCellContent">Color del accesorio</td>
+</tr>
+
+<!-- CARACTERÍSTICAS TÉCNICAS -->
+<tr>
+<td class="tableCellGroupTitle">Características Técnicas</td>
+<td class="tableCellGroupTitleContent"></td>
+</tr>
+<tr>
+<td class="tableCellMeta">Compatibilidad</td>
+<td class="tableCellContent">Periféricos compatibles</td>
+</tr>
+<tr>
+<td class="tableCellMeta">Características especiales</td>
+<td class="tableCellContent">Funcionalidades únicas</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+
+<style>
+.nav-tabs .nav-item.show .nav-link,
+.nav-tabs .nav-link .active {
+background: #f5f5f5;
+border-bottom: 2px solid #036cbf;
+border-radius: 5px 5px 0 0;
+}
+
+.row, .NEW-TABLE, .TableOverride-1, .tab-drag, .tt-title-sub,
+.tableCellMeta, .tableCellContent, .tableCellGroupTitle,
+.tableCellGroupTitleContent, .product-seo-intro, .div-drop {
+font-family: inherit;
+color: inherit;
+}
+
+.tt-title-sub {
+font-size: 12px;
+font-weight: 700;
+margin: 6px 0 10px;
+letter-spacing: 0.3px;
+text-align: center;
+}
+
+.div-drop { overflow-x: auto; }
+table { border-collapse: collapse; font-size: 14px; width: 100%; }
+
+.tableCellMeta {
+border: 1px solid #fbfbfb;
+padding: 3px 0 3px 15px;
+vertical-align: middle;
+background-color: #fdfdfd;
+width: 50%;
+text-align: left;
+}
+
+.tableCellContent {
+text-align: center;
+border: 1px solid #fbfbfb;
+padding: 3px 0 3px 15px;
+vertical-align: middle;
+background-color: #fafafa;
+width: 50%;
+}
+
+.tableCellGroupTitle {
+border: 1px solid #f8f8f8;
+padding: 3px 0 3px 5px;
+vertical-align: middle;
+background-color: #f7f7f7;
+font-weight: 800;
+text-transform: uppercase;
+text-align: center;
+}
+
+.tableCellGroupTitleContent {
+border: 1px solid #fbfbfb;
+padding: 3px 0 3px 15px;
+vertical-align: middle;
+background-color: #fafafa;
+width: 50%;
+}
+
+@media (max-width: 576px) {
+.tt-title-sub { font-size: 11px; }
+.tableCellMeta, .tableCellContent { font-size: 13px; padding-left: 10px; }
+}
+</style>

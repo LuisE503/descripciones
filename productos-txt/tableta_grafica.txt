@@ -1,0 +1,155 @@
+INSTRUCCIONES PARA TABLETAS GRÁFICAS:
+
+Tipo: Tableta con lápiz, Pad sensible a presión, Display pen, Modelo especifico
+Tamaño: Pulgadas o medidas exactas
+Resolución de presión: Niveles (2048, 4096, 8192)
+Área activa: Milímetros (ancho x alto)
+Conectividad: USB, Bluetooth, Inalámbrica
+Compatibilidad: Windows, Mac, Linux
+Lápiz: Incluido/No incluido, Tipo (pasivo, activo)
+Botones programables: Cantidad
+Software incluido: Licencias o trials
+
+<!-- BLOQUE: Tabletas Gráficas (descripción y tabla de especificaciones) -->
+<div class="row">
+<div class="col-sm-8 col-offset-sm-2 col-md-10 offset-md-1 mb-3">
+<div class="product-seo-intro">
+<p>Tabletas gráficas profesionales para diseñadores, artistas y ilustradores. Con sensibilidad de presión avanzada y compatibilidad con los principales software de diseño.</p>
+</div>
+<br>
+<h6 class="tt-title-sub text-center">ESPECIFICACIONES DEL PRODUCTO</h6>
+
+<div class="div-drop">
+<table style="margin: auto;" class="NEW-TABLE TableOverride-1 tab-drag" width="100%">
+<tbody>
+<!-- IDENTIFICACIÓN -->
+<tr>
+<td class="tableCellGroupTitle">Identificación</td>
+<td class="tableCellGroupTitleContent"></td>
+</tr>
+<tr>
+<td class="tableCellMeta">Tipo</td>
+<td class="tableCellContent">Tableta con lápiz | Pad sensible | Display pen</td>
+</tr>
+
+<!-- ESPECIFICACIONES TÉCNICAS -->
+<tr>
+<td class="tableCellGroupTitle">Especificaciones Técnicas</td>
+<td class="tableCellGroupTitleContent"></td>
+</tr>
+<tr>
+<td class="tableCellMeta">Tamaño</td>
+<td class="tableCellContent">Pulgadas o medidas exactas</td>
+</tr>
+<tr>
+<td class="tableCellMeta">Área activa</td>
+<td class="tableCellContent">Ancho x Alto (mm)</td>
+</tr>
+<tr>
+<td class="tableCellMeta">Resolución de presión</td>
+<td class="tableCellContent">Niveles de presión</td>
+</tr>
+
+<!-- CONECTIVIDAD -->
+<tr>
+<td class="tableCellGroupTitle">Conectividad</td>
+<td class="tableCellGroupTitleContent"></td>
+</tr>
+<tr>
+<td class="tableCellMeta">Tipo de conexión</td>
+<td class="tableCellContent">USB | Bluetooth | Inalámbrica</td>
+</tr>
+<tr>
+<td class="tableCellMeta">Compatibilidad SO</td>
+<td class="tableCellContent">Windows | Mac | Linux</td>
+</tr>
+
+<!-- ACCESORIOS -->
+<tr>
+<td class="tableCellGroupTitle">Accesorios</td>
+<td class="tableCellGroupTitleContent"></td>
+</tr>
+<tr>
+<td class="tableCellMeta">Lápiz incluido</td>
+<td class="tableCellContent">Sí | No</td>
+</tr>
+<tr>
+<td class="tableCellMeta">Botones programables</td>
+<td class="tableCellContent">Cantidad</td>
+</tr>
+<tr>
+<td class="tableCellMeta">Software incluido</td>
+<td class="tableCellContent">Software/Licencias</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+
+<style>
+.nav-tabs .nav-item.show .nav-link,
+.nav-tabs .nav-link .active {
+background: #f5f5f5;
+border-bottom: 2px solid #036cbf;
+border-radius: 5px 5px 0 0;
+}
+
+.row, .NEW-TABLE, .TableOverride-1, .tab-drag, .tt-title-sub,
+.tableCellMeta, .tableCellContent, .tableCellGroupTitle,
+.tableCellGroupTitleContent, .product-seo-intro, .div-drop {
+font-family: inherit;
+color: inherit;
+}
+
+.tt-title-sub {
+font-size: 12px;
+font-weight: 700;
+margin: 6px 0 10px;
+letter-spacing: 0.3px;
+text-align: center;
+}
+
+.div-drop { overflow-x: auto; }
+table { border-collapse: collapse; font-size: 14px; width: 100%; }
+
+.tableCellMeta {
+border: 1px solid #fbfbfb;
+padding: 3px 0 3px 15px;
+vertical-align: middle;
+background-color: #fdfdfd;
+width: 50%;
+text-align: left;
+}
+
+.tableCellContent {
+text-align: center;
+border: 1px solid #fbfbfb;
+padding: 3px 0 3px 15px;
+vertical-align: middle;
+background-color: #fafafa;
+width: 50%;
+}
+
+.tableCellGroupTitle {
+border: 1px solid #f8f8f8;
+padding: 3px 0 3px 5px;
+vertical-align: middle;
+background-color: #f7f7f7;
+font-weight: 800;
+text-transform: uppercase;
+text-align: center;
+}
+
+.tableCellGroupTitleContent {
+border: 1px solid #fbfbfb;
+padding: 3px 0 3px 15px;
+vertical-align: middle;
+background-color: #fafafa;
+width: 50%;
+}
+
+@media (max-width: 576px) {
+.tt-title-sub { font-size: 11px; }
+.tableCellMeta, .tableCellContent { font-size: 13px; padding-left: 10px; }
+}
+</style>

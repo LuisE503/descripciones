@@ -1,0 +1,172 @@
+INSTRUCCIONES PARA DRONES:
+
+Tipo: Cuadricóptero, Hexacóptero, Ala fija, Submarino
+Cámara: Resolución (MP), Video (4K, FHD)
+Tiempo de vuelo: Minutos aproximados
+Alcance: Metros de distancia máxima
+Velocidad máxima: Km/h
+Peso: Gramos
+Batería: Capacidad mAh, Tiempo carga
+Resistencia: Lluvia, Nieve, Viento (si aplica)
+Control: Aplicación móvil, Control remoto
+Accesorios: Propelas, Baterías, Cargador
+
+<!-- BLOQUE: Drones (descripción y tabla de especificaciones) -->
+<div class="row">
+<div class="col-sm-8 col-offset-sm-2 col-md-10 offset-md-1 mb-3">
+<div class="product-seo-intro">
+<p>Drones de última tecnología para capturar imágenes aéreas profesionales, transmisión en vivo y exploración. Diseñados para usuarios aficionados y profesionales con controles intuitivos.</p>
+</div>
+<br>
+<h6 class="tt-title-sub text-center">ESPECIFICACIONES DEL PRODUCTO</h6>
+
+<div class="div-drop">
+<table style="margin: auto;" class="NEW-TABLE TableOverride-1 tab-drag" width="100%">
+<tbody>
+<!-- IDENTIFICACIÓN -->
+<tr>
+<td class="tableCellGroupTitle">Identificación</td>
+<td class="tableCellGroupTitleContent"></td>
+</tr>
+<tr>
+<td class="tableCellMeta">Tipo de drone</td>
+<td class="tableCellContent">Cuadricóptero | Hexacóptero | Ala fija | Submarino</td>
+</tr>
+
+<!-- CÁMARA -->
+<tr>
+<td class="tableCellGroupTitle">Cámara</td>
+<td class="tableCellGroupTitleContent"></td>
+</tr>
+<tr>
+<td class="tableCellMeta">Resolución</td>
+<td class="tableCellContent">Megapíxeles</td>
+</tr>
+<tr>
+<td class="tableCellMeta">Video</td>
+<td class="tableCellContent">4K | Full HD | Resolución</td>
+</tr>
+
+<!-- RENDIMIENTO -->
+<tr>
+<td class="tableCellGroupTitle">Rendimiento</td>
+<td class="tableCellGroupTitleContent"></td>
+</tr>
+<tr>
+<td class="tableCellMeta">Tiempo de vuelo</td>
+<td class="tableCellContent">Minutos aproximados</td>
+</tr>
+<tr>
+<td class="tableCellMeta">Alcance máximo</td>
+<td class="tableCellContent">Metros</td>
+</tr>
+<tr>
+<td class="tableCellMeta">Velocidad máxima</td>
+<td class="tableCellContent">Km/h</td>
+</tr>
+
+<!-- ESPECIFICACIONES FÍSICAS -->
+<tr>
+<td class="tableCellGroupTitle">Especificaciones Físicas</td>
+<td class="tableCellGroupTitleContent"></td>
+</tr>
+<tr>
+<td class="tableCellMeta">Peso</td>
+<td class="tableCellContent">Gramos</td>
+</tr>
+
+<!-- BATERÍA -->
+<tr>
+<td class="tableCellGroupTitle">Batería</td>
+<td class="tableCellGroupTitleContent"></td>
+</tr>
+<tr>
+<td class="tableCellMeta">Capacidad</td>
+<td class="tableCellContent">mAh</td>
+</tr>
+<tr>
+<td class="tableCellMeta">Tiempo de carga</td>
+<td class="tableCellContent">Minutos</td>
+</tr>
+
+<!-- CONTROL Y CONECTIVIDAD -->
+<tr>
+<td class="tableCellGroupTitle">Control</td>
+<td class="tableCellGroupTitleContent"></td>
+</tr>
+<tr>
+<td class="tableCellMeta">Métodos de control</td>
+<td class="tableCellContent">App móvil | Control remoto | Ambos</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+
+<style>
+.nav-tabs .nav-item.show .nav-link,
+.nav-tabs .nav-link .active {
+background: #f5f5f5;
+border-bottom: 2px solid #036cbf;
+border-radius: 5px 5px 0 0;
+}
+
+.row, .NEW-TABLE, .TableOverride-1, .tab-drag, .tt-title-sub,
+.tableCellMeta, .tableCellContent, .tableCellGroupTitle,
+.tableCellGroupTitleContent, .product-seo-intro, .div-drop {
+font-family: inherit;
+color: inherit;
+}
+
+.tt-title-sub {
+font-size: 12px;
+font-weight: 700;
+margin: 6px 0 10px;
+letter-spacing: 0.3px;
+text-align: center;
+}
+
+.div-drop { overflow-x: auto; }
+table { border-collapse: collapse; font-size: 14px; width: 100%; }
+
+.tableCellMeta {
+border: 1px solid #fbfbfb;
+padding: 3px 0 3px 15px;
+vertical-align: middle;
+background-color: #fdfdfd;
+width: 50%;
+text-align: left;
+}
+
+.tableCellContent {
+text-align: center;
+border: 1px solid #fbfbfb;
+padding: 3px 0 3px 15px;
+vertical-align: middle;
+background-color: #fafafa;
+width: 50%;
+}
+
+.tableCellGroupTitle {
+border: 1px solid #f8f8f8;
+padding: 3px 0 3px 5px;
+vertical-align: middle;
+background-color: #f7f7f7;
+font-weight: 800;
+text-transform: uppercase;
+text-align: center;
+}
+
+.tableCellGroupTitleContent {
+border: 1px solid #fbfbfb;
+padding: 3px 0 3px 15px;
+vertical-align: middle;
+background-color: #fafafa;
+width: 50%;
+}
+
+@media (max-width: 576px) {
+.tt-title-sub { font-size: 11px; }
+.tableCellMeta, .tableCellContent { font-size: 13px; padding-left: 10px; }
+}
+</style>

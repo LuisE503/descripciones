@@ -1,6 +1,6 @@
 # Servidor HTTP simple en PowerShell
 # Puerto en el que se ejecutará el servidor
-$port = 8000
+$port = 8888
 $url = "http://localhost:$port"
 
 Write-Host "========================================" -ForegroundColor Green

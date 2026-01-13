@@ -1,0 +1,169 @@
+INSTRUCCIONES PARA INTERNET DE LAS COSAS (IoT GENERAL):
+
+Categorías: Sensores inteligentes, Medidores, Monitores ambientales, Sistemas IoT integrados
+Tipo de dispositivo: Sensor temperatura, Sensor humedad, Monitor CO2, Sistema completo
+Conectividad: WiFi, Bluetooth, Zigbee, Z-Wave, LoRaWAN
+Rango de medición: Valores mín-máx según tipo
+Precisión: Margen de error
+Batería: Duración en meses o años
+Display: Incluido o no, Tipo
+Integración: Plataformas soportadas (InfluxDB, Grafana, etc.)
+API: Disponible para integración
+
+<!-- BLOQUE: Internet de las Cosas (descripción y tabla de especificaciones) -->
+<div class="row">
+<div class="col-sm-8 col-offset-sm-2 col-md-10 offset-md-1 mb-3">
+<div class="product-seo-intro">
+<p>Dispositivos IoT inteligentes para monitoreo, control y automatización de procesos. Con conectividad flexible y compatibilidad con múltiples plataformas para soluciones personalizadas.</p>
+</div>
+<br>
+<h6 class="tt-title-sub text-center">ESPECIFICACIONES DEL PRODUCTO</h6>
+
+<div class="div-drop">
+<table style="margin: auto;" class="NEW-TABLE TableOverride-1 tab-drag" width="100%">
+<tbody>
+<!-- IDENTIFICACIÓN -->
+<tr>
+<td class="tableCellGroupTitle">Identificación</td>
+<td class="tableCellGroupTitleContent"></td>
+</tr>
+<tr>
+<td class="tableCellMeta">Tipo de dispositivo</td>
+<td class="tableCellContent">Sensor | Monitor | Sistema integrado</td>
+</tr>
+
+<!-- CONECTIVIDAD -->
+<tr>
+<td class="tableCellGroupTitle">Conectividad</td>
+<td class="tableCellGroupTitleContent"></td>
+</tr>
+<tr>
+<td class="tableCellMeta">Protocolo</td>
+<td class="tableCellContent">WiFi | Bluetooth | Zigbee | Z-Wave | LoRaWAN</td>
+</tr>
+<tr>
+<td class="tableCellMeta">Frecuencia</td>
+<td class="tableCellContent">2.4 GHz | 868/915 MHz | Especificar</td>
+</tr>
+
+<!-- ESPECIFICACIONES TÉCNICAS -->
+<tr>
+<td class="tableCellGroupTitle">Especificaciones Técnicas</td>
+<td class="tableCellGroupTitleContent"></td>
+</tr>
+<tr>
+<td class="tableCellMeta">Rango de medición</td>
+<td class="tableCellContent">Valores mín-máx</td>
+</tr>
+<tr>
+<td class="tableCellMeta">Precisión</td>
+<td class="tableCellContent">Margen de error</td>
+</tr>
+<tr>
+<td class="tableCellMeta">Tiempo de respuesta</td>
+<td class="tableCellContent">Segundos o milisegundos</td>
+</tr>
+
+<!-- ALIMENTACIÓN -->
+<tr>
+<td class="tableCellGroupTitle">Alimentación</td>
+<td class="tableCellGroupTitleContent"></td>
+</tr>
+<tr>
+<td class="tableCellMeta">Tipo</td>
+<td class="tableCellContent">Batería | USB | PoE | Energía solar</td>
+</tr>
+<tr>
+<td class="tableCellMeta">Duración batería</td>
+<td class="tableCellContent">Meses o años</td>
+</tr>
+
+<!-- INTERFAZ E INTEGRACIÓN -->
+<tr>
+<td class="tableCellGroupTitle">Integración</td>
+<td class="tableCellGroupTitleContent"></td>
+</tr>
+<tr>
+<td class="tableCellMeta">Display</td>
+<td class="tableCellContent">Sí | No (tipo si aplica)</td>
+</tr>
+<tr>
+<td class="tableCellMeta">API disponible</td>
+<td class="tableCellContent">Sí | No</td>
+</tr>
+<tr>
+<td class="tableCellMeta">Plataformas soportadas</td>
+<td class="tableCellContent">Plataformas / Integraciones</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+
+<style>
+.nav-tabs .nav-item.show .nav-link,
+.nav-tabs .nav-link .active {
+background: #f5f5f5;
+border-bottom: 2px solid #036cbf;
+border-radius: 5px 5px 0 0;
+}
+
+.row, .NEW-TABLE, .TableOverride-1, .tab-drag, .tt-title-sub,
+.tableCellMeta, .tableCellContent, .tableCellGroupTitle,
+.tableCellGroupTitleContent, .product-seo-intro, .div-drop {
+font-family: inherit;
+color: inherit;
+}
+
+.tt-title-sub {
+font-size: 12px;
+font-weight: 700;
+margin: 6px 0 10px;
+letter-spacing: 0.3px;
+text-align: center;
+}
+
+.div-drop { overflow-x: auto; }
+table { border-collapse: collapse; font-size: 14px; width: 100%; }
+
+.tableCellMeta {
+border: 1px solid #fbfbfb;
+padding: 3px 0 3px 15px;
+vertical-align: middle;
+background-color: #fdfdfd;
+width: 50%;
+text-align: left;
+}
+
+.tableCellContent {
+text-align: center;
+border: 1px solid #fbfbfb;
+padding: 3px 0 3px 15px;
+vertical-align: middle;
+background-color: #fafafa;
+width: 50%;
+}
+
+.tableCellGroupTitle {
+border: 1px solid #f8f8f8;
+padding: 3px 0 3px 5px;
+vertical-align: middle;
+background-color: #f7f7f7;
+font-weight: 800;
+text-transform: uppercase;
+text-align: center;
+}
+
+.tableCellGroupTitleContent {
+border: 1px solid #fbfbfb;
+padding: 3px 0 3px 15px;
+vertical-align: middle;
+background-color: #fafafa;
+width: 50%;
+}
+
+@media (max-width: 576px) {
+.tt-title-sub { font-size: 11px; }
+.tableCellMeta, .tableCellContent { font-size: 13px; padding-left: 10px; }
+}
+</style>

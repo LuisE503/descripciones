@@ -8,12 +8,25 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles-ai.css">
+    <link rel="stylesheet" href="css/styles-ai.css">
 </head>
 <body>
     <!-- Header con indicador de IA -->
     <header class="header">
         <div class="container">
+            <!-- Barra superior de navegación -->
+            <nav class="header-nav">
+                <a href="index.html" class="nav-link">
+                    <i class="fas fa-cube"></i> v1 Básico
+                </a>
+                <a href="index-pro.html" class="nav-link">
+                    <i class="fas fa-crown"></i> v2 Profesional
+                </a>
+                <a href="index-ai.html" class="nav-link active">
+                    <i class="fas fa-brain"></i> v2.1 IA
+                </a>
+            </nav>
+            
             <div class="header-content">
                 <div class="logo-section">
                     <div class="logo-icon ai-glow">
@@ -23,7 +36,7 @@
                         <h1>Generador de Descripciones</h1>
                         <div class="badge-container">
                             <span class="badge-ai">AI</span>
-                            <span class="badge-powered">Powered by Groq & Qwen</span>
+                            <span class="badge-powered">Powered by Groq & ChatGPT</span>
                         </div>
                     </div>
                 </div>
@@ -34,7 +47,7 @@
                 <div class="header-stats">
                     <div class="stat">
                         <i class="fas fa-box-open"></i>
-                        <span><strong id="totalProducts">61</strong> Productos</span>
+                        <span><strong id="totalProducts">70</strong> Productos</span>
                     </div>
                     <div class="stat">
                         <i class="fas fa-brain"></i>
@@ -62,7 +75,7 @@
                     <i class="fas fa-key"></i>
                     <div>
                         <h3>Configura tu API Key para habilitar la generación automática con IA</h3>
-                        <p>Usa Groq (gratuito y rápido) o Qwen API para generar descripciones automáticamente</p>
+                        <p>Conecta con Groq o ChatGPT para generar descripciones automáticamente</p>
                     </div>
                 </div>
                 <button class="btn btn-config" id="openConfigBtn">
@@ -150,7 +163,7 @@
                     </div>
                     <div>
                         <h2>Configuración de API</h2>
-                        <span class="modal-category">Conecta con Groq o Qwen para generación automática</span>
+                        <span class="modal-category">Conecta con Groq o ChatGPT para generación automática</span>
                     </div>
                 </div>
                 <button class="modal-close" id="configModalClose">
@@ -163,25 +176,25 @@
                     <div class="provider-tabs">
                         <button class="provider-tab active" data-provider="groq">
                             <i class="fas fa-bolt"></i>
-                            Groq (Recomendado)
+                            Groq
                         </button>
-                        <button class="provider-tab" data-provider="qwen">
-                            <i class="fas fa-brain"></i>
-                            Qwen API
+                        <button class="provider-tab" data-provider="chatgpt">
+                            <i class="fas fa-comments"></i>
+                            ChatGPT
                         </button>
                     </div>
                     
                     <div class="provider-content active" id="groqConfig">
                         <div class="provider-info">
-                            <div class="provider-badge free">
-                                <i class="fas fa-gift"></i>
-                                Gratis
+                            <div class="provider-badge">
+                                <i class="fas fa-bolt"></i>
+                                Rápido
                             </div>
                             <h3>Groq API</h3>
-                            <p>Groq ofrece acceso gratuito a modelos de IA ultra rápidos. Perfecto para generación de descripciones.</p>
+                            <p>Groq ofrece acceso a modelos de IA ultra rápidos. Perfecto para generación de descripciones.</p>
                             <a href="https://console.groq.com/keys" target="_blank" class="provider-link">
                                 <i class="fas fa-external-link-alt"></i>
-                                Obtener API Key gratis en console.groq.com
+                                Obtener API Key en console.groq.com
                             </a>
                         </div>
                         
@@ -212,42 +225,43 @@
                         </div>
                     </div>
                     
-                    <div class="provider-content" id="qwenConfig">
+                    <div class="provider-content" id="chatgptConfig">
                         <div class="provider-info">
-                            <div class="provider-badge paid">
-                                <i class="fas fa-coins"></i>
-                                Pago por uso
+                            <div class="provider-badge">
+                                <i class="fas fa-comments"></i>
+                                Potente
                             </div>
-                            <h3>Qwen API (Alibaba Cloud)</h3>
-                            <p>Qwen es un modelo de IA potente de Alibaba. Ofrece excelente calidad en español.</p>
-                            <a href="https://dashscope.console.aliyun.com/" target="_blank" class="provider-link">
+                            <h3>OpenAI ChatGPT API</h3>
+                            <p>ChatGPT es el modelo de IA más avanzado de OpenAI. Ofrece excelente calidad en generación de contenido.</p>
+                            <a href="https://platform.openai.com/api-keys" target="_blank" class="provider-link">
                                 <i class="fas fa-external-link-alt"></i>
-                                Obtener API Key en Alibaba Cloud
+                                Obtener API Key en platform.openai.com
                             </a>
                         </div>
                         
                         <div class="form-group">
-                            <label for="qwenApiKey">
+                            <label for="chatgptApiKey">
                                 <i class="fas fa-key"></i>
-                                API Key de Qwen
+                                API Key de OpenAI
                             </label>
                             <div class="input-with-icon">
-                                <input type="password" id="qwenApiKey" placeholder="sk-...">
-                                <button class="toggle-visibility" data-target="qwenApiKey">
+                                <input type="password" id="chatgptApiKey" placeholder="sk-...">
+                                <button class="toggle-visibility" data-target="chatgptApiKey">
                                     <i class="fas fa-eye"></i>
                                 </button>
                             </div>
                         </div>
                         
                         <div class="form-group">
-                            <label for="qwenModel">
+                            <label for="chatgptModel">
                                 <i class="fas fa-microchip"></i>
                                 Modelo
                             </label>
-                            <select id="qwenModel">
-                                <option value="qwen-plus">Qwen Plus (Recomendado)</option>
-                                <option value="qwen-turbo">Qwen Turbo (Más rápido)</option>
-                                <option value="qwen-max">Qwen Max (Mejor calidad)</option>
+                            <select id="chatgptModel">
+                                <option value="gpt-4o">GPT-4o (Recomendado)</option>
+                                <option value="gpt-4o-mini">GPT-4o Mini (Más rápido)</option>
+                                <option value="gpt-4-turbo">GPT-4 Turbo</option>
+                                <option value="gpt-3.5-turbo">GPT-3.5 Turbo</option>
                             </select>
                         </div>
                     </div>
@@ -405,6 +419,20 @@
                                     Generar Todo
                                 </button>
                             </div>
+                            
+                            <div class="ai-option-card" id="generateTagsCard">
+                                <div class="option-icon tags-icon">
+                                    <i class="fas fa-hashtag"></i>
+                                </div>
+                                <div class="option-info">
+                                    <h4>Generar Etiquetas Shopify</h4>
+                                    <p>Genera las mejores etiquetas/tags para mejorar la búsqueda y organización del producto en Shopify.</p>
+                                </div>
+                                <button class="btn btn-ai-tags" id="generateTagsBtn" disabled>
+                                    <i class="fas fa-tags"></i>
+                                    Generar Tags
+                                </button>
+                            </div>
                         </div>
                         
                         <!-- Área de resultados de IA -->
@@ -437,6 +465,26 @@
                                     <span id="metaCharCount">0 caracteres</span>
                                 </div>
                             </div>
+                            
+                            <div class="result-section" id="tagsResultSection" style="display: none;">
+                                <div class="result-header">
+                                    <h4>
+                                        <i class="fas fa-hashtag"></i>
+                                        Etiquetas Shopify Generadas
+                                    </h4>
+                                    <button class="btn-icon" id="copyGeneratedTags" title="Copiar todas">
+                                        <i class="fas fa-copy"></i>
+                                    </button>
+                                </div>
+                                <div class="tags-result">
+                                    <div class="tags-container" id="generatedTagsContainer">
+                                        <!-- Las etiquetas se generarán aquí -->
+                                    </div>
+                                    <div class="tags-info">
+                                        <span><i class="fas fa-info-circle"></i> Haz clic en una etiqueta para copiarla individualmente</span>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                         
                         <!-- Loading state -->
@@ -467,7 +515,7 @@
                                 <i class="fas fa-key"></i>
                             </div>
                             <h4>API no configurada</h4>
-                            <p>Configura tu API Key de Groq o Qwen para habilitar la generación automática.</p>
+                            <p>Configura tu API Key de Groq o ChatGPT para habilitar la generación automática.</p>
                             <button class="btn btn-primary" id="openConfigFromAi">
                                 <i class="fas fa-cog"></i>
                                 Configurar API
@@ -518,16 +566,16 @@
                 </div>
                 <div class="footer-right">
                     <button class="btn btn-chatgpt" id="copyFullPromptBtn" disabled>
-                        <i class="fas fa-robot"></i>
+                        <i class="fas fa-comments"></i>
                         Prompt ChatGPT
+                    </button>
+                    <button class="btn btn-groq" id="copyGroqPromptBtn" disabled>
+                        <i class="fas fa-bolt"></i>
+                        Prompt Groq
                     </button>
                     <button class="btn btn-meta" id="copyMetaPromptBtn" disabled>
                         <i class="fas fa-tags"></i>
                         Prompt Meta
-                    </button>
-                    <button class="btn btn-qwen" id="copyQwenPromptBtn" disabled>
-                        <i class="fas fa-brain"></i>
-                        Prompt Qwen
                     </button>
                 </div>
             </div>
@@ -542,34 +590,54 @@
         <span id="toastMessage"></span>
     </div>
 
-    <!-- Footer -->
-    <footer class="footer">
+    <!-- Footer Profesional AI -->
+    <footer class="footer footer-ai">
         <div class="container">
             <div class="footer-content">
-                <div class="footer-brand">
-                    <i class="fas fa-robot"></i>
-                    <span>Generador de Descripciones Shopify AI</span>
+                <!-- Columna Principal - Marca -->
+                <div class="footer-main">
+                    <div class="footer-brand">
+                        <i class="fas fa-robot"></i>
+                        <span>Generador de Descripciones Shopify AI</span>
+                    </div>
+                    <p class="footer-tagline">Genera descripciones optimizadas automáticamente con Inteligencia Artificial.</p>
                 </div>
-                <div class="footer-info">
-                    <span>
-                        <i class="fas fa-box-open"></i>
-                        61 categorías de productos
-                    </span>
-                    <span class="separator">•</span>
-                    <span>
-                        <i class="fas fa-brain"></i>
-                        Powered by Groq & Qwen
-                    </span>
+                
+                <!-- Columna - Estadísticas -->
+                <div class="footer-stats">
+                    <h4><i class="fas fa-chart-bar"></i> Estadísticas</h4>
+                    <ul>
+                        <li><i class="fas fa-folder"></i> 70 categorías de productos</li>
+                        <li><i class="fas fa-wand-magic-sparkles"></i> Generación automática</li>
+                        <li><i class="fas fa-search"></i> SEO optimizado con IA</li>
+                    </ul>
                 </div>
-                <div class="footer-version">
-                    <span>Versión AI 1.0</span>
+                
+                <!-- Columna - Tecnología AI -->
+                <div class="footer-compat">
+                    <h4><i class="fas fa-microchip"></i> Powered by</h4>
+                    <div class="compat-badges">
+                        <span class="badge-compat badge-groq"><i class="fas fa-bolt"></i> Groq</span>
+                        <span class="badge-compat badge-chatgpt"><i class="fas fa-comments"></i> ChatGPT</span>
+                        <span class="badge-compat"><i class="fas fa-rocket"></i> LLaMA 3</span>
+                        <span class="badge-compat"><i class="fas fa-fire"></i> GPT-4o</span>
+                    </div>
+                </div>
+                
+                <!-- Columna - Versión -->
+                <div class="footer-version-col">
+                    <div class="version-badge version-ai">
+                        <span class="version-label">IA AVANZADA</span>
+                        <span class="version-number">v2.1</span>
+                    </div>
+                    <span class="copyright">© 2026 - Sistema de generación con IA</span>
                 </div>
             </div>
         </div>
     </footer>
 
     <!-- Scripts -->
-    <script src="products-data.js"></script>
-    <script src="script-ai.js"></script>
+    <script src="js/products-data.js"></script>
+    <script src="js/script-ai.js"></script>
 </body>
 </html>

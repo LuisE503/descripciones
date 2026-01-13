@@ -4,20 +4,32 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Generador de Descripciones Shopify - Proyecto Grupal</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-    <!-- Header -->
     <header class="header">
         <div class="container">
+            <!-- Barra superior de navegación -->
+            <nav class="header-nav">
+                <a href="index.html" class="nav-link active">
+                    <i class="fas fa-cube"></i> v1 Básico
+                </a>
+                <span class="nav-link disabled" title="Próximamente disponible">
+                    <i class="fas fa-crown"></i> v2 Profesional
+                </span>
+                <span class="nav-link disabled" title="Próximamente disponible">
+                    <i class="fas fa-brain"></i> v2.1 IA
+                </span>
+            </nav>
+            
             <div class="header-content">
                 <h1>🛍️ Generador de Descripciones Shopify</h1>
-                <p class="subtitle">Prompts optimizados para ChatGPT-5, Copilot y Qwen AI</p>
+                <p class="subtitle">Generador de descripciones HTML optimizadas para Shopify v1</p>
             </div>
         </div>
     </header>
 
-    <!-- Search and Filter Section -->
     <section class="search-section">
         <div class="container">
             <div class="search-filter-row">
@@ -52,7 +64,6 @@
                             <input type="text" id="categorySearch" placeholder="Buscar categoría...">
                         </div>
                         <div class="dropdown-content" id="dropdownContent">
-                            <!-- Las categorías se generarán dinámicamente -->
                         </div>
                     </div>
                 </div>
@@ -137,12 +148,10 @@
         </div>
     </div>
 
-    <!-- Toast Notification -->
     <div class="toast" id="toast">
         <span id="toastMessage"></span>
     </div>
 
-    <!-- Footer -->
     <footer class="footer">
         <div class="container">
             <p>🛍️ Generador de Descripciones Shopify - Proyecto Profesional</p>
@@ -150,7 +159,7 @@
         </div>
     </footer>
 
-    <script src="products-data.js"></script>
-    <script src="script.js"></script>
+    <script src="js/products-data.js"></script>
+    <script src="js/script.js"></script>
 </body>
 </html>

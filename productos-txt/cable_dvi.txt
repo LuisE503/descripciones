@@ -1,0 +1,140 @@
+INSTRUCCIONES PARA CABLE DVI:
+
+Tipo: DVI-D, DVI-A, DVI-I (especificar)
+Longitud: Metros exactos
+Versión: DVI 1.0, DVI 2.0
+Conectores: Macho-Hembra o Macho-Macho
+Apantallamiento: Doble, Triple, Ninguno
+Características: Ferrita, Resistencia EMI/RFI
+Resolución máxima: Soportada (1920x1200, 2560x1600, etc.)
+Marcas: Especificar si es genérico o marca específica
+
+<!-- BLOQUE: Cable DVI (descripción y tabla de especificaciones) -->
+<div class="row">
+<div class="col-sm-8 col-offset-sm-2 col-md-10 offset-md-1 mb-3">
+<div class="product-seo-intro">
+<p>Cable DVI de alta calidad para conexión de monitores y proyectores. Con apantallamiento completo para garantizar una transmisión de video clara y sin interferencias.</p>
+</div>
+<br>
+<h6 class="tt-title-sub text-center">ESPECIFICACIONES DEL PRODUCTO</h6>
+
+<div class="div-drop">
+<table style="margin: auto;" class="NEW-TABLE TableOverride-1 tab-drag" width="100%">
+<tbody>
+<!-- IDENTIFICACIÓN -->
+<tr>
+<td class="tableCellGroupTitle">Identificación</td>
+<td class="tableCellGroupTitleContent"></td>
+</tr>
+<tr>
+<td class="tableCellMeta">Tipo de DVI</td>
+<td class="tableCellContent">DVI-D | DVI-A | DVI-I</td>
+</tr>
+
+<!-- ESPECIFICACIONES TÉCNICAS -->
+<tr>
+<td class="tableCellGroupTitle">Especificaciones Técnicas</td>
+<td class="tableCellGroupTitleContent"></td>
+</tr>
+<tr>
+<td class="tableCellMeta">Longitud</td>
+<td class="tableCellContent">Metros exactos</td>
+</tr>
+<tr>
+<td class="tableCellMeta">Versión</td>
+<td class="tableCellContent">DVI 1.0 | DVI 2.0</td>
+</tr>
+<tr>
+<td class="tableCellMeta">Resolución máxima</td>
+<td class="tableCellContent">Resolución soportada</td>
+</tr>
+
+<!-- CARACTERÍSTICAS FÍSICAS -->
+<tr>
+<td class="tableCellGroupTitle">Características Físicas</td>
+<td class="tableCellGroupTitleContent"></td>
+</tr>
+<tr>
+<td class="tableCellMeta">Conectores</td>
+<td class="tableCellContent">Tipo de conexión</td>
+</tr>
+<tr>
+<td class="tableCellMeta">Apantallamiento</td>
+<td class="tableCellContent">Doble | Triple | Estándar</td>
+</tr>
+<tr>
+<td class="tableCellMeta">Características</td>
+<td class="tableCellContent">Ferrita, EMI/RFI, etc.</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+
+<style>
+.nav-tabs .nav-item.show .nav-link,
+.nav-tabs .nav-link .active {
+background: #f5f5f5;
+border-bottom: 2px solid #036cbf;
+border-radius: 5px 5px 0 0;
+}
+
+.row, .NEW-TABLE, .TableOverride-1, .tab-drag, .tt-title-sub,
+.tableCellMeta, .tableCellContent, .tableCellGroupTitle,
+.tableCellGroupTitleContent, .product-seo-intro, .div-drop {
+font-family: inherit;
+color: inherit;
+}
+
+.tt-title-sub {
+font-size: 12px;
+font-weight: 700;
+margin: 6px 0 10px;
+letter-spacing: 0.3px;
+text-align: center;
+}
+
+.div-drop { overflow-x: auto; }
+table { border-collapse: collapse; font-size: 14px; width: 100%; }
+
+.tableCellMeta {
+border: 1px solid #fbfbfb;
+padding: 3px 0 3px 15px;
+vertical-align: middle;
+background-color: #fdfdfd;
+width: 50%;
+text-align: left;
+}
+
+.tableCellContent {
+text-align: center;
+border: 1px solid #fbfbfb;
+padding: 3px 0 3px 15px;
+vertical-align: middle;
+background-color: #fafafa;
+width: 50%;
+}
+
+.tableCellGroupTitle {
+border: 1px solid #f8f8f8;
+padding: 3px 0 3px 5px;
+vertical-align: middle;
+background-color: #f7f7f7;
+font-weight: 800;
+text-transform: uppercase;
+text-align: center;
+}
+
+.tableCellGroupTitleContent {
+border: 1px solid #fbfbfb;
+padding: 3px 0 3px 15px;
+vertical-align: middle;
+background-color: #fafafa;
+width: 50%;
+}
+
+@media (max-width: 576px) {
+.tt-title-sub { font-size: 11px; }
+.tableCellMeta, .tableCellContent { font-size: 13px; padding-left: 10px; }
+}
+</style>

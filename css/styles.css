@@ -159,6 +159,64 @@ textarea:focus-visible {
     background: linear-gradient(to top, rgba(245,247,250,0.1), transparent);
 }
 
+/* Navegación del Header */
+.header-nav {
+    display: flex;
+    justify-content: center;
+    gap: var(--spacing-sm);
+    margin-bottom: var(--spacing-md);
+    position: relative;
+    z-index: 2;
+}
+
+.header-nav .nav-link {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    padding: 8px 16px;
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: var(--radius-full);
+    color: rgba(255, 255, 255, 0.7);
+    text-decoration: none;
+    font-size: 0.85rem;
+    font-weight: 500;
+    transition: all 0.2s ease;
+    backdrop-filter: blur(10px);
+}
+
+.header-nav .nav-link:hover {
+    background: rgba(255, 255, 255, 0.2);
+    color: white;
+    transform: translateY(-2px);
+}
+
+.header-nav .nav-link.active {
+    background: rgba(255, 255, 255, 0.25);
+    color: white;
+    border-color: rgba(255, 255, 255, 0.4);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.header-nav .nav-link i {
+    font-size: 0.9rem;
+}
+
+/* Nav link deshabilitado */
+.header-nav .nav-link.disabled {
+    opacity: 0.4;
+    cursor: not-allowed;
+    pointer-events: none;
+    background: rgba(255, 255, 255, 0.05);
+    border-color: rgba(255, 255, 255, 0.1);
+}
+
+.header-nav .nav-link.disabled:hover {
+    transform: none;
+    background: rgba(255, 255, 255, 0.05);
+    color: rgba(255, 255, 255, 0.5);
+}
+
 .header-content {
     position: relative;
     z-index: 1;
@@ -509,7 +567,7 @@ textarea:focus-visible {
     border-radius: var(--radius-lg);
     padding: var(--spacing-lg);
     box-shadow: var(--shadow-md);
-    transition: all var(--transition-normal);
+    transition: all 0.2s ease;
     display: flex;
     flex-direction: column;
     gap: var(--spacing-md);
@@ -528,7 +586,7 @@ textarea:focus-visible {
     height: 4px;
     background: linear-gradient(90deg, #667eea 0%, #7c3aed 50%, #a855f7 100%);
     transform: scaleX(0);
-    transition: transform var(--transition-normal);
+    transition: transform 0.2s ease;
     transform-origin: left;
 }
 
@@ -541,7 +599,7 @@ textarea:focus-visible {
     bottom: 0;
     background: linear-gradient(135deg, rgba(102, 126, 234, 0.03) 0%, rgba(124, 58, 237, 0.03) 100%);
     opacity: 0;
-    transition: opacity var(--transition-normal);
+    transition: opacity 0.2s ease;
     pointer-events: none;
 }
 
@@ -555,8 +613,14 @@ textarea:focus-visible {
 
 .product-card:hover {
     transform: translateY(-8px) scale(1.01);
-    box-shadow: var(--shadow-xl), 0 0 30px rgba(102, 126, 234, 0.15);
-    border-color: rgba(102, 126, 234, 0.3);
+    box-shadow: 0 12px 24px rgba(102, 126, 234, 0.15);
+}
+
+.product-card:active {
+    transform: translateY(-4px) scale(1);
+    box-shadow: 0 6px 16px rgba(102, 126, 234, 0.1);
+    background: rgba(255, 255, 255, 0.98);
+    transition: all 0.1s ease;
 }
 
 .product-icon {

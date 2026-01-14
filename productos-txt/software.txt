@@ -1,8 +1,7 @@
-﻿<!-- BLOQUE: Software (estructura y CSS consistente con los bloques anteriores) -->
-<div class="row">
+﻿<div class="row">
 <div class="col-sm-8 col-offset-sm-2 col-md-10 offset-md-1 mb-3">
 <div class="product-seo-intro">
-<p>Este software te brinda las herramientas que necesitas para trabajar de manera eficiente, con interfaz intuitiva y funciones diseÃ±adas para simplificar tus tareas diarias.</p>
+<p>Este software te brinda las herramientas que necesitas para trabajar de manera eficiente, con interfaz intuitiva y funciones diseñadas para simplificar tus tareas diarias.</p>
 </div>
 <br>
 <h6 class="tt-title-sub">ESPECIFICACIONES DEL PRODUCTO</h6>
@@ -14,8 +13,8 @@
 <td class="tableCellGroupTitleContent"></td>
 </tr>
 <tr>
-<td class="tableCellMeta">Serie / VersiÃ³n</td>
-<td class="tableCellContent">VersiÃ³n 1.0.0</td>
+<td class="tableCellMeta">Serie / Versión</td>
+<td class="tableCellContent">Versión 1.0.0</td>
 </tr>
 <tr>
 <td class="tableCellMeta">Licencia</td>
@@ -32,7 +31,7 @@
 </tr>
 <tr>
 <td class="tableCellMeta">Idioma</td>
-<td class="tableCellContent">EspaÃ±ol</td>
+<td class="tableCellContent">Español</td>
 </tr>
 <!-- REQUISITOS -->
 <tr>
@@ -40,24 +39,24 @@
 <td class="tableCellGroupTitleContent"></td>
 </tr>
 <tr>
-<td class="tableCellMeta">Requisitos mÃ­nimos</td>
+<td class="tableCellMeta">Requisitos mínimos</td>
 <td class="tableCellContent">CPU: 2 GHz; RAM: 4 GB; Almacenamiento: 2 GB; OS: Windows 10 64-bit</td>
 </tr>
 <tr>
 <td class="tableCellMeta">Requisitos recomendados</td>
 <td class="tableCellContent">CPU: 3.0 GHz; RAM: 8 GB; Almacenamiento: 4 GB; GPU: Integrada</td>
 </tr>
-<!-- DISTRIBUCIÃ“N Y TAMAÃ‘O -->
+<!-- DISTRIBUCIÓN Y TAMAÑO -->
 <tr>
-<td class="tableCellGroupTitle">DistribuciÃ³n</td>
+<td class="tableCellGroupTitle">Distribución</td>
 <td class="tableCellGroupTitleContent"></td>
 </tr>
 <tr>
-<td class="tableCellMeta">TamaÃ±o de descarga</td>
+<td class="tableCellMeta">Tamaño de descarga</td>
 <td class="tableCellContent">250 MB</td>
 </tr>
 <tr>
-<td class="tableCellMeta">Formato de distribuciÃ³n</td>
+<td class="tableCellMeta">Formato de distribución</td>
 <td class="tableCellContent">Descarga digital</td>
 </tr>
 <!-- FUNCIONALIDADES Y SOPORTE -->
@@ -66,16 +65,16 @@
 <td class="tableCellGroupTitleContent"></td>
 </tr>
 <tr>
-<td class="tableCellMeta">Actualizaciones automÃ¡ticas</td>
-<td class="tableCellContent">SÃ­</td>
+<td class="tableCellMeta">Actualizaciones automáticas</td>
+<td class="tableCellContent">Sí</td>
 </tr>
 <tr>
-<td class="tableCellMeta">Soporte tÃ©cnico</td>
-<td class="tableCellContent">SÃ­</td>
+<td class="tableCellMeta">Soporte técnico</td>
+<td class="tableCellContent">Sí</td>
 </tr>
 <tr>
 <td class="tableCellMeta">Conectividad requerida</td>
-<td class="tableCellContent">Internet para activaciÃ³n y actualizaciones</td>
+<td class="tableCellContent">Internet para activación y actualizaciones</td>
 </tr>
 <!-- COMPATIBILIDAD Y FECHAS -->
 <tr>
@@ -104,7 +103,7 @@
     border-radius: 5px 5px 0 0;
   }
 
-  /* Heredar tipografÃ­a del tema automÃ¡ticamente */
+  /* Heredar tipografía del tema automáticamente */
   .row,
   .NEW-TABLE,
   .TableOverride-1,
@@ -120,7 +119,7 @@
     color: inherit;
   }
 
-  /* TÃ­tulo centrado pero mÃ¡s pequeÃ±o */
+  /* Título centrado pero más pequeño */
   .tt-title-sub {
     font-size: 12px;
     font-weight: 700;
@@ -174,8 +173,3 @@
     .tableCellMeta, .tableCellContent { font-size: 13px; padding-left: 10px; }
   }
 </style>
-
-<!--
-INSTRUCCIONES ADICIONALES:
-Las especificaciones y como se muestran dependeara de la especificacion oficiales
--->

@@ -1,5 +1,4 @@
-<!-- BLOQUE: Micrófono -->
-<div class="row">
+﻿<div class="row">
   <div class="col-sm-8 col-offset-sm-2 col-md-10 offset-md-1 mb-3">
     <div class="product-seo-intro">
       <p>Micrófono profesional con excelente calidad de audio, diseño ergonómico y conectividad versátil para grabaciones, streaming y videoconferencias.</p>

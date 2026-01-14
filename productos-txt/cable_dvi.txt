@@ -1,16 +1,4 @@
-<!--
-INSTRUCCIONES PARA CABLE DVI:
-
-Tipo: DVI-D, DVI-A, DVI-I (especificar)
-Longitud: Metros exactos
-Versión: DVI 1.0, DVI 2.0
-Conectores: Macho-Hembra o Macho-Macho
-Apantallamiento: Doble, Triple, Ninguno
-Características: Ferrita, Resistencia EMI/RFI
-Resolución máxima: Soportada (1920x1200, 2560x1600, etc.)
-Marcas: Especificar si es genérico o marca específica
--->
-
+﻿
 <!-- BLOQUE: Cable DVI (descripción y tabla de especificaciones) -->
 <div class="row">
 <div class="col-sm-8 col-offset-sm-2 col-md-10 offset-md-1 mb-3">

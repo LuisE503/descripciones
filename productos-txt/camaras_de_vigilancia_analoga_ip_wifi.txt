@@ -1,5 +1,4 @@
-<!-- BLOQUE: Cámaras de Vigilancia -->
-<div class="row">
+﻿<div class="row">
   <div class="col-sm-8 col-offset-sm-2 col-md-10 offset-md-1 mb-3">
     <div class="product-seo-intro">
       <p>Sistema de videovigilancia profesional con tecnología avanzada de detección, visión nocturna y conectividad flexible para proteger tu hogar o negocio.</p>

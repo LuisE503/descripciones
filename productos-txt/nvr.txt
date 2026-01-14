@@ -1,5 +1,4 @@
-﻿<!-- BLOQUE: NVR (solo descripción y tabla de especificaciones) -->
-<div class="row">
+﻿<div class="row">
   <div class="col-sm-8 offset-sm-2 col-md-10 offset-md-1 mb-3">
     <div class="product-seo-intro">
       <p>Grabador NVR diseñado para sistemas IP: gestión centralizada de cámaras, grabación en alta resolución, reproducción flexible y soporte PoE para instalaciones residenciales y comerciales.</p>

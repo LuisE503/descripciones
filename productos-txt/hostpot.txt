@@ -1,5 +1,4 @@
-﻿<!-- BLOQUE: Hotspot (solo descripción y tabla de especificaciones) -->
-<div class="row">
+﻿<div class="row">
 <div class="col-sm-8 col-offset-sm-2 col-md-10 offset-md-1 mb-3">
 <div class="product-seo-intro">
 <p>Hotspot móvil compacto para conectar múltiples dispositivos: soporte 4G LTE, Wi‑Fi moderno (802.11ax/b/g/n), ranura Nano SIM y gestión vía app para uso en movilidad y entornos temporales.</p>

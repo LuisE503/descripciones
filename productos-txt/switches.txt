@@ -1,5 +1,4 @@
-<!-- BLOQUE: Switch de Red -->
-<div class="row">
+﻿<div class="row">
   <div class="col-sm-8 col-offset-sm-2 col-md-10 offset-md-1 mb-3">
     <div class="product-seo-intro">
       <p>Switch Ethernet de alto rendimiento para expandir tu red con múltiples puertos Gigabit, ideal para oficinas y entornos empresariales.</p>

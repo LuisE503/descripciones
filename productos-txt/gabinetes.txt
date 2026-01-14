@@ -1,20 +1,4 @@
-<!--
-INSTRUCCIONES PARA GABINETES:
-
-Ancho	Cantidad seguida de una unidad de medida de longitud sin espacios (pueden ser centímetros, metros, pies u otra unidad, siguiendo el estándar del Sistema Internacional). Si la medida se encuentra en decimales (1.54m, por ejemplo), es preferible que se utilice una unidad de medida que no requiera los decimales si esta existe (1.54m => 154cm). Agregar la palabra Ancho con inicial mayúscula al inicio (Ancho 154cm, Ancho 1m).
-Profundidad	Cantidad seguida de una unidad de medida de longitud sin espacios (pueden ser centímetros, metros, pies u otra unidad, siguiendo el estándar del Sistema Internacional). Si la medida se encuentra en decimales (1.54m, por ejemplo), es preferible que se utilice una unidad de medida que no requiera los decimales si esta existe (1.54m => 154cm) (50cm, 1m). Agregar la palabra Profundidad con inicial mayúscula al inicio (Profundidad 154cm, Profundidad 1m).
-Altura	Cantidad seguida de una unidad de medida de longitud sin espacios (pueden ser centímetros, metros, pies u otra unidad, siguiendo el estándar del Sistema Internacional). Si la medida se encuentra en decimales (1.54m, por ejemplo), es preferible que se utilice una unidad de medida que no requiera los decimales si esta existe (1.54m => 154cm) (50cm, 1m). Agregar la palabra Altura con inicial mayúscula al inicio (Altura 154cm, Altura 1m).
-Serie	Según la especificación. Se trata del nombre con el que se clasifica a los productos.
-Puerta de vidrio	Sí/No
-Doble Bisagra	Sí/No
-Ventiladores de techo	Sí/No
-Incluye llave	Sí/No
-Con rodos	Sí/No
-Acceso de cables	Sí/No
-Paneles laterales removibles	Sí/No
-Infraestructura de Red	Sí/No
--->
-
+﻿
 
 
 <!-- BLOQUE: Gabinete (solo descripción y tabla de especificaciones) -->

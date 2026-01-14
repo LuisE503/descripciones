@@ -1,5 +1,4 @@
-﻿<!-- BLOQUE: Almacenamiento externo (estructura y CSS consistente con los bloques anteriores) -->
-<div class="row">
+﻿<div class="row">
   <div class="col-sm-8 col-offset-sm-2 col-md-10 offset-md-1 mb-3">
     <div class="product-seo-intro">
       <p>Unidad de almacenamiento externa diseñada para copias de seguridad y transferencia rápida de archivos, con diseño compacto y acabado elegante.</p>

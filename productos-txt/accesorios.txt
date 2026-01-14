@@ -1,16 +1,4 @@
-<!--
-INSTRUCCIONES PARA ACCESORIOS PERIFÉRICOS:
-
-Tipos de accesorios: Adaptadores, Extensores, Conectores, Protectores, Organizadores
-Material del accesorio: Plástico, Aluminio, Silicona, Nylon, Otros
-Compatibilidad: Periférico específico (mouse, teclado, etc.)
-Color: Especificar color exacto
-Dimensiones: Alto x Ancho x Profundidad (mm)
-Peso: Gramos exactos
-Características especiales: Antideslizante, Protección contra derrames, Ventilación, etc.
-Resistencia: Materiales resistentes a caídas/golpes si aplica
--->
-
+﻿
 <!-- BLOQUE: Accesorios para Periféricos (descripción y tabla de especificaciones) -->
 <div class="row">
 <div class="col-sm-8 col-offset-sm-2 col-md-10 offset-md-1 mb-3">

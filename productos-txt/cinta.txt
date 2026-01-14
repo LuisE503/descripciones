@@ -1,5 +1,4 @@
-<!-- BLOQUE: Cinta (estructura y CSS consistente con los bloques anteriores) -->
-<div class="row">
+﻿<div class="row">
   <div class="col-sm-8 col-offset-sm-2 col-md-10 offset-md-1 mb-3">
     <div class="product-seo-intro">
       <p>Esta cinta de impresión ofrece texto nítido y duradero para tus documentos, diseñada para impresoras matriciales con alta capacidad de impresión y bajo costo por página.</p>

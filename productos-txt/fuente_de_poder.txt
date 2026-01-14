@@ -121,11 +121,3 @@
     .tableCellMeta, .tableCellContent { font-size: 13px; padding-left: 10px; }
   }
 </style>
-
-<!--
-INSTRUCCIONES ADICIONALES:
-La potencia se expresa en W
-y en clasificación 80 plus se expresa en Bronze, Silver, Gold, Platinum o Titanium según se especifique
-si no, no se coloca esta clasificación
-Modular o Semimodular se coloca sí o no según se especifique
--->

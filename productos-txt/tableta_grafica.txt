@@ -1,22 +1,9 @@
-﻿<!--
-INSTRUCCIONES PARA TABLETAS GRÃFICAS:
-
-Tipo: Tableta con lÃ¡piz, Pad sensible a presiÃ³n, Display pen, Modelo especifico
-TamaÃ±o: Pulgadas o medidas exactas
-ResoluciÃ³n de presiÃ³n: Niveles (2048, 4096, 8192)
-Ãrea activa: MilÃ­metros (ancho x alto)
-Conectividad: USB, Bluetooth, InalÃ¡mbrica
-Compatibilidad: Windows, Mac, Linux
-LÃ¡piz: Incluido/No incluido, Tipo (pasivo, activo)
-Botones programables: Cantidad
-Software incluido: Licencias o trials
--->
-
-<!-- BLOQUE: Tabletas GrÃ¡ficas (descripciÃ³n y tabla de especificaciones) -->
+﻿
+<!-- BLOQUE: Tabletas Gráficas (descripción y tabla de especificaciones) -->
 <div class="row">
 <div class="col-sm-8 col-offset-sm-2 col-md-10 offset-md-1 mb-3">
 <div class="product-seo-intro">
-<p>Tabletas grÃ¡ficas profesionales para diseÃ±adores, artistas y ilustradores. Con sensibilidad de presiÃ³n avanzada y compatibilidad con los principales software de diseÃ±o.</p>
+<p>Tabletas gráficas profesionales para diseñadores, artistas y ilustradores. Con sensibilidad de presión avanzada y compatibilidad con los principales software de diseño.</p>
 </div>
 <br>
 <h6 class="tt-title-sub text-center">ESPECIFICACIONES DEL PRODUCTO</h6>
@@ -24,32 +11,32 @@ Software incluido: Licencias o trials
 <div class="div-drop">
 <table style="margin: auto;" class="NEW-TABLE TableOverride-1 tab-drag" width="100%">
 <tbody>
-<!-- IDENTIFICACIÃ“N -->
+<!-- IDENTIFICACIÓN -->
 <tr>
-<td class="tableCellGroupTitle">IdentificaciÃ³n</td>
+<td class="tableCellGroupTitle">Identificación</td>
 <td class="tableCellGroupTitleContent"></td>
 </tr>
 <tr>
 <td class="tableCellMeta">Tipo</td>
-<td class="tableCellContent">Tableta con lÃ¡piz | Pad sensible | Display pen</td>
+<td class="tableCellContent">Tableta con lápiz | Pad sensible | Display pen</td>
 </tr>
 
-<!-- ESPECIFICACIONES TÃ‰CNICAS -->
+<!-- ESPECIFICACIONES TÉCNICAS -->
 <tr>
-<td class="tableCellGroupTitle">Especificaciones TÃ©cnicas</td>
+<td class="tableCellGroupTitle">Especificaciones Técnicas</td>
 <td class="tableCellGroupTitleContent"></td>
 </tr>
 <tr>
-<td class="tableCellMeta">TamaÃ±o</td>
+<td class="tableCellMeta">Tamaño</td>
 <td class="tableCellContent">Pulgadas o medidas exactas</td>
 </tr>
 <tr>
-<td class="tableCellMeta">Ãrea activa</td>
+<td class="tableCellMeta">Área activa</td>
 <td class="tableCellContent">Ancho x Alto (mm)</td>
 </tr>
 <tr>
-<td class="tableCellMeta">ResoluciÃ³n de presiÃ³n</td>
-<td class="tableCellContent">Niveles de presiÃ³n</td>
+<td class="tableCellMeta">Resolución de presión</td>
+<td class="tableCellContent">Niveles de presión</td>
 </tr>
 
 <!-- CONECTIVIDAD -->
@@ -58,8 +45,8 @@ Software incluido: Licencias o trials
 <td class="tableCellGroupTitleContent"></td>
 </tr>
 <tr>
-<td class="tableCellMeta">Tipo de conexiÃ³n</td>
-<td class="tableCellContent">USB | Bluetooth | InalÃ¡mbrica</td>
+<td class="tableCellMeta">Tipo de conexión</td>
+<td class="tableCellContent">USB | Bluetooth | Inalámbrica</td>
 </tr>
 <tr>
 <td class="tableCellMeta">Compatibilidad SO</td>
@@ -72,8 +59,8 @@ Software incluido: Licencias o trials
 <td class="tableCellGroupTitleContent"></td>
 </tr>
 <tr>
-<td class="tableCellMeta">LÃ¡piz incluido</td>
-<td class="tableCellContent">SÃ­ | No</td>
+<td class="tableCellMeta">Lápiz incluido</td>
+<td class="tableCellContent">Sí | No</td>
 </tr>
 <tr>
 <td class="tableCellMeta">Botones programables</td>

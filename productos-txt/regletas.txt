@@ -1,4 +1,4 @@
-﻿<!-- BLOQUE: Regletas (estructura y CSS consistente con los bloques anteriores) -->
+<!-- BLOQUE: Regletas (estructura y CSS consistente con los bloques anteriores) -->
 <div class="row">
   <div class="col-sm-8 col-offset-sm-2 col-md-10 offset-md-1 mb-3">
     <div class="product-seo-intro">
@@ -155,20 +155,3 @@
     .tableCellMeta, .tableCellContent { font-size: 13px; padding-left: 10px; }
   }
 </style>
-
-<!--
-INSTRUCCIONES ADICIONALES:
-Número de salidas	Cantidad seguida de la palabra “salidas” (4 salidas, 5 salidas)
-Longitud del cable	Debe iniciarse colocando la palabra “Cable” con inicial mayúscula seguida de la cantidad y la unidad de medida (según el estándar internacional, evitar el uso de mts. o alguna otra variación) sin espacios (Cable 5m)
-Voltaje	Cantidad seguida de la unidad de medida expresada en voltios con letra mayúscula sin espacios (5V, 12V).
-Número de puertos USB	Si existen, colocar el número de puertos USB colocando la cantidad seguida de dos palabras: Puerto/s USB. (5 Puertos USB, 1 Puerto USB).
-Botón de encendido	Sí/No
-Montaje en pared	Sí/No
-Protección contra picos	Sí/No
-Protección AVR	Sí/No
-Retardador de llama	Sí/No
-Para Rack	Sí/No
-Protección eléctrica	Sí/No
-
-Las especificaciones que seran visibles dependera de la informacion oficial, si no lo mensiona no se coloca
--->

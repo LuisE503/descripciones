@@ -1,5 +1,4 @@
-<!-- BLOQUE: Impresora de Inyección (estructura y CSS consistente con los bloques anteriores) -->
-<div class="row">
+﻿<div class="row">
   <div class="col-sm-8 col-offset-sm-2 col-md-10 offset-md-1 mb-3">
     <div class="product-seo-intro">
       <p>Esta impresora multifunción combina velocidad y versatilidad para tu oficina o hogar, con impresión de alta calidad, escaneo preciso y copiado eficiente que facilitan tu trabajo diario.</p>

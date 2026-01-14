@@ -1,5 +1,4 @@
-<!-- BLOQUE: Impresora Matricial (estructura y CSS consistente con los bloques anteriores) -->
-<div class="row">
+﻿<div class="row">
   <div class="col-sm-8 col-offset-sm-2 col-md-10 offset-md-1 mb-3">
     <div class="product-seo-intro">
       <p>Esta impresora matricial destaca por su robustez y fiabilidad en entornos de punto de venta, diseñada para impresión continua de recibos y formularios con alta durabilidad y bajo costo operativo.</p>

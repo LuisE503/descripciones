@@ -1,4 +1,4 @@
-﻿<!-- BLOQUE: UPS / UPS Online (estructura y CSS consistente con los bloques anteriores) -->
+<!-- BLOQUE: UPS / UPS Online (estructura y CSS consistente con los bloques anteriores) -->
 <div class="row">
   <div class="col-sm-8 col-offset-sm-2 col-md-10 offset-md-1 mb-3">
     <div class="product-seo-intro">
@@ -185,24 +185,3 @@
     .tableCellMeta, .tableCellContent { font-size: 13px; padding-left: 10px; }
   }
 </style>
-
-<!--
-INSTRUCCIONES ADICIONALES:
-Clasificación	Especificar si el producto Offline, Online, Interactivo o Electromecánico.
-Número de salidas	Cantidad seguida de la palabra “salidas” (4 salidas, 5 salidas)
-Número de salidas con supresión	Si se especifica, colocar el número de salidas con supresión eléctrica colocando la cantidad seguida de las palabras “salidas con Supresión” (5 salidas con Supresión).
-Número de salidas con regulación.	Si se especifica, colocar el número de salidas con regulación colocando la cantidad seguida de las palabras “salidas con Regulación” (5 salidas con Regulación).
-Número de salidas de batería.	Si se especifica, colocar el número de salidas de batería colocando la cantidad seguida de las palabras “salidas de Batería” (5 salidas de Batería).
-Longitud del cable	Debe iniciarse colocando la palabra “Cable” con inicial mayúscula seguida de la cantidad y la unidad de medida (según el estándar internacional, evitar el uso de mts. o alguna otra variación) sin espacios (Cable 5m)
-Tiempo de duración de la batería	Cantidad seguida de la unidad de medida de tiempo según el Sistema Internacional (50min, 1h).
-Voltaje	Cantidad seguida de la unidad de medida expresada en voltios con letra mayúscula sin espacios (5V, 12V).
-Capacidad	Cantidad que se debe especificar utilizando la unidad de medida VA / W o VA sin espacios. (500VA/300W, 500VA).
-Número de puertos USB	Si existen, colocar el número de puertos USB colocando la cantidad seguida de dos palabras: Puerto/s USB. (5 Puertos USB, 1 Puerto USB).
-Pantalla LED	Sí/No
-Software de administración	Sí/No
-Indicador de consumo	Sí/No
-Protección AVR	Sí/No
-Protección RJ11	Sí/No
-Indicadores LED	Sí/No
-Protección eléctrica	Sí/No
--->

@@ -1,5 +1,4 @@
-<!-- VISTA PREVIA HTML - Case/Gabinete -->
-<div class="row">
+﻿<div class="row">
   <div class="col-sm-8 col-offset-sm-2 col-md-10 offset-md-1 mb-3">
     <div class="product-seo-intro">
       <p>Este gabinete combina diseño y funcionalidad para tu PC, con espacio optimizado para componentes y flujo de aire eficiente que mantiene tu sistema fresco durante largas sesiones.</p>

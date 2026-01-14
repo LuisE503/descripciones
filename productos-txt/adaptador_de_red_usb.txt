@@ -1,5 +1,4 @@
-﻿<!-- BLOQUE: Adaptador de red USB (estructura y CSS consistente con los bloques anteriores) -->
-<div class="row">
+﻿<div class="row">
   <div class="col-sm-8 col-offset-sm-2 col-md-10 offset-md-1 mb-3">
     <div class="product-seo-intro">
       <p>Adaptador USB para conectar dispositivos a redes cableadas o inalámbricas, con instalación sencilla y rendimiento estable para trabajo y entretenimiento.</p>

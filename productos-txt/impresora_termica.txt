@@ -1,5 +1,4 @@
-<!-- BLOQUE: Impresora Térmica (estructura y CSS consistente con los bloques anteriores) -->
-<div class="row">
+﻿<div class="row">
   <div class="col-sm-8 col-offset-sm-2 col-md-10 offset-md-1 mb-3">
     <div class="product-seo-intro">
       <p>Esta impresora térmica combina rapidez y practicidad para puntos de venta, con impresión silenciosa, conectividad versátil y diseño compacto que se adapta perfectamente a cualquier mostrador.</p>

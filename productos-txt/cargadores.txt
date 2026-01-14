@@ -1,17 +1,4 @@
-<!--
-INSTRUCCIONES PARA CARGADORES:
-
-Tipo: Cargador USB, Cargador de pared, Cargador inalámbrico, Cargador de viaje
-Potencia de salida: Watts (W)
-Número de puertos: Cantidad exacta
-Tipo de puerto: USB-A, USB-C, Micro USB, Lightning
-Velocidad de carga: Rápida, Estándar (especificar W si es rápida)
-Compatibilidad: Dispositivos compatibles
-Tecnología: Quick Charge, Power Delivery, Fast Charging
-Voltaje: Entrada y salida (V)
-Certificaciones: CE, FCC, UL si tiene
--->
-
+﻿
 <!-- BLOQUE: Cargadores (descripción y tabla de especificaciones) -->
 <div class="row">
 <div class="col-sm-8 col-offset-sm-2 col-md-10 offset-md-1 mb-3">

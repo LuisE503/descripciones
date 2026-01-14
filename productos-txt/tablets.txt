@@ -1,4 +1,4 @@
-﻿<!-- BLOQUE: Tablet (descripción y tabla de especificaciones con formato estándar) -->
+<!-- BLOQUE: Tablet (descripción y tabla de especificaciones con formato estándar) -->
 <div class="row">
 <div class="col-sm-8 col-offset-sm-2 col-md-10 offset-md-1 mb-3">
 <div class="product-seo-intro">
@@ -222,16 +222,3 @@ width: 50%;
 .tableCellMeta, .tableCellContent { font-size: 13px; padding-left: 10px; }
 }
 </style>
-
-<!--
-INSTRUCCIONES ADICIONALES:
-Tamaño de la pantalla	Cantidad seguida de un espacio y la unidad de medida expresada en pulgadas con la abreviación Plg (7.5 Plg, 10.5 Plg)
-Almacenamiento	Capacidad + Unidad de medida en mayúscula sin espacio (240GB, 1TB)
-Memoria RAM	Capacidad + Unidad de medida en mayúscula sin espacio seguido de un espacio y la palabra RAM (1GB RAM, 2GB RAM)
-Cámara Principal	Cantidad seguida de la unidad de medida expresada en megapíxeles (MP) sin espacio y la palabra “Principal” separada por un espacio (12MP Principal, 15MP Principal).
-Cámara Frontal	Cantidad seguida de la unidad de medida expresada en megapíxeles (MP) sin espacio y la palabra “Frontal” separada por un espacio (12MP Frontal, 15MP Frontal).
-Propiedades de batería	Cantidad seguida de un espacio y la unidad de medida expresa en amperios por hora (pueden ser miliamperios por hora) (3000 mAh)
-Sistema Operativo	Según especificación. Colocar plataforma, versión y, si es Android, el nombre (Android 8.0 Oreo, Windows 10 Home).
-Color	Según especificación
-(Blanco, Rojo). Pueden crearse tipos combinados si se unen los nombres de los colores por medio del signo “/” sin espacios (Blanco/Rojo).
--->

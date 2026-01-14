@@ -1,5 +1,4 @@
-<!-- BLOQUE: Punto de Acceso -->
-<div class="row">
+﻿<div class="row">
   <div class="col-sm-8 col-offset-sm-2 col-md-10 offset-md-1 mb-3">
     <div class="product-seo-intro">
       <p>Access Point empresarial con cobertura extendida, múltiples SSIDs y gestión centralizada para redes WiFi de alto rendimiento.</p>

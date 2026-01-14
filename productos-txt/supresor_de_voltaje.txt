@@ -1,4 +1,4 @@
-﻿<!-- BLOQUE: Supresor de Voltaje (estructura y CSS consistente con los bloques anteriores) -->
+<!-- BLOQUE: Supresor de Voltaje (estructura y CSS consistente con los bloques anteriores) -->
 <div class="row">
   <div class="col-sm-8 col-offset-sm-2 col-md-10 offset-md-1 mb-3">
     <div class="product-seo-intro">
@@ -165,22 +165,3 @@
     .tableCellMeta, .tableCellContent { font-size: 13px; padding-left: 10px; }
   }
 </style>
-
-<!--
-INSTRUCCIONES ADICIONALES:
-Número de salidas	Cantidad seguida de la palabra “salidas” (4 salidas, 5 salidas)
-Número de salidas con supresión	Si se especifica, colocar el número de salidas con supresión eléctrica colocando la cantidad seguida de las palabras “salidas con Supresión” (5 salidas con Supresión).
-Número de salidas con regulación.	Si se especifica, colocar el número de salidas con regulación colocando la cantidad seguida de las palabras “salidas con Regulación” (5 salidas con Regulación).
-Longitud del cable	Debe iniciarse colocando la palabra “Cable” con inicial mayúscula seguida de la cantidad y la unidad de medida (según el estándar internacional, evitar el uso de mts. o alguna otra variación) sin espacios (Cable 5m)
-Voltaje	Cantidad seguida de la unidad de medida expresada en voltios con letra mayúscula sin espacios (5V, 12V).
-Protección AVR	Sí/No
-Protección RJ11	Sí/No
-Indicadores LED	Sí/No
-Retardador de llama	Sí/No
-Protección Coaxial	Sí/No
-Protección RJ45	Sí/No
-Protección eléctrica	Sí/No
-
-
-La informacion que se pondra dependera de las especificaciones oficiales
--->

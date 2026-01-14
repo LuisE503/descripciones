@@ -1,21 +1,9 @@
-﻿<!--
-INSTRUCCIONES PARA SMART HOME (AutomatizaciÃ³n del Hogar):
-
-CategorÃ­as: IluminaciÃ³n inteligente, Termostatos, Enchufes inteligentes, Cerraduras, Sensores
-TecnologÃ­a de conectividad: WiFi, Bluetooth, Zigbee, Z-Wave
-Compatibilidad ecosistema: Alexa, Google Home, Apple HomeKit, Samsung SmartThings
-Potencia: Vatios (para iluminaciÃ³n y enchufes)
-Control: App, Voz, Control remoto
-AutomatizaciÃ³n: Horarios, Rutinas, GeolocalizaciÃ³n
-Compatibilidad: SO (iOS, Android)
-CaracterÃ­sticas: Temporizadores, Dimmer, Sensor movimiento
--->
-
-<!-- BLOQUE: Smart Home - AutomatizaciÃ³n (descripciÃ³n y tabla de especificaciones) -->
+﻿
+<!-- BLOQUE: Smart Home - Automatización (descripción y tabla de especificaciones) -->
 <div class="row">
 <div class="col-sm-8 col-offset-sm-2 col-md-10 offset-md-1 mb-3">
 <div class="product-seo-intro">
-<p>Dispositivos inteligentes para automatizar y controlar tu hogar desde cualquier lugar. Compatible con los principales ecosistemas, ofrecen comodidad, ahorro de energÃ­a y seguridad mejorada.</p>
+<p>Dispositivos inteligentes para automatizar y controlar tu hogar desde cualquier lugar. Compatible con los principales ecosistemas, ofrecen comodidad, ahorro de energía y seguridad mejorada.</p>
 </div>
 <br>
 <h6 class="tt-title-sub text-center">ESPECIFICACIONES DEL PRODUCTO</h6>
@@ -23,14 +11,14 @@ CaracterÃ­sticas: Temporizadores, Dimmer, Sensor movimiento
 <div class="div-drop">
 <table style="margin: auto;" class="NEW-TABLE TableOverride-1 tab-drag" width="100%">
 <tbody>
-<!-- IDENTIFICACIÃ“N -->
+<!-- IDENTIFICACIÓN -->
 <tr>
-<td class="tableCellGroupTitle">IdentificaciÃ³n</td>
+<td class="tableCellGroupTitle">Identificación</td>
 <td class="tableCellGroupTitleContent"></td>
 </tr>
 <tr>
 <td class="tableCellMeta">Tipo de dispositivo</td>
-<td class="tableCellContent">IluminaciÃ³n | Termostato | Enchufe | Cerradura | Sensor</td>
+<td class="tableCellContent">Iluminación | Termostato | Enchufe | Cerradura | Sensor</td>
 </tr>
 
 <!-- CONECTIVIDAD -->
@@ -39,7 +27,7 @@ CaracterÃ­sticas: Temporizadores, Dimmer, Sensor movimiento
 <td class="tableCellGroupTitleContent"></td>
 </tr>
 <tr>
-<td class="tableCellMeta">TecnologÃ­a</td>
+<td class="tableCellMeta">Tecnología</td>
 <td class="tableCellContent">WiFi | Bluetooth | Zigbee | Z-Wave</td>
 </tr>
 <tr>
@@ -47,9 +35,9 @@ CaracterÃ­sticas: Temporizadores, Dimmer, Sensor movimiento
 <td class="tableCellContent">Alexa | Google Home | Apple HomeKit | SmartThings</td>
 </tr>
 
-<!-- CARACTERÃSTICAS TÃ‰CNICAS -->
+<!-- CARACTERÍSTICAS TÉCNICAS -->
 <tr>
-<td class="tableCellGroupTitle">CaracterÃ­sticas TÃ©cnicas</td>
+<td class="tableCellGroupTitle">Características Técnicas</td>
 <td class="tableCellGroupTitleContent"></td>
 </tr>
 <tr>
@@ -57,8 +45,8 @@ CaracterÃ­sticas: Temporizadores, Dimmer, Sensor movimiento
 <td class="tableCellContent">App | Voz | Control remoto</td>
 </tr>
 <tr>
-<td class="tableCellMeta">AutomatizaciÃ³n</td>
-<td class="tableCellContent">Horarios | Rutinas | GeolocalizaciÃ³n</td>
+<td class="tableCellMeta">Automatización</td>
+<td class="tableCellContent">Horarios | Rutinas | Geolocalización</td>
 </tr>
 <tr>
 <td class="tableCellMeta">Compatibilidad SO</td>
@@ -71,8 +59,8 @@ CaracterÃ­sticas: Temporizadores, Dimmer, Sensor movimiento
 <td class="tableCellGroupTitleContent"></td>
 </tr>
 <tr>
-<td class="tableCellMeta">Potencia/CaracterÃ­sticas</td>
-<td class="tableCellContent">Watts | FunciÃ³n especÃ­fica</td>
+<td class="tableCellMeta">Potencia/Características</td>
+<td class="tableCellContent">Watts | Función específica</td>
 </tr>
 </tbody>
 </table>

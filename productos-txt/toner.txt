@@ -1,5 +1,4 @@
-<!-- BLOQUE: Toner (estructura y CSS consistente con los bloques anteriores) -->
-<div class="row">
+﻿<div class="row">
   <div class="col-sm-8 col-offset-sm-2 col-md-10 offset-md-1 mb-3">
     <div class="product-seo-intro">
       <p>Este tóner de alto rendimiento está diseñado para impresoras láser, ofreciendo miles de páginas con texto nítido y bajo costo de impresión, ideal para oficinas y usuarios exigentes.</p>

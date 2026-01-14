@@ -1,5 +1,4 @@
-﻿<!-- BLOQUE: Smartwatch (descripción y tabla de especificaciones con CSS estándar) -->
-<div class="row">
+﻿<div class="row">
   <div class="col-sm-8 col-offset-sm-2 col-md-10 offset-md-1 mb-3">
     <div class="product-seo-intro">
       <p>Smartwatch con pantalla AMOLED, sensores de salud y conectividad Bluetooth para seguimiento de actividad y notificaciones desde el teléfono.</p>

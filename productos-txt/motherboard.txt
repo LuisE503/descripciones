@@ -169,13 +169,3 @@
     .tableCellMeta, .tableCellContent { font-size: 13px; padding-left: 10px; }
   }
 </style>
-
-<!--
-INSTRUCCIONES ADICIONALES:
-En factor de forma poner segun se especifique ATX, MINI-ATX
-En serie segun sea especificada la serie de la motherboard
-en tipo de sockect LGA, PGA, BGA segun se especifique
-la cantidad de puertos se pone la cantidad segun se indique en las especificaciones oficiales
-si no se indican solo no se ponen 
-se pone si o no si tiene wifi y Bluetooth
--->

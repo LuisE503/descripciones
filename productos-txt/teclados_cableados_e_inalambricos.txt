@@ -1,5 +1,4 @@
-<!-- BLOQUE: Teclados (Cableados e Inalámbricos) -->
-<div class="row">
+﻿<div class="row">
   <div class="col-sm-8 col-offset-sm-2 col-md-10 offset-md-1 mb-3">
     <div class="product-seo-intro">
       <p>Teclado ergonómico con teclas de respuesta rápida, diseño duradero y conectividad versátil para máxima productividad y comodidad.</p>

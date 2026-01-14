@@ -1,5 +1,4 @@
-<!-- BLOQUE: Mouse Pad -->
-<div class="row">
+﻿<div class="row">
   <div class="col-sm-8 col-offset-sm-2 col-md-10 offset-md-1 mb-3">
     <div class="product-seo-intro">
       <p>Alfombrilla para mouse de superficie suave y base antideslizante que garantiza movimientos precisos y comodidad durante el uso prolongado.</p>

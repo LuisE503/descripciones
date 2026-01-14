@@ -1,5 +1,4 @@
-<!-- BLOQUE: Memorias Extraíbles -->
-<div class="row">
+﻿<div class="row">
   <div class="col-sm-8 col-offset-sm-2 col-md-10 offset-md-1 mb-3">
     <div class="product-seo-intro">
       <p>Memoria USB flash drive portátil con alta capacidad de almacenamiento y velocidades de transferencia rápidas para transportar tus archivos.</p>

@@ -1,5 +1,4 @@
-<!-- BLOQUE: Soporte o Bracket (estructura y CSS consistente con los bloques anteriores) -->
-<div class="row">
+﻿<div class="row">
   <div class="col-sm-8 col-offset-sm-2 col-md-10 offset-md-1 mb-3">
     <div class="product-seo-intro">
       <p>Este soporte de pared para televisores combina robustez y versatilidad, con instalación segura, ajuste inclinable y compatibilidad con múltiples tamaños de pantalla para optimizar tu espacio.</p>

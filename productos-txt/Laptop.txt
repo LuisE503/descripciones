@@ -226,9 +226,3 @@
     .tableCellMeta, .tableCellContent { font-size: 13px; padding-left: 10px; }
   }
 </style>
-
-<!-- 
-  📖 INSTRUCCIONES PARA PROMPTS:
-  Ver archivo: _INSTRUCCIONES_laptop.md
-  Contiene reglas específicas para clasificación, GPU dedicada y características Sí/No
--->

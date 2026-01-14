@@ -1,18 +1,4 @@
-<!--
-INSTRUCCIONES PARA DRONES:
-
-Tipo: Cuadricóptero, Hexacóptero, Ala fija, Submarino
-Cámara: Resolución (MP), Video (4K, FHD)
-Tiempo de vuelo: Minutos aproximados
-Alcance: Metros de distancia máxima
-Velocidad máxima: Km/h
-Peso: Gramos
-Batería: Capacidad mAh, Tiempo carga
-Resistencia: Lluvia, Nieve, Viento (si aplica)
-Control: Aplicación móvil, Control remoto
-Accesorios: Propelas, Baterías, Cargador
--->
-
+﻿
 <!-- BLOQUE: Drones (descripción y tabla de especificaciones) -->
 <div class="row">
 <div class="col-sm-8 col-offset-sm-2 col-md-10 offset-md-1 mb-3">

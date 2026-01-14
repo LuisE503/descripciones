@@ -1,5 +1,4 @@
-﻿<!-- BLOQUE: Cámara de video (web / DSLR / digital) -->
-<div class="row">
+﻿<div class="row">
   <div class="col-sm-8 col-offset-sm-2 col-md-10 offset-md-1 mb-3">
     <div class="product-seo-intro">
           <p>Cámara de video versátil para videollamadas, grabación y streaming: captura imágenes nítidas, enfoque flexible y compatibilidad con los principales sistemas operativos.</p>

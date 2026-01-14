@@ -1,21 +1,9 @@
-﻿<!--
-INSTRUCCIONES PARA INFRAESTRUCTURA DE RED:
-
-CategorÃ­as: Brackets para servidores, Bandejas rack, Herramientas diagnÃ³stico red, Accesorios montaje
-Tipo: Especificar subcategorÃ­a
-Dimensiones: Altura x Ancho x Profundidad (mm o U si es rack)
-Capacidad de carga: Kilogramos mÃ¡ximos
-Material: Acero, Aluminio, PlÃ¡stico
-Acabado: Pintura, Galvanizado, Cromado
-Compatibilidad: EstÃ¡ndares (19" rack, VESA, etc.)
-CaracterÃ­sticas: VentilaciÃ³n, GestiÃ³n cables, Capacidad puertos
--->
-
-<!-- BLOQUE: Infraestructura de Red (descripciÃ³n y tabla de especificaciones) -->
+﻿
+<!-- BLOQUE: Infraestructura de Red (descripción y tabla de especificaciones) -->
 <div class="row">
 <div class="col-sm-8 col-offset-sm-2 col-md-10 offset-md-1 mb-3">
 <div class="product-seo-intro">
-<p>Soluciones profesionales de infraestructura de red para organizar, proteger y gestionar equipos en entornos empresariales. DiseÃ±adas para mÃ¡xima eficiencia y escalabilidad.</p>
+<p>Soluciones profesionales de infraestructura de red para organizar, proteger y gestionar equipos en entornos empresariales. Diseñadas para máxima eficiencia y escalabilidad.</p>
 </div>
 <br>
 <h6 class="tt-title-sub text-center">ESPECIFICACIONES DEL PRODUCTO</h6>
@@ -23,9 +11,9 @@ CaracterÃ­sticas: VentilaciÃ³n, GestiÃ³n cables, Capacidad puertos
 <div class="div-drop">
 <table style="margin: auto;" class="NEW-TABLE TableOverride-1 tab-drag" width="100%">
 <tbody>
-<!-- IDENTIFICACIÃ“N -->
+<!-- IDENTIFICACIÓN -->
 <tr>
-<td class="tableCellGroupTitle">IdentificaciÃ³n</td>
+<td class="tableCellGroupTitle">Identificación</td>
 <td class="tableCellGroupTitleContent"></td>
 </tr>
 <tr>
@@ -37,9 +25,9 @@ CaracterÃ­sticas: VentilaciÃ³n, GestiÃ³n cables, Capacidad puertos
 <td class="tableCellContent">Acero | Aluminio | Otros</td>
 </tr>
 
-<!-- ESPECIFICACIONES FÃSICAS -->
+<!-- ESPECIFICACIONES FÍSICAS -->
 <tr>
-<td class="tableCellGroupTitle">Especificaciones FÃ­sicas</td>
+<td class="tableCellGroupTitle">Especificaciones Físicas</td>
 <td class="tableCellGroupTitleContent"></td>
 </tr>
 <tr>
@@ -48,25 +36,25 @@ CaracterÃ­sticas: VentilaciÃ³n, GestiÃ³n cables, Capacidad puertos
 </tr>
 <tr>
 <td class="tableCellMeta">Capacidad de carga</td>
-<td class="tableCellContent">Kilogramos mÃ¡ximos</td>
+<td class="tableCellContent">Kilogramos máximos</td>
 </tr>
 <tr>
 <td class="tableCellMeta">Peso</td>
 <td class="tableCellContent">En kilogramos</td>
 </tr>
 
-<!-- CARACTERÃSTICAS TÃ‰CNICAS -->
+<!-- CARACTERÍSTICAS TÉCNICAS -->
 <tr>
-<td class="tableCellGroupTitle">CaracterÃ­sticas TÃ©cnicas</td>
+<td class="tableCellGroupTitle">Características Técnicas</td>
 <td class="tableCellGroupTitleContent"></td>
 </tr>
 <tr>
 <td class="tableCellMeta">Compatibilidad</td>
-<td class="tableCellContent">EstÃ¡ndares soportados</td>
+<td class="tableCellContent">Estándares soportados</td>
 </tr>
 <tr>
-<td class="tableCellMeta">CaracterÃ­sticas especiales</td>
-<td class="tableCellContent">GestiÃ³n cables, VentilaciÃ³n, etc.</td>
+<td class="tableCellMeta">Características especiales</td>
+<td class="tableCellContent">Gestión cables, Ventilación, etc.</td>
 </tr>
 </tbody>
 </table>

@@ -1,37 +1,7 @@
-﻿<!--
-Serie	Colocar el nombre del producto, segÃºn lo indica el fabricante, no colocar el nÃºmero de serie o modelo.
-Idioma	SegÃºn especificaciÃ³n. Asegurarse de que estÃ© escrito correctamente.
-(EspaÃ±ol, InglÃ©s)
-Propiedades de conexiÃ³n	DescripciÃ³n del tipo de tecnologÃ­a para la conexiÃ³n.
-(PS/2, USB, Bluetooth, 2.4GHz)
-DuraciÃ³n de la baterÃ­a del teclado	Colocar la cantidad, en nÃºmeros enteros seguida de un espacio y la palabra meses (5 meses)
-DuraciÃ³n de la baterÃ­a del mouse	Colocar la cantidad, en nÃºmeros enteros seguida de un espacio y la palabra meses (5 meses)
-Tipo de Cable	Colocar si es de Caucho, Nylon, Trenzado, entre otros.
-Tipo de Tecla	Colocar para los Teclados Gamer, si es de Membrana, Cherry MX (el color en InglÃ©s de las mismas Cherry MX Red o Cherry MX Blue, Kaith Silver Speed, Hyper X Red, HyperX Blue)
-Color	SegÃºn especificaciÃ³n
-(Blanco, Rojo). Pueden crearse tipos combinados si se unen los nombres de los colores por medio del signo â€œ/â€ sin espacios (Blanco/Rojo).
-Incluye Mouse	SÃ­/No
-Teclado NumÃ©rico	Pendiente de agregar
-ErgonÃ³mico	Pendiente de agregar
-DPI Ajustable	SÃ­/No
-InalÃ¡mbrico	SÃ­/No
-Plug and Play	SÃ­/No
-Resistente a derrames o salpicaduras	SÃ­/No
-Teclas silenciosas	SÃ­/No
-Teclas Multifuncionales EspecÃ­ficas	SÃ­/No
-Teclas Multifuncionales Secundarias	SÃ­/No
-Teclas silenciosas	SÃ­/No
-Incluye baterÃ­as	SÃ­/No
-RetroiluminaciÃ³n RGB	SÃ­/No
-MecÃ¡nico	SÃ­/No
-MetÃ¡lico	SÃ­/No
--->
-
-<!-- BLOQUE: Combo Teclado y Mouse (descripciÃ³n y tabla de especificaciones) -->
-<div class="row">
+﻿<div class="row">
 <div class="col-sm-8 col-offset-sm-2 col-md-10 offset-md-1 mb-3">
 <div class="product-seo-intro">
-<p>Combo inalÃ¡mbrico teclado + mouse pensado para productividad diaria: teclado compacto con secciÃ³n numÃ©rica y patas inclinables, y mouse ergonÃ³mico con sensor Ã³ptico de 1000 DPI. Conectividad Bluetooth Low Energy, larga autonomÃ­a y diseÃ±o multisistema para Windows, macOS y ChromeOS.</p>
+<p>Combo inalámbrico teclado + mouse pensado para productividad diaria: teclado compacto con sección numérica y patas inclinables, y mouse ergonómico con sensor óptico de 1000 DPI. Conectividad Bluetooth Low Energy, larga autonomía y diseño multisistema para Windows, macOS y ChromeOS.</p>
 </div>
 <br>
 <h6 class="tt-title-sub text-center">ESPECIFICACIONES PRODUCTOS</h6>
@@ -39,9 +9,9 @@ MetÃ¡lico	SÃ­/No
 <div class="div-drop">
 <table style="margin: auto;" class="NEW-TABLE TableOverride-1 tab-drag" width="100%" id="table-combo-kb-mouse" role="table" aria-label="Especificaciones del combo teclado y mouse">
 <tbody>
-<!-- IDENTIFICACIÃ“N -->
+<!-- IDENTIFICACIÓN -->
 <tr>
-<td class="tableCellGroupTitle">IdentificaciÃ³n</td>
+<td class="tableCellGroupTitle">Identificación</td>
 <td class="tableCellGroupTitleContent"></td>
 </tr>
 <tr>
@@ -50,7 +20,7 @@ MetÃ¡lico	SÃ­/No
 </tr>
 <tr>
 <td class="tableCellMeta">Incluye Mouse</td>
-<td class="tableCellContent">SÃ­</td>
+<td class="tableCellContent">Sí</td>
 </tr>
 
 <!-- DIMENSIONES TECLADO -->
@@ -97,9 +67,9 @@ MetÃ¡lico	SÃ­/No
 <td class="tableCellContent">76 g</td>
 </tr>
 
-<!-- ESPECIFICACIONES TÃ‰CNICAS MOUSE -->
+<!-- ESPECIFICACIONES TÉCNICAS MOUSE -->
 <tr>
-<td class="tableCellGroupTitle">ESPECIFICACIONES TÃ‰CNICAS</td>
+<td class="tableCellGroupTitle">ESPECIFICACIONES TÉCNICAS</td>
 <td class="tableCellGroupTitleContent"></td>
 </tr>
 <tr>
@@ -107,62 +77,62 @@ MetÃ¡lico	SÃ­/No
 <td class="tableCellGroupTitleContent"></td>
 </tr>
 <tr>
-<td class="tableCellMeta">TecnologÃ­a de sensor</td>
-<td class="tableCellContent">Seguimiento Ã³ptico fluido (1000 DPI)</td>
+<td class="tableCellMeta">Tecnología de sensor</td>
+<td class="tableCellContent">Seguimiento óptico fluido (1000 DPI)</td>
 </tr>
 <tr>
 <td class="tableCellMeta">DPI Ajustable</td>
 <td class="tableCellContent">No especificado</td>
 </tr>
 <tr>
-<td class="tableCellMeta">NÃºmero de botones</td>
+<td class="tableCellMeta">Número de botones</td>
 <td class="tableCellContent">3 (click izquierdo/derecho, rueda central)</td>
 </tr>
 <tr>
-<td class="tableCellMeta">BotÃ³n scroll</td>
-<td class="tableCellContent">2D, mecÃ¡nico</td>
+<td class="tableCellMeta">Botón scroll</td>
+<td class="tableCellContent">2D, mecánico</td>
 </tr>
 <tr>
-<td class="tableCellMeta">Tipo de baterÃ­a (mouse)</td>
+<td class="tableCellMeta">Tipo de batería (mouse)</td>
 <td class="tableCellContent">1 AA (incluido)</td>
 </tr>
 <tr>
-<td class="tableCellMeta">DuraciÃ³n de la baterÃ­a (mouse)</td>
+<td class="tableCellMeta">Duración de la batería (mouse)</td>
 <td class="tableCellContent">12 meses</td>
 </tr>
 
-<!-- ESPECIFICACIONES TÃ‰CNICAS TECLADO -->
+<!-- ESPECIFICACIONES TÉCNICAS TECLADO -->
 <tr>
 <td class="tableCellGroupTitle">TECLADO</td>
 <td class="tableCellGroupTitleContent"></td>
 </tr>
 <tr>
-<td class="tableCellMeta">Tipo de conexiÃ³n</td>
-<td class="tableCellContent">BluetoothÂ® Low Energy</td>
+<td class="tableCellMeta">Tipo de conexión</td>
+<td class="tableCellContent">Bluetooth® Low Energy</td>
 </tr>
 <tr>
-<td class="tableCellMeta">Alcance inalÃ¡mbrico</td>
+<td class="tableCellMeta">Alcance inalámbrico</td>
 <td class="tableCellContent">10 m</td>
 </tr>
 <tr>
-<td class="tableCellMeta">Tipo de baterÃ­a (teclado)</td>
+<td class="tableCellMeta">Tipo de batería (teclado)</td>
 <td class="tableCellContent">2 AAA (incluidas)</td>
 </tr>
 <tr>
-<td class="tableCellMeta">DuraciÃ³n de la baterÃ­a (teclado)</td>
+<td class="tableCellMeta">Duración de la batería (teclado)</td>
 <td class="tableCellContent">12 meses</td>
 </tr>
 <tr>
 <td class="tableCellMeta">Botones especiales</td>
-<td class="tableCellContent">BotÃ³n de encendido/apagado</td>
+<td class="tableCellContent">Botón de encendido/apagado</td>
 </tr>
 <tr>
-<td class="tableCellMeta">CaracterÃ­sticas adicionales</td>
-<td class="tableCellContent">Patas inclinables (7Â° de inclinaciÃ³n)</td>
+<td class="tableCellMeta">Características adicionales</td>
+<td class="tableCellContent">Patas inclinables (7° de inclinación)</td>
 </tr>
 <tr>
-<td class="tableCellMeta">DistribuciÃ³n</td>
-<td class="tableCellContent">DiseÃ±o compacto con secciÃ³n numÃ©rica</td>
+<td class="tableCellMeta">Distribución</td>
+<td class="tableCellContent">Diseño compacto con sección numérica</td>
 </tr>
 
 <!-- CONECTIVIDAD Y FUNCIONES -->
@@ -171,7 +141,7 @@ MetÃ¡lico	SÃ­/No
 <td class="tableCellGroupTitleContent"></td>
 </tr>
 <tr>
-<td class="tableCellMeta">Propiedades de conexiÃ³n</td>
+<td class="tableCellMeta">Propiedades de conexión</td>
 <td class="tableCellContent">Bluetooth</td>
 </tr>
 <tr>
@@ -179,12 +149,12 @@ MetÃ¡lico	SÃ­/No
 <td class="tableCellContent">No especificado</td>
 </tr>
 <tr>
-<td class="tableCellMeta">InalÃ¡mbrico</td>
-<td class="tableCellContent">SÃ­</td>
+<td class="tableCellMeta">Inalámbrico</td>
+<td class="tableCellContent">Sí</td>
 </tr>
 <tr>
-<td class="tableCellMeta">Teclas Multifuncionales EspecÃ­ficas</td>
-<td class="tableCellContent">SÃ­</td>
+<td class="tableCellMeta">Teclas Multifuncionales Específicas</td>
+<td class="tableCellContent">Sí</td>
 </tr>
 <tr>
 <td class="tableCellMeta">Teclas Multifuncionales Secundarias</td>
@@ -195,9 +165,9 @@ MetÃ¡lico	SÃ­/No
 <td class="tableCellContent">No especificado</td>
 </tr>
 
-<!-- APARIENCIA Y CONSTRUCCIÃ“N -->
+<!-- APARIENCIA Y CONSTRUCCIÓN -->
 <tr>
-<td class="tableCellGroupTitle">APARIENCIA Y CONSTRUCCIÃ“N</td>
+<td class="tableCellGroupTitle">APARIENCIA Y CONSTRUCCIÓN</td>
 <td class="tableCellGroupTitleContent"></td>
 </tr>
 <tr>
@@ -206,14 +176,14 @@ MetÃ¡lico	SÃ­/No
 </tr>
 <tr>
 <td class="tableCellMeta">Tipo de cable</td>
-<td class="tableCellContent">No aplica (inalÃ¡mbrico)</td>
+<td class="tableCellContent">No aplica (inalámbrico)</td>
 </tr>
 <tr>
-<td class="tableCellMeta">MecÃ¡nico</td>
+<td class="tableCellMeta">Mecánico</td>
 <td class="tableCellContent">No</td>
 </tr>
 <tr>
-<td class="tableCellMeta">MetÃ¡lico</td>
+<td class="tableCellMeta">Metálico</td>
 <td class="tableCellContent">No especificado</td>
 </tr>
 <tr>
@@ -228,7 +198,7 @@ MetÃ¡lico	SÃ­/No
 </tr>
 <tr>
 <td class="tableCellMeta">Requisitos</td>
-<td class="tableCellContent">BluetoothÂ® Low Energy</td>
+<td class="tableCellContent">Bluetooth® Low Energy</td>
 </tr>
 <tr>
 <td class="tableCellMeta">Compatibilidad</td>
@@ -237,23 +207,23 @@ MetÃ¡lico	SÃ­/No
 
 <!-- SOSTENIBILIDAD -->
 <tr>
-<td class="tableCellGroupTitle">PLÃSTICO RECICLADO</td>
+<td class="tableCellGroupTitle">PLÁSTICO RECICLADO</td>
 <td class="tableCellGroupTitleContent"></td>
 </tr>
 <tr>
-<td class="tableCellMeta">Mouse â€“ Grafito</td>
+<td class="tableCellMeta">Mouse – Grafito</td>
 <td class="tableCellContent">67% de material reciclado</td>
 </tr>
 <tr>
-<td class="tableCellMeta">Mouse â€“ Blanco crudo</td>
+<td class="tableCellMeta">Mouse – Blanco crudo</td>
 <td class="tableCellContent">66% de material reciclado</td>
 </tr>
 <tr>
-<td class="tableCellMeta">Keyboard â€“ Grafito</td>
+<td class="tableCellMeta">Keyboard – Grafito</td>
 <td class="tableCellContent">74% de material reciclado</td>
 </tr>
 <tr>
-<td class="tableCellMeta">Keyboard â€“ Blanco crudo</td>
+<td class="tableCellMeta">Keyboard – Blanco crudo</td>
 <td class="tableCellContent">69% de material reciclado</td>
 </tr>
 </tbody>

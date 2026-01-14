@@ -1,5 +1,4 @@
-<!-- BLOQUE: Hub USB -->
-<div class="row">
+﻿<div class="row">
   <div class="col-sm-8 col-offset-sm-2 col-md-10 offset-md-1 mb-3">
     <div class="product-seo-intro">
       <p>Expansor de puertos USB con transferencia de datos de alta velocidad, diseño compacto y compatibilidad universal para aumentar la conectividad.</p>

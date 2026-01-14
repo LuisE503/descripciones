@@ -1,22 +1,9 @@
-﻿<!--
-INSTRUCCIONES PARA INTERNET DE LAS COSAS (IoT GENERAL):
-
-CategorÃ­as: Sensores inteligentes, Medidores, Monitores ambientales, Sistemas IoT integrados
-Tipo de dispositivo: Sensor temperatura, Sensor humedad, Monitor CO2, Sistema completo
-Conectividad: WiFi, Bluetooth, Zigbee, Z-Wave, LoRaWAN
-Rango de mediciÃ³n: Valores mÃ­n-mÃ¡x segÃºn tipo
-PrecisiÃ³n: Margen de error
-BaterÃ­a: DuraciÃ³n en meses o aÃ±os
-Display: Incluido o no, Tipo
-IntegraciÃ³n: Plataformas soportadas (InfluxDB, Grafana, etc.)
-API: Disponible para integraciÃ³n
--->
-
-<!-- BLOQUE: Internet de las Cosas (descripciÃ³n y tabla de especificaciones) -->
+﻿
+<!-- BLOQUE: Internet de las Cosas (descripción y tabla de especificaciones) -->
 <div class="row">
 <div class="col-sm-8 col-offset-sm-2 col-md-10 offset-md-1 mb-3">
 <div class="product-seo-intro">
-<p>Dispositivos IoT inteligentes para monitoreo, control y automatizaciÃ³n de procesos. Con conectividad flexible y compatibilidad con mÃºltiples plataformas para soluciones personalizadas.</p>
+<p>Dispositivos IoT inteligentes para monitoreo, control y automatización de procesos. Con conectividad flexible y compatibilidad con múltiples plataformas para soluciones personalizadas.</p>
 </div>
 <br>
 <h6 class="tt-title-sub text-center">ESPECIFICACIONES DEL PRODUCTO</h6>
@@ -24,9 +11,9 @@ API: Disponible para integraciÃ³n
 <div class="div-drop">
 <table style="margin: auto;" class="NEW-TABLE TableOverride-1 tab-drag" width="100%">
 <tbody>
-<!-- IDENTIFICACIÃ“N -->
+<!-- IDENTIFICACIÓN -->
 <tr>
-<td class="tableCellGroupTitle">IdentificaciÃ³n</td>
+<td class="tableCellGroupTitle">Identificación</td>
 <td class="tableCellGroupTitleContent"></td>
 </tr>
 <tr>
@@ -48,17 +35,17 @@ API: Disponible para integraciÃ³n
 <td class="tableCellContent">2.4 GHz | 868/915 MHz | Especificar</td>
 </tr>
 
-<!-- ESPECIFICACIONES TÃ‰CNICAS -->
+<!-- ESPECIFICACIONES TÉCNICAS -->
 <tr>
-<td class="tableCellGroupTitle">Especificaciones TÃ©cnicas</td>
+<td class="tableCellGroupTitle">Especificaciones Técnicas</td>
 <td class="tableCellGroupTitleContent"></td>
 </tr>
 <tr>
-<td class="tableCellMeta">Rango de mediciÃ³n</td>
-<td class="tableCellContent">Valores mÃ­n-mÃ¡x</td>
+<td class="tableCellMeta">Rango de medición</td>
+<td class="tableCellContent">Valores mín-máx</td>
 </tr>
 <tr>
-<td class="tableCellMeta">PrecisiÃ³n</td>
+<td class="tableCellMeta">Precisión</td>
 <td class="tableCellContent">Margen de error</td>
 </tr>
 <tr>
@@ -66,32 +53,32 @@ API: Disponible para integraciÃ³n
 <td class="tableCellContent">Segundos o milisegundos</td>
 </tr>
 
-<!-- ALIMENTACIÃ“N -->
+<!-- ALIMENTACIÓN -->
 <tr>
-<td class="tableCellGroupTitle">AlimentaciÃ³n</td>
+<td class="tableCellGroupTitle">Alimentación</td>
 <td class="tableCellGroupTitleContent"></td>
 </tr>
 <tr>
 <td class="tableCellMeta">Tipo</td>
-<td class="tableCellContent">BaterÃ­a | USB | PoE | EnergÃ­a solar</td>
+<td class="tableCellContent">Batería | USB | PoE | Energía solar</td>
 </tr>
 <tr>
-<td class="tableCellMeta">DuraciÃ³n baterÃ­a</td>
-<td class="tableCellContent">Meses o aÃ±os</td>
+<td class="tableCellMeta">Duración batería</td>
+<td class="tableCellContent">Meses o años</td>
 </tr>
 
-<!-- INTERFAZ E INTEGRACIÃ“N -->
+<!-- INTERFAZ E INTEGRACIÓN -->
 <tr>
-<td class="tableCellGroupTitle">IntegraciÃ³n</td>
+<td class="tableCellGroupTitle">Integración</td>
 <td class="tableCellGroupTitleContent"></td>
 </tr>
 <tr>
 <td class="tableCellMeta">Display</td>
-<td class="tableCellContent">SÃ­ | No (tipo si aplica)</td>
+<td class="tableCellContent">Sí | No (tipo si aplica)</td>
 </tr>
 <tr>
 <td class="tableCellMeta">API disponible</td>
-<td class="tableCellContent">SÃ­ | No</td>
+<td class="tableCellContent">Sí | No</td>
 </tr>
 <tr>
 <td class="tableCellMeta">Plataformas soportadas</td>

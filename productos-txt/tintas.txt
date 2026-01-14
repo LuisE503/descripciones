@@ -1,5 +1,4 @@
-<!-- BLOQUE: Tintas (estructura y CSS consistente con los bloques anteriores) -->
-<div class="row">
+﻿<div class="row">
   <div class="col-sm-8 col-offset-sm-2 col-md-10 offset-md-1 mb-3">
     <div class="product-seo-intro">
       <p>Esta tinta de alta calidad en presentación de 500 ml garantiza impresiones nítidas y duraderas, ideal para recargas frecuentes con colores vibrantes y bajo costo por página.</p>
